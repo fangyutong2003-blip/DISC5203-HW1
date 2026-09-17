@@ -58,6 +58,14 @@ The larger enclosure bounded by T6, T7, and T8 is provisionally treated as slab 
 
 Columns are represented by their centre points. Walls are reconstructed using their section outlines and represented by finite geometric centreline segments. Main wall segments and short returns carrying the same ID are grouped as one structural element.
 
+### Manual review and correction
+
+The first agent-generated diagram showed support axes and several local midpoint boundaries, but it did not form closed tributary-area polygons. I manually marked the expected wall centre axes, midpoint divisions, and 45-degree divisions at orthogonal wall corners to identify the missing connections.
+
+This sketch was used as a review document rather than as direct calculation input. It records the human checking and correction stage of the AI-assisted workflow. The final boundaries were then reconstructed computationally, closed at actual intersections, and checked by area conservation.
+
+![Manual review sketch showing proposed axes and boundary corrections](manual_review_sketch.png)
+
 The first figure shows only the structural elements, support axes, and closed dashed boundaries. It is intended to resemble the construction shown in the assignment example.
 
 ![Plan 3 support axes and dashed tributary boundaries](FloorPlan3_tributary_boundaries.png)
@@ -104,4 +112,3 @@ All assumed slab cells are assigned exactly once. The closed regions do not over
 5. Geometric wall centrelines are used. If the required fixation lines differ, the support axes and tributary regions must be recalculated.
 6. Column and wall footprints remain within the plan allocation. Their self-weight must be handled consistently later to avoid double-counting material volumes.
 7. This is a reproducible geometric partition based on the stated assumptions. It is not, by itself, a validated stiffness-based structural load-path model.
-
