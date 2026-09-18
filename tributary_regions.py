@@ -34,9 +34,12 @@ segments.extend((9+i,x,y,u,v) for i,x,y,u,v in extra)
 slabs=[(0,0,10.2,12.1),(0,12.1,7.75,3.1),(2.45,15.2,5.3,4.),
        (3.75,19.2,2.65,.5),(0,15.2,2.45,1.),(7.75,13.8,.5,4.3),
        (7.75,12.1,2.45,.9),(1,-1.2,8.2,1.2)]
-# Two upper core rectangles marked X in the user's reference sketch.
-# Clear dimensions are reconstructed from the assumed wall geometry.
-openings=[(4.70,10.60,1.05,1.25),(6.00,10.60,.55,1.25)]
+# Areas excluded from the ordinary 150 mm flat-slab allocation.
+# O1/O2 are shaft voids. S1 is the stair/core enclosure bounded by T6-T8;
+# its load must be represented separately rather than as ordinary flat slab.
+openings=[('O1',4.70,10.60,1.05,1.25),('O2',6.00,10.60,.55,1.25),
+          ('S1',4.70,7.45,1.85,2.90)]
+excluded_area=sum(w*h for _,x,y,w,h in openings)
 def partition(step):
     xs=(np.arange(round(10.2/step))+.5)*step
     ys=-1.2+(np.arange(round(20.9/step))+.5)*step
@@ -44,7 +47,7 @@ def partition(step):
     mask=np.zeros((len(ys),len(xs)),bool)
     for x,y,w,h in slabs: mask|=(X>=x)&(X<x+w)&(Y>=y)&(Y<y+h)
     if STRAIGHT:
-        for x,y,w,h in openings: mask&=~((X>=x)&(X<x+w)&(Y>=y)&(Y<y+h))
+        for name,x,y,w,h in openings: mask&=~((X>=x)&(X<x+w)&(Y>=y)&(Y<y+h))
     best=np.full(mask.shape,np.inf); owner=np.full(mask.shape,-1,np.int16)
     for i,x,y,u,v in segments:
         dx=abs(X-np.clip(X,min(x,u),max(x,u)))
@@ -60,7 +63,7 @@ def partition(step):
 
 coarse,_,a0=partition(.02)
 owner,mask,areas=partition(.01)
-target=186.615-(2.0 if STRAIGHT else 0)
+target=186.615-(excluded_area if STRAIGHT else 0)
 assert abs(areas.sum()-target)<.06
 palette=[]
 for i in range(21):
@@ -114,16 +117,15 @@ for i in range(21):
     k=np.argmin((rr-midr)**2+(cc-midc)**2)
     txt((cc[k]+.5)*.01,-1.2+(rr[k]+.5)*.01,'A('+names[i]+')',f=small)
 # Draw openings / unresolved core explicitly.
-for x,y,w,h in openings:
+for name,x,y,w,h in openings:
     a=p(x,y+h);b=p(x+w,y)
     d.rectangle([a,b],fill='white',outline='#c97b0d',width=3)
-    d.line([a,b],fill='#c97b0d',width=2)
-    d.line([(a[0],b[1]),(b[0],a[1])],fill='#c97b0d',width=2)
+    if name!='S1':
+        d.line([a,b],fill='#c97b0d',width=2)
+        d.line([(a[0],b[1]),(b[0],a[1])],fill='#c97b0d',width=2)
 txt(5.23,11.22,'VOID O1',f=tiny)
 txt(6.28,11.22,'O2',f=tiny)
-a=p(4.70,10.35);b=p(6.55,7.45)
-d.rectangle([a,b],outline='#c97b0d',width=3)
-txt(5.6,8.8,'SLAB ASSUMED',f=tiny)
+txt(5.63,8.90,'STAIR / CORE\nSEPARATE LOAD',f=tiny)
 d.text((90,30),'Plan 3 | Closed Tributary-Area Regions',font=font,fill='#172c43')
 d.text((90,70),('Rectilinear L1 allocation: horizontal, vertical and 45-degree boundaries' if STRAIGHT else 'Preliminary nearest-support geometric allocation'),font=small,fill='#526174')
 d.text((950,160),'Region owner',font=font,fill='#172c43')
@@ -132,7 +134,7 @@ for i,n in enumerate(names):
     d.rectangle((950,yy,980,yy+25),fill=palette[i],outline='#768391')
     d.text((995,yy-2),n,font=small,fill='#172c43')
 d.multiline_text((950,1255),'Dark hatch: wall / column\nCyan: wall geometric axis\nRed cross: column axis\nThin dark line: region boundary\nOrange: void / unresolved area',font=small,fill='#172c43',spacing=12)
-d.multiline_text((950,1480),('ASSUMPTIONS\nO1 and O2 deducted as voids\nLarge central enclosure treated as slab\nP10-P14 projections included\nColumn/wall footprints not deducted\nShort wall returns reconstructed\napproximately\n\nReturns with the same ID are grouped' if STRAIGHT else 'ASSUMPTIONS\nCentral uncertain zones treated as slab\nP10-P14 projections included\nColumn/wall footprints not deducted\nShort wall returns approximate'),font=tiny,fill='#526174',spacing=9)
+d.multiline_text((950,1480),('ASSUMPTIONS\nO1/O2 deducted as voids\nS1 stair/core excluded from flat slab\nand requires a separate load model\nP10-P14 projections included\nColumn/wall footprints not deducted\nShort wall returns reconstructed\napproximately\n\nReturns with the same ID are grouped' if STRAIGHT else 'ASSUMPTIONS\nCentral special regions excluded\nP10-P14 projections included\nColumn/wall footprints not deducted\nShort wall returns approximate'),font=tiny,fill='#526174',spacing=9)
 d.multiline_text((90,1840),'The coloured regions are closed, non-overlapping, and cover the assumed effective slab.\nThis is a reproducible geometric allocation, not a validated structural load-path model.\nRevise the wall fixation lines and voids if better source information becomes available.',font=small,fill='#526174',spacing=8)
 im.save(ROOT/('FloorPlan3_tributary_regions_straight.png' if STRAIGHT else 'FloorPlan3_tributary_regions.png'))
 
@@ -177,23 +179,25 @@ if STRAIGHT:
     for i,(x,y,w,h) in enumerate(walls):
         pos=(x+w/2,y-.30 if w>h else y+h/2)
         ld.text(lp(*pos),names[9+i],font=tiny,fill='#111111',anchor='mm',stroke_width=2,stroke_fill='white')
-    for x,y,w,h in openings:
+    for name,x,y,w,h in openings:
         a=lp(x,y+h);b=lp(x+w,y)
         ld.rectangle([a,b],fill='white',outline='#111111',width=2)
-        ld.line([a,b],fill='#111111',width=2);ld.line([(a[0],b[1]),(b[0],a[1])],fill='#111111',width=2)
+        if name!='S1':
+            ld.line([a,b],fill='#111111',width=2);ld.line([(a[0],b[1]),(b[0],a[1])],fill='#111111',width=2)
+        ld.text(((a[0]+b[0])//2,(a[1]+b[1])//2),('STAIR / CORE' if name=='S1' else name),font=tiny,fill='#111111',anchor='mm')
     ld.text((90,30),'Plan 3 | Support Axes and Tributary Boundaries',font=font,fill='#172c43')
     ld.text((90,70),'Dashed lines are closed midpoint / 45-degree boundaries; solid black lines are support axes.',font=small,fill='#526174')
     ld.multiline_text((945,180),'LEGEND\n\nHatched: wall / column\nSolid line: support axis\nDashed line: tributary boundary\nCrossed white area: void\n\nAll dashed boundaries close\nat another boundary, slab edge,\nor void edge.\n\nGeometry matches the area\ncalculation figure.',font=small,fill='#172c43',spacing=10)
-    ld.multiline_text((90,1835),'Assumptions: O1/O2 are voids; the larger central enclosure is slab; wall returns and P10 location are approximate.',font=tiny,fill='#526174')
+    ld.multiline_text((90,1835),'Assumptions: O1/O2 are voids; S1 is stair/core with a separate load model; wall returns and P10 location are approximate.',font=tiny,fill='#526174')
     lm.save(ROOT/'FloorPlan3_tributary_boundaries.png')
 payload={'method':('L1 distance to column centers and grouped finite wall-axis segments' if STRAIGHT else 'Euclidean distance to column centers and grouped finite wall-axis segments'),
          'status':'closed geometric partition; assumptions require instructor/user validation',
          'grid_m':.01,'gross_area_exact_m2':186.615,
-         'deducted_openings_m2':(2.0 if STRAIGHT else 0),
+         'excluded_from_flat_slab_m2':(excluded_area if STRAIGHT else 0),
          'effective_area_m2':target,'raster_area_m2':float(areas.sum()),
          'max_element_area_change_2cm_to_1cm_m2':float(abs(areas-a0).max()),
          'areas_m2':{n:round(float(a),4) for n,a in zip(names,areas)},
-         'assumptions':[('O1/O2 deducted as openings; larger central enclosure treated as slab.' if STRAIGHT else 'Unconfirmed central patches treated as slab for this drawing.'),
+         'assumptions':[('O1/O2 deducted as voids; S1 stair/core excluded from ordinary flat slab and requires a separate load model.' if STRAIGHT else 'Unconfirmed central patches treated as slab for this drawing.'),
                         'Columns/walls footprints included in gross allocated area.',
                         'Approximate wall returns, support locations and P10 horizontal offset.',
                         'No stiffness, beam load routing or line-of-sight constraint.',

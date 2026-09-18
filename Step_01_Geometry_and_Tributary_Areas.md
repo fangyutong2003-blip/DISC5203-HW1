@@ -40,19 +40,23 @@ The gross slab area before deducting openings is:
 A_\mathrm{gross}=168.645+17.970=186.615\ \mathrm{m^2}
 \]
 
-Following the marked-up reference, O1 and O2 between T4 and T6 are provisionally treated as voids. Under the current wall reconstruction, O1 is 1.05×1.25 m and O2 is 0.55×1.25 m:
+The detailed structural drawing confirms that the two upper core rectangles O1 and O2 contain no ordinary slab panel. It also shows the enclosure bounded by T6, T7, and T8 as a stair/core zone rather than a normal flat-slab panel.
+
+![Original structural drawing used to review the core](Plan3_original_structural_drawing.png)
+
+Under the current geometric reconstruction, O1 is 1.05×1.25 m, O2 is 0.55×1.25 m, and the clear stair/core zone S1 is 1.85×2.90 m:
 
 \[
-A_\mathrm{void}=1.05(1.25)+0.55(1.25)=2.000\ \mathrm{m^2}
+A_\mathrm{excluded}=1.05(1.25)+0.55(1.25)+1.85(2.90)=7.365\ \mathrm{m^2}
 \]
 
 The adopted effective slab area is:
 
 \[
-\boxed{A_\mathrm{effective}=186.615-2.000=184.615\ \mathrm{m^2}}
+\boxed{A_\mathrm{flat\ slab}=186.615-7.365=179.250\ \mathrm{m^2}}
 \]
 
-The larger enclosure bounded by T6, T7, and T8 is provisionally treated as slab because the source drawing does not provide enough evidence to classify it as a void.
+O1 and O2 are treated as voids. S1 is excluded from the ordinary 150 mm flat-slab allocation and must receive a separate stair/core load model in the vertical-load calculation. Exclusion from this flat-slab calculation does not mean that S1 carries zero structural load.
 
 ## 3. Support axes and tributary boundaries
 
@@ -72,7 +76,7 @@ The first figure shows only the structural elements, support axes, and closed da
 
 The closed partition uses rectilinear (L1) distance. Each slab point is assigned to the nearest column centre or finite wall-axis segment. For an orthogonal layout, this produces midpoint boundaries, horizontal or vertical segments, 45-degree wall-corner divisions, and actual intersections that close every tributary-area polygon.
 
-The partition is clipped by the slab outline and O1/O2. A 0.01 m calculation grid is used. Recalculation with a 0.02 m grid changes the area of any single element by no more than approximately 0.049 m².
+The partition is clipped by the slab outline, O1/O2, and S1. A 0.01 m calculation grid is used. Recalculation with a 0.02 m grid changes the area of any single element by no more than approximately 0.073 m².
 
 ## 4. Tributary areas
 
@@ -86,10 +90,10 @@ The second figure applies colour to the same closed regions used for area calcul
 | C2 | 2.6293 | T2 | 6.3181 |
 | C3 | 7.8498 | T3 | 14.1177 |
 | C4 | 5.4765 | T4 | 12.1027 |
-| C5 | 4.3862 | T5 | 1.1977 |
-| C6 | 9.2966 | T6 | 8.6437 |
-| C7 | 10.4308 | T7 | 10.8267 |
-| C8 | 9.0280 | T8 | 12.0618 |
+| C5 | 4.3862 | T5 | 1.0133 |
+| C6 | 9.2966 | T6 | 7.1752 |
+| C7 | 10.4308 | T7 | 8.7395 |
+| C8 | 9.0280 | T8 | 10.4369 |
 | C9 | 7.3866 | T9 | 8.4668 |
 | | | T10 | 15.1329 |
 | | | T11 | 15.1360 |
@@ -98,15 +102,15 @@ The second figure applies colour to the same closed regions used for area calcul
 Area-conservation check:
 
 \[
-\sum A_i=184.615\ \mathrm{m^2}=A_\mathrm{effective}
+\sum A_i=179.250\ \mathrm{m^2}=A_\mathrm{flat\ slab}
 \]
 
 All assumed slab cells are assigned exactly once. The closed regions do not overlap and collectively cover the complete effective slab area adopted in this model.
 
 ## 5. Assumptions requiring confirmation
 
-1. O1 and O2 are provisionally deducted as voids based on the marked-up reference; the source drawing itself does not contain an explicit OPEN or VOID note.
-2. The larger enclosure bounded by T6, T7, and T8 is provisionally treated as slab.
+1. O1 and O2 are treated as voids because neither carries a slab-panel designation in the detailed structural drawing.
+2. S1, bounded by T6, T7, and T8, is treated as a stair/core zone. It is excluded from ordinary flat-slab area and requires a separate load model in Step 02.
 3. Short wall returns are reconstructed approximately from the image and should be checked against the original CAD drawing or instructor guidance.
 4. The horizontal location of P10 is not fully dimensioned. This does not affect its area but affects its local tributary partition.
 5. Geometric wall centrelines are used. If the required fixation lines differ, the support axes and tributary regions must be recalculated.

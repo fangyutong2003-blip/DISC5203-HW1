@@ -45,9 +45,13 @@ Gross area including P10-P14:
 
 ## Central areas
 
-The two upper core rectangles marked O1 and O2 in the user's reference are provisionally treated as voids. Their combined reconstructed area is 2.000 m². The larger enclosure bounded by T6, T7, and T8 is provisionally treated as slab because the source drawing contains no explicit opening note.
+The detailed structural drawing shows no ordinary slab-panel designation in O1, O2, or the larger enclosure bounded by T6, T7, and T8. O1 and O2 are therefore treated as voids. The larger enclosure S1 is classified as a stair/core zone and excluded from the ordinary 150 mm flat-slab allocation; its gravity load must be modelled separately.
+
+The reconstructed excluded plan area is 2.000 m² for O1/O2 plus 5.365 m² for S1, giving 7.365 m² in total. The resulting ordinary flat-slab area is 179.250 m².
 
 These classifications must be updated if an original CAD drawing or instructor clarification becomes available.
+
+![Detailed structural drawing](Plan3_original_structural_drawing.png)
 
 ![Coordinate and opening review](FloorPlan3_coordinates.png)
 
