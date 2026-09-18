@@ -1,0 +1,24 @@
+check_id,description,expected,actual,tolerance,status
+V01,Number of vertical elements,21,21,exact,PASS
+V02,Number of by-level result rows,105,105,exact,PASS
+V03,"Element IDs agree across area, coordinate, summary, and level files",True,True,exact,PASS
+V04,Tributary areas close to ordinary flat-slab area (m2),179.250000,179.250000,0.001000,PASS
+V05,Gross floor area closes after adding O1/O2 and S1 (m2),186.615000,186.615000,0.001000,PASS
+V06,Ordinary slab dead load per floor (kN),672.187500,672.187500,0.001000,PASS
+V07,Ordinary slab live load per floor (kN),896.250000,896.250000,0.001000,PASS
+V08,S1 equivalent dead load per floor (kN),20.118750,20.118750,0.001000,PASS
+V09,S1 equivalent live load per floor (kN),26.825000,26.825000,0.001000,PASS
+V10,Vertical-member self-weight per floor (kN),606.187500,606.187500,0.001000,PASS
+V11,Total permanent load per floor (kN),1298.493750,1298.493750,0.001000,PASS
+V12,Total variable load per floor (kN),923.075000,923.075000,0.001000,PASS
+V13,Base permanent load for five storeys (kN),6492.468750,6492.468750,0.001000,PASS
+V14,Base variable load for five storeys (kN),4615.375000,4615.375000,0.001000,PASS
+V15,Base service load G+Q (kN),11107.843750,11107.843750,0.001000,PASS
+V16,Base ULS load 1.35G+1.50Q (kN),15687.895310,15687.895312,0.002000,PASS
+V17,Base quasi-permanent load G+0.30Q (kN),7877.081250,7877.081250,0.002000,PASS
+V18,Maximum absolute difference in Step 02 summary (kN or m2),0.000000,0.000050,0.000110,PASS
+V19,Every element contains the 1:2:3:4:5 storey accumulation sequence,True,True,exact,PASS
+V20,Maximum absolute difference in by-level results (kN),0.000000,0.000050,0.000110,PASS
+V21,All recomputed areas and loads are nonnegative,True,True,exact,PASS
+V22,Representative C1 base ULS agrees with Step 02 (kN),539.361656,539.361700,0.000110,PASS
+V23,Representative T7 base ULS agrees with Step 02 (kN),1130.020609,1130.020600,0.000110,PASS
