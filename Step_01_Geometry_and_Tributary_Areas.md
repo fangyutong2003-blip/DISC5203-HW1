@@ -58,7 +58,46 @@ The adopted effective slab area is:
 
 O1 and O2 are treated as voids. S1 is excluded from the ordinary 150 mm flat-slab allocation and must receive a separate stair/core load model in the vertical-load calculation. Exclusion from this flat-slab calculation does not mean that S1 carries zero structural load.
 
-## 3. Support axes and tributary boundaries
+## 3. Vertical structural elements and coordinates
+
+The vertical-load-resisting elements identified in the drawing are nine columns (C1-C9) and twelve structural wall elements (T1-T12). Coordinates are measured in the coordinate system defined in Section 1. Column coordinates refer to section centres. Wall coordinates refer to finite geometric centreline segments.
+
+The coordinates were reconstructed from the dimensioned floor-plan image and the detailed structural drawing. They are therefore classified as **image-derived geometric data**, rather than original CAD coordinates. Main wall lengths match the labelled section lengths. Short wall returns are reconstructed approximately from the raster image.
+
+### Column centres
+
+| Column | x (m) | y (m) | Section (mm) |
+|---|---:|---:|---:|
+| C1 | 7.550 | 15.900 | 400×400 |
+| C2 | 0.200 | 15.000 | 400×400 |
+| C3 | 0.200 | 11.900 | 400×400 |
+| C4 | 3.600 | 11.900 | 400×400 |
+| C5 | 10.000 | 11.900 | 400×400 |
+| C6 | 0.200 | 6.050 | 400×400 |
+| C7 | 3.600 | 6.050 | 450×450 |
+| C8 | 6.600 | 6.050 | 400×400 |
+| C9 | 10.000 | 6.050 | 400×400 |
+
+### Main wall-axis segments
+
+| Wall | Axis start (m) | Axis end (m) | Section (mm) |
+|---|---|---|---:|
+| T1 | (5.750, 19.075) | (7.750, 19.075) | 2000×250 |
+| T2 | (2.575, 17.200) | (2.575, 19.200) | 250×2000 |
+| T3 | (1.700, 15.075) | (3.700, 15.075) | 2000×250 |
+| T4 | (4.700, 11.975) | (7.750, 11.975) | 3050×250 |
+| T5 | (5.875, 10.350) | (5.875, 12.100) | 250×1750 |
+| T6 | (4.700, 10.475) | (6.800, 10.475) | 2100×250 |
+| T7 | (6.675, 7.200) | (6.675, 10.600) | 250×3400 |
+| T8 | (4.700, 7.325) | (6.800, 7.325) | 2100×250 |
+| T9 | (0.125, 0.000) | (0.125, 2.000) | 250×2000 |
+| T10 | (2.450, 0.125) | (4.450, 0.125) | 2000×250 |
+| T11 | (5.750, 0.125) | (7.750, 0.125) | 2000×250 |
+| T12 | (10.075, 0.000) | (10.075, 2.000) | 250×2000 |
+
+The machine-readable file [Step_01B_Vertical_Element_Coordinates.csv](Step_01B_Vertical_Element_Coordinates.csv) also records the short return segments used in the tributary-area model. This CSV is the input geometry for subsequent load calculations.
+
+## 4. Support axes and tributary boundaries
 
 Columns are represented by their centre points. Walls are reconstructed using their section outlines and represented by finite geometric centreline segments. Main wall segments and short returns carrying the same ID are grouped as one structural element.
 
@@ -78,7 +117,7 @@ The closed partition uses rectilinear (L1) distance. Each slab point is assigned
 
 The partition is clipped by the slab outline, O1/O2, and S1. A 0.01 m calculation grid is used. Recalculation with a 0.02 m grid changes the area of any single element by no more than approximately 0.073 m².
 
-## 4. Tributary areas
+## 5. Tributary areas
 
 The second figure applies colour to the same closed regions used for area calculation.
 
@@ -107,7 +146,7 @@ Area-conservation check:
 
 All assumed slab cells are assigned exactly once. The closed regions do not overlap and collectively cover the complete effective slab area adopted in this model.
 
-## 5. Assumptions requiring confirmation
+## 6. Assumptions requiring confirmation
 
 1. O1 and O2 are treated as voids because neither carries a slab-panel designation in the detailed structural drawing.
 2. S1, bounded by T6, T7, and T8, is treated as a stair/core zone. It is excluded from ordinary flat-slab area and requires a separate load model in Step 02.
