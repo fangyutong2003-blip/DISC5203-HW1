@@ -85,12 +85,12 @@ The Step 01 partition uses a 0.01 m calculation grid. The recorded 0.02 m rerun 
 
 Recent Git history when this checkpoint was generated:
 
+- `b5d70a3 Add independent verification and checkpoint report`
 - `96fc493 Calculate vertical loads and five-storey axial forces`
 - `79b97cc Add vertical element coordinate schedule`
 - `9866e92 Refine core openings using detailed structural drawing`
 - `032fc3d Exclude temporary inspection images`
 - `cf4382e Rename report to identify Step 01`
-- `daa469f Add manual review sketch to methodology`
 
 ## Remaining limitations before final submission
 

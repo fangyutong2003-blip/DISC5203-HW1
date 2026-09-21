@@ -98,7 +98,14 @@ def exact_check(
 def git_history() -> list[str]:
     try:
         output = subprocess.check_output(
-            ["git", "log", "-6", "--pretty=format:%h %s"],
+            [
+                "git",
+                "-c",
+                f"safe.directory={ROOT.as_posix()}",
+                "log",
+                "-6",
+                "--pretty=format:%h %s",
+            ],
             cwd=ROOT,
             text=True,
             encoding="utf-8",

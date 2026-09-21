@@ -1,0 +1,10 @@
+# Temporary source-page renders and superseded inspection figures
+HW1_page4_0.png
+HW1_page4_1.png
+Plan3_bottom_inspection.png
+FloorPlan3_support_axes.png
+FloorPlan3_tributary_regions.png
+
+# Python cache files
+__pycache__/
+*.pyc
