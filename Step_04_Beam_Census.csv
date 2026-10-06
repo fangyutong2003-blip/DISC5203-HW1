@@ -1,0 +1,26 @@
+beam_id,x1_m,y1_m,x2_m,y2_m,span_m,width_mm,depth_mm,panels,role
+D01,2.4500,19.2000,5.7500,19.2000,3.3000,250,700,"P1, P10",perimeter/root; two-sided including cantilever
+D02,2.4500,15.2000,2.4500,17.2000,2.0000,250,700,P1,perimeter; one-sided
+D03,7.7500,15.2000,7.7500,19.2000,4.0000,250,700,"P1, P12",perimeter/root; two-sided including cantilever
+D04,0.0000,15.2000,2.4500,15.2000,2.4500,250,700,"P2, P11",perimeter/root; two-sided including cantilever
+D05,0.0000,12.1000,0.0000,15.2000,3.1000,250,700,P2,perimeter; one-sided; Beam A segment
+D06,3.6000,12.1000,3.6000,15.2000,3.1000,250,600,"P1, P2",interior; two-sided
+D07,7.7500,12.1000,7.7500,15.2000,3.1000,250,600,"P1, P12",perimeter/root; two-sided including cantilever
+D08,0.0000,12.1000,3.6000,12.1000,3.6000,250,600,"P2, P3",interior; two-sided
+D09,3.6000,12.1000,4.7000,12.1000,1.1000,250,600,"P1, P4",core-side; two-sided
+D10,7.7500,12.1000,10.2000,12.1000,2.4500,250,700,"P5, P13",perimeter/root; two-sided including cantilever
+D11,0.0000,6.0500,0.0000,12.1000,6.0500,250,700,P3,perimeter; one-sided; Beam A segment
+D12,3.6000,6.0500,3.6000,12.1000,6.0500,250,600,"P3, P4",interior; two-sided
+D13,6.6000,10.6000,6.6000,12.1000,1.5000,250,600,P5,core-side; one-sided
+D14,6.6000,6.0500,6.6000,7.2000,1.1500,250,600,"P5, P6",core-side; one slab-bearing side adopted
+D15,10.2000,6.0500,10.2000,12.1000,6.0500,250,700,P5,perimeter; one-sided
+D16,0.0000,6.0500,3.6000,6.0500,3.6000,250,600,"P3, P7",interior; two-sided; Beam B span 1
+D17,3.6000,6.0500,6.6000,6.0500,3.0000,250,600,"P6, P8",interior; P8 is one-way to vertical beams; Beam B span 2
+D18,6.6000,6.0500,10.2000,6.0500,3.6000,250,600,"P5, P9",interior; two-sided; Beam B span 3
+D19,0.0000,0.0000,0.0000,6.0500,6.0500,250,700,P7,perimeter; one-sided; Beam A segment
+D20,3.6000,0.0000,3.6000,6.0500,6.0500,250,600,"P7, P8",interior; two-sided
+D21,6.6000,0.0000,6.6000,6.0500,6.0500,250,600,"P8, P9",interior; two-sided
+D22,10.2000,0.0000,10.2000,6.0500,6.0500,250,700,P9,perimeter; one-sided
+D23,0.0000,0.0000,3.6000,0.0000,3.6000,250,700,"P7, P14",perimeter/root; two-sided including cantilever
+D24,3.6000,0.0000,6.6000,0.0000,3.0000,250,700,"P8, P14",perimeter/root; cantilever load only from P14
+D25,6.6000,0.0000,10.2000,0.0000,3.6000,250,700,"P9, P14",perimeter/root; two-sided including cantilever

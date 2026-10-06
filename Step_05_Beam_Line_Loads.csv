@@ -1,0 +1,26 @@
+beam_id,span_m,depth_mm,panels,role,tributary_area_m2,mean_tributary_width_m,load_shape,slab_dead_udl_kN_m,beam_stem_dead_udl_kN_m,total_dead_udl_kN_m,live_udl_kN_m,service_udl_total_load_equiv_kN_m,service_udl_midspan_moment_equiv_kN_m
+D01,3.3000,700,"P1, P10",perimeter/root; two-sided including cantilever,6.0049,1.8197,trapezoidal/truncated + partial cantilever UDL,6.8238,3.4375,10.2613,9.0983,19.3596,20.5108
+D02,2.0000,700,P1,perimeter; one-sided,2.7052,1.3526,"triangular/truncated, one-sided",5.0723,3.4375,8.5098,6.7630,15.2728,15.6465
+D03,4.0000,700,"P1, P12",perimeter/root; two-sided including cantilever,8.7583,2.1896,trapezoidal + cantilever UDL,8.2109,3.4375,11.6484,10.9479,22.5963,24.1372
+D04,2.4500,700,"P2, P11",perimeter/root; two-sided including cantilever,4.9717,2.0293,triangular/truncated + cantilever UDL,7.6097,3.4375,11.0472,10.1463,21.1936,22.1548
+D05,3.1000,700,P2,perimeter; one-sided; Beam A segment,2.3992,0.7739,"triangular, one-sided",2.9023,3.4375,6.3398,3.8697,10.2094,12.4699
+D06,3.1000,600,"P1, P2",interior; two-sided,8.7323,2.8169,two-sided triangular/trapezoidal,10.5633,2.8125,13.3758,14.0844,27.4601,24.7891
+D07,3.1000,600,"P1, P12",perimeter/root; two-sided including cantilever,4.4440,1.4335,trapezoidal/truncated + short cantilever UDL,5.3758,2.8125,8.1883,7.1677,15.3560,15.8433
+D08,3.6000,600,"P2, P3",interior; two-sided,6.4238,1.7844,two-sided triangular,6.6915,2.8125,9.5040,8.9219,18.4259,23.5391
+D09,1.1000,600,"P1, P4",core-side; two-sided,0.6049,0.5499,"truncated triangular, core-side",2.0622,2.8125,4.8747,2.7495,7.6242,7.6253
+D10,2.4500,700,"P5, P13",perimeter/root; two-sided including cantilever,4.7921,1.9560,truncated triangular + cantilever UDL,7.3348,3.4375,10.7723,9.7798,20.5521,21.5265
+D11,6.0500,700,P3,perimeter; one-sided; Beam A segment,7.6476,1.2641,"trapezoidal, one-sided",4.7402,3.4375,8.1777,6.3203,14.4981,17.3268
+D12,6.0500,600,"P3, P4",interior; two-sided,10.9761,1.8142,two-sided trapezoidal + one-way strip,6.8034,2.8125,9.6159,9.0712,18.6870,21.5149
+D13,1.5000,600,P5,core-side; one-sided,1.1248,0.7499,"truncated triangular, one-sided",2.8120,2.8125,5.6245,3.7493,9.3738,9.3801
+D14,1.1500,600,"P5, P6",core-side; one slab-bearing side adopted,0.6662,0.5793,"truncated triangular, one-sided",2.1724,2.8125,4.9849,2.8965,7.8814,7.8821
+D15,6.0500,700,P5,perimeter; one-sided,7.6522,1.2648,"trapezoidal, one-sided",4.7431,3.4375,8.1806,6.3241,14.5047,17.3304
+D16,3.6000,600,"P3, P7",interior; two-sided; Beam B span 1,6.4915,1.8032,two-sided triangular,6.7620,2.8125,9.5745,9.0160,18.5905,23.8402
+D17,3.0000,600,"P6, P8",interior; P8 is one-way to vertical beams; Beam B span 2,1.2160,0.4053,partial uniform one-way strip,1.5200,2.8125,4.3325,2.0267,6.3592,6.9067
+D18,3.6000,600,"P5, P9",interior; two-sided; Beam B span 3,6.4812,1.8003,two-sided triangular,6.7512,2.8125,9.5637,9.0017,18.5654,23.8223
+D19,6.0500,700,P7,perimeter; one-sided; Beam A segment,7.6513,1.2647,"trapezoidal, one-sided",4.7425,3.4375,8.1800,6.3234,14.5034,17.3294
+D20,6.0500,600,"P7, P8",interior; two-sided,16.7187,2.7634,"trapezoidal + one-way UDL, two-sided",10.3628,2.8125,13.1753,13.8171,26.9924,29.8244
+D21,6.0500,600,"P8, P9",interior; two-sided,16.7174,2.7632,"trapezoidal + one-way UDL, two-sided",10.3620,2.8125,13.1745,13.8160,26.9906,29.8225
+D22,6.0500,700,P9,perimeter; one-sided,7.6518,1.2648,"trapezoidal, one-sided",4.7429,3.4375,8.1804,6.3238,14.5042,17.3303
+D23,3.6000,700,"P7, P14",perimeter/root; two-sided including cantilever,6.3483,1.7634,triangular + partial cantilever UDL,6.6128,3.4375,10.0503,8.8171,18.8674,22.7854
+D24,3.0000,700,"P8, P14",perimeter/root; cantilever load only from P14,3.6000,1.2000,partial cantilever UDL only,4.5000,3.4375,7.9375,6.0000,13.9375,13.9375
+D25,3.6000,700,"P9, P14",perimeter/root; two-sided including cantilever,6.3538,1.7649,triangular + partial cantilever UDL,6.6185,3.4375,10.0560,8.8247,18.8808,22.8009

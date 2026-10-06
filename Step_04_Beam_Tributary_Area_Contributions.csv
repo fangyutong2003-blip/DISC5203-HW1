@@ -1,0 +1,51 @@
+support_id,panel_id,tributary_area_m2,support_type
+CORE_AND_SUPPORT_RESIDUAL,residual,1.7170,wall/direct support
+D01,P1,5.0299,beam
+D01,P10,0.9750,beam
+D02,P1,2.7052,beam
+D03,P1,6.7583,beam
+D03,P12,2.0000,beam
+D04,P11,2.4500,beam
+D04,P2,2.5217,beam
+D05,P2,2.3992,beam
+D06,P1,6.3308,beam
+D06,P2,2.4015,beam
+D07,P1,4.2940,beam
+D07,P12,0.1500,beam
+D08,P2,3.1748,beam
+D08,P3,3.2490,beam
+D09,P1,0.6049,beam
+D10,P13,2.2050,beam
+D10,P5,2.5871,beam
+D11,P3,7.6476,beam
+D12,P3,7.6486,beam
+D12,P4,3.3275,beam
+D13,P5,1.1248,beam
+D14,P5,0.6662,beam
+D15,P5,7.6522,beam
+D16,P3,3.2348,beam
+D16,P7,3.2567,beam
+D17,P6,1.2160,beam
+D18,P5,3.2292,beam
+D18,P9,3.2520,beam
+D19,P7,7.6513,beam
+D20,P7,7.6437,beam
+D20,P8,9.0750,beam
+D21,P8,9.0750,beam
+D21,P9,7.6424,beam
+D22,P9,7.6518,beam
+D23,P14,3.1200,beam
+D23,P7,3.2283,beam
+D24,P14,3.6000,beam
+D25,P14,3.1200,beam
+D25,P9,3.2338,beam
+W_CORE_R,P4,3.3275,wall/direct support
+W_T1,P1,1.9983,wall/direct support
+W_T1,P10,0.3500,wall/direct support
+W_T2,P1,1.9953,wall/direct support
+W_T3,P1,0.6574,wall/direct support
+W_T3,P2,0.6628,wall/direct support
+W_T4,P1,3.6909,wall/direct support
+W_T4,P5,0.6600,wall/direct support
+W_T7,P5,5.8605,wall/direct support
+W_T8,P6,1.1970,wall/direct support
