@@ -1,5 +1,7 @@
 # Step 06 - OpenSees Briefing and Agent Iteration Log
 
+> Revision notice: The briefing below is retained as historical audit evidence. Its symmetric profiles and numerical bounds are superseded by the mixed-edge revision. Use Step_06_Mixed_Support_PreSolve_Screening.md and Step_06_OpenSees_Models_and_Verification.md for current loads and results. The generated shape schematic is illustrative, not proof of independent pre-solve student work. The single-line subframes omit the perpendicular bay and do not complete Tasks 3/12.
+
 ## 1. User instruction
 
 The user's short instruction, translated to English, was: **"Build the OpenSees model."** The repository and the HW2 brief supplied the engineering context. The agent expanded that instruction into the model briefing below; the student must review the stated assumptions before final submission.

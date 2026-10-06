@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -84,7 +85,19 @@ def main() -> None:
     for path in RESULTS:
         result = json.loads(path.read_text(encoding="utf-8"))
         label = f"{result['beam']} {result['model']}"
-        add_check(rows, f"O{next_id:02d}", f"{label} vertical equilibrium (kN)", 0.0, result["equilibrium_error_kN"], 1.0e-6)
+        for filename,key in (("Step_05_Beam_Load_Profiles.csv","profile_sha256"),("Step_05_Beam_Endpoint_Loads.csv","endpoint_sha256")):
+            digest=hashlib.sha256((ROOT/filename).read_bytes()).hexdigest()
+            add_check(rows,f"O{next_id:02d}",f"{label} {key} provenance",digest,result[key],"exact")
+            next_id+=1
+        with (ROOT/"Step_05_Beam_Line_Loads.csv").open(encoding="utf-8-sig") as stream:
+            expected=sum(float(r["span_m"])*float(r["service_udl_total_load_equiv_kN_m"]) for r in csv.DictReader(stream) if r["beam_id"] in result["segments"])
+        add_check(rows,f"O{next_id:02d}",f"{label} independently summed Step 05 force",expected,result["applied_service_load_kN"],1e-7)
+        next_id+=1
+        # The 0.01 m mesh has high stiffness contrast to 3 m columns. The
+        # absolute gate is 0.1 N; also enforce relative balance independently.
+        add_check(rows, f"O{next_id:02d}", f"{label} vertical equilibrium (kN)", 0.0, result["equilibrium_error_kN"], 1.0e-4)
+        next_id += 1
+        add_check(rows, f"O{next_id:02d}", f"{label} relative vertical equilibrium", 0.0, result["equilibrium_error_kN"]/result["applied_service_load_kN"], 1.0e-6)
         next_id += 1
         add_check(rows, f"O{next_id:02d}", f"{label} element end-moment reconstruction (kN m)", 0.0, result["max_element_end_moment_error_kNm"], 1.0e-9)
         next_id += 1

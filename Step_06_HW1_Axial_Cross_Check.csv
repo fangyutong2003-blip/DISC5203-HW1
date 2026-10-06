@@ -1,9 +1,9 @@
 beam,grid_point,HW1_one_floor_service_axial_kN,HW2_selected_line_subframe_reaction_kN,difference_percent,scope_note
-Beam A,T9,111.5845,42.8885,-61.56,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
-Beam A,C6,93.3452,91.1595,-2.34,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
-Beam A,C3,80.6858,66.8417,-17.16,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
-Beam A,C2,35.0064,6.2185,-82.24,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
-Beam B,C6,93.3452,30.5471,-67.28,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
-Beam B,C7,106.4570,45.6404,-57.13,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
-Beam B,C8,90.9950,46.0850,-49.35,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
-Beam B,C9,76.6328,30.5664,-60.11,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
+Beam A,T9,111.5845,31.3915,-71.87,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
+Beam A,C6,93.3452,66.7803,-28.46,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
+Beam A,C3,80.6858,48.7003,-39.64,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
+Beam A,C2,35.0064,4.3963,-87.44,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
+Beam B,C6,93.3452,41.2076,-55.85,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
+Beam B,C7,106.4570,47.9005,-55.00,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
+Beam B,C8,90.9950,52.7786,-42.00,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.
+Beam B,C9,76.6328,41.1847,-46.26,HW2 contains only the selected beam line; HW1 contains the full floor tributary load and member self-weight.

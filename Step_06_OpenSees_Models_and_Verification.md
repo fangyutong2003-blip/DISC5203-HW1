@@ -2,9 +2,9 @@
 
 ## 1. Scope
 
-This step implements HW2 Task 3 for both marked lines. Beam A is D19-D11-D05, the three-span peripheral edge beam. Beam B is D16-D17-D18, the three-span interior beam. The models reuse the Step 04 geometry and Step 05 service line loads rather than re-deriving the floor plan.
+This step is a preliminary single-line model for each marked beam, not the complete HW2 Task 3 subframe. It lacks the perpendicular bay and the full Task 12 load-path comparison. Beam A is D19-D11-D05; Beam B is D16-D17-D18. The models use the revised Step 04 mixed-edge allocation and actual Step 05 service-load profiles. All C/S labels remain assumptions; unresolved core area remains unallocated.
 
-The structural briefing and the pre-solve hand bounds were recorded before execution in `Step_06_OpenSees_Briefing_and_Iteration_Log.md`.
+The old briefing is retained as historical evidence in `Step_06_OpenSees_Briefing_and_Iteration_Log.md`; its old load values are superseded. Current screening scales are recorded before this rerun in `Step_06_Mixed_Support_PreSolve_Screening.md`. No claim is made that the historical schematic was independently drawn before the first-ever solver execution.
 
 ## 2. Model assumptions
 
@@ -12,7 +12,7 @@ The structural briefing and the pre-solve hand bounds were recorded before execu
 - Concrete: linear elastic, E = 30,000,000 kN/m2.
 - Beam A section: 250 x 700 mm; Beam B section: 250 x 600 mm.
 - Load case: service G+Q, including slab load and beam-stem self-weight.
-- The non-uniform profiles are discretised into 60 uniform elasticBeamColumn elements per span.
+- Actual non-uniform profiles are read directly from Step_05_Beam_Load_Profiles.csv into 0.01 m elasticBeamColumn intervals. Asymmetry is preserved; no symmetric fitting or force rescaling is used.
 - The pure models are continuous beams with vertical simple supports at all grid points.
 - Each subframe places the beam at the top of one 3.0 m storey; the support members have fixed bases and there are no upper-storey columns.
 - Positive plotted moment is sagging; negative plotted moment is hogging.
@@ -23,21 +23,21 @@ The configuration is machine-readable in `Step_06_OpenSees_Model_Config.json`.
 
 ![Pre-solve expected shapes](Step_06_PreSolve_Expected_Shapes.png)
 
-The governing simply-supported moment bounds were 79.287 kN m for Beam A and 38.621 kN m for Beam B. Continuity was expected to introduce negative moments over the interior supports and reduce span sagging relative to isolated simply-supported spans. Beam B's lightly loaded central D17 span was expected to be strongly influenced by the two loaded outer spans.
+The governing simply-supported midspan screening scales are 58.470 kN m for Beam A and 46.470 kN m for Beam B. These are not rigorous maximum-moment bounds for asymmetric loading. Continuity can introduce negative moments over interior supports. The schematic is an illustrative guide, not a student hand drawing.
 
 ## 4. Solver results
 
-| Beam | Model | Applied G+Q (kN) | Reaction sum (kN) | M+ (kN m) | M- (kN m) | max |V| (kN) | max |N| (kN) | max vertical deflection (mm) | Bound check |
+| Beam | Model | Applied G+Q (kN) | Reaction sum (kN) | M+ (kN m) | M- (kN m) | max abs(V) (kN) | max abs(N) (kN) | max vertical deflection (mm) | Screen check |
 |---|---|---:|---:|---:|---:|---:|---:|---:|:---:|
-| Beam A | pure | 207.108 | 207.108 | 48.297 | -68.664 | 55.222 | 0.000 | 0.668 | PASS |
-| Beam A | subframe | 207.108 | 207.108 | 32.201 | -54.615 | 46.302 | 5.325 | 0.428 | PASS |
-| Beam B | pure | 152.839 | 152.839 | 29.497 | -19.104 | 38.770 | 0.000 | 0.259 | PASS |
-| Beam B | subframe | 152.839 | 152.839 | 22.760 | -21.851 | 36.379 | 5.758 | 0.205 | PASS |
+| Beam A | pure | 151.268 | 151.268 | 35.629 | -50.301 | 40.433 | 0.000 | 0.491 | PASS |
+| Beam A | subframe | 151.268 | 151.268 | 24.056 | -40.016 | 33.934 | 3.890 | 0.316 | PASS |
+| Beam B | pure | 183.071 | 183.071 | 37.046 | -22.291 | 43.990 | 0.000 | 0.323 | PASS |
+| Beam B | subframe | 183.071 | 183.071 | 28.073 | -25.297 | 41.208 | 7.332 | 0.253 | PASS |
 
 
-Maximum vertical equilibrium error across the four models was 5.852e-09 kN. Maximum reconstructed element-end moment error was 4.619e-14 kN m. All four peak moments passed the deliberately broad pre-solve order-of-magnitude gate.
+Maximum vertical equilibrium error across the four models was 3.965e-05 kN. The fine mesh uses an absolute equilibrium gate of 1e-4 kN (0.1 N) and relative gate of 1e-6; the former 60-element mesh used 1e-6 kN. This relaxed absolute gate acknowledges numerical conditioning, not missing physical load. Maximum reconstructed element-end moment error was 7.283e-14 kN m. All four peak moments passed the deliberately broad screening gate.
 
-The independent reference suite in `Step_06_OpenSees_Verification.csv` also passed 17/17 checks, including the closed-form (qL^2/8), (-qL^2/12), and (qL^2/24) limits for a 4 m beam under 10 kN/m.
+Run `verify_step06_opensees.py` separately to produce `Step_06_OpenSees_Verification.csv`. It includes closed-form (qL^2/8), (-qL^2/12), and (qL^2/24) references for a 4 m beam at 10 kN/m, plus profile provenance, load totals and solver equilibrium checks. Model self-consistency is not independent validation of the assumed support conditions.
 
 ### Beam A - pure continuous beam
 
@@ -57,7 +57,7 @@ The independent reference suite in `Step_06_OpenSees_Verification.csv` also pass
 
 ## 5. Pure beam versus subframe
 
-For Beam A, the peak absolute moment changed from 68.66 to 54.62 kN m and maximum vertical deflection changed from 0.668 to 0.428 mm. The stiff T9 boundary member and the finite column rotational stiffness redistribute both the support and span moments. For Beam B, the subframe reduced the peak sagging moment from 29.50 to 22.76 kN m while increasing the peak hogging magnitude from 19.10 to 21.85 kN m. This is the expected transfer from span moment into support moment. The beam remains rotation-compatible at each support and does not form a displacement kink; the frame columns sway and rotate with the beam nodes.
+For Beam A, the peak absolute moment changed from 50.30 to 40.02 kN m and maximum vertical deflection changed from 0.491 to 0.316 mm. The stiff T9 boundary member and the finite column rotational stiffness redistribute both the support and span moments. For Beam B, the subframe reduced the peak sagging moment from 37.05 to 28.07 kN m while increasing the peak hogging magnitude from 22.29 to 25.30 kN m. This is the expected transfer from span moment into support moment. The beam remains rotation-compatible at each support and does not form a displacement kink; the frame columns sway and rotate with the beam nodes.
 
 The subframe is the more defensible of these two models for beam-force distribution because it includes support stiffness and frame action. It is still only a one-line, one-storey approximation and is not a substitute for a full floor-grid or multi-storey model.
 
@@ -69,14 +69,14 @@ The detailed reactions are in `Step_06_OpenSees_Support_Reactions.csv`.
 
 | Beam | Grid point | HW1 full-floor one-storey axial (kN) | HW2 selected-line reaction (kN) | Difference |
 |---|---|---:|---:|---:|
-| Beam A | T9 | 111.58 | 42.89 | -61.6% |
-| Beam A | C6 | 93.35 | 91.16 | -2.3% |
-| Beam A | C3 | 80.69 | 66.84 | -17.2% |
-| Beam A | C2 | 35.01 | 6.22 | -82.2% |
-| Beam B | C6 | 93.35 | 30.55 | -67.3% |
-| Beam B | C7 | 106.46 | 45.64 | -57.1% |
-| Beam B | C8 | 91.00 | 46.09 | -49.4% |
-| Beam B | C9 | 76.63 | 30.57 | -60.1% |
+| Beam A | T9 | 111.58 | 31.39 | -71.9% |
+| Beam A | C6 | 93.35 | 66.78 | -28.5% |
+| Beam A | C3 | 80.69 | 48.70 | -39.6% |
+| Beam A | C2 | 35.01 | 4.40 | -87.4% |
+| Beam B | C6 | 93.35 | 41.21 | -55.9% |
+| Beam B | C7 | 106.46 | 47.90 | -55.0% |
+| Beam B | C8 | 91.00 | 52.78 | -42.0% |
+| Beam B | C9 | 76.63 | 41.18 | -46.3% |
 
 
 This is a scope diagnostic, not an expected equality. The HW1 value contains the full floor tributary load plus vertical-member self-weight. The Step 06 subframe contains only the selected marked beam line and omits reactions arriving from orthogonal and neighbouring beams. The generally smaller HW2 reactions therefore identify missing floor-grid scope rather than a vertical-equilibrium failure. A full Task 12 equality check requires either a larger grid model or equivalent nodal loads from every omitted adjoining beam.
@@ -104,5 +104,5 @@ The four explicit OpenSees entry points are:
 1. Confirm the image-derived mapping of Beam A to D19-D11-D05 and Beam B to D16-D17-D18.
 2. Confirm the T9 strong-axis wall-equivalent representation in the Beam A subframe.
 3. Confirm that the W5 convention intends fixed bases with no upper-storey columns.
-4. Add the student's hand-drawn deformed-shape sketches. The pre-solve schematic above records the engineering prediction but is not a substitute for the required hand drawing.
+4. Add the student's hand-drawn deformed-shape sketches. The illustrative schematic is not a substitute for the required hand drawing.
 5. Decide whether Task 12 should be extended to a full floor-grid reaction model or completed with equivalent nodal loads from omitted beams.

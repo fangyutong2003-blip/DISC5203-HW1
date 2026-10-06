@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import csv
+import hashlib
+import json
 from pathlib import Path
 
 import matplotlib
@@ -45,17 +47,29 @@ def expected_shape_figure() -> None:
         supports = np.cumsum([0.0] + lengths)
         ax.scatter(supports, np.zeros_like(supports), marker="^", s=80, color="#1f4f82", zorder=3)
         ax.axhline(0.0, color="#6b7280", linewidth=0.8)
-        ax.set_title(f"{name}: pre-solve expected deflected-shape sketch")
+        ax.set_title(f"{name}: illustrative qualitative deflected-shape guide")
         ax.set_ylabel("Relative deflection")
         ax.grid(alpha=0.2)
     axes[-1].set_xlabel("Distance along beam line (m)")
-    fig.suptitle("Engineering expectation recorded before OpenSees execution (schematic, not to scale)", fontweight="bold")
+    fig.suptitle("Illustrative guide only; not student hand-drawn or independent pre-solve evidence", fontweight="bold")
     fig.savefig(ROOT / "Step_06_PreSolve_Expected_Shapes.png", dpi=190)
     plt.close(fig)
 
 
 def main() -> None:
     expected_shape_figure()
+    loads = {r["beam_id"]:r for r in read_csv(ROOT / "Step_05_Beam_Line_Loads.csv")}
+    config = json.loads((ROOT / "Step_06_OpenSees_Model_Config.json").read_text())
+    note = ["# Step 06 - Revised Load Screening Before This Rerun", "",
+            "Generated before the revised solver run. These simply-supported MIDSPAN values are screening scales, not rigorous peak-moment bounds or original student hand calculations.", "",
+            "The broad 0.2 to 1.5 times scale gate is a debugging heuristic only.", "",
+            "Profile SHA256: " + hashlib.sha256((ROOT / "Step_05_Beam_Load_Profiles.csv").read_bytes()).hexdigest(), ""]
+    for name,line in config["beam_lines"].items():
+        for segment in line["segments"]:
+            row=loads[segment]
+            value=float(row["service_udl_midspan_moment_equiv_kN_m"])*float(row["span_m"])**2/8
+            note.append(f"- {name}, {segment}: {value:.6f} kN m.")
+    (ROOT / "Step_06_Mixed_Support_PreSolve_Screening.md").write_text("\n".join(note)+"\n",encoding="utf-8")
     results = [
         run_model("Beam A", "pure"),
         run_model("Beam A", "subframe"),
@@ -146,9 +160,9 @@ def main() -> None:
 
 ## 1. Scope
 
-This step implements HW2 Task 3 for both marked lines. Beam A is D19-D11-D05, the three-span peripheral edge beam. Beam B is D16-D17-D18, the three-span interior beam. The models reuse the Step 04 geometry and Step 05 service line loads rather than re-deriving the floor plan.
+This step is a preliminary single-line model for each marked beam, not the complete HW2 Task 3 subframe. It lacks the perpendicular bay and the full Task 12 load-path comparison. Beam A is D19-D11-D05; Beam B is D16-D17-D18. The models use the revised Step 04 mixed-edge allocation and actual Step 05 service-load profiles. All C/S labels remain assumptions; unresolved core area remains unallocated.
 
-The structural briefing and the pre-solve hand bounds were recorded before execution in `Step_06_OpenSees_Briefing_and_Iteration_Log.md`.
+The old briefing is retained as historical evidence in `Step_06_OpenSees_Briefing_and_Iteration_Log.md`; its old load values are superseded. Current screening scales are recorded before this rerun in `Step_06_Mixed_Support_PreSolve_Screening.md`. No claim is made that the historical schematic was independently drawn before the first-ever solver execution.
 
 ## 2. Model assumptions
 
@@ -156,7 +170,7 @@ The structural briefing and the pre-solve hand bounds were recorded before execu
 - Concrete: linear elastic, E = 30,000,000 kN/m2.
 - Beam A section: 250 x 700 mm; Beam B section: 250 x 600 mm.
 - Load case: service G+Q, including slab load and beam-stem self-weight.
-- The non-uniform profiles are discretised into 60 uniform elasticBeamColumn elements per span.
+- Actual non-uniform profiles are read directly from Step_05_Beam_Load_Profiles.csv into 0.01 m elasticBeamColumn intervals. Asymmetry is preserved; no symmetric fitting or force rescaling is used.
 - The pure models are continuous beams with vertical simple supports at all grid points.
 - Each subframe places the beam at the top of one 3.0 m storey; the support members have fixed bases and there are no upper-storey columns.
 - Positive plotted moment is sagging; negative plotted moment is hogging.
@@ -167,11 +181,11 @@ The configuration is machine-readable in `Step_06_OpenSees_Model_Config.json`.
 
 ![Pre-solve expected shapes](Step_06_PreSolve_Expected_Shapes.png)
 
-The governing simply-supported moment bounds were 79.287 kN m for Beam A and 38.621 kN m for Beam B. Continuity was expected to introduce negative moments over the interior supports and reduce span sagging relative to isolated simply-supported spans. Beam B's lightly loaded central D17 span was expected to be strongly influenced by the two loaded outer spans.
+The governing simply-supported midspan screening scales are {a_pure['governing_hand_bound_kNm']:.3f} kN m for Beam A and {b_pure['governing_hand_bound_kNm']:.3f} kN m for Beam B. These are not rigorous maximum-moment bounds for asymmetric loading. Continuity can introduce negative moments over interior supports. The schematic is an illustrative guide, not a student hand drawing.
 
 ## 4. Solver results
 
-| Beam | Model | Applied G+Q (kN) | Reaction sum (kN) | M+ (kN m) | M- (kN m) | max |V| (kN) | max |N| (kN) | max vertical deflection (mm) | Bound check |
+| Beam | Model | Applied G+Q (kN) | Reaction sum (kN) | M+ (kN m) | M- (kN m) | max abs(V) (kN) | max abs(N) (kN) | max vertical deflection (mm) | Screen check |
 |---|---|---:|---:|---:|---:|---:|---:|---:|:---:|
 """
     for result in results:
@@ -185,9 +199,9 @@ The governing simply-supported moment bounds were 79.287 kN m for Beam A and 38.
 
     report += f"""
 
-Maximum vertical equilibrium error across the four models was {max_equilibrium_error:.3e} kN. Maximum reconstructed element-end moment error was {max_end_error:.3e} kN m. All four peak moments passed the deliberately broad pre-solve order-of-magnitude gate.
+Maximum vertical equilibrium error across the four models was {max_equilibrium_error:.3e} kN. The fine mesh uses an absolute equilibrium gate of 1e-4 kN (0.1 N) and relative gate of 1e-6; the former 60-element mesh used 1e-6 kN. This relaxed absolute gate acknowledges numerical conditioning, not missing physical load. Maximum reconstructed element-end moment error was {max_end_error:.3e} kN m. All four peak moments passed the deliberately broad screening gate.
 
-The independent reference suite in `Step_06_OpenSees_Verification.csv` also passed 17/17 checks, including the closed-form (qL^2/8), (-qL^2/12), and (qL^2/24) limits for a 4 m beam under 10 kN/m.
+Run `verify_step06_opensees.py` separately to produce `Step_06_OpenSees_Verification.csv`. It includes closed-form (qL^2/8), (-qL^2/12), and (qL^2/24) references for a 4 m beam at 10 kN/m, plus profile provenance, load totals and solver equilibrium checks. Model self-consistency is not independent validation of the assumed support conditions.
 
 ### Beam A - pure continuous beam
 
@@ -252,7 +266,7 @@ The four explicit OpenSees entry points are:
 1. Confirm the image-derived mapping of Beam A to D19-D11-D05 and Beam B to D16-D17-D18.
 2. Confirm the T9 strong-axis wall-equivalent representation in the Beam A subframe.
 3. Confirm that the W5 convention intends fixed bases with no upper-storey columns.
-4. Add the student's hand-drawn deformed-shape sketches. The pre-solve schematic above records the engineering prediction but is not a substitute for the required hand drawing.
+4. Add the student's hand-drawn deformed-shape sketches. The illustrative schematic is not a substitute for the required hand drawing.
 5. Decide whether Task 12 should be extended to a full floor-grid reaction model or completed with equivalent nodal loads from omitted beams.
 """
     (ROOT / "Step_06_OpenSees_Models_and_Verification.md").write_text(report, encoding="utf-8")

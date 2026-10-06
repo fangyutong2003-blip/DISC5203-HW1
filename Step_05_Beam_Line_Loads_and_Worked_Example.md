@@ -1,73 +1,43 @@
-# Step 05 - Beam Line Loads and Worked Example
+# Step 05 - Revised Beam Line Loads
 
-## 1. Load basis
+Uses the closed mixed-support polygons from revised Step 04. Units: m, m2, kN and kN/m.
 
-The adopted slab dead load is 3.75 kN/m2 and the live load is 5.00 kN/m2, consistent with HW1. No finishes value is shown, so no superimposed finish load is invented. Beam self-weight is added as the concrete stem below the 150 mm slab to avoid double-counting the slab thickness:
+Slab G=3.75 kN/m2; Q=5.00 kN/m2. Beam stem G=0.25(d-0.15)*25 kN/m. For each profile interval q(s)=8.75*b(s)+G_stem. Force-equivalent UDL is total force/L. The midspan-moment-equivalent UDL is 8*M(L/2)/L^2, integrating the simply-supported influence line 0.5*min(s,L-s). Neither is a substitute for the actual shear or moment diagram, especially with asymmetric loading.
 
-\[g_{beam}=0.25(d-0.15)(25)\]
+[Profile CSV](Step_05_Beam_Load_Profiles.csv) stores exact strip areas divided by strip length (0.01 m strips). [Endpoint forces](Step_05_Beam_Endpoint_Loads.csv) are kept separately. Step 06 reads these distributions directly and no longer reconstructs symmetric shapes from two UDLs.
 
-For each beam, the total-load-equivalent slab UDL is tributary area times area load divided by beam length. The separately reported moment-equivalent UDL reproduces the simply-supported midspan moment of the sampled triangular/trapezoidal service-load shape; it is not equivalent for local shear.
+| Beam | L (m) | Area (m2) | Slab G | Stem G | Q | Total force-equivalent UDL | Midspan-moment-equivalent UDL |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| D01 | 3.30 | 6.1898 | 7.0339 | 3.4375 | 9.3785 | 19.8498 | 21.1621 |
+| D02 | 2.00 | 0.8117 | 1.5219 | 3.4375 | 2.0291 | 6.9885 | 7.8947 |
+| D03 | 4.00 | 8.2148 | 7.7014 | 3.4375 | 10.2685 | 21.4074 | 23.4949 |
+| D04 | 2.45 | 5.4740 | 8.3785 | 3.4375 | 11.1713 | 22.9873 | 24.4814 |
+| D05 | 3.10 | 1.3871 | 1.6779 | 3.4375 | 2.2372 | 7.3527 | 8.6577 |
+| D06 | 3.10 | 6.6822 | 8.0833 | 2.8125 | 10.7777 | 21.6735 | 24.7629 |
+| D07 | 3.10 | 4.9797 | 6.0238 | 2.8125 | 8.0318 | 16.8681 | 17.5059 |
+| D08 | 3.60 | 7.7934 | 8.1181 | 2.8125 | 10.8241 | 21.7547 | 27.0765 |
+| D09 | 1.10 | 0.6050 | 2.0625 | 2.8125 | 2.7500 | 7.6250 | 7.6250 |
+| D10 | 2.45 | 5.6825 | 8.6978 | 3.4375 | 11.5970 | 23.7323 | 26.0441 |
+| D11 | 6.05 | 4.9647 | 3.0773 | 3.4375 | 4.1030 | 10.6178 | 12.7795 |
+| D12 | 6.05 | 11.9265 | 7.3925 | 2.8125 | 9.8566 | 20.0616 | 23.8059 |
+| D13 | 1.50 | 0.4566 | 1.1414 | 2.8125 | 1.5219 | 5.4757 | 6.1554 |
+| D14 | 1.15 | 0.6613 | 2.1563 | 2.8125 | 2.8750 | 7.8438 | 7.8438 |
+| D15 | 6.05 | 4.9647 | 3.0773 | 3.4375 | 4.1030 | 10.6178 | 12.7795 |
+| D16 | 3.60 | 8.2163 | 8.5587 | 2.8125 | 11.4115 | 22.7827 | 28.6854 |
+| D17 | 3.00 | 1.2112 | 1.5141 | 2.8125 | 2.0188 | 6.3453 | 6.8907 |
+| D18 | 3.60 | 8.2163 | 8.5587 | 2.8125 | 11.4115 | 22.7827 | 28.6854 |
+| D19 | 6.05 | 4.9647 | 3.0773 | 3.4375 | 4.1030 | 10.6178 | 12.7795 |
+| D20 | 6.05 | 17.6740 | 10.9550 | 2.8125 | 14.6066 | 28.3741 | 32.1184 |
+| D21 | 6.05 | 17.6740 | 10.9550 | 2.8125 | 14.6066 | 28.3741 | 32.1184 |
+| D22 | 6.05 | 4.9647 | 3.0773 | 3.4375 | 4.1030 | 10.6178 | 12.7795 |
+| D23 | 3.60 | 7.2282 | 7.5293 | 3.4375 | 10.0391 | 21.0059 | 25.2536 |
+| D24 | 3.00 | 3.6000 | 4.5000 | 3.4375 | 6.0000 | 13.9375 | 13.9375 |
+| D25 | 3.60 | 7.2282 | 7.5293 | 3.4375 | 10.0391 | 21.0059 | 25.2536 |
 
-## 2. Line-load summary
+## D18 worked example
 
-| Beam | Span (m) | Area (m2) | Shape | Slab G (kN/m) | Beam stem G (kN/m) | Total G (kN/m) | Q (kN/m) | G+Q total-load UDL (kN/m) | G+Q midspan-moment UDL (kN/m) |
-|---|---:|---:|---|---:|---:|---:|---:|---:|---:|
-| D01 | 3.30 | 6.0049 | trapezoidal/truncated + partial cantilever UDL | 6.824 | 3.437 | 10.261 | 9.098 | 19.360 | 20.511 |
-| D02 | 2.00 | 2.7052 | triangular/truncated, one-sided | 5.072 | 3.437 | 8.510 | 6.763 | 15.273 | 15.646 |
-| D03 | 4.00 | 8.7583 | trapezoidal + cantilever UDL | 8.211 | 3.437 | 11.648 | 10.948 | 22.596 | 24.137 |
-| D04 | 2.45 | 4.9717 | triangular/truncated + cantilever UDL | 7.610 | 3.437 | 11.047 | 10.146 | 21.194 | 22.155 |
-| D05 | 3.10 | 2.3992 | triangular, one-sided | 2.902 | 3.437 | 6.340 | 3.870 | 10.209 | 12.470 |
-| D06 | 3.10 | 8.7323 | two-sided triangular/trapezoidal | 10.563 | 2.812 | 13.376 | 14.084 | 27.460 | 24.789 |
-| D07 | 3.10 | 4.4440 | trapezoidal/truncated + short cantilever UDL | 5.376 | 2.812 | 8.188 | 7.168 | 15.356 | 15.843 |
-| D08 | 3.60 | 6.4238 | two-sided triangular | 6.691 | 2.812 | 9.504 | 8.922 | 18.426 | 23.539 |
-| D09 | 1.10 | 0.6049 | truncated triangular, core-side | 2.062 | 2.812 | 4.875 | 2.750 | 7.624 | 7.625 |
-| D10 | 2.45 | 4.7921 | truncated triangular + cantilever UDL | 7.335 | 3.437 | 10.772 | 9.780 | 20.552 | 21.527 |
-| D11 | 6.05 | 7.6476 | trapezoidal, one-sided | 4.740 | 3.437 | 8.178 | 6.320 | 14.498 | 17.327 |
-| D12 | 6.05 | 10.9761 | two-sided trapezoidal + one-way strip | 6.803 | 2.812 | 9.616 | 9.071 | 18.687 | 21.515 |
-| D13 | 1.50 | 1.1248 | truncated triangular, one-sided | 2.812 | 2.812 | 5.624 | 3.749 | 9.374 | 9.380 |
-| D14 | 1.15 | 0.6662 | truncated triangular, one-sided | 2.172 | 2.812 | 4.985 | 2.897 | 7.881 | 7.882 |
-| D15 | 6.05 | 7.6522 | trapezoidal, one-sided | 4.743 | 3.437 | 8.181 | 6.324 | 14.505 | 17.330 |
-| D16 | 3.60 | 6.4915 | two-sided triangular | 6.762 | 2.812 | 9.574 | 9.016 | 18.590 | 23.840 |
-| D17 | 3.00 | 1.2160 | partial uniform one-way strip | 1.520 | 2.812 | 4.332 | 2.027 | 6.359 | 6.907 |
-| D18 | 3.60 | 6.4812 | two-sided triangular | 6.751 | 2.812 | 9.564 | 9.002 | 18.565 | 23.822 |
-| D19 | 6.05 | 7.6513 | trapezoidal, one-sided | 4.743 | 3.437 | 8.180 | 6.323 | 14.503 | 17.329 |
-| D20 | 6.05 | 16.7187 | trapezoidal + one-way UDL, two-sided | 10.363 | 2.812 | 13.175 | 13.817 | 26.992 | 29.824 |
-| D21 | 6.05 | 16.7174 | trapezoidal + one-way UDL, two-sided | 10.362 | 2.812 | 13.175 | 13.816 | 26.991 | 29.822 |
-| D22 | 6.05 | 7.6518 | trapezoidal, one-sided | 4.743 | 3.437 | 8.180 | 6.324 | 14.504 | 17.330 |
-| D23 | 3.60 | 6.3483 | triangular + partial cantilever UDL | 6.613 | 3.437 | 10.050 | 8.817 | 18.867 | 22.785 |
-| D24 | 3.00 | 3.6000 | partial cantilever UDL only | 4.500 | 3.437 | 7.938 | 6.000 | 13.938 | 13.937 |
-| D25 | 3.60 | 6.3538 | triangular + partial cantilever UDL | 6.619 | 3.437 | 10.056 | 8.825 | 18.881 | 22.801 |
+L=3.60 m; A=8.216311 m2; average width A/L=2.282309 m. Slab G=3.75A/L=8.558657 kN/m; stem G=2.812500 kN/m; Q=5A/L=11.411543 kN/m. Integrated simply-supported midspan moment=46.470356 kN m.
 
-## 3. Worked example - D18
+![D18 profile](HW2_D18_Worked_Line_Load.png)
 
-D18 is the right-hand span of marked Beam B. It is an interior beam between P5 and P9, so both slab sides contribute. The 45-degree construction produces a combined triangular/trapezoidal distribution rather than a uniform peak load.
-
-- Span: L = 3.60 m.
-- Tributary area: A = 6.4812 m2.
-- Mean tributary width: A/L = 1.8003 m.
-- Slab dead-load UDL by total load: 3.75A/L = 6.751 kN/m.
-- Beam-stem self-weight: 2.812 kN/m.
-- Total dead-load UDL: 9.564 kN/m.
-- Live-load UDL by total load: 5.00A/L = 9.002 kN/m.
-- Service UDL by total load: 18.565 kN/m.
-- Service UDL reproducing simply-supported midspan moment: 23.822 kN/m.
-
-![D18 worked line load](HW2_D18_Worked_Line_Load.png)
-
-The actual non-uniform load will be retained for the OpenSees discretised model. The total-load UDL is used for reaction checks, while the midspan-moment-equivalent UDL is used only for the stated hand moment comparison.
-
-## 4. Verification
-
-- Every D01-D25 beam has one census row and one line-load row.
-- The sum of beam and direct-wall tributary areas reconciles to the 179.250 m2 HW1 ordinary slab area.
-- Slab dead and live beam loads reconcile to beam tributary area multiplied by 3.75 and 5.00 kN/m2 respectively.
-- Beam-stem self-weight uses metres and kN consistently and excludes the slab thickness already counted in the area load.
-- Total-load and moment-equivalent UDLs are labelled separately because they answer different questions.
-
-## 5. Assumptions to freeze before Task 3
-
-1. Confirm D05/D11/D19 as Beam A and D16-D18 as Beam B.
-2. Confirm the image-derived 250x600 and 250x700 beam sections.
-3. Confirm the core-side P4/P6 support interpretation and whether D14 receives P6 edge-strip load.
-4. Confirm that no finishes load should be added.
-5. Freeze the non-uniform line-load profiles before generating the OpenSees briefing and model files.
+The edge-condition assumptions and unresolved core area in Step 04 still govern the scope of these loads.

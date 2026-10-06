@@ -1,0 +1,50 @@
+panel_id,support_id,condition,rule,basis,status
+P1,D01,C,"C/C or S/S:45; C/S:60 from C,30 from S",Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity.,assumption requiring course review
+P1,W_T1,C,"C/C or S/S:45; C/S:60 from C,30 from S",Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P1,D02,S,"C/C or S/S:45; C/S:60 from C,30 from S",Slab terminates or meets an opening: supported but rotationally simple assumed.,assumption requiring course review
+P1,W_T2,C,"C/C or S/S:45; C/S:60 from C,30 from S",Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P1,W_T3,C,"C/C or S/S:45; C/S:60 from C,30 from S",Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P1,D06,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P1,D09,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P1,W_T4,C,"C/C or S/S:45; C/S:60 from C,30 from S",Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P1,D03,C,"C/C or S/S:45; C/S:60 from C,30 from S",Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity.,assumption requiring course review
+P1,D07,C,"C/C or S/S:45; C/S:60 from C,30 from S",Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity.,assumption requiring course review
+P2,D04,C,"C/C or S/S:45; C/S:60 from C,30 from S",Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity.,assumption requiring course review
+P2,W_T3,C,"C/C or S/S:45; C/S:60 from C,30 from S",Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P2,D05,S,"C/C or S/S:45; C/S:60 from C,30 from S",Slab terminates or meets an opening: supported but rotationally simple assumed.,assumption requiring course review
+P2,D06,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P2,D08,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P3,D08,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P3,D11,S,"C/C or S/S:45; C/S:60 from C,30 from S",Slab terminates or meets an opening: supported but rotationally simple assumed.,assumption requiring course review
+P3,D12,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P3,D16,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P4,D12,C,one-way equal split; no corner-angle allocation,Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P4,W_CORE_R,C,one-way equal split; no corner-angle allocation,Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P5,W_T4,C,"C/C or S/S:45; C/S:60 from C,30 from S",Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P5,D10,C,"C/C or S/S:45; C/S:60 from C,30 from S",Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity.,assumption requiring course review
+P5,D13,S,"C/C or S/S:45; C/S:60 from C,30 from S",Slab terminates or meets an opening: supported but rotationally simple assumed.,assumption requiring course review
+P5,W_T7,C,"C/C or S/S:45; C/S:60 from C,30 from S",Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P5,D14,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P5,D15,S,"C/C or S/S:45; C/S:60 from C,30 from S",Slab terminates or meets an opening: supported but rotationally simple assumed.,assumption requiring course review
+P5,D18,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P6,W_T8,C,one-way equal split; no corner-angle allocation,Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified.,assumption requiring course review
+P6,D17,C,one-way equal split; no corner-angle allocation,Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P7,D16,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P7,D19,S,"C/C or S/S:45; C/S:60 from C,30 from S",Slab terminates or meets an opening: supported but rotationally simple assumed.,assumption requiring course review
+P7,D20,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P7,D23,C,"C/C or S/S:45; C/S:60 from C,30 from S",Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity.,assumption requiring course review
+P8,D20,C,one-way equal split; no corner-angle allocation,Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P8,D21,C,one-way equal split; no corner-angle allocation,Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P9,D18,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P9,D21,C,"C/C or S/S:45; C/S:60 from C,30 from S",Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified.,assumption requiring course review
+P9,D22,S,"C/C or S/S:45; C/S:60 from C,30 from S",Slab terminates or meets an opening: supported but rotationally simple assumed.,assumption requiring course review
+P9,D25,C,"C/C or S/S:45; C/S:60 from C,30 from S",Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity.,assumption requiring course review
+P10,D01,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived
+P10,W_T1,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived
+P11,D04,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived
+P12,D03,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived
+P12,D07,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived
+P13,D10,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived
+P14,D23,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived
+P14,D24,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived
+P14,D25,cantilever root,all to root; no 30/60 split,overhang footprint clipped to finite root segment,image-derived

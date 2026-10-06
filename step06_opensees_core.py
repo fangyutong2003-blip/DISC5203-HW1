@@ -7,6 +7,7 @@ using the frozen service-load profiles from Step 05. Units are kN and m.
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -47,7 +48,7 @@ def _profile_function(
     q_average: float,
     q_moment: float,
 ) -> tuple[Callable[[float], float], dict[str, float | str]]:
-    """Return the slab-load profile that matches total load and hand moment."""
+    """Legacy symmetric reconstruction, retained for audit; no active caller."""
 
     if q_average <= 0.0:
         return (lambda _x: 0.0), {"profile": "zero"}
@@ -114,12 +115,21 @@ def _model_data(beam_name: str) -> tuple[dict, list[dict], list[dict]]:
     rows = {row["beam_id"]: row for row in _read_csv(LOAD_PATH)}
     span_rows = [rows[beam_id] for beam_id in line["segments"]]
     profiles = []
-    for row, profile_type in zip(span_rows, line["profile_types"]):
+    profile_rows = _read_csv(ROOT / "Step_05_Beam_Load_Profiles.csv")
+    endpoint_rows = _read_csv(ROOT / "Step_05_Beam_Endpoint_Loads.csv")
+    for row in span_rows:
         stem = float(row["beam_stem_dead_udl_kN_m"])
-        q_average = float(row["service_udl_total_load_equiv_kN_m"]) - stem
-        q_moment = float(row["service_udl_midspan_moment_equiv_kN_m"]) - stem
-        profile, metadata = _profile_function(profile_type, float(row["span_m"]), q_average, q_moment)
-        profiles.append({"function": profile, "metadata": metadata, "stem": stem})
+        bins = [{k: float(v) for k, v in r.items() if k != "beam_id"}
+                for r in profile_rows if r["beam_id"] == row["beam_id"]]
+        endpoints = [r for r in endpoint_rows if r["beam_id"] == row["beam_id"]]
+        force = sum((r["s1_m"]-r["s0_m"])*r["service_kN_m"] for r in bins)
+        force += sum(float(r["service_kN"]) for r in endpoints)
+        expected = float(row["service_udl_total_load_equiv_kN_m"])*float(row["span_m"])
+        if abs(force-expected) > 1e-7:
+            raise ValueError(f"Profile force mismatch: {row['beam_id']}")
+        profiles.append({"bins": bins, "endpoints": endpoints, "stem": stem,
+                         "metadata": {"profile": "direct Step 05 strip-average profile",
+                                      "beam_id": row["beam_id"], "intervals": len(bins)}})
     return config, span_rows, profiles
 
 
@@ -129,7 +139,6 @@ def run_model(beam_name: str, model_kind: str, save_outputs: bool = True) -> dic
 
     config, span_rows, profiles = _model_data(beam_name)
     line = config["beam_lines"][beam_name]
-    divisions = int(config["analysis"]["elements_per_span"])
     beam_y = 0.0 if model_kind == "pure" else float(config["storey_height_m"])
 
     ops.wipe()
@@ -156,16 +165,10 @@ def run_model(beam_name: str, model_kind: str, save_outputs: bool = True) -> dic
         width = 0.250
         area = width * depth
         inertia = width * depth**3 / 12.0
-        dx = length / divisions
         start_node = beam_nodes[-1]
-        raw_slab = [profile_data["function"]((j + 0.5) * dx) for j in range(divisions)]
-        target_slab_load = (
-            float(row["service_udl_total_load_equiv_kN_m"]) - profile_data["stem"]
-        ) * length
-        sampled_slab_load = sum(raw_slab) * dx
-        scale = target_slab_load / sampled_slab_load if sampled_slab_load else 1.0
-        for j in range(divisions):
-            local_end = (j + 1) * dx
+        for interval in profile_data["bins"]:
+            dx = interval["s1_m"] - interval["s0_m"]
+            local_end = interval["s1_m"]
             node_tag = next_node
             next_node += 1
             ops.node(node_tag, cursor + local_end, beam_y)
@@ -173,12 +176,12 @@ def run_model(beam_name: str, model_kind: str, save_outputs: bool = True) -> dic
             element_tag = next_element
             next_element += 1
             ops.element("elasticBeamColumn", element_tag, start_node, node_tag, area, E_CONCRETE, inertia, 1)
-            total_down = profile_data["stem"] + raw_slab[j] * scale
+            total_down = interval["service_kN_m"]
             beam_elements.append({
                 "tag": element_tag,
                 "i": start_node,
                 "j": node_tag,
-                "x0": cursor + j * dx,
+                "x0": cursor + interval["s0_m"],
                 "length": dx,
                 "q_down": total_down,
                 "span_id": row["beam_id"],
@@ -214,6 +217,13 @@ def run_model(beam_name: str, model_kind: str, save_outputs: bool = True) -> dic
     ops.pattern("Plain", 1, 1)
     for element in beam_elements:
         ops.eleLoad("-ele", element["tag"], "-type", "-beamUniform", -element["q_down"])
+    endpoint_force = 0.0
+    for i, profile in enumerate(profiles):
+        for endpoint in profile["endpoints"]:
+            node = support_nodes[i if float(endpoint["s_m"]) == 0 else i+1]
+            force = float(endpoint["service_kN"])
+            ops.load(node, 0.0, -force, 0.0)
+            endpoint_force += force
 
     ops.constraints("Plain")
     ops.numberer("RCM")
@@ -252,7 +262,7 @@ def run_model(beam_name: str, model_kind: str, save_outputs: bool = True) -> dic
 
     node_coordinates = {node: tuple(float(v) for v in ops.nodeCoord(node)) for node in set(beam_nodes + base_nodes)}
     node_displacements = {node: tuple(float(v) for v in ops.nodeDisp(node)) for node in node_coordinates}
-    applied_load = sum(element["q_down"] * element["length"] for element in beam_elements)
+    applied_load = sum(element["q_down"] * element["length"] for element in beam_elements) + endpoint_force
     reaction_sum = sum(item["Ry_kN"] for item in reactions)
     max_vertical_displacement = max(abs(node_displacements[node][1]) for node in beam_nodes)
 
@@ -290,11 +300,15 @@ def run_model(beam_name: str, model_kind: str, save_outputs: bool = True) -> dic
         "hand_bound_order_check": "PASS" if bound_pass else "FAIL",
         "reactions": reactions,
         "profile_metadata": [item["metadata"] for item in profiles],
+        "profile_sha256": hashlib.sha256((ROOT / "Step_05_Beam_Load_Profiles.csv").read_bytes()).hexdigest(),
+        "endpoint_sha256": hashlib.sha256((ROOT / "Step_05_Beam_Endpoint_Loads.csv").read_bytes()).hexdigest(),
         "assumptions": [
             "Linear-elastic gross concrete sections with E = 30 GPa.",
             "Service G+Q loading; no load factors are applied in Step 06.",
-            "Non-uniform slab profiles are discretised into 60 uniform sub-elements per span.",
+            "Direct Step 05 strip-average profiles: 0.01 m elements; no symmetric fit or force rescaling.",
+            "Midspan-moment scales are screening values, not rigorous maximum-moment bounds for asymmetric profiles.",
             "The subframe contains one storey below the beam with fixed bases and no upper-storey columns.",
+            "Preliminary single-line model; no perpendicular bay; unresolved core area is not allocated to this model.",
         ],
         "figure": figure_name,
     }

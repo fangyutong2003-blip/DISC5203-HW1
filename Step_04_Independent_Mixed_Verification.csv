@@ -1,0 +1,148 @@
+check,actual,expected,tolerance,status
+square all-S: test_bottom,0.25,0.25,1e-08,PASS
+square all-S: test_left,0.25,0.25,1e-08,PASS
+square all-S: test_top,0.25,0.25,1e-08,PASS
+square all-S: test_right,0.25,0.25,1e-08,PASS
+square all-C: test_bottom,0.25,0.25,1e-08,PASS
+square all-C: test_left,0.25,0.25,1e-08,PASS
+square all-C: test_top,0.25,0.25,1e-08,PASS
+square all-C: test_right,0.25,0.25,1e-08,PASS
+square mixed continuous edge closed-form area,0.40192378864668404,0.401923788646684,1e-08,PASS
+mixed shared boundary passes through 60 degree ray,0.0,0,1e-08,PASS
+mixed square closure,0.9999999999999999,1,1e-08,PASS
+exported resolved polygons overlap,-2.842170943040401e-14,0,1e-08,PASS
+exported floor area incl unresolved,179.25,179.25,1e-08,PASS
+unresolved is not allocated twice,0.0,0,1e-08,PASS
+O1 O2 S1 excluded,0.0,0,1e-08,PASS
+all exported geometries valid,0,0,1e-08,PASS
+exported P3 mixed 60 degree point on D16,3.3702063455652447e-16,0,1e-08,PASS
+exported P3 mixed 60 degree point on D11,3.3702063455652467e-16,0,1e-08,PASS
+exported P3 matched 45 degree point on D16,0.0,0,1e-08,PASS
+exported P3 matched 45 degree point on D12,9.631166853612326e-16,0,1e-08,PASS
+all 25 beam IDs present,0,0,1e-08,PASS
+D01 profile continuous coverage,0.0,0,1e-08,PASS
+D01 profile area vs summary,6.189791666666666,6.189791666666666,1e-08,PASS
+D01 polygon area vs summary,6.1897916666666655,6.189791666666666,1e-08,PASS
+D01 total service force,65.50442708333333,65.50442708333333,1e-07,PASS
+D01 midspan influence integration,21.162092305632076,21.16209230563208,1e-07,PASS
+D02 profile continuous coverage,0.0,0,1e-08,PASS
+D02 profile area vs summary,0.8116548391159553,0.8116548391159553,1e-08,PASS
+D02 polygon area vs summary,0.8116548391159553,0.8116548391159553,1e-08,PASS
+D02 total service force,13.976979842264608,13.976979842264608,1e-07,PASS
+D02 midspan influence integration,7.894731366186709,7.894731366186706,1e-07,PASS
+D03 profile continuous coverage,0.0,0,1e-08,PASS
+D03 profile area vs summary,8.214791666666668,8.21479166666667,1e-08,PASS
+D03 polygon area vs summary,8.214791666666668,8.21479166666667,1e-08,PASS
+D03 total service force,85.62942708333335,85.62942708333337,1e-07,PASS
+D03 midspan influence integration,23.49488282552084,23.494882825520857,1e-07,PASS
+D04 profile continuous coverage,0.0,0,1e-08,PASS
+D04 profile area vs summary,5.473957989135958,5.473957989135959,1e-08,PASS
+D04 polygon area vs summary,5.473957989135959,5.473957989135959,1e-08,PASS
+D04 total service force,56.31900740493964,56.31900740493965,1e-07,PASS
+D04 midspan influence integration,24.481400231261432,24.481400231261425,1e-07,PASS
+D05 profile continuous coverage,0.0,0,1e-08,PASS
+D05 profile area vs summary,1.3870840217280778,1.387084021728078,1e-08,PASS
+D05 polygon area vs summary,1.387084021728078,1.387084021728078,1e-08,PASS
+D05 total service force,22.79323519012068,22.79323519012068,1e-07,PASS
+D05 midspan influence integration,8.657654363333029,8.65765436333303,1e-07,PASS
+D06 profile continuous coverage,0.0,0,1e-08,PASS
+D06 profile area vs summary,6.682187500000002,6.682187500000003,1e-08,PASS
+D06 polygon area vs summary,6.682187500000002,6.682187500000003,1e-08,PASS
+D06 total service force,67.18789062500002,67.18789062500004,1e-07,PASS
+D06 midspan influence integration,24.762861765088456,24.762861765088456,1e-07,PASS
+D07 profile continuous coverage,0.0,0,1e-08,PASS
+D07 profile area vs summary,4.979687499999999,4.979687499999999,1e-08,PASS
+D07 polygon area vs summary,4.979687499999999,4.979687499999999,1e-08,PASS
+D07 total service force,52.29101562499999,52.29101562499999,1e-07,PASS
+D07 midspan influence integration,17.50588856009365,17.50588856009365,1e-07,PASS
+D08 profile continuous coverage,0.0,0,1e-08,PASS
+D08 profile area vs summary,7.7933633726128,7.7933633726128,1e-08,PASS
+D08 polygon area vs summary,7.793363372612801,7.7933633726128,1e-08,PASS
+D08 total service force,78.316929510362,78.316929510362,1e-07,PASS
+D08 midspan influence integration,27.076546818711236,27.076546818711225,1e-07,PASS
+D09 profile continuous coverage,0.0,0,1e-08,PASS
+D09 profile area vs summary,0.6049999999999989,0.6049999999999989,1e-08,PASS
+D09 polygon area vs summary,0.6049999999999989,0.6049999999999989,1e-08,PASS
+D09 total service force,8.38749999999999,8.38749999999999,1e-07,PASS
+D09 midspan influence integration,7.62499999999999,7.624999999999989,1e-07,PASS
+D10 profile continuous coverage,0.0,0,1e-08,PASS
+D10 profile area vs summary,5.682530383476839,5.6825303834768395,1e-08,PASS
+D10 polygon area vs summary,5.682530383476838,5.6825303834768395,1e-08,PASS
+D10 total service force,58.14401585542233,58.14401585542234,1e-07,PASS
+D10 midspan influence integration,26.044113879366265,26.04411387936626,1e-07,PASS
+D11 profile continuous coverage,0.0,0,1e-08,PASS
+D11 profile area vs summary,4.964654828332426,4.964654828332426,1e-08,PASS
+D11 polygon area vs summary,4.964654828332426,4.964654828332426,1e-08,PASS
+D11 total service force,64.23760474790872,64.23760474790872,1e-07,PASS
+D11 midspan influence integration,12.779525248177675,12.779525248177684,1e-07,PASS
+D12 profile continuous coverage,0.0,0,1e-08,PASS
+D12 profile area vs summary,11.926534404713903,11.926534404713903,1e-08,PASS
+D12 polygon area vs summary,11.926534404713902,11.926534404713903,1e-08,PASS
+D12 total service force,121.37280104124666,121.37280104124666,1e-07,PASS
+D12 midspan influence integration,23.805862375434987,23.805862375434977,1e-07,PASS
+D13 profile continuous coverage,0.0,0,1e-08,PASS
+D13 profile area vs summary,0.4565558470027254,0.45655584700272533,1e-08,PASS
+D13 polygon area vs summary,0.45655584700272533,0.45655584700272533,1e-08,PASS
+D13 total service force,8.213613661273847,8.213613661273847,1e-07,PASS
+D13 midspan influence integration,6.155374288982123,6.155374288982122,1e-07,PASS
+D14 profile continuous coverage,0.0,0,1e-08,PASS
+D14 profile area vs summary,0.6612500000000009,0.661250000000001,1e-08,PASS
+D14 polygon area vs summary,0.661250000000001,0.661250000000001,1e-08,PASS
+D14 total service force,9.020312500000008,9.020312500000008,1e-07,PASS
+D14 midspan influence integration,7.843750000000005,7.843750000000005,1e-07,PASS
+D15 profile continuous coverage,0.0,0,1e-08,PASS
+D15 profile area vs summary,4.964654828332423,4.964654828332423,1e-08,PASS
+D15 polygon area vs summary,4.964654828332423,4.964654828332423,1e-08,PASS
+D15 total service force,64.2376047479087,64.2376047479087,1e-07,PASS
+D15 midspan influence integration,12.779525248177672,12.77952524817768,1e-07,PASS
+D16 profile continuous coverage,0.0,0,1e-08,PASS
+D16 profile area vs summary,8.216310766953676,8.216310766953676,1e-08,PASS
+D16 polygon area vs summary,8.216310766953676,8.216310766953676,1e-08,PASS
+D16 total service force,82.01771921084466,82.01771921084466,1e-07,PASS
+D16 midspan influence integration,28.68540480437512,28.68540480437512,1e-07,PASS
+D17 profile continuous coverage,0.0,0,1e-08,PASS
+D17 profile area vs summary,1.21125,1.21125,1e-08,PASS
+D17 polygon area vs summary,1.21125,1.21125,1e-08,PASS
+D17 total service force,19.0359375,19.0359375,1e-07,PASS
+D17 midspan influence integration,6.8907291666666675,6.890729166666668,1e-07,PASS
+D18 profile continuous coverage,4.440892098500626e-16,0,1e-08,PASS
+D18 profile area vs summary,8.216310766953674,8.216310766953674,1e-08,PASS
+D18 polygon area vs summary,8.216310766953676,8.216310766953674,1e-08,PASS
+D18 total service force,82.01771921084465,82.01771921084465,1e-07,PASS
+D18 midspan influence integration,28.685404804375125,28.685404804375118,1e-07,PASS
+D19 profile continuous coverage,0.0,0,1e-08,PASS
+D19 profile area vs summary,4.964654828332425,4.964654828332424,1e-08,PASS
+D19 polygon area vs summary,4.964654828332424,4.964654828332424,1e-08,PASS
+D19 total service force,64.23760474790872,64.23760474790872,1e-07,PASS
+D19 midspan influence integration,12.779525248177675,12.779525248177674,1e-07,PASS
+D20 profile continuous coverage,0.0,0,1e-08,PASS
+D20 profile area vs summary,17.674034404713897,17.6740344047139,1e-08,PASS
+D20 polygon area vs summary,17.6740344047139,17.6740344047139,1e-08,PASS
+D20 total service force,171.6634260412466,171.66342604124662,1e-07,PASS
+D20 midspan influence integration,32.11836237543498,32.11836237543495,1e-07,PASS
+D21 profile continuous coverage,0.0,0,1e-08,PASS
+D21 profile area vs summary,17.674034404713897,17.6740344047139,1e-08,PASS
+D21 polygon area vs summary,17.6740344047139,17.6740344047139,1e-08,PASS
+D21 total service force,171.66342604124662,171.66342604124662,1e-07,PASS
+D21 midspan influence integration,32.11836237543498,32.11836237543494,1e-07,PASS
+D22 profile continuous coverage,0.0,0,1e-08,PASS
+D22 profile area vs summary,4.964654828332425,4.964654828332424,1e-08,PASS
+D22 polygon area vs summary,4.964654828332424,4.964654828332424,1e-08,PASS
+D22 total service force,64.23760474790872,64.23760474790872,1e-07,PASS
+D22 midspan influence integration,12.779525248177675,12.779525248177672,1e-07,PASS
+D23 profile continuous coverage,0.0,0,1e-08,PASS
+D23 profile area vs summary,7.228155383476838,7.228155383476839,1e-08,PASS
+D23 polygon area vs summary,7.228155383476838,7.228155383476839,1e-08,PASS
+D23 total service force,75.62135960542233,75.62135960542234,1e-07,PASS
+D23 midspan influence integration,25.253582031817192,25.2535820318172,1e-07,PASS
+D24 profile continuous coverage,0.0,0,1e-08,PASS
+D24 profile area vs summary,3.599999999999999,3.599999999999999,1e-08,PASS
+D24 polygon area vs summary,3.599999999999999,3.599999999999999,1e-08,PASS
+D24 total service force,41.81249999999999,41.81249999999999,1e-07,PASS
+D24 midspan influence integration,13.9375,13.937499999999996,1e-07,PASS
+D25 profile continuous coverage,4.440892098500626e-16,0,1e-08,PASS
+D25 profile area vs summary,7.228155383476834,7.228155383476835,1e-08,PASS
+D25 polygon area vs summary,7.228155383476835,7.228155383476835,1e-08,PASS
+D25 total service force,75.6213596054223,75.6213596054223,1e-07,PASS
+D25 midspan influence integration,25.253582031817185,25.253582031817178,1e-07,PASS
+independent point ownership (3893 samples),0,0,1e-08,PASS

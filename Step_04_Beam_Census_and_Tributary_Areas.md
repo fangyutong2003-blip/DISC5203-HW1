@@ -1,108 +1,124 @@
-# Step 04 - Beam Census and Beam Tributary Areas
+# Step 04 - Revised Mixed Slab-Edge Conditions
 
-## 1. Scope and continuity from HW1
+Revision of checkpoint b867ebd. The original Step 04-06 outputs and code are preserved in [the pre-revision archive](HW2_Pre_Mixed_Support_Revision_b867ebd.zip). HW1 geometry is unchanged.
 
-This step extends the reviewed HW1 coordinate system. The floor outline, columns, walls, openings, and ordinary flat-slab area are reused; they are not re-derived. The detailed structural drawing identifies 25 beam segments, labelled D01-D25 here to represent drawing labels Δ1-Δ25 in machine-readable files.
+## Method and source
 
-![HW2 marked plan](HW2_FloorPlan3_Marked_Beams.png)
+HW2.md, hint 04 (L04): matched 45/45; mixed 60 from fixed and 30 from simple.
 
-## 2. Beam identification
+C = continuous/rotationally restrained idealisation; S = supported with simple rotation idealisation. These labels describe the slab edge, not the end releases of the supporting beam. Complexity alone does not select an angle. The exact edge connection cannot be read reliably from this plan; every C/S entry below is an explicit modelling assumption.
 
-Beam axes and endpoints are image-derived. D05, D11, and D19 form the marked left vertical peripheral line (Beam A). D16-D18 form the marked horizontal interior continuous line (Beam B).
+For adjacent perpendicular edges use score = finite L1 distance / weight, with w(S)=1 and w(C)=sqrt(3). If the horizontal edge is C and the vertical edge S, equal scores give y=sqrt(3)x: 60 degrees from C and 30 from S. Equal weights give 45 degrees. Opposite unequal edges meet at a shifted straight division, not a 60-degree intersection of parallel edges. This weighted-distance construction is an adopted extension to finite edges and L-shaped panels; it is not a general yield-line or elastic plate solution.
 
-![Beam census](HW2_Beam_Census.png)
+The rule comes from the supplied assignment. [HKConcrete 2013 Table 6.7](https://www.bd.gov.hk/doc/en/resources/codes-and-references/code-and-design-manuals/CoP_SUC2013e.pdf) distinguishes continuous/discontinuous edges, but its coefficients are not identical to the geometric weighting used here. No code compliance or stiffness-based support classification is claimed.
 
-| Beam | Start (m) | End (m) | Span (m) | Section (mm) | Bordering panels | Classification |
-|---|---|---|---:|---:|---|---|
-| D01 | (2.45, 19.20) | (5.75, 19.20) | 3.30 | 250x700 | P1, P10 | perimeter/root; two-sided including cantilever |
-| D02 | (2.45, 15.20) | (2.45, 17.20) | 2.00 | 250x700 | P1 | perimeter; one-sided |
-| D03 | (7.75, 15.20) | (7.75, 19.20) | 4.00 | 250x700 | P1, P12 | perimeter/root; two-sided including cantilever |
-| D04 | (0.00, 15.20) | (2.45, 15.20) | 2.45 | 250x700 | P2, P11 | perimeter/root; two-sided including cantilever |
-| D05 | (0.00, 12.10) | (0.00, 15.20) | 3.10 | 250x700 | P2 | perimeter; one-sided; Beam A segment |
-| D06 | (3.60, 12.10) | (3.60, 15.20) | 3.10 | 250x600 | P1, P2 | interior; two-sided |
-| D07 | (7.75, 12.10) | (7.75, 15.20) | 3.10 | 250x600 | P1, P12 | perimeter/root; two-sided including cantilever |
-| D08 | (0.00, 12.10) | (3.60, 12.10) | 3.60 | 250x600 | P2, P3 | interior; two-sided |
-| D09 | (3.60, 12.10) | (4.70, 12.10) | 1.10 | 250x600 | P1, P4 | core-side; two-sided |
-| D10 | (7.75, 12.10) | (10.20, 12.10) | 2.45 | 250x700 | P5, P13 | perimeter/root; two-sided including cantilever |
-| D11 | (0.00, 6.05) | (0.00, 12.10) | 6.05 | 250x700 | P3 | perimeter; one-sided; Beam A segment |
-| D12 | (3.60, 6.05) | (3.60, 12.10) | 6.05 | 250x600 | P3, P4 | interior; two-sided |
-| D13 | (6.60, 10.60) | (6.60, 12.10) | 1.50 | 250x600 | P5 | core-side; one-sided |
-| D14 | (6.60, 6.05) | (6.60, 7.20) | 1.15 | 250x600 | P5, P6 | core-side; one slab-bearing side adopted |
-| D15 | (10.20, 6.05) | (10.20, 12.10) | 6.05 | 250x700 | P5 | perimeter; one-sided |
-| D16 | (0.00, 6.05) | (3.60, 6.05) | 3.60 | 250x600 | P3, P7 | interior; two-sided; Beam B span 1 |
-| D17 | (3.60, 6.05) | (6.60, 6.05) | 3.00 | 250x600 | P6, P8 | interior; P8 is one-way to vertical beams; Beam B span 2 |
-| D18 | (6.60, 6.05) | (10.20, 6.05) | 3.60 | 250x600 | P5, P9 | interior; two-sided; Beam B span 3 |
-| D19 | (0.00, 0.00) | (0.00, 6.05) | 6.05 | 250x700 | P7 | perimeter; one-sided; Beam A segment |
-| D20 | (3.60, 0.00) | (3.60, 6.05) | 6.05 | 250x600 | P7, P8 | interior; two-sided |
-| D21 | (6.60, 0.00) | (6.60, 6.05) | 6.05 | 250x600 | P8, P9 | interior; two-sided |
-| D22 | (10.20, 0.00) | (10.20, 6.05) | 6.05 | 250x700 | P9 | perimeter; one-sided |
-| D23 | (0.00, 0.00) | (3.60, 0.00) | 3.60 | 250x700 | P7, P14 | perimeter/root; two-sided including cantilever |
-| D24 | (3.60, 0.00) | (6.60, 0.00) | 3.00 | 250x700 | P8, P14 | perimeter/root; cantilever load only from P14 |
-| D25 | (6.60, 0.00) | (10.20, 0.00) | 3.60 | 250x700 | P9, P14 | perimeter/root; two-sided including cantilever |
+## Edge schedule
 
-## 3. Panel classification and allocation rule
+| Panel | Support | Condition | Basis |
+|---|---|---|---|
+| P1 | D01 | C | Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity. |
+| P1 | W_T1 | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P1 | D02 | S | Slab terminates or meets an opening: supported but rotationally simple assumed. |
+| P1 | W_T2 | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P1 | W_T3 | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P1 | D06 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P1 | D09 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P1 | W_T4 | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P1 | D03 | C | Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity. |
+| P1 | D07 | C | Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity. |
+| P2 | D04 | C | Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity. |
+| P2 | W_T3 | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P2 | D05 | S | Slab terminates or meets an opening: supported but rotationally simple assumed. |
+| P2 | D06 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P2 | D08 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P3 | D08 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P3 | D11 | S | Slab terminates or meets an opening: supported but rotationally simple assumed. |
+| P3 | D12 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P3 | D16 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P4 | D12 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P4 | W_CORE_R | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P5 | W_T4 | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P5 | D10 | C | Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity. |
+| P5 | D13 | S | Slab terminates or meets an opening: supported but rotationally simple assumed. |
+| P5 | W_T7 | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P5 | D14 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P5 | D15 | S | Slab terminates or meets an opening: supported but rotationally simple assumed. |
+| P5 | D18 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P6 | W_T8 | C | Wall/core edge: monolithic rotational restraint assumed; connection and W_CORE_R geometry unverified. |
+| P6 | D17 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P7 | D16 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P7 | D19 | S | Slab terminates or meets an opening: supported but rotationally simple assumed. |
+| P7 | D20 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P7 | D23 | C | Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity. |
+| P8 | D20 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P8 | D21 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P9 | D18 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P9 | D21 | C | Slab continues across an internal beam: continuous idealisation assumed; reinforcement unverified. |
+| P9 | D22 | S | Slab terminates or meets an opening: supported but rotationally simple assumed. |
+| P9 | D25 | C | Cantilever-root edge: restrained whole-edge idealisation assumed; finite overhang coverage does not prove full fixity. |
+| P10 | D01 | cantilever root | overhang footprint clipped to finite root segment |
+| P10 | W_T1 | cantilever root | overhang footprint clipped to finite root segment |
+| P11 | D04 | cantilever root | overhang footprint clipped to finite root segment |
+| P12 | D03 | cantilever root | overhang footprint clipped to finite root segment |
+| P12 | D07 | cantilever root | overhang footprint clipped to finite root segment |
+| P13 | D10 | cantilever root | overhang footprint clipped to finite root segment |
+| P14 | D23 | cantilever root | overhang footprint clipped to finite root segment |
+| P14 | D24 | cantilever root | overhang footprint clipped to finite root segment |
+| P14 | D25 | cantilever root | overhang footprint clipped to finite root segment |
 
-Each panel is classified before any load is assigned. Two-way panels with matched orthogonal supports are divided by nearest finite support-edge distance, producing midpoint and 45-degree boundaries. P8 is one-way because 6.05/3.00 > 2 and therefore loads only D20 and D21. The narrow P4 and P6 core-side strips are treated as one-way between their stated opposite supports. Cantilevers P10-P14 load their root supports.
+P4/P6/P8 retain their previous one-way equal reaction split; 30/60 corner rules are not applied to them. Cantilevers route all load to their actual root extent. Treating an entire cantilever-root edge as C is a sensitivity assumption, not proof of full fixity over that edge.
 
-| Panel | Classification | Exact model area (m2) | Grid-assigned area (m2) |
-|---|---|---:|---:|
-| P1 | two-way, matched supports, L-shaped | 34.0650 | 34.0650 |
-| P2 | two-way, matched supports | 11.1600 | 11.1600 |
-| P3 | two-way, matched supports | 21.7800 | 21.7800 |
-| P4 | one-way core-side strip | 6.6550 | 6.6550 |
-| P5 | two-way, matched supports | 21.7800 | 21.7800 |
-| P6 | one-way between T8 and D17 | 2.4225 | 2.4130 |
-| P7 | two-way, matched supports | 21.7800 | 21.7800 |
-| P8 | one-way; 6.05/3.00 > 2 | 18.1500 | 18.1500 |
-| P9 | two-way, matched supports | 21.7800 | 21.7800 |
-| P10 | cantilever, 0.50 m projection | 1.3250 | 1.3250 |
-| P11 | cantilever, 1.00 m projection | 2.4500 | 2.4500 |
-| P12 | cantilever, 0.50 m projection | 2.1500 | 2.1500 |
-| P13 | cantilever, 0.90 m projection | 2.2050 | 2.2050 |
-| P14 | cantilever, 1.20 m projection | 9.8400 | 9.8400 |
+## Closed boundaries and areas
 
-Walls and core boundaries are retained as direct supports in the allocation. Grey regions in the following figure therefore do not load a beam; this prevents wall-supported slab load from being reassigned incorrectly to a nearby beam.
+![Dashed boundaries](HW2_Beam_Tributary_Boundaries.png)
 
-![Beam tributary areas](HW2_Beam_Tributary_Areas.png)
+![Areas](HW2_Beam_Tributary_Areas.png)
 
-## 4. Beam tributary-area results
+Closed polygons are exported in [GeoJSON](Step_04_Closed_Regions.geojson) in local metres, not geographic coordinates. Hatched grey strips show wall axes/widths; orange cross-hatching identifies a geometry gap inherited from the panel reconstruction.
 
-| Beam | Tributary area (m2) | Mean width (m) | Load shape |
-|---|---:|---:|---|
-| D01 | 6.0049 | 1.8197 | trapezoidal/truncated + partial cantilever UDL |
-| D02 | 2.7052 | 1.3526 | triangular/truncated, one-sided |
-| D03 | 8.7583 | 2.1896 | trapezoidal + cantilever UDL |
-| D04 | 4.9717 | 2.0293 | triangular/truncated + cantilever UDL |
-| D05 | 2.3992 | 0.7739 | triangular, one-sided |
-| D06 | 8.7323 | 2.8169 | two-sided triangular/trapezoidal |
-| D07 | 4.4440 | 1.4335 | trapezoidal/truncated + short cantilever UDL |
-| D08 | 6.4238 | 1.7844 | two-sided triangular |
-| D09 | 0.6049 | 0.5499 | truncated triangular, core-side |
-| D10 | 4.7921 | 1.9560 | truncated triangular + cantilever UDL |
-| D11 | 7.6476 | 1.2641 | trapezoidal, one-sided |
-| D12 | 10.9761 | 1.8142 | two-sided trapezoidal + one-way strip |
-| D13 | 1.1248 | 0.7499 | truncated triangular, one-sided |
-| D14 | 0.6662 | 0.5793 | truncated triangular, one-sided |
-| D15 | 7.6522 | 1.2648 | trapezoidal, one-sided |
-| D16 | 6.4915 | 1.8032 | two-sided triangular |
-| D17 | 1.2160 | 0.4053 | partial uniform one-way strip |
-| D18 | 6.4812 | 1.8003 | two-sided triangular |
-| D19 | 7.6513 | 1.2647 | trapezoidal, one-sided |
-| D20 | 16.7187 | 2.7634 | trapezoidal + one-way UDL, two-sided |
-| D21 | 16.7174 | 2.7632 | trapezoidal + one-way UDL, two-sided |
-| D22 | 7.6518 | 1.2648 | trapezoidal, one-sided |
-| D23 | 6.3483 | 1.7634 | triangular + partial cantilever UDL |
-| D24 | 3.6000 | 1.2000 | partial cantilever UDL only |
-| D25 | 6.3538 | 1.7649 | triangular + partial cantilever UDL |
+## Revised beam schedule
 
-## 5. Area checks and limitations
+| Beam | Previous area (m2) | Revised area (m2) | Angle-only change vs exact matched model (m2) |
+|---|---:|---:|---:|
+| D01 | 6.0049 | 6.1898 | +0.1673 |
+| D02 | 2.7052 | 0.8117 | -1.8908 |
+| D03 | 8.7583 | 8.2148 | +0.0067 |
+| D04 | 4.9717 | 5.4740 | +0.5077 |
+| D05 | 2.3992 | 1.3871 | -1.0154 |
+| D06 | 8.7323 | 6.6822 | +0.0000 |
+| D07 | 4.4440 | 4.9797 | +0.0000 |
+| D08 | 6.4238 | 7.7934 | +1.3759 |
+| D09 | 0.6049 | 0.6050 | -0.0000 |
+| D10 | 4.7921 | 5.6825 | +0.8988 |
+| D11 | 7.6476 | 4.9647 | -2.6853 |
+| D12 | 10.9761 | 11.9265 | +0.9490 |
+| D13 | 1.1248 | 0.4566 | -0.6684 |
+| D14 | 0.6662 | 0.6613 | +0.0000 |
+| D15 | 7.6522 | 4.9647 | -2.6853 |
+| D16 | 6.4915 | 8.2163 | +1.7363 |
+| D17 | 1.2160 | 1.2112 | +0.0000 |
+| D18 | 6.4812 | 8.2163 | +1.7363 |
+| D19 | 7.6513 | 4.9647 | -2.6853 |
+| D20 | 16.7187 | 17.6740 | +0.9490 |
+| D21 | 16.7174 | 17.6740 | +0.9490 |
+| D22 | 7.6518 | 4.9647 | -2.6853 |
+| D23 | 6.3483 | 7.2282 | +0.8682 |
+| D24 | 3.6000 | 3.6000 | +0.0000 |
+| D25 | 6.3538 | 7.2282 | +0.8682 |
 
-- Area assigned to beams: 157.1333 m2.
-- Area assigned directly to walls/core/support residual: 22.1167 m2.
-- Total reconciled ordinary slab area: 179.2500 m2 = 179.2500 m2 from HW1.
-- Maximum panel grid-area error at 0.01 m resolution: 0.009500 m2.
-- D01-D25 endpoints and panel support conditions are image-derived. Original CAD beam axes would supersede these values.
-- P4/P6 and the short core-side members are the most interpretation-sensitive regions and must be checked before the OpenSees model is frozen.
-- Equivalent beam areas exclude slab load assigned directly to structural walls. This is intentional and preserves the slab-to-support load path.
+The full census remains in [Step 04 census](Step_04_Beam_Census.csv). The matched comparator uses the same exact geometry, so the last column isolates the angle change from polygon integration and cantilever-root corrections.
 
-The detailed contribution schedule is stored in `Step_04_Beam_Tributary_Area_Contributions.csv`.
+## Conservation and limitations
+
+- Beams: 151.771260 m2.
+- Direct wall/support allocation: 25.771240 m2.
+- Explicit unresolved geometry: 1.707500 m2.
+- Total: 179.250000 m2 (HW1 ordinary slab).
+- 52 checks passed; polygon closure/overlap tolerance 1e-8 m2; profile integration tolerance 1e-7 m2.
+- The unresolved region has not been assigned an invented wall reaction. The previous residual filler is removed. Complete load-path closure is still pending core geometry clarification.
+- Grey physical walls/columns come from the HW1 coordinate schedule for visual reference. Black support axes retain the earlier HW2 idealised segmentation, which is not identical to every physical wall extent. W_CORE_R (magenta dashed) is an unverified assumed core support, not a verified physical wall. The 30/60-degree update does not validate that earlier geometry.
+- Finite-segment L1 scores also create 2.584167 m2 of positive-area ties. These are provisionally assigned by support-list order, not mechanical evidence. [Tie audit](Step_04_Finite_Edge_Ties.csv) identifies the affected supports. This is a distinct uncertainty within allocated area, not additional unallocated floor area. It explains some changes versus the old raster tie handling, including D06; use the rectangular P3 corner tests as the clean 30/60 example.
+- Finite-edge cells projecting beyond a beam endpoint are exported as endpoint forces, not as artificially enormous line-load ordinates.
+- P12 now uses the actual y=13.8 to 18.1 extent across D07/D03; the previous 4.0/0.3 m root split was inconsistent with that footprint.
+
+Reproduce: `python hw2_beam_loads.py`. Verification: `python verify_hw2_mixed_supports.py`.

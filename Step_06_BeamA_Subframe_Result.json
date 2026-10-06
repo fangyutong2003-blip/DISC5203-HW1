@@ -9,79 +9,81 @@
   "span_lengths_m": [
     6.05,
     6.05,
-    3.1
+    3.0999999999999996
   ],
   "simple_span_bounds_kNm": [
-    79.2874204375,
-    79.27552462499999,
-    14.979467375000002
+    58.47032161205291,
+    58.470321612052956,
+    10.4000073039538
   ],
-  "governing_hand_bound_kNm": 79.2874204375,
-  "peak_sagging_kNm": 32.20060267740428,
-  "peak_hogging_kNm": -54.61540184947375,
-  "peak_abs_moment_kNm": 54.61540184947375,
-  "peak_abs_shear_kN": 46.30242569087343,
-  "peak_abs_axial_kN": 5.3251820808497135,
-  "max_vertical_displacement_m": 0.00042820788217744405,
-  "applied_service_load_kN": 207.10821499999997,
-  "vertical_reaction_sum_kN": 207.10821500086743,
-  "equilibrium_error_kN": 8.674589935253607e-10,
-  "max_element_end_moment_error_kNm": 4.618527782440651e-14,
+  "governing_hand_bound_kNm": 58.470321612052956,
+  "peak_sagging_kNm": 24.05602460668886,
+  "peak_hogging_kNm": -40.01599710580092,
+  "peak_abs_moment_kNm": 40.01599710580092,
+  "peak_abs_shear_kN": 33.934211135594474,
+  "peak_abs_axial_kN": 3.8898870107357264,
+  "max_vertical_displacement_m": 0.00031627111696278936,
+  "applied_service_load_kN": 151.2684446859381,
+  "vertical_reaction_sum_kN": 151.26841626418002,
+  "equilibrium_error_kN": -2.8421758088370552e-05,
+  "max_element_end_moment_error_kNm": 5.684341886080802e-14,
   "hand_bound_order_check": "PASS",
   "reactions": [
     {
       "support": "T9",
       "x_m": 0.0,
-      "Rx_kN": 5.268109187480732,
-      "Ry_kN": 42.88849295507128,
-      "M_kNm": 32.34683162799096
+      "Rx_kN": 3.8404006747730435,
+      "Ry_kN": 31.391535985665172,
+      "M_kNm": 23.706250753357132
     },
     {
       "support": "C6",
       "x_m": 6.05,
-      "Rx_kN": 0.0570728933680027,
-      "Ry_kN": 91.15950273651904,
-      "M_kNm": 0.33805710558251334
+      "Rx_kN": 0.04948633632898525,
+      "Ry_kN": 66.78026405739358,
+      "M_kNm": 0.2401688700481709
     },
     {
       "support": "C3",
       "x_m": 12.1,
-      "Rx_kN": -4.646837473088385,
-      "Ry_kN": 66.84168961847982,
-      "M_kNm": 4.95469083704611
+      "Rx_kN": -3.4441756560907226,
+      "Ry_kN": 48.70033227892432,
+      "M_kNm": 3.6700778783193746
     },
     {
       "support": "C2",
       "x_m": 15.2,
-      "Rx_kN": -0.6783446077609252,
-      "Ry_kN": 6.218529690797301,
-      "M_kNm": 0.9805013126634341
+      "Rx_kN": -0.44571135439601994,
+      "Ry_kN": 4.396283942196937,
+      "M_kNm": 0.6678705445521123
     }
   ],
   "profile_metadata": [
     {
-      "profile": "symmetric_trapezoid",
-      "ramp_m": 1.7987256437356116,
-      "peak_slab_kN_m": 15.747912129300467,
-      "target_ratio": 1.2553791377113475
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D19",
+      "intervals": 605
     },
     {
-      "profile": "symmetric_trapezoid",
-      "ramp_m": 1.802096686228674,
-      "peak_slab_kN_m": 15.75286089564756,
-      "target_ratio": 1.2557456195866405
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D11",
+      "intervals": 605
     },
     {
-      "profile": "symmetric_triangle",
-      "peak_slab_kN_m": 13.543800000000001,
-      "target_ratio": 1.3338058742745758
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D05",
+      "intervals": 310
     }
   ],
+  "profile_sha256": "1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6",
+  "endpoint_sha256": "3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597",
   "assumptions": [
     "Linear-elastic gross concrete sections with E = 30 GPa.",
     "Service G+Q loading; no load factors are applied in Step 06.",
-    "Non-uniform slab profiles are discretised into 60 uniform sub-elements per span.",
-    "The subframe contains one storey below the beam with fixed bases and no upper-storey columns."
+    "Direct Step 05 strip-average profiles: 0.01 m elements; no symmetric fit or force rescaling.",
+    "Midspan-moment scales are screening values, not rigorous maximum-moment bounds for asymmetric profiles.",
+    "The subframe contains one storey below the beam with fixed bases and no upper-storey columns.",
+    "Preliminary single-line model; no perpendicular bay; unresolved core area is not allocated to this model."
   ],
   "figure": "Step_06_BeamA_Subframe_Response.png"
 }

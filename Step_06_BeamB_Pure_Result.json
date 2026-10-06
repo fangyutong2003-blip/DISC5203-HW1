@@ -8,79 +8,82 @@
   ],
   "span_lengths_m": [
     3.6,
-    3.0,
-    3.6
+    2.9999999999999996,
+    3.5999999999999996
   ],
   "simple_span_bounds_kNm": [
-    38.621124,
-    7.7700375,
-    38.592126
+    46.4703557830877,
+    7.752070312500001,
+    46.47035578308768
   ],
-  "governing_hand_bound_kNm": 38.621124,
-  "peak_sagging_kNm": 29.49698681342972,
-  "peak_hogging_kNm": -19.10412743484151,
-  "peak_abs_moment_kNm": 29.49698681342972,
-  "peak_abs_shear_kN": 38.76960206521386,
+  "governing_hand_bound_kNm": 46.4703557830877,
+  "peak_sagging_kNm": 37.04588231155212,
+  "peak_hogging_kNm": -22.291218726225306,
+  "peak_abs_moment_kNm": 37.04588231155212,
+  "peak_abs_shear_kN": 43.990263595206855,
   "peak_abs_axial_kN": 0.0,
-  "max_vertical_displacement_m": 0.0002590219852119817,
-  "applied_service_load_kN": 152.83884,
-  "vertical_reaction_sum_kN": 152.8388399944454,
-  "equilibrium_error_kN": -5.554596782531007e-09,
-  "max_element_end_moment_error_kNm": 3.612409850417553e-14,
+  "max_vertical_displacement_m": 0.00032311911098202464,
+  "applied_service_load_kN": 183.0713759216893,
+  "vertical_reaction_sum_kN": 183.07138112164574,
+  "equilibrium_error_kN": 5.199956433443731e-06,
+  "max_element_end_moment_error_kNm": 6.727951529228449e-14,
   "hand_bound_order_check": "PASS",
   "reactions": [
     {
       "support": "C6",
       "x_m": 0.0,
       "Rx_kN": 0.0,
-      "Ry_kN": 28.15619793390819,
-      "M_kNm": 3.193831917686074e-13
+      "Ry_kN": 38.13804784316734,
+      "M_kNm": 2.556807531943787e-12
     },
     {
       "support": "C7",
       "x_m": 3.6,
       "Rx_kN": 0.0,
-      "Ry_kN": 48.32035882012352,
-      "M_kNm": -2.446718383453117e-10
+      "Ry_kN": 51.32188793187924,
+      "M_kNm": 3.7019954035599767e-07
     },
     {
       "support": "C8",
       "x_m": 6.6,
       "Rx_kN": 0.0,
-      "Ry_kN": 48.24130134688211,
-      "M_kNm": 3.8895109355507884e-10
+      "Ry_kN": 55.58399145578559,
+      "M_kNm": -3.9284237374204167e-07
     },
     {
       "support": "C9",
       "x_m": 10.2,
       "Rx_kN": 0.0,
-      "Ry_kN": 28.120981893531592,
-      "M_kNm": 1.0553283344861414e-09
+      "Ry_kN": 38.027453890813554,
+      "M_kNm": 2.8932899024782855e-07
     }
   ],
   "profile_metadata": [
     {
-      "profile": "symmetric_triangle",
-      "peak_slab_kN_m": 31.555999999999997,
-      "target_ratio": 1.3327227785524147
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D16",
+      "intervals": 360
     },
     {
-      "profile": "centred_patch",
-      "loaded_length_m": 2.5368934502495284,
-      "peak_slab_kN_m": 4.194145402107228,
-      "target_ratio": 1.1543688499168239
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D17",
+      "intervals": 300
     },
     {
-      "profile": "symmetric_triangle",
-      "peak_slab_kN_m": 31.5058,
-      "target_ratio": 1.3337099835585828
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D18",
+      "intervals": 360
     }
   ],
+  "profile_sha256": "1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6",
+  "endpoint_sha256": "3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597",
   "assumptions": [
     "Linear-elastic gross concrete sections with E = 30 GPa.",
     "Service G+Q loading; no load factors are applied in Step 06.",
-    "Non-uniform slab profiles are discretised into 60 uniform sub-elements per span.",
-    "The subframe contains one storey below the beam with fixed bases and no upper-storey columns."
+    "Direct Step 05 strip-average profiles: 0.01 m elements; no symmetric fit or force rescaling.",
+    "Midspan-moment scales are screening values, not rigorous maximum-moment bounds for asymmetric profiles.",
+    "The subframe contains one storey below the beam with fixed bases and no upper-storey columns.",
+    "Preliminary single-line model; no perpendicular bay; unresolved core area is not allocated to this model."
   ],
   "figure": "Step_06_BeamB_Pure_Response.png"
 }

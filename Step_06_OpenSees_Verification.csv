@@ -4,15 +4,31 @@ O02,"Simple beam support moment, 4 m at 10 kN/m (kN m)",0.0,2.220446049250313e-1
 O03,Simple beam midspan moment qL2/8 (kN m),20.0,20.000000000000004,1e-06,PASS
 O04,Fixed beam support moment -qL2/12 (kN m),-13.3333333333,-13.333333333333334,1e-06,PASS
 O05,Fixed beam midspan moment qL2/24 (kN m),6.6666666667,6.666666666666666,1e-06,PASS
-O06,Beam A pure vertical equilibrium (kN),0.0,5.8516320677881595e-09,1e-06,PASS
-O07,Beam A pure element end-moment reconstruction (kN m),0.0,4.263256414560601e-14,1e-09,PASS
-O08,Beam A pure pre-solve order gate,PASS,PASS,exact,PASS
-O09,Beam A subframe vertical equilibrium (kN),0.0,8.674589935253607e-10,1e-06,PASS
-O10,Beam A subframe element end-moment reconstruction (kN m),0.0,4.618527782440651e-14,1e-09,PASS
-O11,Beam A subframe pre-solve order gate,PASS,PASS,exact,PASS
-O12,Beam B pure vertical equilibrium (kN),0.0,-5.554596782531007e-09,1e-06,PASS
-O13,Beam B pure element end-moment reconstruction (kN m),0.0,3.612409850417553e-14,1e-09,PASS
-O14,Beam B pure pre-solve order gate,PASS,PASS,exact,PASS
-O15,Beam B subframe vertical equilibrium (kN),0.0,-3.776051471504616e-09,1e-06,PASS
-O16,Beam B subframe element end-moment reconstruction (kN m),0.0,3.907985046680551e-14,1e-09,PASS
-O17,Beam B subframe pre-solve order gate,PASS,PASS,exact,PASS
+O06,Beam A pure profile_sha256 provenance,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,exact,PASS
+O07,Beam A pure endpoint_sha256 provenance,3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597,3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597,exact,PASS
+O08,Beam A pure independently summed Step 05 force,151.2684446859381,151.2684446859381,1e-07,PASS
+O09,Beam A pure vertical equilibrium (kN),0.0,-3.964862756333787e-05,0.0001,PASS
+O10,Beam A pure relative vertical equilibrium,0.0,-2.6210772276832697e-07,1e-06,PASS
+O11,Beam A pure element end-moment reconstruction (kN m),0.0,4.973799150320701e-14,1e-09,PASS
+O12,Beam A pure pre-solve order gate,PASS,PASS,exact,PASS
+O13,Beam A subframe profile_sha256 provenance,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,exact,PASS
+O14,Beam A subframe endpoint_sha256 provenance,3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597,3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597,exact,PASS
+O15,Beam A subframe independently summed Step 05 force,151.2684446859381,151.2684446859381,1e-07,PASS
+O16,Beam A subframe vertical equilibrium (kN),0.0,-2.8421758088370552e-05,0.0001,PASS
+O17,Beam A subframe relative vertical equilibrium,0.0,-1.8788953735446607e-07,1e-06,PASS
+O18,Beam A subframe element end-moment reconstruction (kN m),0.0,5.684341886080802e-14,1e-09,PASS
+O19,Beam A subframe pre-solve order gate,PASS,PASS,exact,PASS
+O20,Beam B pure profile_sha256 provenance,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,exact,PASS
+O21,Beam B pure endpoint_sha256 provenance,3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597,3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597,exact,PASS
+O22,Beam B pure independently summed Step 05 force,183.0713759216893,183.0713759216893,1e-07,PASS
+O23,Beam B pure vertical equilibrium (kN),0.0,5.199956433443731e-06,0.0001,PASS
+O24,Beam B pure relative vertical equilibrium,0.0,2.840398400494934e-08,1e-06,PASS
+O25,Beam B pure element end-moment reconstruction (kN m),0.0,6.727951529228449e-14,1e-09,PASS
+O26,Beam B pure pre-solve order gate,PASS,PASS,exact,PASS
+O27,Beam B subframe profile_sha256 provenance,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,exact,PASS
+O28,Beam B subframe endpoint_sha256 provenance,3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597,3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597,exact,PASS
+O29,Beam B subframe independently summed Step 05 force,183.0713759216893,183.0713759216893,1e-07,PASS
+O30,Beam B subframe vertical equilibrium (kN),0.0,2.8398452514011296e-06,0.0001,PASS
+O31,Beam B subframe relative vertical equilibrium,0.0,1.551222979072328e-08,1e-06,PASS
+O32,Beam B subframe element end-moment reconstruction (kN m),0.0,7.283063041541027e-14,1e-09,PASS
+O33,Beam B subframe pre-solve order gate,PASS,PASS,exact,PASS

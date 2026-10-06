@@ -2,3 +2,4 @@ numpy>=1.24,<3
 Pillow>=10,<13
 matplotlib>=3.8,<4
 openseespy>=3.7,<4
+shapely>=2,<3

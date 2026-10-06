@@ -15,19 +15,19 @@
       "support_labels": ["T9", "C6", "C3", "C2"],
       "classification": "three-span peripheral edge beam; slab load on one side",
       "support_sections_m": [[0.25, 2.0], [0.4, 0.4], [0.4, 0.4], [0.4, 0.4]],
-      "profile_types": ["symmetric_trapezoid", "symmetric_trapezoid", "symmetric_triangle"]
+      "profile_source": "Step_05_Beam_Load_Profiles.csv"
     },
     "Beam B": {
       "segments": ["D16", "D17", "D18"],
       "support_labels": ["C6", "C7", "C8", "C9"],
       "classification": "three-span interior continuous beam; slab load on both sides",
       "support_sections_m": [[0.4, 0.4], [0.45, 0.45], [0.4, 0.4], [0.4, 0.4]],
-      "profile_types": ["symmetric_triangle", "centred_patch", "symmetric_triangle"]
+      "profile_source": "Step_05_Beam_Load_Profiles.csv"
     }
   },
   "analysis": {
     "load_case": "service G+Q",
-    "elements_per_span": 60,
+    "element_length_m": 0.01,
     "pure_supports": "vertical simple supports at every grid point; first support also restrains horizontal translation",
     "subframe": "beam at the top of one 3 m storey; support members extend to fixed bases; no upper-storey columns",
     "geometric_transformation": "Linear"

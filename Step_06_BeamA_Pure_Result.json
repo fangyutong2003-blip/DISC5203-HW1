@@ -9,79 +9,81 @@
   "span_lengths_m": [
     6.05,
     6.05,
-    3.1
+    3.0999999999999996
   ],
   "simple_span_bounds_kNm": [
-    79.2874204375,
-    79.27552462499999,
-    14.979467375000002
+    58.47032161205291,
+    58.470321612052956,
+    10.4000073039538
   ],
-  "governing_hand_bound_kNm": 79.2874204375,
-  "peak_sagging_kNm": 48.29749410880004,
-  "peak_hogging_kNm": -68.66420464421245,
-  "peak_abs_moment_kNm": 68.66420464421245,
-  "peak_abs_shear_kN": 55.2222403141214,
+  "governing_hand_bound_kNm": 58.470321612052956,
+  "peak_sagging_kNm": 35.62892553782021,
+  "peak_hogging_kNm": -50.30123697703864,
+  "peak_abs_moment_kNm": 50.30123697703864,
+  "peak_abs_shear_kN": 40.43304024975774,
   "peak_abs_axial_kN": 0.0,
-  "max_vertical_displacement_m": 0.0006684128259066047,
-  "applied_service_load_kN": 207.10821499999997,
-  "vertical_reaction_sum_kN": 207.1082150058516,
-  "equilibrium_error_kN": 5.8516320677881595e-09,
-  "max_element_end_moment_error_kNm": 4.263256414560601e-14,
+  "max_vertical_displacement_m": 0.0004906718367015222,
+  "applied_service_load_kN": 151.2684446859381,
+  "vertical_reaction_sum_kN": 151.26840503731054,
+  "equilibrium_error_kN": -3.964862756333787e-05,
+  "max_element_end_moment_error_kNm": 4.973799150320701e-14,
   "hand_bound_order_check": "PASS",
   "reactions": [
     {
       "support": "T9",
       "x_m": 0.0,
       "Rx_kN": 0.0,
-      "Ry_kN": 32.523329687602825,
-      "M_kNm": 2.129494497404849e-13
+      "Ry_kN": 23.804532254148157,
+      "M_kNm": -2.5966119852156508e-12
     },
     {
       "support": "C6",
       "x_m": 6.05,
       "Rx_kN": 0.0,
-      "Ry_kN": 104.97534201250386,
-      "M_kNm": -4.54036808150704e-11
+      "Ry_kN": 76.90160974014165,
+      "M_kNm": -8.024066033840427e-08
     },
     {
       "support": "C3",
       "x_m": 12.1,
       "Rx_kN": 0.0,
-      "Ry_kN": 64.4273255611503,
-      "M_kNm": -8.277112328869407e-11
+      "Ry_kN": 46.90278409750075,
+      "M_kNm": -1.4513249979586362e-07
     },
     {
       "support": "C2",
       "x_m": 15.2,
       "Rx_kN": 0.0,
-      "Ry_kN": 5.182217744594611,
-      "M_kNm": 1.744087772424449e-10
+      "Ry_kN": 3.6594789455199823,
+      "M_kNm": -5.3989563015518675e-08
     }
   ],
   "profile_metadata": [
     {
-      "profile": "symmetric_trapezoid",
-      "ramp_m": 1.7987256437356116,
-      "peak_slab_kN_m": 15.747912129300467,
-      "target_ratio": 1.2553791377113475
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D19",
+      "intervals": 605
     },
     {
-      "profile": "symmetric_trapezoid",
-      "ramp_m": 1.802096686228674,
-      "peak_slab_kN_m": 15.75286089564756,
-      "target_ratio": 1.2557456195866405
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D11",
+      "intervals": 605
     },
     {
-      "profile": "symmetric_triangle",
-      "peak_slab_kN_m": 13.543800000000001,
-      "target_ratio": 1.3338058742745758
+      "profile": "direct Step 05 strip-average profile",
+      "beam_id": "D05",
+      "intervals": 310
     }
   ],
+  "profile_sha256": "1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6",
+  "endpoint_sha256": "3a9aca29125475191e707a32831e8cf8b1f272de8d79f9616713efec70911597",
   "assumptions": [
     "Linear-elastic gross concrete sections with E = 30 GPa.",
     "Service G+Q loading; no load factors are applied in Step 06.",
-    "Non-uniform slab profiles are discretised into 60 uniform sub-elements per span.",
-    "The subframe contains one storey below the beam with fixed bases and no upper-storey columns."
+    "Direct Step 05 strip-average profiles: 0.01 m elements; no symmetric fit or force rescaling.",
+    "Midspan-moment scales are screening values, not rigorous maximum-moment bounds for asymmetric profiles.",
+    "The subframe contains one storey below the beam with fixed bases and no upper-storey columns.",
+    "Preliminary single-line model; no perpendicular bay; unresolved core area is not allocated to this model."
   ],
   "figure": "Step_06_BeamA_Pure_Response.png"
 }

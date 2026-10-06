@@ -1,4 +1,7 @@
-"""HW2 Tasks 1-2: beam census, tributary areas, and line loads.
+"""HW2 geometry definitions and preserved legacy all-matched implementation.
+
+The command-line entry point delegates to hw2_mixed_supports.main. The historical
+main below is retained for audit only; it is not the current analysis.
 
 The geometry extends the reviewed HW1 coordinate system. Beam and wall axes are
 image-derived from the detailed structural drawing. Each slab panel is classified
@@ -644,4 +647,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    # The former all-45-degree implementation remains above as audit evidence.
+    from hw2_mixed_supports import main as revised_main
+    revised_main()
