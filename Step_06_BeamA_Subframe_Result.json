@@ -1,0 +1,87 @@
+{
+  "beam": "Beam A",
+  "model": "subframe",
+  "segments": [
+    "D19",
+    "D11",
+    "D05"
+  ],
+  "span_lengths_m": [
+    6.05,
+    6.05,
+    3.1
+  ],
+  "simple_span_bounds_kNm": [
+    79.2874204375,
+    79.27552462499999,
+    14.979467375000002
+  ],
+  "governing_hand_bound_kNm": 79.2874204375,
+  "peak_sagging_kNm": 32.20060267740428,
+  "peak_hogging_kNm": -54.61540184947375,
+  "peak_abs_moment_kNm": 54.61540184947375,
+  "peak_abs_shear_kN": 46.30242569087343,
+  "peak_abs_axial_kN": 5.3251820808497135,
+  "max_vertical_displacement_m": 0.00042820788217744405,
+  "applied_service_load_kN": 207.10821499999997,
+  "vertical_reaction_sum_kN": 207.10821500086743,
+  "equilibrium_error_kN": 8.674589935253607e-10,
+  "max_element_end_moment_error_kNm": 4.618527782440651e-14,
+  "hand_bound_order_check": "PASS",
+  "reactions": [
+    {
+      "support": "T9",
+      "x_m": 0.0,
+      "Rx_kN": 5.268109187480732,
+      "Ry_kN": 42.88849295507128,
+      "M_kNm": 32.34683162799096
+    },
+    {
+      "support": "C6",
+      "x_m": 6.05,
+      "Rx_kN": 0.0570728933680027,
+      "Ry_kN": 91.15950273651904,
+      "M_kNm": 0.33805710558251334
+    },
+    {
+      "support": "C3",
+      "x_m": 12.1,
+      "Rx_kN": -4.646837473088385,
+      "Ry_kN": 66.84168961847982,
+      "M_kNm": 4.95469083704611
+    },
+    {
+      "support": "C2",
+      "x_m": 15.2,
+      "Rx_kN": -0.6783446077609252,
+      "Ry_kN": 6.218529690797301,
+      "M_kNm": 0.9805013126634341
+    }
+  ],
+  "profile_metadata": [
+    {
+      "profile": "symmetric_trapezoid",
+      "ramp_m": 1.7987256437356116,
+      "peak_slab_kN_m": 15.747912129300467,
+      "target_ratio": 1.2553791377113475
+    },
+    {
+      "profile": "symmetric_trapezoid",
+      "ramp_m": 1.802096686228674,
+      "peak_slab_kN_m": 15.75286089564756,
+      "target_ratio": 1.2557456195866405
+    },
+    {
+      "profile": "symmetric_triangle",
+      "peak_slab_kN_m": 13.543800000000001,
+      "target_ratio": 1.3338058742745758
+    }
+  ],
+  "assumptions": [
+    "Linear-elastic gross concrete sections with E = 30 GPa.",
+    "Service G+Q loading; no load factors are applied in Step 06.",
+    "Non-uniform slab profiles are discretised into 60 uniform sub-elements per span.",
+    "The subframe contains one storey below the beam with fixed bases and no upper-storey columns."
+  ],
+  "figure": "Step_06_BeamA_Subframe_Response.png"
+}

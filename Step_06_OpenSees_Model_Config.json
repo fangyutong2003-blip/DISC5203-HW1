@@ -1,0 +1,41 @@
+{
+  "units": {
+    "force": "kN",
+    "length": "m",
+    "stress": "kN/m2"
+  },
+  "material": {
+    "E_kN_m2": 30000000.0,
+    "description": "Linear-elastic concrete stiffness adopted from the HW2 W5 hint."
+  },
+  "storey_height_m": 3.0,
+  "beam_lines": {
+    "Beam A": {
+      "segments": ["D19", "D11", "D05"],
+      "support_labels": ["T9", "C6", "C3", "C2"],
+      "classification": "three-span peripheral edge beam; slab load on one side",
+      "support_sections_m": [[0.25, 2.0], [0.4, 0.4], [0.4, 0.4], [0.4, 0.4]],
+      "profile_types": ["symmetric_trapezoid", "symmetric_trapezoid", "symmetric_triangle"]
+    },
+    "Beam B": {
+      "segments": ["D16", "D17", "D18"],
+      "support_labels": ["C6", "C7", "C8", "C9"],
+      "classification": "three-span interior continuous beam; slab load on both sides",
+      "support_sections_m": [[0.4, 0.4], [0.45, 0.45], [0.4, 0.4], [0.4, 0.4]],
+      "profile_types": ["symmetric_triangle", "centred_patch", "symmetric_triangle"]
+    }
+  },
+  "analysis": {
+    "load_case": "service G+Q",
+    "elements_per_span": 60,
+    "pure_supports": "vertical simple supports at every grid point; first support also restrains horizontal translation",
+    "subframe": "beam at the top of one 3 m storey; support members extend to fixed bases; no upper-storey columns",
+    "geometric_transformation": "Linear"
+  },
+  "sign_convention": {
+    "load": "downward negative local y",
+    "moment_plot": "positive sagging and negative hogging",
+    "reaction": "positive upward"
+  },
+  "status": "image-derived geometry and support mapping; student confirmation required before final submission"
+}

@@ -1,0 +1,18 @@
+check_id,description,expected,actual,tolerance,status
+O01,OpenSees major version,3,3,exact,PASS
+O02,"Simple beam support moment, 4 m at 10 kN/m (kN m)",0.0,2.220446049250313e-15,1e-06,PASS
+O03,Simple beam midspan moment qL2/8 (kN m),20.0,20.000000000000004,1e-06,PASS
+O04,Fixed beam support moment -qL2/12 (kN m),-13.3333333333,-13.333333333333334,1e-06,PASS
+O05,Fixed beam midspan moment qL2/24 (kN m),6.6666666667,6.666666666666666,1e-06,PASS
+O06,Beam A pure vertical equilibrium (kN),0.0,5.8516320677881595e-09,1e-06,PASS
+O07,Beam A pure element end-moment reconstruction (kN m),0.0,4.263256414560601e-14,1e-09,PASS
+O08,Beam A pure pre-solve order gate,PASS,PASS,exact,PASS
+O09,Beam A subframe vertical equilibrium (kN),0.0,8.674589935253607e-10,1e-06,PASS
+O10,Beam A subframe element end-moment reconstruction (kN m),0.0,4.618527782440651e-14,1e-09,PASS
+O11,Beam A subframe pre-solve order gate,PASS,PASS,exact,PASS
+O12,Beam B pure vertical equilibrium (kN),0.0,-5.554596782531007e-09,1e-06,PASS
+O13,Beam B pure element end-moment reconstruction (kN m),0.0,3.612409850417553e-14,1e-09,PASS
+O14,Beam B pure pre-solve order gate,PASS,PASS,exact,PASS
+O15,Beam B subframe vertical equilibrium (kN),0.0,-3.776051471504616e-09,1e-06,PASS
+O16,Beam B subframe element end-moment reconstruction (kN m),0.0,3.907985046680551e-14,1e-09,PASS
+O17,Beam B subframe pre-solve order gate,PASS,PASS,exact,PASS

@@ -28,6 +28,7 @@ The checkpoint and detailed engineering records are retained as separate files:
 | `Step_03*.md/csv` | Independent verification and checkpoint evidence |
 | `Step_04*.md/csv/png` | HW2 beam census and tributary-area records |
 | `Step_05*.md/csv/png` | HW2 beam line-load records and worked example |
+| `Step_06*.md/csv/json/png/py` | HW2 OpenSees pure-beam and subframe models, responses, and checks |
 | `*.py` | Reproducible geometry, load, and verification scripts |
 | `load_combinations.json` | Provisional reporting factors and confirmation status |
 | `requirements.txt` | Python package requirements |
@@ -60,6 +61,8 @@ The first command now uses the validated rectilinear L1 method by default, deduc
 
 ```powershell
 python hw2_beam_loads.py
+python step06_run_all.py
+python verify_step06_opensees.py
 ```
 
 All plotting scripts use a cross-platform font fallback. `load_combinations.json` records the current 1.35G+1.50Q and G+0.30Q factors as provisional because the required course design standard has not yet been confirmed.

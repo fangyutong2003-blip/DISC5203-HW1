@@ -1,0 +1,5 @@
+beam,model,applied_service_load_kN,reaction_sum_kN,equilibrium_error_kN,peak_sagging_kNm,peak_hogging_kNm,peak_abs_shear_kN,peak_abs_axial_kN,max_vertical_displacement_mm,governing_hand_bound_kNm,hand_bound_order_check
+Beam A,pure,207.108215,207.108215,0.000000006,48.297494,-68.664205,55.222240,0.000000,0.668413,79.287420,PASS
+Beam A,subframe,207.108215,207.108215,0.000000001,32.200603,-54.615402,46.302426,5.325182,0.428208,79.287420,PASS
+Beam B,pure,152.838840,152.838840,-0.000000006,29.496987,-19.104127,38.769602,0.000000,0.259022,38.621124,PASS
+Beam B,subframe,152.838840,152.838840,-0.000000004,22.760027,-21.851382,36.378731,5.758350,0.205114,38.621124,PASS
