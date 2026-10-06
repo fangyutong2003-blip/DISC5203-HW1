@@ -1,11 +1,13 @@
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
+from project_utils import default_font
+
 ROOT = Path(__file__).resolve().parent
 im = Image.new('RGB', (1050, 1480), 'white')
 d = ImageDraw.Draw(im)
-font = ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 20)
-small = ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 16)
+font = default_font(20)
+small = default_font(16)
 def p(x,y): return (140+x*64, 1320-y*64)
 def box(x0,y0,x1,y1,fill,outline='#405366',width=2):
     d.rectangle([p(x0,y1),p(x1,y0)],fill=fill,outline=outline,width=width)

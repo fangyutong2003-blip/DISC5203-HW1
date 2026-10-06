@@ -284,8 +284,10 @@ N_\mathrm{ULS}=1.35N_G+1.50N_Q
 \]
 
 \[
-N_\mathrm{mass}=N_G+0.30N_Q
+N_{G+0.30Q}=N_G+0.30N_Q
 \]
+
+These two factored expressions reproduce the original submission and are recorded in `load_combinations.json`. They remain provisional because no confirmed course design standard or lecture reference has yet been identified. The G+0.30Q result is therefore labelled only by its equation, not as seismic mass or a quasi-permanent combination.
 
 The bottom segments support five floors, while the upper segments support four, three, two, and one floor respectively. The complete 105-row schedule is provided in `Step_02_Axial_Loads_by_Level.csv`.
 
@@ -356,7 +358,7 @@ All 23 checks pass. They cover:
 - gross-area closure to 186.615 m2 after adding O1/O2 and S1;
 - ordinary slab, S1, and vertical-element load components;
 - whole-floor and five-storey G and Q totals;
-- service, ULS, and quasi-permanent combinations;
+- service and two provisional reporting combinations;
 - the 1:2:3:4:5 floor-accumulation sequence for every element;
 - nonnegative areas and loads; and
 - representative hand checks for C1 and T7.
@@ -452,6 +454,9 @@ All 23 independent checks pass. The numerical outputs are reproducible under the
 | `tributary_regions.py` | Tributary-region construction |
 | `step02_loads.py` | Load schedules and chart |
 | `verify_results.py` | Independent deterministic verification |
+| `project_utils.py` | Cross-platform plotting helpers |
+| `load_combinations.json` | Provisional combination factors and confirmation status |
+| `requirements.txt` | Python package requirements |
 | `AGENTS.md` | AI-agent project guidance |
 | `skills.md` | Reusable procedures |
 
@@ -466,3 +471,5 @@ python verify_results.py
 ```
 
 `verify_results.py` regenerates the Step 03 files and returns a nonzero exit status if a required check fails.
+
+`tributary_regions.py` now uses the adopted rectilinear L1 method by default and regenerates both Step 01 CSV inputs. The Euclidean comparison is diagnostic-only and requires the explicit `--euclidean-diagnostic` option.

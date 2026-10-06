@@ -26,13 +26,27 @@ The checkpoint and detailed engineering records are retained as separate files:
 | `Step_01*.md/csv` | Geometry, element locations, and tributary areas |
 | `Step_02*.md/csv/png` | Load calculations, schedules, and comparison chart |
 | `Step_03*.md/csv` | Independent verification and checkpoint evidence |
+| `Step_04*.md/csv/png` | HW2 beam census and tributary-area records |
+| `Step_05*.md/csv/png` | HW2 beam line-load records and worked example |
 | `*.py` | Reproducible geometry, load, and verification scripts |
+| `load_combinations.json` | Provisional reporting factors and confirmation status |
+| `requirements.txt` | Python package requirements |
 | `AGENTS.md` | Project guidance for the AI agent |
 | `skills.md` | Reusable procedures used in this workflow |
 
 ## Reproduce the calculations
 
-Run the scripts from the repository root in this order:
+Use Python 3.10 or newer. From a fresh clone, create an environment and install the two required packages:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+On macOS or Linux, activate the environment with `source .venv/bin/activate` instead.
+
+Run the HW1 scripts from the repository root in this order:
 
 ```powershell
 python tributary_regions.py
@@ -40,7 +54,15 @@ python step02_loads.py
 python verify_results.py
 ```
 
-`verify_results.py` exits with an error if any Step 03 check fails.
+The first command now uses the validated rectilinear L1 method by default, deducts O1/O2 and S1, and generates both `Step_01B_Vertical_Element_Coordinates.csv` and `Step_01C_Tributary_Areas.csv`. The deprecated `--straight` flag remains accepted for compatibility. The non-submission Euclidean diagnostic is available only through `python tributary_regions.py --euclidean-diagnostic` and does not overwrite the validated Step 01 CSV files.
+
+`verify_results.py` exits with an error if any Step 03 check fails. To reproduce the completed HW2 Tasks 1 and 2 after HW1 verification, run:
+
+```powershell
+python hw2_beam_loads.py
+```
+
+All plotting scripts use a cross-platform font fallback. `load_combinations.json` records the current 1.35G+1.50Q and G+0.30Q factors as provisional because the required course design standard has not yet been confirmed.
 
 ## Final result
 

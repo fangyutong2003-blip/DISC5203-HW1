@@ -15,7 +15,7 @@ V13,Base permanent load for five storeys (kN),6492.468750,6492.468750,0.001000,P
 V14,Base variable load for five storeys (kN),4615.375000,4615.375000,0.001000,PASS
 V15,Base service load G+Q (kN),11107.843750,11107.843750,0.001000,PASS
 V16,Base ULS load 1.35G+1.50Q (kN),15687.895310,15687.895312,0.002000,PASS
-V17,Base quasi-permanent load G+0.30Q (kN),7877.081250,7877.081250,0.002000,PASS
+V17,Base provisional G+0.30Q reporting combination (kN),7877.081250,7877.081250,0.002000,PASS
 V18,Maximum absolute difference in Step 02 summary (kN or m2),0.000000,0.000050,0.000110,PASS
 V19,Every element contains the 1:2:3:4:5 storey accumulation sequence,True,True,exact,PASS
 V20,Maximum absolute difference in by-level results (kN),0.000000,0.000050,0.000110,PASS

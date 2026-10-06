@@ -2,6 +2,8 @@ from pathlib import Path
 import json
 from PIL import Image, ImageDraw, ImageFont
 
+from project_utils import default_font
+
 ROOT = Path(__file__).resolve().parent
 # Metres. Origin: bottom-left external corner of the main building.
 # External dimensions govern; slab edge alignment is a provisional assumption.
@@ -27,8 +29,8 @@ result = {'units':'m, m2', 'outline':outline,
                          'P10 horizontal offset is estimated for display only and does not affect area.']}
 im = Image.new('RGB', (850, 1450), 'white')
 draw = ImageDraw.Draw(im)
-font = ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 20)
-small = ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 17)
+font = default_font(20)
+small = default_font(17)
 def pt(x,y): return (90+x*62, 1320-y*62)
 def rect(x,y,w,h,color): draw.rectangle([pt(x,y+h),pt(x+w,y)],fill=color,outline='#23364a',width=2)
 def label(x,y,text): draw.multiline_text(pt(x,y),text,font=font,fill='#23364a',anchor='mm',align='center')

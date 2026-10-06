@@ -7,6 +7,7 @@ and writes an auditable check table plus a Markdown checkpoint report.
 from __future__ import annotations
 
 import csv
+import json
 import math
 import subprocess
 from dataclasses import dataclass
@@ -21,6 +22,7 @@ SUMMARY_FILE = ROOT / "Step_02_Element_Load_Summary.csv"
 LEVEL_FILE = ROOT / "Step_02_Axial_Loads_by_Level.csv"
 RESULT_FILE = ROOT / "Step_03_Verification_Results.csv"
 REPORT_FILE = ROOT / "Step_03_Verification_and_Checkpoint.md"
+COMBINATION_FILE = ROOT / "load_combinations.json"
 
 STOREYS = 5
 STOREY_HEIGHT_M = 3.0
@@ -33,6 +35,10 @@ VOID_AREA_M2 = 2.000
 S1_AREA_M2 = 5.365
 FLAT_SLAB_AREA_M2 = GROSS_AREA_M2 - VOID_AREA_M2 - S1_AREA_M2
 S1_BORDER_LENGTHS_M = {"T6": 2.10, "T7": 3.40, "T8": 2.10}
+COMBINATIONS = json.loads(COMBINATION_FILE.read_text(encoding="utf-8"))
+GAMMA_G = float(COMBINATIONS["uls"]["gamma_G"])
+GAMMA_Q = float(COMBINATIONS["uls"]["gamma_Q"])
+G_PLUS_Q_FACTOR = float(COMBINATIONS["g_plus_0_30q"]["q_factor"])
 
 
 @dataclass
@@ -111,7 +117,15 @@ def git_history() -> list[str]:
             encoding="utf-8",
             errors="replace",
         )
-        return [line for line in output.splitlines() if line.strip()]
+        history = []
+        for line in output.splitlines():
+            if not line.strip():
+                continue
+            commit_hash, _, subject = line.partition(" ")
+            if subject and not subject.isascii():
+                subject = "[non-English commit subject omitted from report]"
+            history.append(f"{commit_hash} {subject}".rstrip())
+        return history
     except (OSError, subprocess.CalledProcessError):
         return ["Git history was unavailable when this report was generated."]
 
@@ -191,8 +205,8 @@ def main() -> None:
             "base_g": base_g,
             "base_q": base_q,
             "service": base_g + base_q,
-            "uls": 1.35 * base_g + 1.50 * base_q,
-            "quasi": base_g + 0.30 * base_q,
+            "uls": GAMMA_G * base_g + GAMMA_Q * base_q,
+            "g_plus_0_3q": base_g + G_PLUS_Q_FACTOR * base_q,
         }
 
     total_g_floor = sum(item["g_floor"] for item in expected.values())
@@ -207,15 +221,15 @@ def main() -> None:
         "V16",
         "Base ULS load 1.35G+1.50Q (kN)",
         15687.89531,
-        1.35 * STOREYS * total_g_floor + 1.50 * STOREYS * total_q_floor,
+        GAMMA_G * STOREYS * total_g_floor + GAMMA_Q * STOREYS * total_q_floor,
         0.002,
     )
     close_check(
         checks,
         "V17",
-        "Base quasi-permanent load G+0.30Q (kN)",
+        "Base provisional G+0.30Q reporting combination (kN)",
         7877.08125,
-        STOREYS * total_g_floor + 0.30 * STOREYS * total_q_floor,
+        STOREYS * total_g_floor + G_PLUS_Q_FACTOR * STOREYS * total_q_floor,
         0.002,
     )
 
@@ -228,7 +242,7 @@ def main() -> None:
         "base_Q_5_storeys_kN": "base_q",
         "base_G_plus_Q_kN": "service",
         "base_ULS_1_35G_1_5Q_kN": "uls",
-        "base_G_plus_0_3Q_kN": "quasi",
+        "base_G_plus_0_3Q_kN": "g_plus_0_3q",
     }
     max_summary_delta = 0.0
     for element_id, row in summaries.items():
@@ -250,9 +264,9 @@ def main() -> None:
             "Q_kN": multiplier * expected[element_id]["q_floor"],
             "G_plus_Q_kN": multiplier * (expected[element_id]["g_floor"] + expected[element_id]["q_floor"]),
             "ULS_1_35G_1_5Q_kN": multiplier
-            * (1.35 * expected[element_id]["g_floor"] + 1.50 * expected[element_id]["q_floor"]),
+            * (GAMMA_G * expected[element_id]["g_floor"] + GAMMA_Q * expected[element_id]["q_floor"]),
             "G_plus_0_3Q_kN": multiplier
-            * (expected[element_id]["g_floor"] + 0.30 * expected[element_id]["q_floor"]),
+            * (expected[element_id]["g_floor"] + G_PLUS_Q_FACTOR * expected[element_id]["q_floor"]),
         }
         for field, value in expected_level.items():
             max_level_delta = max(max_level_delta, abs(float(row[field]) - value))
@@ -273,7 +287,7 @@ def main() -> None:
     nonnegative = all(
         expected[element_id][field] >= 0.0
         for element_id in expected
-        for field in ("area", "self", "g_floor", "q_floor", "base_g", "base_q", "service", "uls", "quasi")
+        for field in ("area", "self", "g_floor", "q_floor", "base_g", "base_q", "service", "uls", "g_plus_0_3q")
     )
     exact_check(checks, "V21", "All recomputed areas and loads are nonnegative", True, nonnegative)
 
@@ -340,6 +354,8 @@ This checkpoint independently recalculates the Step 01 geometry totals and the S
 
 The ordinary slab area is distributed to C1-C9 and T1-T12 by the Step 01 tributary-area file. S1 is added separately and distributed to T6, T7, and T8 in proportion to bordering lengths 2.10:3.40:2.10. Column and wall self-weights use the main labelled section dimensions, a 3.0 m storey height, and 25 kN/m3 concrete density.
 
+The 1.35G+1.50Q and G+0.30Q factors are read from `load_combinations.json`. They reproduce the original submission but remain provisional pending confirmation of the course design standard. G+0.30Q is labelled only by its equation and is not classified as seismic mass or quasi-permanent load.
+
 ## Representative manual checks
 
 ### C1
@@ -347,7 +363,7 @@ The ordinary slab area is distributed to C1-C9 and T1-T12 by the Step 01 tributa
 - Tributary slab dead load = {c1['area']:.4f} x {DEAD_LOAD_KN_M2:.3f} = {c1['area'] * DEAD_LOAD_KN_M2:.4f} kN/floor.
 - Column self-weight = 0.400 x 0.400 x 3.0 x 25 = {c1['self']:.4f} kN/floor.
 - G = {c1['g_floor']:.4f} kN/floor and Q = {c1['q_floor']:.4f} kN/floor.
-- Base ULS = 1.35 x ({STOREYS} x {c1['g_floor']:.4f}) + 1.50 x ({STOREYS} x {c1['q_floor']:.4f}) = {c1['uls']:.4f} kN.
+- Base provisional ULS = {GAMMA_G:.2f} x ({STOREYS} x {c1['g_floor']:.4f}) + {GAMMA_Q:.2f} x ({STOREYS} x {c1['q_floor']:.4f}) = {c1['uls']:.4f} kN.
 
 ### T7
 
@@ -381,6 +397,7 @@ Recent Git history when this checkpoint was generated:
 - The S1 treatment is a provisional equivalent horizontal-area model. A stair-specific load path should replace it if the coursework requires flight and landing analysis.
 - Short wall returns are excluded from member self-weight to avoid overlap and uncertain image dimensions.
 - Finishes, partitions, facade, beam self-weight, and live-load reduction are not included because no project values have been provided.
+- The load-combination factors require confirmation against the standard or lecture reference specified by the instructor.
 - Support-fixity assumptions still require confirmation before lateral-load or frame analysis.
 
 ## Reproduction

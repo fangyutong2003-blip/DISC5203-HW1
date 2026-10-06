@@ -1,0 +1,14 @@
+{
+  "status": "provisional_pending_course_standard_confirmation",
+  "note": "These factors reproduce the original submission but are not attributed to a confirmed design standard. Confirm the required course code before design use.",
+  "uls": {
+    "gamma_G": 1.35,
+    "gamma_Q": 1.50,
+    "label": "1.35G + 1.50Q"
+  },
+  "g_plus_0_30q": {
+    "q_factor": 0.30,
+    "label": "G + 0.30Q",
+    "purpose": "Unclassified reporting combination; do not call it seismic mass or quasi-permanent until the course basis is confirmed."
+  }
+}

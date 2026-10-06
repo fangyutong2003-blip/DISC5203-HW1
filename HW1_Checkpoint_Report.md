@@ -46,7 +46,7 @@ Plan dimensions are interpreted in metres. Column and wall section dimensions ar
 4. Construct midpoint divisions and 45-degree wall-corner divisions by assigning slab cells to the nearest support axis using rectilinear distance.
 5. Close and clip every tributary region against the slab outline and excluded zones.
 6. Apply slab dead and live loads to each tributary area and add the self-weight of the corresponding vertical element.
-7. Accumulate loads through five identical storeys and calculate service, ultimate, and quasi-permanent combinations.
+7. Accumulate loads through five identical storeys and calculate service and provisional reporting combinations.
 8. Recompute the main outputs independently and compare them with the generated schedules.
 
 The manual sketch below records the human review used to identify missing wall axes, midpoint boundaries, and corner divisions in an earlier agent-generated diagram.
@@ -91,6 +91,8 @@ The stair/core zone S1 is provisionally represented by its horizontal plan area.
 | Five-storey base service load, G+Q | 11107.844 kN |
 | Five-storey base ULS load, 1.35G+1.50Q | 15687.895 kN |
 
+The 1.35G+1.50Q and G+0.30Q factors are provisional reporting assumptions retained from the original submission. Their course-code basis must be confirmed before design use; the latter is not classified as seismic mass or quasi-permanent load in the current reproducible workflow.
+
 The current element-level base results are:
 
 | Element | Location or main axis (m) | Tributary area (m2) | Base G (kN) | Base Q (kN) | Base G+Q (kN) | Base ULS (kN) |
@@ -132,7 +134,7 @@ The checks include:
 - area closure to 179.250 m2 and gross-area closure to 186.615 m2;
 - independent slab-load and member-self-weight calculations;
 - whole-floor and five-storey load reconciliation;
-- service, ULS, and quasi-permanent load combinations;
+- service and provisional reporting combinations;
 - the 1:2:3:4:5 floor-accumulation sequence for every element;
 - representative hand checks for C1 and T7; and
 - nonnegative areas and loads.
@@ -152,6 +154,8 @@ python tributary_regions.py
 python step02_loads.py
 python verify_results.py
 ```
+
+The first command uses the adopted rectilinear L1 method by default and regenerates both Step 01 CSV inputs. The non-submission Euclidean comparison requires `--euclidean-diagnostic` and does not overwrite those validated CSV files.
 
 ## 8. Current limitations and next work
 

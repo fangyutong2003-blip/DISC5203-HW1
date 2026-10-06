@@ -42,7 +42,9 @@ Reported combinations:
 
 \[N_{service}=G+Q\]
 \[N_{ULS}=1.35G+1.50Q\]
-\[N_{mass}=G+0.30Q\]
+\[N_{G+0.30Q}=G+0.30Q\]
+
+The two factored expressions above are provisional reporting combinations loaded from `load_combinations.json`. No confirmed course design standard has yet been identified for them. The second expression is deliberately labelled by its equation rather than as seismic mass or quasi-permanent load until its intended use is confirmed.
 
 ## 4. Five-storey base axial loads
 

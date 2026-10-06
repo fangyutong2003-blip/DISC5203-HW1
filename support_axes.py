@@ -5,11 +5,13 @@ from pathlib import Path
 import sys
 from PIL import Image, ImageDraw, ImageFont
 import math
+
+from project_utils import default_font
 ROOT=Path(__file__).resolve().parent
 REVISED='--revised' in sys.argv
 im=Image.new('RGB',(1200,1800),'white'); d=ImageDraw.Draw(im)
-f=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',21)
-s=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',17)
+f=default_font(21)
+s=default_font(17)
 def p(x,y): return (170+73*x,1550-73*y)
 def line(a,b,color,width=3,dash=False):
     a=p(*a); b=p(*b)

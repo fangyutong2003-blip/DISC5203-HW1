@@ -1,14 +1,25 @@
-"""Reproducible preliminary geometric tributary allocation for Plan 3.
-Euclidean point/segment Voronoi, clipped to gross floor footprint.
-NOT a validated structural load-path model or the unique interpretation of HW1.
+"""Generate the reviewed Step 01 geometry and tributary-area deliverables.
+
+The validated default is a rectilinear L1 partition with O1/O2 and S1 excluded.
+An explicit Euclidean option is retained only as a non-submission diagnostic.
 """
 from pathlib import Path
-import json, colorsys, sys
+import argparse
+import csv
+import json, colorsys
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
+from project_utils import default_font
+
 ROOT=Path(__file__).resolve().parent
-STRAIGHT='--straight' in sys.argv
+parser=argparse.ArgumentParser(description="Generate the validated HW1 tributary-area model and Step 01 CSV files.")
+parser.add_argument("--straight",action="store_true",help="Deprecated compatibility flag; the validated rectilinear method is now the default.")
+parser.add_argument("--euclidean-diagnostic",action="store_true",help="Generate the non-submission Euclidean diagnostic only; do not write validated Step 01 CSV files.")
+args=parser.parse_args()
+if args.straight and args.euclidean_diagnostic:
+    parser.error("--straight and --euclidean-diagnostic cannot be used together")
+STRAIGHT=not args.euclidean_diagnostic
 names=[f'C{i}' for i in range(1,10)]+[f'T{i}' for i in range(1,13)]
 columns=[(7.55,15.90,.4),(.2,15.,.4),(.2,11.9,.4),(3.6,11.9,.4),
          (10.,11.9,.4),(.2,6.05,.4),(3.6,6.05,.45),(6.6,6.05,.4),(10.,6.05,.4)]
@@ -78,9 +89,9 @@ rgb[boundary]=[60,70,83]
 region=Image.fromarray(rgb[::-1]).resize((816,1672),Image.Resampling.LANCZOS)
 im=Image.new('RGB',(1380,1940),'white'); im.paste(region,(90,130))
 d=ImageDraw.Draw(im)
-font=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',22)
-small=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',18)
-tiny=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',15)
+font=default_font(22)
+small=default_font(18)
+tiny=default_font(15)
 def p(x,y):return (90+x*80,130+(19.7-y)*80)
 def txt(x,y,text,fill='#172c43',f=small):
     d.text(p(x,y),text,font=f,fill=fill,anchor='mm',stroke_width=2,stroke_fill='white')
@@ -202,4 +213,33 @@ payload={'method':('L1 distance to column centers and grouped finite wall-axis s
                         'Approximate wall returns, support locations and P10 horizontal offset.',
                         'No stiffness, beam load routing or line-of-sight constraint.',
                         'Wall geometry centerlines not verified fixation lines from instructor example.']}
+
+if STRAIGHT:
+    coordinate_fields=["element_id","element_type","axis_segment","x1_m","y1_m","x2_m","y2_m","section_mm","status","notes"]
+    coordinate_rows=[]
+    column_sections=["400x400","400x400","400x400","400x400","400x400","400x400","450x450","400x400","400x400"]
+    for i,(x,y,w) in enumerate(columns):
+        coordinate_rows.append({"element_id":f"C{i+1}","element_type":"column","axis_segment":"centre","x1_m":x,"y1_m":y,"x2_m":x,"y2_m":y,"section_mm":column_sections[i],"status":"image-derived","notes":"Point support at section centre"})
+    wall_sections=["2000x250","250x2000","2000x250","3050x250","250x1750","2100x250","250x3400","2100x250","250x2000","2000x250","2000x250","250x2000"]
+    # The first 9 entries are columns and the next 12 are main wall axes.
+    # Later entries reuse wall IDs for short returns and must not overwrite them.
+    main_segments={i-9:(x,y,u,v) for i,x,y,u,v in segments[9:21]}
+    return_segments={i:(x,y,u,v) for i,x,y,u,v in extra}
+    for i in range(12):
+        x,y,u,v=main_segments[i]
+        coordinate_rows.append({"element_id":f"T{i+1}","element_type":"wall","axis_segment":"main","x1_m":x,"y1_m":y,"x2_m":u,"y2_m":v,"section_mm":wall_sections[i],"status":"image-derived","notes":("Horizontal" if y==v else "Vertical")+" geometric centreline"})
+        if i in return_segments:
+            x,y,u,v=return_segments[i]
+            coordinate_rows.append({"element_id":f"T{i+1}","element_type":"wall","axis_segment":"return","x1_m":x,"y1_m":y,"x2_m":u,"y2_m":v,"section_mm":"approx. return","status":"image-derived","notes":"Short end return reconstructed from image"})
+    with (ROOT/"Step_01B_Vertical_Element_Coordinates.csv").open("w",newline="",encoding="utf-8") as stream:
+        writer=csv.DictWriter(stream,fieldnames=coordinate_fields,lineterminator="\n")
+        writer.writeheader()
+        for row in coordinate_rows:
+            writer.writerow({key:(f"{value:.3f}" if key in {"x1_m","y1_m","x2_m","y2_m"} else value) for key,value in row.items()})
+    with (ROOT/"Step_01C_Tributary_Areas.csv").open("w",newline="",encoding="utf-8") as stream:
+        writer=csv.writer(stream,lineterminator="\n")
+        writer.writerow(["element_id","tributary_area_m2"])
+        for name,area in zip(names,areas):
+            writer.writerow([name,f"{area:.4f}"])
+    payload["generated_files"]=["Step_01B_Vertical_Element_Coordinates.csv","Step_01C_Tributary_Areas.csv","FloorPlan3_tributary_regions_straight.png","FloorPlan3_tributary_boundaries.png"]
 print(json.dumps(payload,ensure_ascii=False,indent=2))

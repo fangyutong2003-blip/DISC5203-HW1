@@ -28,7 +28,7 @@ This checkpoint independently recalculates the Step 01 geometry totals and the S
 | V14 | Base variable load for five storeys (kN) | 4615.375000 | 4615.375000 | 0.001000 | **PASS** |
 | V15 | Base service load G+Q (kN) | 11107.843750 | 11107.843750 | 0.001000 | **PASS** |
 | V16 | Base ULS load 1.35G+1.50Q (kN) | 15687.895310 | 15687.895312 | 0.002000 | **PASS** |
-| V17 | Base quasi-permanent load G+0.30Q (kN) | 7877.081250 | 7877.081250 | 0.002000 | **PASS** |
+| V17 | Base provisional G+0.30Q reporting combination (kN) | 7877.081250 | 7877.081250 | 0.002000 | **PASS** |
 | V18 | Maximum absolute difference in Step 02 summary (kN or m2) | 0.000000 | 0.000050 | 0.000110 | **PASS** |
 | V19 | Every element contains the 1:2:3:4:5 storey accumulation sequence | True | True | exact | **PASS** |
 | V20 | Maximum absolute difference in by-level results (kN) | 0.000000 | 0.000050 | 0.000110 | **PASS** |
@@ -54,6 +54,8 @@ This checkpoint independently recalculates the Step 01 geometry totals and the S
 
 The ordinary slab area is distributed to C1-C9 and T1-T12 by the Step 01 tributary-area file. S1 is added separately and distributed to T6, T7, and T8 in proportion to bordering lengths 2.10:3.40:2.10. Column and wall self-weights use the main labelled section dimensions, a 3.0 m storey height, and 25 kN/m3 concrete density.
 
+The 1.35G+1.50Q and G+0.30Q factors are read from `load_combinations.json`. They reproduce the original submission but remain provisional pending confirmation of the course design standard. G+0.30Q is labelled only by its equation and is not classified as seismic mass or quasi-permanent load.
+
 ## Representative manual checks
 
 ### C1
@@ -61,7 +63,7 @@ The ordinary slab area is distributed to C1-C9 and T1-T12 by the Step 01 tributa
 - Tributary slab dead load = 7.2973 x 3.750 = 27.3649 kN/floor.
 - Column self-weight = 0.400 x 0.400 x 3.0 x 25 = 12.0000 kN/floor.
 - G = 39.3649 kN/floor and Q = 36.4865 kN/floor.
-- Base ULS = 1.35 x (5 x 39.3649) + 1.50 x (5 x 36.4865) = 539.3617 kN.
+- Base provisional ULS = 1.35 x (5 x 39.3649) + 1.50 x (5 x 36.4865) = 539.3617 kN.
 
 ### T7
 
@@ -85,12 +87,12 @@ The Step 01 partition uses a 0.01 m calculation grid. The recorded 0.02 m rerun 
 
 Recent Git history when this checkpoint was generated:
 
-- `b5d70a3 Add independent verification and checkpoint report`
-- `96fc493 Calculate vertical loads and five-storey axial forces`
-- `79b97cc Add vertical element coordinate schedule`
-- `9866e92 Refine core openings using detailed structural drawing`
-- `032fc3d Exclude temporary inspection images`
-- `cf4382e Rename report to identify Step 01`
+- `8d1b172 Repair reproducible HW1 workflow and cross-platform setup`
+- `dbd0516 Merge remote-tracking branch 'origin/master'`
+- `5164a40 Add HW2 beam tributary areas and line-load schedules`
+- `2490a98 [non-English commit subject omitted from report]`
+- `acd55bc Update repository entry point for final submission`
+- `ad6ea6a Add consolidated final Markdown report`
 
 ## Remaining limitations before final submission
 
@@ -98,6 +100,7 @@ Recent Git history when this checkpoint was generated:
 - The S1 treatment is a provisional equivalent horizontal-area model. A stair-specific load path should replace it if the coursework requires flight and landing analysis.
 - Short wall returns are excluded from member self-weight to avoid overlap and uncertain image dimensions.
 - Finishes, partitions, facade, beam self-weight, and live-load reduction are not included because no project values have been provided.
+- The load-combination factors require confirmation against the standard or lecture reference specified by the instructor.
 - Support-fixity assumptions still require confirmation before lateral-load or frame analysis.
 
 ## Reproduction

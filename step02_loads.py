@@ -7,9 +7,12 @@ as a transparent provisional equivalent-area model, separate from flat slab.
 from __future__ import annotations
 
 import csv
+import json
 import math
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
+
+from project_utils import default_font
 
 ROOT = Path(__file__).resolve().parent
 COORDS = ROOT / "Step_01B_Vertical_Element_Coordinates.csv"
@@ -18,15 +21,17 @@ SUMMARY = ROOT / "Step_02_Element_Load_Summary.csv"
 LEVELS = ROOT / "Step_02_Axial_Loads_by_Level.csv"
 REPORT = ROOT / "Step_02_Vertical_Load_and_Axial_Force_Calculation.md"
 CHART = ROOT / "Step_02_Base_ULS_Axial_Loads.png"
+COMBINATIONS = ROOT / "load_combinations.json"
 
 CONCRETE_UNIT_WEIGHT = 25.0  # kN/m3
 SLAB_THICKNESS = 0.150       # m
 STOREY_HEIGHT = 3.0          # m
 LIVE_LOAD = 5.0              # kN/m2
 STOREYS = 5
-GAMMA_G = 1.35
-GAMMA_Q = 1.50
-SEISMIC_Q_FACTOR = 0.30
+combination_data = json.loads(COMBINATIONS.read_text(encoding="utf-8"))
+GAMMA_G = float(combination_data["uls"]["gamma_G"])
+GAMMA_Q = float(combination_data["uls"]["gamma_Q"])
+G_PLUS_Q_FACTOR = float(combination_data["g_plus_0_30q"]["q_factor"])
 
 FLAT_SLAB_DEAD = SLAB_THICKNESS * CONCRETE_UNIT_WEIGHT
 S1_AREA = 1.85 * 2.90
@@ -103,7 +108,7 @@ for element, area in areas.items():
         "base_Q_5_storeys_kN": base_q,
         "base_G_plus_Q_kN": base_g + base_q,
         "base_ULS_1_35G_1_5Q_kN": GAMMA_G * base_g + GAMMA_Q * base_q,
-        "base_G_plus_0_3Q_kN": base_g + SEISMIC_Q_FACTOR * base_q,
+        "base_G_plus_0_3Q_kN": base_g + G_PLUS_Q_FACTOR * base_q,
     })
     for level in range(STOREYS, 0, -1):
         floors_supported = STOREYS - level + 1
@@ -117,7 +122,7 @@ for element, area in areas.items():
             "Q_kN": q,
             "G_plus_Q_kN": g + q,
             "ULS_1_35G_1_5Q_kN": GAMMA_G * g + GAMMA_Q * q,
-            "G_plus_0_3Q_kN": g + SEISMIC_Q_FACTOR * q,
+            "G_plus_0_3Q_kN": g + G_PLUS_Q_FACTOR * q,
         })
 
 
@@ -142,9 +147,9 @@ totals = {key: sum(float(row[key]) for row in summary_rows) for key in [
 # Base ULS comparison chart.
 chart = Image.new("RGB", (1300, 1120), "white")
 draw = ImageDraw.Draw(chart)
-title_font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 28)
-font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 19)
-small = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 16)
+title_font = default_font(28)
+font = default_font(19)
+small = default_font(16)
 draw.text((70, 40), "Plan 3 | Base ULS Axial Load by Vertical Element", font=title_font, fill="#17324d")
 draw.text((70, 80), "ULS = 1.35G + 1.50Q; five-storey accumulation", font=font, fill="#53677a")
 left, right, top, row_h = 145, 1210, 125, 44
@@ -208,7 +213,9 @@ lines = [
     "",
     r"\[N_{service}=G+Q\]",
     r"\[N_{ULS}=1.35G+1.50Q\]",
-    r"\[N_{mass}=G+0.30Q\]",
+    r"\[N_{G+0.30Q}=G+0.30Q\]",
+    "",
+    "The two factored expressions above are provisional reporting combinations loaded from `load_combinations.json`. No confirmed course design standard has yet been identified for them. The second expression is deliberately labelled by its equation rather than as seismic mass or quasi-permanent load until its intended use is confirmed.",
     "",
     "## 4. Five-storey base axial loads",
     "",
