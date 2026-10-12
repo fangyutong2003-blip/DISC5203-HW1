@@ -1,0 +1,9 @@
+beam,grid_point,HW1_one_floor_G_plus_Q_kN,grid_subframe_base_reaction_kN,difference_percent,interpretation
+Beam A,T9,111.5845,99.97055899098082,-10.408202760257192,"Not expected to match exactly: local grid excludes direct wall loads, unresolved core area, slab stiffness and upper storeys."
+Beam A,C6,93.3452,128.47552114533977,37.63484479688271,"Not expected to match exactly: local grid excludes direct wall loads, unresolved core area, slab stiffness and upper storeys."
+Beam A,C3,80.6858,100.92683158633105,25.086237710143603,"Not expected to match exactly: local grid excludes direct wall loads, unresolved core area, slab stiffness and upper storeys."
+Beam A,C2,35.0064,40.909487515432836,16.8628808315989,"Not expected to match exactly: local grid excludes direct wall loads, unresolved core area, slab stiffness and upper storeys."
+Beam B,C6,93.3452,129.19599620970416,38.40668423197353,"Not expected to match exactly: local grid excludes direct wall loads, unresolved core area, slab stiffness and upper storeys."
+Beam B,C7,106.457,228.15241356804034,114.31414896910523,"Not expected to match exactly: local grid excludes direct wall loads, unresolved core area, slab stiffness and upper storeys."
+Beam B,C8,90.995,203.72551256796075,123.88649109067612,"Not expected to match exactly: local grid excludes direct wall loads, unresolved core area, slab stiffness and upper storeys."
+Beam B,C9,76.6328,129.17140722755062,68.55890327320756,"Not expected to match exactly: local grid excludes direct wall loads, unresolved core area, slab stiffness and upper storeys."

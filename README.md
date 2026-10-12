@@ -1,6 +1,6 @@
 # DISC 5203 HW1 - AI-Assisted Structural Analysis
 
-This repository contains the final Homework 1 submission for Floor Plan 3, together with the complete intermediate audit trail.
+This repository contains the final Homework 1 submission and the ongoing Homework 2 extension for Floor Plan 3, together with the complete intermediate audit trail.
 
 **Student:** Fangyutong  
 **Student ID:** 21353319  
@@ -9,6 +9,8 @@ This repository contains the final Homework 1 submission for Floor Plan 3, toget
 ## Start here
 
 Open [HW1_Final_Report.md](HW1_Final_Report.md) for the complete continuous submission report.
+
+For HW2, start with [the English submission draft](HW2_Submission_Report_Draft.md) and [process-file manifest](HW2_Process_File_Manifest.md). The draft still requires the student's hand calculations, four hand-drawn deformation sketches and final support-condition sign-off.
 
 The checkpoint and detailed engineering records are retained as separate files:
 
@@ -62,8 +64,11 @@ The first command now uses the validated rectilinear L1 method by default, deduc
 ```powershell
 python hw2_beam_loads.py
 python verify_hw2_mixed_supports.py
+python step05_coefficient_check.py
 python step06_run_all.py
 python verify_step06_opensees.py
+python step08_grid_subframes.py
+python verify_step08_grid_subframes.py
 ```
 
 ## HW2 mixed-support revision

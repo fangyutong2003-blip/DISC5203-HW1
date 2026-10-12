@@ -87,12 +87,12 @@ The Step 01 partition uses a 0.01 m calculation grid. The recorded 0.02 m rerun 
 
 Recent Git history when this checkpoint was generated:
 
-- `8d1b172 Repair reproducible HW1 workflow and cross-platform setup`
+- `20909ae Revise HW2 mixed-edge tributary regions and propagate actual load profiles`
+- `b867ebd Add HW2 OpenSees beam and subframe models`
+- `2aa77dc Repair reproducible HW1 workflow and cross-platform setup`
 - `dbd0516 Merge remote-tracking branch 'origin/master'`
 - `5164a40 Add HW2 beam tributary areas and line-load schedules`
 - `2490a98 [non-English commit subject omitted from report]`
-- `acd55bc Update repository entry point for final submission`
-- `ad6ea6a Add consolidated final Markdown report`
 
 ## Remaining limitations before final submission
 

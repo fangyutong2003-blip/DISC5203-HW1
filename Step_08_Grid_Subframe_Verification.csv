@@ -1,0 +1,43 @@
+check,expected,actual,tolerance,status
+Beam A profile provenance,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,exact,PASS
+Beam A included beam load,803.7675781250001,803.7675781250002,1e-07,PASS
+Beam A vertical member self-weight,175.6875,175.6875,1e-07,PASS
+Beam A applied load sum,979.4550781250001,979.455078125,1e-07,PASS
+Beam A vertical equilibrium,0,-3.728393949131714e-08,1e-05,PASS
+Beam A positive sagging exists,True,True,0,PASS
+Beam A negative hogging exists,True,True,0,PASS
+Beam A contains perpendicular bay members,True,True,0,PASS
+Beam A response starts at zero,0,0.0,1e-07,PASS
+Beam A response reaches full selected length,15.2,15.2,1e-07,PASS
+Beam A bending-moment continuity inside each span,0,5.859845941813546e-11,0.0001,PASS
+Beam A support count,9,9,0,PASS
+Beam A positive total base reaction,979.4550780877161,979.4550780877161,1e-07,PASS
+Beam A T9 HW1 source,111.5845,111.5845,1e-07,PASS
+Beam A T9 reaction source,99.97055899098082,99.97055899098082,1e-07,PASS
+Beam A C6 HW1 source,93.3452,93.3452,1e-07,PASS
+Beam A C6 reaction source,128.47552114533977,128.47552114533977,1e-07,PASS
+Beam A C3 HW1 source,80.6858,80.6858,1e-07,PASS
+Beam A C3 reaction source,100.92683158633105,100.92683158633105,1e-07,PASS
+Beam A C2 HW1 source,35.0064,35.0064,1e-07,PASS
+Beam A C2 reaction source,40.909487515432836,40.909487515432836,1e-07,PASS
+Beam B profile provenance,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6,exact,PASS
+Beam B included beam load,1259.8590387749668,1259.859038774967,1e-07,PASS
+Beam B vertical member self-weight,358.125,358.125,1e-07,PASS
+Beam B applied load sum,1617.9840387749668,1617.9840387749668,1e-07,PASS
+Beam B vertical equilibrium,0,-9.8480768428999e-08,1e-05,PASS
+Beam B positive sagging exists,True,True,0,PASS
+Beam B negative hogging exists,True,True,0,PASS
+Beam B contains perpendicular bay members,True,True,0,PASS
+Beam B response starts at zero,0,0.0,1e-07,PASS
+Beam B response reaches full selected length,10.2,10.2,1e-07,PASS
+Beam B bending-moment continuity inside each span,0,3.3367086871294305e-11,0.0001,PASS
+Beam B support count,15,15,0,PASS
+Beam B positive total base reaction,1617.984038676486,1617.984038676486,1e-07,PASS
+Beam B C6 HW1 source,93.3452,93.3452,1e-07,PASS
+Beam B C6 reaction source,129.19599620970416,129.19599620970416,1e-07,PASS
+Beam B C7 HW1 source,106.457,106.457,1e-07,PASS
+Beam B C7 reaction source,228.15241356804034,228.15241356804034,1e-07,PASS
+Beam B C8 HW1 source,90.995,90.995,1e-07,PASS
+Beam B C8 reaction source,203.72551256796075,203.72551256796075,1e-07,PASS
+Beam B C9 HW1 source,76.6328,76.6328,1e-07,PASS
+Beam B C9 reaction source,129.17140722755062,129.17140722755062,1e-07,PASS

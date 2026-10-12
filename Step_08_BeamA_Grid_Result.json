@@ -1,0 +1,151 @@
+{
+  "beam": "Beam A",
+  "model": "one-floor plan-grid subframe",
+  "included_members": [
+    "D19",
+    "D11",
+    "D05",
+    "D20",
+    "D12",
+    "D06",
+    "D23",
+    "D16",
+    "D08",
+    "D04"
+  ],
+  "selected_members": [
+    "D19",
+    "D11",
+    "D05"
+  ],
+  "support_assumption": "One bay east of the peripheral Beam A line. D04 terminates at T3; T3 is represented by two half-wall vertical supports, so no fictitious D04 extension is added.",
+  "profile_source_sha256": "1b3a2728eb19110b51b9d8ea3afd2d0cd52a6baf69ed0860f82207e2fe3274b6",
+  "represented_beam_service_load_kN": 803.7675781250002,
+  "vertical_member_self_weight_kN": 175.6875,
+  "applied_vertical_load_kN": 979.455078125,
+  "vertical_reaction_sum_kN": 979.4550780877161,
+  "equilibrium_error_kN": -3.728393949131714e-08,
+  "peak_sagging_kNm": 29.40679686027223,
+  "peak_hogging_kNm": -46.931671300370596,
+  "peak_abs_shear_kN": 37.595249937240276,
+  "peak_abs_axial_kN": 8.015792375445745,
+  "max_vertical_displacement_m": 0.0004274774421787569,
+  "max_floor_grid_vertical_displacement_m": 0.0014237531622114078,
+  "reactions": [
+    {
+      "support": "T9",
+      "x_m": 0.0,
+      "y_m": 0.0,
+      "Rx_kN": 11.041197094777788,
+      "Ry_kN": 7.774179475230698,
+      "Rz_kN": 99.97055899098082,
+      "Mx_kNm": -6.608419772857438,
+      "My_kNm": 6.096970845166505,
+      "Mz_kNm": -0.36453536835562894,
+      "vertical_member_self_weight_kN": 37.5
+    },
+    {
+      "support": "C6",
+      "x_m": 0.0,
+      "y_m": 6.05,
+      "Rx_kN": 8.237440789713766,
+      "Ry_kN": -2.3178345507985227,
+      "Rz_kN": 128.47552114533977,
+      "Mx_kNm": 3.1414507272256946,
+      "My_kNm": 8.562928482517925,
+      "Mz_kNm": -0.04675552240476285,
+      "vertical_member_self_weight_kN": 12.000000000000002
+    },
+    {
+      "support": "C3",
+      "x_m": 0.0,
+      "y_m": 12.1,
+      "Rx_kN": 7.253141943451596,
+      "Ry_kN": -4.30257189431907,
+      "Rz_kN": 100.92683158633105,
+      "Mx_kNm": 5.029620708590135,
+      "My_kNm": 7.091451564687853,
+      "Mz_kNm": -0.1357611435508995,
+      "vertical_member_self_weight_kN": 12.000000000000002
+    },
+    {
+      "support": "C2",
+      "x_m": 0.0,
+      "y_m": 15.2,
+      "Rx_kN": 2.4510544210533323,
+      "Ry_kN": -1.441184481903321,
+      "Rz_kN": 40.909487515432836,
+      "Mx_kNm": 2.1541475739004943,
+      "My_kNm": 2.900142600184253,
+      "Mz_kNm": -0.04589819124529125,
+      "vertical_member_self_weight_kN": 12.000000000000002
+    },
+    {
+      "support": "T10",
+      "x_m": 3.6,
+      "y_m": 0.0,
+      "Rx_kN": -11.07193735668394,
+      "Ry_kN": 23.77033174102499,
+      "Rz_kN": 153.9558325367735,
+      "Mx_kNm": -21.438088974117328,
+      "My_kNm": -7.592919767290298,
+      "Mz_kNm": -0.36484558063997274,
+      "vertical_member_self_weight_kN": 37.5
+    },
+    {
+      "support": "C7",
+      "x_m": 3.6,
+      "y_m": 6.05,
+      "Rx_kN": -8.38431981978345,
+      "Ry_kN": -12.257943022425318,
+      "Rz_kN": 213.98511014317663,
+      "Mx_kNm": 14.597671439364186,
+      "My_kNm": -7.711167371400737,
+      "Mz_kNm": -0.0934803608624259,
+      "vertical_member_self_weight_kN": 15.187500000000002
+    },
+    {
+      "support": "C4",
+      "x_m": 3.6,
+      "y_m": 12.1,
+      "Rx_kN": -6.7654540706882855,
+      "Ry_kN": -7.9395490822275026,
+      "Rz_kN": 142.71887375566146,
+      "Mx_kNm": 9.188432990354256,
+      "My_kNm": -6.848849821969471,
+      "Mz_kNm": -0.048885398837264456,
+      "vertical_member_self_weight_kN": 12.000000000000002
+    },
+    {
+      "support": "T3-A",
+      "x_m": 2.45,
+      "y_m": 15.2,
+      "Rx_kN": -2.717617254171902,
+      "Ry_kN": -0.23610981640565978,
+      "Rz_kN": 51.81175435351603,
+      "Mx_kNm": 0.5197610724171962,
+      "My_kNm": 1.8441513542196573,
+      "Mz_kNm": 0.1584302215903564,
+      "vertical_member_self_weight_kN": 18.75
+    },
+    {
+      "support": "T3-B",
+      "x_m": 3.6,
+      "y_m": 15.2,
+      "Rx_kN": -0.04350574752120373,
+      "Ry_kN": -3.049318370127932,
+      "Rz_kN": 46.70110806050392,
+      "Mx_kNm": 3.793341879210572,
+      "My_kNm": 1.2493107215192054,
+      "Mz_kNm": -0.06511346587727924,
+      "vertical_member_self_weight_kN": 18.75
+    }
+  ],
+  "assumptions": [
+    "3D elastic space frame; floor beams at z=3 m and vertical members fixed at z=0.",
+    "Gross uncracked sections, E=30 GPa, nu=0.20, service G+Q beam loads.",
+    "Every included beam uses the actual Step 05 profile grouped from 0.01 m into 0.05 m intervals without force rescaling.",
+    "Vertical-member self-weight is applied at each support top; slab load assigned directly to walls and the unresolved core area are excluded.",
+    "Wall supports are discrete line-end idealisations; diaphragm action, slab stiffness, cracking and upper storeys are omitted."
+  ]
+}

@@ -1,0 +1,17 @@
+panel_id,panel_case,alpha,edge,supports,edge_length_m,beta_v,coefficient_route_slab_service_kN_m,area_route_slab_service_kN_m,difference_percent,note
+P2,one short edge discontinuous,1.1612903225806452,top C,D04;W_T3,3.6,0.40838709677419355,8.308124999999999,8.957102753472222,-7.245398108452505,Table route is an independent approximate check; beam stem self-weight excluded.
+P2,one short edge discontinuous,1.1612903225806452,bottom C,D08,3.6,0.40838709677419355,8.308124999999999,8.957102753472222,-7.245398108452505,Table route is an independent approximate check; beam stem self-weight excluded.
+P2,one short edge discontinuous,1.1612903225806452,left S,D05,3.1,0.24,4.8825,3.9151565080645163,24.70765830032416,Table route is an independent approximate check; beam stem self-weight excluded.
+P2,one short edge discontinuous,1.1612903225806452,right C,D06,3.1,0.36,7.323750000000001,6.781249999999999,8.000000000000034,Table route is an independent approximate check; beam stem self-weight excluded.
+P3,one long edge discontinuous,1.6805555555555554,left S,D11,6.05,0.35444444444444445,8.373750000000001,7.180285911157025,16.621400646296305,Table route is an independent approximate check; beam stem self-weight excluded.
+P3,one long edge discontinuous,1.6805555555555554,right C,D12,6.05,0.5388888888888889,12.731250000000001,12.436620000000001,2.3690520414710723,Table route is an independent approximate check; beam stem self-weight excluded.
+P3,one long edge discontinuous,1.6805555555555554,bottom C,D16,3.6,0.36,8.505,9.985099881944445,-14.823085391672787,Table route is an independent approximate check; beam stem self-weight excluded.
+P3,one long edge discontinuous,1.6805555555555554,top C,D08,3.6,0.36,8.505,9.985099881944445,-14.823085391672787,Table route is an independent approximate check; beam stem self-weight excluded.
+P7,one long edge discontinuous,1.6805555555555554,left S,D19,6.05,0.35444444444444445,8.373750000000001,7.180285911157025,16.621400646296305,Table route is an independent approximate check; beam stem self-weight excluded.
+P7,one long edge discontinuous,1.6805555555555554,right C,D20,6.05,0.5388888888888889,12.731250000000001,12.436620000000001,2.3690520414710723,Table route is an independent approximate check; beam stem self-weight excluded.
+P7,one long edge discontinuous,1.6805555555555554,bottom C,D23,3.6,0.36,8.505,9.985099881944445,-14.823085391672787,Table route is an independent approximate check; beam stem self-weight excluded.
+P7,one long edge discontinuous,1.6805555555555554,top C,D16,3.6,0.36,8.505,9.985099881944445,-14.823085391672787,Table route is an independent approximate check; beam stem self-weight excluded.
+P9,one long edge discontinuous,1.6805555555555554,right S,D22,6.05,0.35444444444444445,8.373750000000001,7.180285911157025,16.621400646296305,Table route is an independent approximate check; beam stem self-weight excluded.
+P9,one long edge discontinuous,1.6805555555555554,left C,D21,6.05,0.5388888888888889,12.731250000000001,12.436620000000001,2.3690520414710723,Table route is an independent approximate check; beam stem self-weight excluded.
+P9,one long edge discontinuous,1.6805555555555554,bottom C,D25,3.6,0.36,8.505,9.985099881944445,-14.823085391672787,Table route is an independent approximate check; beam stem self-weight excluded.
+P9,one long edge discontinuous,1.6805555555555554,top C,D18,3.6,0.36,8.505,9.985099881944445,-14.823085391672787,Table route is an independent approximate check; beam stem self-weight excluded.
