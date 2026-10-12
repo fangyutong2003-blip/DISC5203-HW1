@@ -114,6 +114,11 @@ The student-supplied sheet below contains four sketches: Beam A standalone, Beam
 
 The qualitative curvature agrees with the corresponding solver plots: Beam A shows two dominant downward lobes and a much smaller final-span response, while Beam B shows two dominant exterior-span lobes. The grid sketches also reproduce the unequal downward displacement peaks caused by support stiffness and load redistribution. The hand sketches are qualitative and their axes are not used as numerical solver data. The computer-generated schematic retained in the process log remains illustrative only.
 
+- **Beam A standalone:** the sketch reproduces the two dominant downward span lobes and the much smaller response in the short final span.
+- **Beam A grid:** the sketch reproduces the unequal downward peaks and the non-zero support-node displacement caused by vertical-member shortening.
+- **Beam B standalone:** the sketch reproduces the downward exterior spans and the reversed curvature through the central span.
+- **Beam B grid:** the sketch reproduces the two dominant exterior-span displacement troughs and the reduced downward displacement near the middle of the selected line.
+
 ## 6. Task 10 - Standalone beam versus grid subframe
 
 | Beam | Model | Peak sagging (kN m) | Peak hogging (kN m) | Max abs shear (kN) | Max abs axial (kN) | Max vertical displacement (mm) |
@@ -156,9 +161,8 @@ Passing these checks establishes reproducibility and numerical consistency of th
 1. Confirm the C/S edge-condition schedule and the Beam A/Beam B mapping against the course drawing.
 2. Confirm the T3, T4 and T7 discrete wall-end idealisations.
 3. Resolve or explicitly accept the 1.707500 m2 unallocated core area and P1 finite-edge tie convention.
-4. Add two handwritten moment-bound calculations and four hand-drawn deformation sketches.
-5. Add a short personal comment beside each sketch comparing it with the solver output.
-6. Remove the word “Draft” from the report title/status only after these items are complete.
+
+The pre-analysis moment calculations, four student-supplied deformation sketches and the corresponding comparison comments are now included. Remove the word “Draft” from the report title/status only after the three engineering assumptions above are signed off.
 
 ## 11. Reproduction
 
