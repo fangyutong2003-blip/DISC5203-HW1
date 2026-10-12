@@ -86,3 +86,7 @@ This manifest records the English process evidence retained for submission. Hist
 The hand sketches and calculation record are linked in `HW2_Submission_Report_Draft.md`. Final support-condition sign-off and resolution or acceptance of the documented core/P1 allocation uncertainties remain before the report is renamed or declared final.
 
 The pre-existing HW1 Git history is preserved under the repository audit rule. All new HW2 filenames, file contents, code comments, report text and commit messages are English.
+
+## Language audit note
+
+The submitted reports, calculations, source files, code comments, tracked filenames and all HW2 commit subjects are in English. One inherited pre-HW2 history entry, commit `2490a98`, has the Colab-generated Chinese subject whose English meaning is "Created with Colab." It is retained only to preserve the original Git audit history; it is not assignment content or a current HW2 commit message.
