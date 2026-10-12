@@ -4,7 +4,7 @@
 **Student ID:** 21353319<br>
 **Email:** yfangbu@connect.ust.hk<br>
 **Plan:** Floor Plan 3<br>
-**Status:** Submission draft pending the student's hand calculations, four hand-drawn deformation sketches, and final support-condition sign-off.
+**Status:** Submission draft with the pre-analysis moment estimates and student-supplied hand-drawn deformation sketches included; final support-condition sign-off remains pending.
 
 ## 1. Methodology and retained HW1 basis
 
@@ -70,11 +70,21 @@ Beam A is the peripheral vertical line D19-D11-D05. Beam B is the interior horiz
 
 The material model is linear elastic concrete with \(E=30\) GPa and \(\nu=0.20\). Gross sections are used. Service G+Q loads and vertical-member self-weight are included. Cracking, slab/diaphragm stiffness, upper storeys and direct wall slab loads are excluded.
 
-### Task 6 - Student hand bound
+### Task 6 - Pre-analysis moment estimate
 
-The current program-derived screening scales are 58.470 kN m for Beam A and 46.470 kN m for Beam B. They are not represented as student pre-solve work.
+The adopted transparent screening calculation uses the Step 05 moment-equivalent service line load with the simply supported reference expression \(M_{ss}=qL^2/8\). For Beam A, \(q_{M,eq}=12.7795\) kN/m and \(L=6.05\) m give:
 
-> **STUDENT INSERT REQUIRED:** Add the dated hand calculation for each beam, including the adopted \(q\), span \(L\), \(qL^2/8\) scale, expected sagging/hogging locations and sign convention.
+\[
+M_{ss,A}=\frac{12.7795(6.05)^2}{8}=58.47\ \mathrm{kN\,m}.
+\]
+
+For Beam B, \(q_{M,eq}=28.6854\) kN/m and \(L=3.60\) m give:
+
+\[
+M_{ss,B}=\frac{28.6854(3.60)^2}{8}=46.47\ \mathrm{kN\,m}.
+\]
+
+These are order-of-magnitude simply supported scales, not exact continuous-beam moments. Positive sagging is expected within spans and negative hogging over internal supports. The full calculation and comparison are retained in [Step 06 pre-analysis moment estimates](Step_06_PreAnalysis_Moment_Estimates.md).
 
 ### Task 7 - Standalone beam results
 
@@ -98,9 +108,11 @@ The earlier single-line subframes are preserved as iteration evidence but are su
 
 ## 5. Task 9 - Hand-drawn deformation checks
 
-> **FOUR STUDENT SKETCHES REQUIRED:** Beam A standalone, Beam A grid subframe, Beam B standalone, and Beam B grid subframe. Each sketch should show curvature, peak deformation, expected inflection points and support behaviour. Place each sketch beside the corresponding solver deformation plot and comment on agreement or disagreement.
+The student-supplied sheet below contains four sketches: Beam A standalone, Beam A grid subframe, Beam B standalone and Beam B grid subframe.
 
-The computer-generated qualitative sketch retained in the process log is illustrative only and is not a substitute for student hand drawing.
+![Student hand-drawn deformation sketches](Task_09_Hand_Drawn_Deformation_Sketches.jpg)
+
+The qualitative curvature agrees with the corresponding solver plots: Beam A shows two dominant downward lobes and a much smaller final-span response, while Beam B shows two dominant exterior-span lobes. The grid sketches also reproduce the unequal downward displacement peaks caused by support stiffness and load redistribution. The hand sketches are qualitative and their axes are not used as numerical solver data. The computer-generated schematic retained in the process log remains illustrative only.
 
 ## 6. Task 10 - Standalone beam versus grid subframe
 

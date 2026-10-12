@@ -57,6 +57,7 @@ This manifest records the English process evidence retained for submission. Hist
 - Historical single-line subframe result JSON files and response figures; superseded for final Task 8 comparison.
 - `Step_06_OpenSees_Model_Summary.csv`, `Step_06_OpenSees_Support_Reactions.csv` and `Step_06_OpenSees_Verification.csv`.
 - `Step_06_Mixed_Support_PreSolve_Screening.md`.
+- `Step_06_PreAnalysis_Moment_Estimates.md` - adopted Beam A and Beam B \(qL^2/8\) screening calculations.
 - `Step_06_PreSolve_Expected_Shapes.png` - illustrative computer output, not student hand work.
 - `Step_06_OpenSees_Briefing_and_Iteration_Log.md`.
 - `Step_06_OpenSees_Models_and_Verification.md`.
@@ -77,12 +78,11 @@ This manifest records the English process evidence retained for submission. Hist
 - `Step_08_Grid_Subframe_Iteration_Log.md`.
 - `Step_12_HW1_Grid_Subframe_Cross_Check.csv` and comparison PNG.
 
-## Student files still to add
+## Student-supplied material
 
-- Two dated handwritten moment-bound calculations, one for each marked beam.
-- Four hand-drawn deformation sketches: Beam A standalone, Beam A grid, Beam B standalone and Beam B grid.
-- Optional photographs/scans should use English filenames, for example `Task_06_Hand_Bounds.jpg` and `Task_09_Hand_Sketches.jpg`.
+- `Task_09_Hand_Drawn_Deformation_Sketches.jpg` - one student-supplied sheet containing Beam A standalone, Beam A grid, Beam B standalone and Beam B grid deformation sketches.
+- `Step_06_PreAnalysis_Moment_Estimates.md` - English calculation record used for the two simplified moment bounds.
 
-After adding these images, link them beside the corresponding solver figures in `HW2_Submission_Report_Draft.md`, complete the personal comparison comments, rename/finalise the report if desired, rerun the link/language checks, commit and push.
+The hand sketches and calculation record are linked in `HW2_Submission_Report_Draft.md`. Final support-condition sign-off and resolution or acceptance of the documented core/P1 allocation uncertainties remain before the report is renamed or declared final.
 
 The pre-existing HW1 Git history is preserved under the repository audit rule. All new HW2 filenames, file contents, code comments, report text and commit messages are English.
