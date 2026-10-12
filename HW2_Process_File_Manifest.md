@@ -7,7 +7,8 @@ This manifest records the English process evidence retained for submission. Hist
 - `README.md` - repository entry point and reproduction commands.
 - `AGENTS.md` - project rules and calculation sequence.
 - `requirements.txt` - reproducible Python dependencies.
-- `HW2_Submission_Report_Draft.md` - continuous submission draft.
+- `HW2_Final_Report.md` - final continuous English submission report.
+- `HW2_Submission_Report_Draft.md` - retained pre-finalisation draft and process evidence.
 - `HW2_FloorPlan3_Marked_Beams.png` - source plan with the two assigned beam lines.
 
 ## HW1 retained basis
@@ -83,7 +84,7 @@ This manifest records the English process evidence retained for submission. Hist
 - `Task_09_Hand_Drawn_Deformation_Sketches.jpg` - one student-supplied sheet containing Beam A standalone, Beam A grid, Beam B standalone and Beam B grid deformation sketches.
 - `Step_06_PreAnalysis_Moment_Estimates.md` - English calculation record used for the two simplified moment bounds.
 
-The hand sketches and calculation record are linked in `HW2_Submission_Report_Draft.md`. Final support-condition sign-off and resolution or acceptance of the documented core/P1 allocation uncertainties remain before the report is renamed or declared final.
+The hand sketches and calculation record are linked in `HW2_Final_Report.md`. The final report adopts the current image-derived support schedule and wall-end idealisations while explicitly disclosing the unresolved core area and provisional P1 tie convention.
 
 The pre-existing HW1 Git history is preserved under the repository audit rule. All new HW2 filenames, file contents, code comments, report text and commit messages are English.
 

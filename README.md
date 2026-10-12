@@ -10,7 +10,7 @@ This repository contains the final Homework 1 submission and the ongoing Homewor
 
 Open [HW1_Final_Report.md](HW1_Final_Report.md) for the complete continuous submission report.
 
-For HW2, start with [the English submission draft](HW2_Submission_Report_Draft.md) and [process-file manifest](HW2_Process_File_Manifest.md). The pre-analysis moment estimates and student-supplied deformation sketches are included; final support-condition sign-off remains pending.
+For HW2, start with [the final English report](HW2_Final_Report.md) and [process-file manifest](HW2_Process_File_Manifest.md). The earlier [submission draft](HW2_Submission_Report_Draft.md) is retained as process evidence.
 
 The checkpoint and detailed engineering records are retained as separate files:
 

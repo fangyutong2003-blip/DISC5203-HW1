@@ -87,12 +87,12 @@ The Step 01 partition uses a 0.01 m calculation grid. The recorded 0.02 m rerun 
 
 Recent Git history when this checkpoint was generated:
 
+- `98f1081 Document English language audit for HW2 submission`
+- `952a717 Update HW2 sketch review and final sign-off list`
+- `66b59e6 Add HW2 hand sketches and moment estimates`
+- `d203cdb Complete HW2 plan-grid subframes and English process package`
 - `20909ae Revise HW2 mixed-edge tributary regions and propagate actual load profiles`
 - `b867ebd Add HW2 OpenSees beam and subframe models`
-- `2aa77dc Repair reproducible HW1 workflow and cross-platform setup`
-- `dbd0516 Merge remote-tracking branch 'origin/master'`
-- `5164a40 Add HW2 beam tributary areas and line-load schedules`
-- `2490a98 [non-English commit subject omitted from report]`
 
 ## Remaining limitations before final submission
 
