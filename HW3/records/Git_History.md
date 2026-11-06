@@ -1,10 +1,25 @@
 # Readable Git History
 
-Exported UTC: 2026-11-06T12:47:35.966900+00:00
+Exported UTC: 2026-11-06T12:55:11.681555+00:00
 
 Legacy non-English characters are replaced by ? in this display only. Original Git history remains intact.
 
 ```text
+0a89d73 | 2026-11-06T20:47:36+08:00 | Record initial HW3 classical extraction and visual review
+
+M	HW3/README.md
+A	HW3/outputs/Plan3/stage01/01_Threshold.png
+A	HW3/outputs/Plan3/stage01/02_Diagonal_Hatching.png
+A	HW3/outputs/Plan3/stage01/03_Close17.png
+A	HW3/outputs/Plan3/stage01/04_Open21.png
+A	HW3/outputs/Plan3/stage01/05_Open17_Alternative.png
+A	HW3/outputs/Plan3/stage01/06_OCR_Long_Lines_Removed.png
+A	HW3/outputs/Plan3/stage01/07_Component_Overlay.png
+A	HW3/outputs/Plan3/stage01/Classical_Components.json
+M	HW3/records/Git_History.md
+M	HW3/records/Iteration_Log.md
+A	HW3/records/Source_Hashes.json
+A	HW3/records/Task_Status.md
 8b44c4a | 2026-11-06T20:45:46+08:00 | Initialize HW3 audited workflow and two-reader protocol
 
 A	.githooks/pre-commit

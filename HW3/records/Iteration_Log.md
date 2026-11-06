@@ -22,3 +22,18 @@
 - Threshold, diagonal hatching, close17/open21, an open17 alternative and a long-line-removal image are retained. Scale, labels and merge/break scores remain pending independent assessment.
 - The source brief's morphology wording differs from the L09 recap. Both the chosen close17/open21 route and an open17 alternative are explicitly recorded rather than silently treating the wording as identical.
 - Two dependency installer invocations overlapped and one returned a Windows file-lock error. OpenCV was importable and the classical stage completed. Full environment verification is recorded separately; no forest training or mechanics run is claimed here.
+
+## Stage 02 - Dual OCR and provisional label supervision
+
+- Used local RapidOCR ONNX 1.4.4 because no Tesseract executable was available. This is a text detection/recognition stage, not a VLM flag reader.
+- Original reading: 52 text detections. Long-line-removed reading: 61. Raw text, boxes, confidence and input hashes are retained.
+- Initial parsing allowed implausible zero dimensions and split concatenated label/size strings incorrectly. Revised to enumerate plausible splits and preserve explicit spaces. The final export contains all 21 label/size hypotheses.
+- Directional bars and square-column candidates yielded 21 unique provisional label matches. Visual overlay review confirmed the core wall separation and label locations. This is agent review, not an independent human reference or a model-comparison result.
+- Square-column median gives an uncorrected scale seed of 183.75 px/m. It is not promoted: measured stroke growth, directional scale checks, metric origin and labelled-size extent support are still required.
+
+## Stage 03 - Retained forest and draft review package
+
+- Actual preliminary experiment: 120000 weak-labelled pixels, 15 features, 60 trees, random seed 5203, half-size Plan 3. Fitting took approximately 3.61 seconds. Model and probability/mask images are retained and explicitly never selected.
+- Largest importances were blur8 (0.2147), blur4 (0.1592) and ink-density9 (0.1553). The 45-degree filters did not dominate this experiment. No result was tuned to imitate the lecture; no unseen-plan accuracy is claimed.
+- Five draft flags were generated from single-pass label readings and merged-component containment. Crops, hashes, questions and field scopes are saved. The package remains DRAFT until an independent reference and final gate are frozen.
+- No external-model answer, winning reader, signed student prediction or final structural result has been manufactured.

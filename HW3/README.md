@@ -6,6 +6,23 @@ Student: Fangyutong, 21353319. Assigned drawing: Floor Plan 3.
 
 Task 1A has an initial classical run: 20 connected components, including merged walls and artifacts. Labels, scale and element-level scores remain pending. No reader has been promoted; no final CM/CR has been calculated. DP v4.1 is the student's proposed second reader; exact service model ID and image capability must be recorded from the actual session.
 
+Task 1B now has two raw OCR readings and 21 unique provisional label/bar matches. A preliminary 60-tree weakly supervised forest is retained but never selected. Five draft review flags are prepared; the independent reference, final scale and flag freeze remain pending.
+
+![Provisional one-label-per-bar matches](outputs/Plan3/stage03/Provisional_Label_Matches.png)
+
+## Reproduce current evidence
+
+Install HW3/requirements.txt in a virtual environment, then run from the repository root:
+
+```text
+python HW3/scripts/stage01_classical.py
+python HW3/scripts/stage02_ocr.py
+python HW3/scripts/stage03_bars.py
+python HW3/scripts/stage04_forest.py
+python HW3/scripts/prepare_review_flags.py
+python HW3/scripts/verify_extraction_stage.py
+```
+
 ![Initial connected components, not final elements](outputs/Plan3/stage01/07_Component_Overlay.png)
 
 ## Evidence locations

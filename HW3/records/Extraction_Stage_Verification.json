@@ -1,0 +1,127 @@
+{
+  "checks": [
+    {
+      "check": "source hash sources/assets/FloorPlan1.png",
+      "pass": true
+    },
+    {
+      "check": "source hash sources/assets/FloorPlan2.png",
+      "pass": true
+    },
+    {
+      "check": "source hash sources/assets/FloorPlan3.png",
+      "pass": true
+    },
+    {
+      "check": "source hash sources/assets/NewPlan.png",
+      "pass": true
+    },
+    {
+      "check": "source hash sources/assets/UST_logo.png",
+      "pass": true
+    },
+    {
+      "check": "source hash sources/HW3_Assignment.md",
+      "pass": true
+    },
+    {
+      "check": "OCR input hash original",
+      "pass": true
+    },
+    {
+      "check": "OCR boxes original",
+      "pass": true
+    },
+    {
+      "check": "OCR input hash lines_removed",
+      "pass": true
+    },
+    {
+      "check": "OCR boxes lines_removed",
+      "pass": true
+    },
+    {
+      "check": "unique labels",
+      "pass": true
+    },
+    {
+      "check": "unique bars",
+      "pass": true
+    },
+    {
+      "check": "all OCR hypotheses matched",
+      "pass": true
+    },
+    {
+      "check": "match sizes trace to OCR",
+      "pass": true
+    },
+    {
+      "check": "forest never selected",
+      "pass": true
+    },
+    {
+      "check": "feature importance sums to one",
+      "pass": true
+    },
+    {
+      "check": "forest artifact retained",
+      "pass": true
+    },
+    {
+      "check": "no fictitious reader runs",
+      "pass": true
+    },
+    {
+      "check": "crop hash P3-F01",
+      "pass": true
+    },
+    {
+      "check": "crop extent P3-F01",
+      "pass": true
+    },
+    {
+      "check": "crop hash P3-F02",
+      "pass": true
+    },
+    {
+      "check": "crop extent P3-F02",
+      "pass": true
+    },
+    {
+      "check": "crop hash P3-F03",
+      "pass": true
+    },
+    {
+      "check": "crop extent P3-F03",
+      "pass": true
+    },
+    {
+      "check": "crop hash P3-F04",
+      "pass": true
+    },
+    {
+      "check": "crop extent P3-F04",
+      "pass": true
+    },
+    {
+      "check": "crop hash P3-F05",
+      "pass": true
+    },
+    {
+      "check": "crop extent P3-F05",
+      "pass": true
+    }
+  ],
+  "passed": 28,
+  "total": 28,
+  "scope": "Artifact integrity and internal consistency only; not independent geometry accuracy or a final HW3 verification.",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "Pillow": "12.3.0",
+    "opencv-python": "5.0.0.93",
+    "scikit-learn": "1.9.1",
+    "rapidocr-onnxruntime": "1.4.4",
+    "openseespy": "3.8.0.0"
+  }
+}

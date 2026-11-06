@@ -1,0 +1,31 @@
+{
+  "selected": false,
+  "selection_reason": "Labels copy the classical rules, including merges and artifacts.",
+  "stage": "preliminary weak-label experiment; not final label-supervised pipeline extraction",
+  "training_plan": "Plan3",
+  "test_plan": null,
+  "validation_note": "No generalisation performance is claimed on the training drawing.",
+  "random_seed": 5203,
+  "trees": 60,
+  "features": 15,
+  "training_pixels": 120000,
+  "training_seconds": 3.6119314000006852,
+  "image_resize_factor": 0.5,
+  "feature_importance": {
+    "blur_8": 0.2147364588941312,
+    "blur_4": 0.15915894966666186,
+    "ink_density_9": 0.15527660200314805,
+    "ink_density_17": 0.10093536629125491,
+    "directional_17_1": 0.08178465365950963,
+    "directional_1_9": 0.06386934725595621,
+    "blur_2": 0.057986844766049254,
+    "directional_1_17": 0.04952688140819723,
+    "grey": 0.03054631682875477,
+    "edge_strength": 0.03048228729452855,
+    "ink_density_5": 0.02221973674770443,
+    "blur_1": 0.016880260465141066,
+    "diagonal_45_17": 0.011135343177983726,
+    "diagonal_45_9": 0.003170133053067774,
+    "diagonal_45_5": 0.0022908184879113437
+  }
+}
