@@ -1,0 +1,328 @@
+{
+  "dimension_chain_m": {
+    "x": [
+      1.0,
+      8.2,
+      1.0
+    ],
+    "y": [
+      19.2
+    ]
+  },
+  "dimension_scale_px_per_m": {
+    "x": 164.41176470588238,
+    "y": 164.11458333333334
+  },
+  "scale_gate": [
+    {
+      "route": "lecture_stroke",
+      "axis": "x",
+      "relative_scale_error": 0.029874776386404456,
+      "tolerance": 0.02,
+      "accepted": false
+    },
+    {
+      "route": "lecture_stroke",
+      "axis": "y",
+      "relative_scale_error": 0.031164709615994934,
+      "tolerance": 0.02,
+      "accepted": false
+    },
+    {
+      "route": "effective_growth",
+      "axis": "x",
+      "relative_scale_error": 0.007403155242895365,
+      "tolerance": 0.02,
+      "accepted": true
+    },
+    {
+      "route": "effective_growth",
+      "axis": "y",
+      "relative_scale_error": 0.009422221451990453,
+      "tolerance": 0.02,
+      "accepted": true
+    }
+  ],
+  "gate_note": "2% calibration tolerance, explicitly separate from hand/model CR agreement tolerance.",
+  "historical_source_commit": "5f1eafe",
+  "historical_source_sha256": "e08b7091841896b3a9cc7862d71589066640e50fa6cc16856455b5034daf72b3",
+  "reference_route": "Archived HW1 dimension-chain and named-element schedule, generated before the current OCR/morphology flags; main wall segments only.",
+  "reference_limits": "An earlier image-derived, AI-assisted reading, not original CAD or a new student hand reading. It is used as an independent-route audit aid; new reference scoring remains pending explicit defensible source review.",
+  "comparison": [
+    {
+      "label": "C1",
+      "size_matches": true,
+      "reference_centre_m": [
+        7.55,
+        15.9
+      ],
+      "new_centre_m": [
+        7.584163981660843,
+        16.06136566419986
+      ],
+      "centre_distance_m": 0.16494258160215877
+    },
+    {
+      "label": "C2",
+      "size_matches": true,
+      "reference_centre_m": [
+        0.2,
+        15.0
+      ],
+      "new_centre_m": [
+        0.20034118231108422,
+        15.172508266414738
+      ],
+      "centre_distance_m": 0.17250860380510763
+    },
+    {
+      "label": "C3",
+      "size_matches": true,
+      "reference_centre_m": [
+        0.2,
+        11.9
+      ],
+      "new_centre_m": [
+        0.20034118231108422,
+        12.038440140660263
+      ],
+      "centre_distance_m": 0.13844056107731878
+    },
+    {
+      "label": "C4",
+      "size_matches": true,
+      "reference_centre_m": [
+        3.6,
+        11.9
+      ],
+      "new_centre_m": [
+        3.619571988980931,
+        12.019986353855035
+      ],
+      "centre_distance_m": 0.1215721508574038
+    },
+    {
+      "label": "C5",
+      "size_matches": true,
+      "reference_centre_m": [
+        10.0,
+        11.9
+      ],
+      "new_centre_m": [
+        10.026034011155348,
+        12.019986353855035
+      ],
+      "centre_distance_m": 0.1227782344239501
+    },
+    {
+      "label": "C6",
+      "size_matches": true,
+      "reference_centre_m": [
+        0.2,
+        6.05
+      ],
+      "new_centre_m": [
+        0.20034118231108422,
+        6.139379625255865
+      ],
+      "centre_distance_m": 0.08938027643864305
+    },
+    {
+      "label": "C7",
+      "size_matches": true,
+      "reference_centre_m": [
+        3.6,
+        6.05
+      ],
+      "new_centre_m": [
+        3.631827296531719,
+        6.108623313913819
+      ],
+      "centre_distance_m": 0.06670584486202215
+    },
+    {
+      "label": "C8",
+      "size_matches": true,
+      "reference_centre_m": [
+        6.6,
+        6.05
+      ],
+      "new_centre_m": [
+        6.615994685148593,
+        6.145530887524274
+      ],
+      "centre_distance_m": 0.0968606237032266
+    },
+    {
+      "label": "C9",
+      "size_matches": true,
+      "reference_centre_m": [
+        10.0,
+        6.05
+      ],
+      "new_centre_m": [
+        10.04441697248153,
+        6.13630399412166
+      ],
+      "centre_distance_m": 0.09706310754234387
+    },
+    {
+      "label": "T1",
+      "size_matches": true,
+      "reference_centre_m": [
+        6.75,
+        19.075
+      ],
+      "new_centre_m": [
+        6.766122202645745,
+        19.229265732430587
+      ],
+      "centre_distance_m": 0.15510590453137552
+    },
+    {
+      "label": "T2",
+      "size_matches": true,
+      "reference_centre_m": [
+        2.575,
+        18.2
+      ],
+      "new_centre_m": [
+        2.6146367698163164,
+        18.35271085918228
+      ],
+      "centre_distance_m": 0.1577709733558816
+    },
+    {
+      "label": "T3",
+      "size_matches": true,
+      "reference_centre_m": [
+        2.7,
+        15.075
+      ],
+      "new_centre_m": [
+        2.6912324420087415,
+        15.237096520233035
+      ],
+      "centre_distance_m": 0.16233345910436614
+    },
+    {
+      "label": "T4",
+      "size_matches": true,
+      "reference_centre_m": [
+        6.225,
+        11.975
+      ],
+      "new_centre_m": [
+        6.242207804849559,
+        12.093801501075946
+      ],
+      "centre_distance_m": 0.12004126459529917
+    },
+    {
+      "label": "T5",
+      "size_matches": true,
+      "reference_centre_m": [
+        5.875,
+        11.225
+      ],
+      "new_centre_m": [
+        5.895995366539799,
+        11.346423135464232
+      ],
+      "centre_distance_m": 0.12322492946683193
+    },
+    {
+      "label": "T6",
+      "size_matches": true,
+      "reference_centre_m": [
+        5.75,
+        10.475
+      ],
+      "new_centre_m": [
+        5.770378464144222,
+        10.586742245315698
+      ],
+      "centre_distance_m": 0.11358525955893643
+    },
+    {
+      "label": "T7",
+      "size_matches": true,
+      "reference_centre_m": [
+        6.675,
+        8.9
+      ],
+      "new_centre_m": [
+        6.692590357341017,
+        9.002792211200335
+      ],
+      "centre_distance_m": 0.10428642938963281
+    },
+    {
+      "label": "T8",
+      "size_matches": true,
+      "reference_centre_m": [
+        5.75,
+        7.325
+      ],
+      "new_centre_m": [
+        5.770378464144222,
+        7.458825381829633
+      ],
+      "centre_distance_m": 0.13536807091306394
+    },
+    {
+      "label": "T9",
+      "size_matches": true,
+      "reference_centre_m": [
+        0.125,
+        1.0
+      ],
+      "new_centre_m": [
+        0.1329369907817503,
+        0.9999999999999994
+      ],
+      "centre_distance_m": 0.007936990781750308
+    },
+    {
+      "label": "T10",
+      "size_matches": true,
+      "reference_centre_m": [
+        3.45,
+        0.125
+      ],
+      "new_centre_m": [
+        3.484763605922263,
+        0.1295963890201013
+      ],
+      "centre_distance_m": 0.03506615303597617
+    },
+    {
+      "label": "T11",
+      "size_matches": true,
+      "reference_centre_m": [
+        6.75,
+        0.125
+      ],
+      "new_centre_m": [
+        6.769186029533442,
+        0.1295963890201013
+      ],
+      "centre_distance_m": 0.019728926004276313
+    },
+    {
+      "label": "T12",
+      "size_matches": true,
+      "reference_centre_m": [
+        10.075,
+        1.0
+      ],
+      "new_centre_m": [
+        10.121012644673955,
+        0.9999999999999994
+      ],
+      "centre_distance_m": 0.04601264467395616
+    }
+  ],
+  "human_reference_signoff": false,
+  "max_centre_distance_m": 0.17250860380510763
+}

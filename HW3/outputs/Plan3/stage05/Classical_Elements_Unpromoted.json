@@ -1,0 +1,465 @@
+{
+  "source": {
+    "file": "FloorPlan3.png"
+  },
+  "scale_px_per_m": {
+    "x": 163.19459888800634,
+    "y": 162.56825938566553
+  },
+  "elements": [
+    {
+      "id": 1,
+      "labels": [
+        "C1"
+      ],
+      "class": "column",
+      "centre_m": [
+        7.584163981660843,
+        16.06136566419986
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 2,
+      "labels": [
+        "C2"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.20034118231108422,
+        15.172508266414738
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 3,
+      "labels": [
+        "C3"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.20034118231108422,
+        12.038440140660263
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 4,
+      "labels": [
+        "C4"
+      ],
+      "class": "column",
+      "centre_m": [
+        3.619571988980931,
+        12.019986353855035
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 5,
+      "labels": [
+        "C5"
+      ],
+      "class": "column",
+      "centre_m": [
+        10.026034011155348,
+        12.019986353855035
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 6,
+      "labels": [
+        "C6"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.20034118231108422,
+        6.139379625255865
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 7,
+      "labels": [
+        "C7"
+      ],
+      "class": "column",
+      "centre_m": [
+        3.631827296531719,
+        6.108623313913819
+      ],
+      "size_mm": [
+        450,
+        450
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 8,
+      "labels": [
+        "C8"
+      ],
+      "class": "column",
+      "centre_m": [
+        6.615994685148593,
+        6.145530887524274
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 9,
+      "labels": [
+        "C9"
+      ],
+      "class": "column",
+      "centre_m": [
+        10.04441697248153,
+        6.13630399412166
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      }
+    },
+    {
+      "id": 10,
+      "labels": [
+        "T1"
+      ],
+      "class": "wall",
+      "centre_m": [
+        6.766122202645745,
+        19.229265732430587
+      ],
+      "size_mm": [
+        2000,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 11,
+      "labels": [
+        "T10"
+      ],
+      "class": "wall",
+      "centre_m": [
+        3.484763605922263,
+        0.1295963890201013
+      ],
+      "size_mm": [
+        2000,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 12,
+      "labels": [
+        "T11"
+      ],
+      "class": "wall",
+      "centre_m": [
+        6.769186029533442,
+        0.1295963890201013
+      ],
+      "size_mm": [
+        2000,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 13,
+      "labels": [
+        "T12"
+      ],
+      "class": "wall",
+      "centre_m": [
+        10.121012644673955,
+        0.9999999999999994
+      ],
+      "size_mm": [
+        250,
+        2000
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    },
+    {
+      "id": 14,
+      "labels": [
+        "T2"
+      ],
+      "class": "wall",
+      "centre_m": [
+        2.6146367698163164,
+        18.35271085918228
+      ],
+      "size_mm": [
+        250,
+        2000
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    },
+    {
+      "id": 15,
+      "labels": [
+        "T3"
+      ],
+      "class": "wall",
+      "centre_m": [
+        2.6912324420087415,
+        15.237096520233035
+      ],
+      "size_mm": [
+        2000,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 16,
+      "labels": [
+        "T4"
+      ],
+      "class": "wall",
+      "centre_m": [
+        6.242207804849559,
+        12.093801501075946
+      ],
+      "size_mm": [
+        3050,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 17,
+      "labels": [
+        "T5"
+      ],
+      "class": "wall",
+      "centre_m": [
+        5.895995366539799,
+        11.346423135464232
+      ],
+      "size_mm": [
+        250,
+        1750
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    },
+    {
+      "id": 18,
+      "labels": [
+        "T6"
+      ],
+      "class": "wall",
+      "centre_m": [
+        5.770378464144222,
+        10.586742245315698
+      ],
+      "size_mm": [
+        2100,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 19,
+      "labels": [
+        "T7"
+      ],
+      "class": "wall",
+      "centre_m": [
+        6.692590357341017,
+        9.002792211200335
+      ],
+      "size_mm": [
+        250,
+        3400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    },
+    {
+      "id": 20,
+      "labels": [
+        "T8"
+      ],
+      "class": "wall",
+      "centre_m": [
+        5.770378464144222,
+        7.458825381829633
+      ],
+      "size_mm": [
+        2100,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 21,
+      "labels": [
+        "T9"
+      ],
+      "class": "wall",
+      "centre_m": [
+        0.1329369907817503,
+        0.9999999999999994
+      ],
+      "size_mm": [
+        250,
+        2000
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending"
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    }
+  ],
+  "floor": {
+    "outline_area_m2": null,
+    "load_kN_m2": 8.75,
+    "storeys": 5
+  },
+  "checks": {
+    "sum_areas_m2": null,
+    "sum_axial_kN": null
+  },
+  "status": "unpromoted classical candidate; floor extraction pending"
+}

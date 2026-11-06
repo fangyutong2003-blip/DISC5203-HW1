@@ -1,10 +1,41 @@
 # Readable Git History
 
-Exported UTC: 2026-11-06T12:55:11.681555+00:00
+Exported UTC: 2026-11-06T13:05:00.118025+00:00
 
 Legacy non-English characters are replaced by ? in this display only. Original Git history remains intact.
 
 ```text
+be412ee | 2026-11-06T20:55:12+08:00 | Add HW3 dual OCR label matching and retained forest experiment
+
+M	HW3/README.md
+A	HW3/outputs/Plan3/review_package_draft/Flag_Manifest.json
+A	HW3/outputs/Plan3/review_package_draft/P3-F01.png
+A	HW3/outputs/Plan3/review_package_draft/P3-F02.png
+A	HW3/outputs/Plan3/review_package_draft/P3-F03.png
+A	HW3/outputs/Plan3/review_package_draft/P3-F04.png
+A	HW3/outputs/Plan3/review_package_draft/P3-F05.png
+A	HW3/outputs/Plan3/review_package_draft/Questions.md
+A	HW3/outputs/Plan3/stage02/Dual_OCR.json
+A	HW3/outputs/Plan3/stage02/Dual_OCR_Review.md
+A	HW3/outputs/Plan3/stage03/Bar_Label_Matches.json
+A	HW3/outputs/Plan3/stage03/Bars_x.png
+A	HW3/outputs/Plan3/stage03/Bars_y.png
+A	HW3/outputs/Plan3/stage03/Provisional_Label_Matches.png
+A	HW3/outputs/Plan3/stage04_forest/Feature_Importance.md
+A	HW3/outputs/Plan3/stage04_forest/Forest_Mask_Never_Selected.png
+A	HW3/outputs/Plan3/stage04_forest/Forest_Never_Selected.joblib
+A	HW3/outputs/Plan3/stage04_forest/Forest_Probability.png
+A	HW3/outputs/Plan3/stage04_forest/Forest_Report.json
+A	HW3/records/Extraction_Stage_Verification.json
+M	HW3/records/Git_History.md
+M	HW3/records/Iteration_Log.md
+M	HW3/records/Task_Status.md
+M	HW3/requirements.txt
+A	HW3/scripts/prepare_review_flags.py
+A	HW3/scripts/stage02_ocr.py
+A	HW3/scripts/stage03_bars.py
+A	HW3/scripts/stage04_forest.py
+A	HW3/scripts/verify_extraction_stage.py
 0a89d73 | 2026-11-06T20:47:36+08:00 | Record initial HW3 classical extraction and visual review
 
 M	HW3/README.md

@@ -37,3 +37,14 @@
 - Largest importances were blur8 (0.2147), blur4 (0.1592) and ink-density9 (0.1553). The 45-degree filters did not dominate this experiment. No result was tuned to imitate the lecture; no unseen-plan accuracy is claimed.
 - Five draft flags were generated from single-pass label readings and merged-component containment. Crops, hashes, questions and field scopes are saved. The package remains DRAFT until an independent reference and final gate are frozen.
 - No external-model answer, winning reader, signed student prediction or final structural result has been manufactured.
+
+## Stage 05 - Metric scale gate and archived dimension-chain audit
+
+- Raw thin-line sampling measured a median 6 px stroke. Applying the L09 two-stroke growth of 12 px gave x=159.5 and y=159.0 px/m, failing the declared 2% dimension-chain calibration gate. This rejected route remains in Metric_Calibration.json.
+- A separate extent-versus-labelled-length regression measured effective bar growth of approximately 4.61 px (x) and 4.86 px (y). The resulting median scales are x=163.194599 and y=162.568259 px/m; both pass the overall 10.20 by 19.20 m dimension-chain cross-check.
+- This is a documented methodological extension. Effective morphological-bar growth and thin-line stroke width are not interchangeable on this drawing.
+- First run encountered an OpenCV Hough return-shape incompatibility. Normalising the line array to N-by-4 fixed it before results were exported.
+- Exported 21 labelled-size metric rectangles with pixel-derived centres and a documented exterior structural origin. Their visual overlay agrees with the main wall/column bodies; short returns are not silently added as extra labelled walls.
+- All 21 printed sizes agree with the archived HW1 main-element reading at commit 5f1eafe. Maximum centre difference is 0.172509 m; old coordinates were not substituted for measured new ones. The comparison is an audit aid, not proof of independent ground truth.
+- Axial raw-ink support is 100% for all rectangles, but ink may include linework. This is explicitly weaker than a hatch-specific completion check and does not close all geometry questions.
+- Independent_Reference_Form.md was prepared for an actual student source reading before either VLM response is collected. It contains no invented signoff or prefilled answers. The five-flag package remains a draft until the reference and crop questions are frozen.

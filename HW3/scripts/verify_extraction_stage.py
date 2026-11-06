@@ -42,6 +42,24 @@ for f in flags["flags"]:
     with Image.open(p) as image:
         x0,y0,x1,y1=f["crop_bbox_px"]
         check("crop extent "+f["flag_id"],image.size==(x1-x0,y1-y0))
+metric_path=ROOT/"outputs/Plan3/stage05/Classical_Elements_Unpromoted.json"
+if metric_path.exists():
+    metric=load("outputs/Plan3/stage05/Classical_Elements_Unpromoted.json")
+    calibration=load("outputs/Plan3/stage05/Metric_Calibration.json")
+    audit=load("outputs/Plan3/stage05/Dimension_Chain_and_Historical_Audit.json")
+    check("directional scale finite positive",all(0<s<10000 for s in metric["scale_px_per_m"].values()))
+    for axis in ("x","y"):
+        rows=[m for m in calibration["scale_measurements"] if m["axis"]==axis]
+        g=calibration["effective_growth_regression"][axis]["growth_px"]
+        values=sorted((m["extent_px"]-g)/m["labelled_length_m"] for m in rows)
+        n=len(values); expected=values[n//2] if n%2 else (values[n//2-1]+values[n//2])/2
+        check("scale median formula "+axis,abs(expected-metric["scale_px_per_m"][axis])<1e-10)
+    check("rejected lecture scale retained",any(not c["accepted"] for c in audit["scale_gate"] if c["route"]=="lecture_stroke"))
+    check("adopted candidate passes dimensional gate",all(c["accepted"] for c in audit["scale_gate"] if c["route"]=="effective_growth"))
+    check("human signoff not fabricated",audit["human_reference_signoff"] is False)
+    check("unpromoted floor unknown",metric["floor"]["outline_area_m2"] is None)
+    for e in metric["elements"]:
+        check("metric label and size provenance "+e["labels"][0],any(m["label"]==e["labels"][0] and m["size_mm"]==e["size_mm"] for m in matches))
 result={"checks":checks,"passed":sum(c["pass"] for c in checks),"total":len(checks),
         "scope":"Artifact integrity and internal consistency only; not independent geometry accuracy or a final HW3 verification.",
         "package_versions":{p:importlib.metadata.version(p) for p in

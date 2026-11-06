@@ -20,8 +20,16 @@ python HW3/scripts/stage02_ocr.py
 python HW3/scripts/stage03_bars.py
 python HW3/scripts/stage04_forest.py
 python HW3/scripts/prepare_review_flags.py
+python HW3/scripts/stage05_metric_geometry.py
+python HW3/scripts/check_metric_reference.py
 python HW3/scripts/verify_extraction_stage.py
 ```
+
+## Current metric calibration
+
+See [metric calibration review](outputs/Plan3/stage05/Metric_Geometry_Review.md) and [labelled-size overlay](outputs/Plan3/stage05/Labelled_Size_Rectangles.png). The two-stroke growth route failed the dimension-chain gate and is retained; a separately measured effective-bar-growth route passes. These are unpromoted candidates while floor extraction and independent reference review remain open.
+
+The student can fill the [independent reference form](records/Independent_Reference_Form.md) directly from the source crops before viewing either model's answers.
 
 ![Initial connected components, not final elements](outputs/Plan3/stage01/07_Component_Overlay.png)
 
