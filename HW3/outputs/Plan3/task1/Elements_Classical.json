@@ -1,0 +1,709 @@
+{
+  "source": {
+    "file": "FloorPlan3.png"
+  },
+  "scale_px_per_m": {
+    "x": 164.41176470588238,
+    "y": 164.11458333333334
+  },
+  "elements": [
+    {
+      "id": 1,
+      "labels": [
+        "C1"
+      ],
+      "class": "column",
+      "centre_m": [
+        7.542039355992843,
+        15.924849254205013
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          7.584163981660843,
+          16.06136566419986
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 2,
+      "labels": [
+        "C2"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.21288014311270123,
+        15.04436686766106
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          0.20034118231108422,
+          15.172508266414738
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 3,
+      "labels": [
+        "C3"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.21288014311270123,
+        11.939828625833067
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          0.20034118231108422,
+          12.038440140660263
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 4,
+      "labels": [
+        "C4"
+      ],
+      "class": "column",
+      "centre_m": [
+        3.6067978533094807,
+        11.921548714693747
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          3.619571988980931,
+          12.019986353855035
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 5,
+      "labels": [
+        "C5"
+      ],
+      "class": "column",
+      "centre_m": [
+        9.965831842576026,
+        11.921548714693747
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          10.026034011155348,
+          12.019986353855035
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 6,
+      "labels": [
+        "C6"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.21288014311270123,
+        6.096350364963503
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          0.20034118231108422,
+          6.139379625255865
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 7,
+      "labels": [
+        "C7"
+      ],
+      "class": "column",
+      "centre_m": [
+        3.6189624329159207,
+        6.065883846397969
+      ],
+      "size_mm": [
+        450,
+        450
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          3.631827296531719,
+          6.108623313913819
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 8,
+      "labels": [
+        "C8"
+      ],
+      "class": "column",
+      "centre_m": [
+        6.581037567084078,
+        6.10244366867661
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          6.615994685148593,
+          6.145530887524274
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 9,
+      "labels": [
+        "C9"
+      ],
+      "class": "column",
+      "centre_m": [
+        9.984078711985687,
+        6.09330371310695
+      ],
+      "size_mm": [
+        400,
+        400
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          10.04441697248153,
+          6.13630399412166
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      }
+    },
+    {
+      "id": 10,
+      "labels": [
+        "T1"
+      ],
+      "class": "wall",
+      "centre_m": [
+        6.730053667262968,
+        19.062900666455093
+      ],
+      "size_mm": [
+        2000,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          6.766122202645745,
+          19.229265732430587
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 11,
+      "labels": [
+        "T10"
+      ],
+      "class": "wall",
+      "centre_m": [
+        3.47298747763864,
+        0.14319263725801332
+      ],
+      "size_mm": [
+        2000,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          3.484763605922263,
+          0.1295963890201013
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 12,
+      "labels": [
+        "T11"
+      ],
+      "class": "wall",
+      "centre_m": [
+        6.733094812164579,
+        0.14319263725801332
+      ],
+      "size_mm": [
+        2000,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          6.769186029533442,
+          0.1295963890201013
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 13,
+      "labels": [
+        "T12"
+      ],
+      "class": "wall",
+      "centre_m": [
+        10.060107334525938,
+        1.0053951126626468
+      ],
+      "size_mm": [
+        250,
+        2000
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          10.121012644673955,
+          0.9999999999999994
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    },
+    {
+      "id": 14,
+      "labels": [
+        "T2"
+      ],
+      "class": "wall",
+      "centre_m": [
+        2.609302325581395,
+        18.194604887337352
+      ],
+      "size_mm": [
+        250,
+        2000
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          2.6146367698163164,
+          18.35271085918228
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    },
+    {
+      "id": 15,
+      "labels": [
+        "T3"
+      ],
+      "class": "wall",
+      "centre_m": [
+        2.6853309481216456,
+        15.108346556648682
+      ],
+      "size_mm": [
+        2000,
+        250
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          2.6912324420087415,
+          15.237096520233035
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 16,
+      "labels": [
+        "T4"
+      ],
+      "class": "wall",
+      "centre_m": [
+        6.210017889087656,
+        11.994668359251031
+      ],
+      "size_mm": [
+        3050,
+        250
+      ],
+      "audit": {
+        "flags": [
+          {
+            "flag_id": "P3-F01",
+            "kind": "merged_component_continuity_review",
+            "source": "recorded dual OCR / classical component containment"
+          }
+        ],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          6.242207804849559,
+          12.093801501075946
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 17,
+      "labels": [
+        "T5"
+      ],
+      "class": "wall",
+      "centre_m": [
+        5.866368515205724,
+        11.254331958108537
+      ],
+      "size_mm": [
+        250,
+        1750
+      ],
+      "audit": {
+        "flags": [
+          {
+            "flag_id": "P3-F02",
+            "kind": "single_pass_label_reading",
+            "source": "recorded dual OCR / classical component containment"
+          }
+        ],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          5.895995366539799,
+          11.346423135464232
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    },
+    {
+      "id": 18,
+      "labels": [
+        "T6"
+      ],
+      "class": "wall",
+      "centre_m": [
+        5.741681574239713,
+        10.501808949539829
+      ],
+      "size_mm": [
+        2100,
+        250
+      ],
+      "audit": {
+        "flags": [
+          {
+            "flag_id": "P3-F03",
+            "kind": "single_pass_label_reading",
+            "source": "recorded dual OCR / classical component containment"
+          }
+        ],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          5.770378464144222,
+          10.586742245315698
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 19,
+      "labels": [
+        "T7"
+      ],
+      "class": "wall",
+      "centre_m": [
+        6.657066189624328,
+        8.932783243414788
+      ],
+      "size_mm": [
+        250,
+        3400
+      ],
+      "audit": {
+        "flags": [
+          {
+            "flag_id": "P3-F04",
+            "kind": "merged_component_continuity_review",
+            "source": "recorded dual OCR / classical component containment"
+          }
+        ],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          6.692590357341017,
+          9.002792211200335
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    },
+    {
+      "id": 20,
+      "labels": [
+        "T8"
+      ],
+      "class": "wall",
+      "centre_m": [
+        5.741681574239713,
+        7.403364011424944
+      ],
+      "size_mm": [
+        2100,
+        250
+      ],
+      "audit": {
+        "flags": [
+          {
+            "flag_id": "P3-F05",
+            "kind": "single_pass_label_reading",
+            "source": "recorded dual OCR / classical component containment"
+          }
+        ],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          5.770378464144222,
+          7.458825381829633
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 0.0,
+      "continuous": null
+    },
+    {
+      "id": 21,
+      "labels": [
+        "T9"
+      ],
+      "class": "wall",
+      "centre_m": [
+        0.14597495527728083,
+        1.0053951126626468
+      ],
+      "size_mm": [
+        250,
+        2000
+      ],
+      "audit": {
+        "flags": [],
+        "source": "dual OCR + directional bar pixels",
+        "status": "unpromoted classical extraction; independent reference and VLM review pending",
+        "prior_label_scale_centre_m": [
+          0.1329369907817503,
+          0.9999999999999994
+        ],
+        "merged": false,
+        "partly_missed": [],
+        "short_returns": "Not separately modelled; labelled rectangular main body only. Historic HW1 grouped returns are retained in its source files.",
+        "hatch_axial_support": 1.0,
+        "footprint_outside_dimension_floor_m2": 0.0,
+        "geometric_warnings": []
+      },
+      "angle_deg": 90.0,
+      "continuous": null
+    }
+  ],
+  "floor": {
+    "outline_area_m2": 186.61499999999995,
+    "load_kN_m2": 8.75,
+    "storeys": 5,
+    "ordinary_flat_area_m2": 179.25,
+    "void_area_m2": 1.9999999999999996,
+    "separate_stair_area_m2": 5.365
+  },
+  "checks": {
+    "sum_areas_m2": 179.25000000000003,
+    "sum_axial_kN": 7842.187500000001,
+    "axial_scope": "five-storey ordinary-flat-slab G+Q contribution only; S1 and element self-weight are in Inherited_HW1_Loads.csv",
+    "region_union_error_m2": 1.355537904146331e-13
+  }
+}

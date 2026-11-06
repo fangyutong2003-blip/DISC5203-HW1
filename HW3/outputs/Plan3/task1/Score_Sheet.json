@@ -1,0 +1,27 @@
+{
+  "association_route": "Retrospective label-to-initial-component bbox audit; not an unseen detector benchmark.",
+  "classical": {
+    "labelled_elements_located": 21,
+    "one_to_one_labels": 16,
+    "merged_groups": [
+      [
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ]
+    ],
+    "labels_sharing_object": 5,
+    "unlabelled_objects": 3,
+    "score": 8,
+    "broken_elements_observed": 0,
+    "break_note": "No axial breaks in the 21 matched bars under the current review; short returns are grouped, not additional elements."
+  },
+  "label_supervised": {
+    "one_to_one_labels": 21,
+    "merged_groups": 0,
+    "unclaimed_bars": 0,
+    "score": 21
+  }
+}

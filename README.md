@@ -8,6 +8,8 @@ This repository contains the final Homework 1 submission and the ongoing Homewor
 
 ## Start here
 
+For HW3, open [Task 1 report](HW3/HW3_Task_01_Report.md), [task status](HW3/records/Task_Status.md), and [iteration log](HW3/records/Iteration_Log.md). The extraction pipeline and one contextual reader are complete for Plan 3. The formal two-reader comparison and structural calculations remain pending.
+
 Open [HW1_Final_Report.md](HW1_Final_Report.md) for the complete continuous submission report.
 
 For HW2, start with [the final English report](HW2_Final_Report.md) and [process-file manifest](HW2_Process_File_Manifest.md). The earlier [submission draft](HW2_Submission_Report_Draft.md) is retained as process evidence.

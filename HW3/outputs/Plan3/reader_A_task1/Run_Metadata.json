@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-11-06T13:30:35.697073+00:00",
+  "model": "GPT-6, system-reported Codex session identity",
+  "image_capability": "Native local image-viewing tool, five actual frozen crops inspected in flag order.",
+  "collection_method": "Assistant-authored structured answers after native image inspection; not an external API call.",
+  "context_limit": "This engineering session previously saw the draft crops and OCR/historical audit. This is a real Task 1 reading but not a blinded controlled Task 2 run. A fresh isolated first-reader session should be collected alongside DP for the formal two-model comparison.",
+  "confidence_note": "Self-reported judgement; not calibrated probability.",
+  "prompt_sha256": "d526886279919aceae670fde2bb544fbbd070441ea03d4192de7876a04ada876",
+  "reference_sha256": "97368e2f0d66f443e8c07ef0201b20c5530b83950f000420fe99c6ad5b8e7fda",
+  "answers_sha256": "cf695bee636a1eb4b71014f6d3ec10155c7b0ad9bdebc00e20ba79eec433bb80",
+  "model_promoted": false
+}

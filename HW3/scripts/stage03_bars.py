@@ -55,6 +55,10 @@ def main():
             thickness = min(w, h)
             expected_thickness = min(a, b)/1000*scale_seed
             mismatch = abs(thickness-expected_thickness)/expected_thickness
+            nominal_classes=sorted({min(h["readings"][0]["size_mm"]) for h in labels})
+            observed_class=min(nominal_classes,key=lambda c:abs(thickness/scale_seed*1000-c))
+            if observed_class!=min(a,b):
+                continue
             if mismatch > .45:
                 continue
             distance = np.linalg.norm(np.array(candidate["centre_px"])-text_centre)

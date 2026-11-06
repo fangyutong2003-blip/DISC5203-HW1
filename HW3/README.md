@@ -1,5 +1,7 @@
 # HW3 - Audited extraction and rigid-diaphragm analysis
 
+Start with [the Task 1 report](HW3_Task_01_Report.md). The assigned-plan Task 1 pipeline is complete; the chronology below and earlier artifacts remain as process evidence. The formal Task 2 comparison is still pending.
+
 Student: Fangyutong, 21353319. Assigned drawing: Floor Plan 3.
 
 ## Current stage

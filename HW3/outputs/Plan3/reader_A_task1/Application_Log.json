@@ -1,0 +1,57 @@
+{
+  "status": "Task 1 single-reader candidate, not Task 2 winner",
+  "original_sha256": "2c0ffece47b3e0f4477238fbc2d1b20061e307c9f2077d8fe57b24500a93c0a8",
+  "original_preserved": true,
+  "accepted": 5,
+  "total": 5,
+  "actions": [
+    {
+      "flag_id": "P3-F01",
+      "reference_agreement": true,
+      "accepted": true,
+      "geometry_vertices_moved": false,
+      "asked_fields": [
+        "continuous"
+      ]
+    },
+    {
+      "flag_id": "P3-F02",
+      "reference_agreement": true,
+      "accepted": true,
+      "geometry_vertices_moved": false,
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "P3-F03",
+      "reference_agreement": true,
+      "accepted": true,
+      "geometry_vertices_moved": false,
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "P3-F04",
+      "reference_agreement": true,
+      "accepted": true,
+      "geometry_vertices_moved": false,
+      "asked_fields": [
+        "continuous"
+      ]
+    },
+    {
+      "flag_id": "P3-F05",
+      "reference_agreement": true,
+      "accepted": true,
+      "geometry_vertices_moved": false,
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    }
+  ]
+}

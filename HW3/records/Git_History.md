@@ -1,10 +1,26 @@
 # Readable Git History
 
-Exported UTC: 2026-11-06T13:05:00.118025+00:00
+Exported UTC: 2026-11-06T13:30:39.059945+00:00
 
 Legacy non-English characters are replaced by ? in this display only. Original Git history remains intact.
 
 ```text
+3782f88 | 2026-11-06T21:05:00+08:00 | Calibrate HW3 metric geometry with explicit rejection and dimension checks
+
+M	HW3/README.md
+A	HW3/outputs/Plan3/stage05/Classical_Elements_Unpromoted.json
+A	HW3/outputs/Plan3/stage05/Dimension_Chain_and_Historical_Audit.json
+A	HW3/outputs/Plan3/stage05/Labelled_Size_Rectangles.png
+A	HW3/outputs/Plan3/stage05/Metric_Calibration.json
+A	HW3/outputs/Plan3/stage05/Metric_Geometry_Review.md
+M	HW3/records/Extraction_Stage_Verification.json
+M	HW3/records/Git_History.md
+A	HW3/records/Independent_Reference_Form.md
+M	HW3/records/Iteration_Log.md
+M	HW3/records/Task_Status.md
+A	HW3/scripts/check_metric_reference.py
+A	HW3/scripts/stage05_metric_geometry.py
+M	HW3/scripts/verify_extraction_stage.py
 be412ee | 2026-11-06T20:55:12+08:00 | Add HW3 dual OCR label matching and retained forest experiment
 
 M	HW3/README.md

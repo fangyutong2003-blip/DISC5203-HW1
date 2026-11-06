@@ -1,0 +1,104 @@
+{
+  "status": "FROZEN inputs v1; Task 2 scoring pending",
+  "model_runs": [],
+  "confidence_threshold": 0.8,
+  "threshold_note": "Confidence alone does not establish correctness; independent reference agreement is required.",
+  "flags": [
+    {
+      "flag_id": "P3-F01",
+      "candidate_label": "T4",
+      "flag": "merged_component_continuity_review",
+      "source": "recorded dual OCR / classical component containment",
+      "crop": "P3-F01.png",
+      "crop_bbox_px": [
+        847,
+        968,
+        1727,
+        1848
+      ],
+      "sha256": "49f2985828f67595e73708b5392961e5a67ed5f3850746e0d62b451078abb23d",
+      "question": "Is the hatched wall through the red cross continuous along its axis, or is there a genuine gap in the concrete?",
+      "asked_fields": [
+        "continuous"
+      ]
+    },
+    {
+      "flag_id": "P3-F02",
+      "candidate_label": "T5",
+      "flag": "single_pass_label_reading",
+      "source": "recorded dual OCR / classical component containment",
+      "crop": "P3-F02.png",
+      "crop_bbox_px": [
+        791,
+        1090,
+        1671,
+        1970
+      ],
+      "sha256": "1e9b746cb598766f16eb268aa1df8cea56116cdd5cd8f45fb75559742f1a5b41",
+      "question": "What element label and size string are printed beside the element at the red cross?",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "P3-F03",
+      "candidate_label": "T6",
+      "flag": "single_pass_label_reading",
+      "source": "recorded dual OCR / classical component containment",
+      "crop": "P3-F03.png",
+      "crop_bbox_px": [
+        771,
+        1214,
+        1651,
+        2094
+      ],
+      "sha256": "9873d0aba1f4923f33fa76c7a26ce14aec37637a924d6c382216b4ec17ff42ec",
+      "question": "What element label and size string are printed beside the element at the red cross?",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "P3-F04",
+      "candidate_label": "T7",
+      "flag": "merged_component_continuity_review",
+      "source": "recorded dual OCR / classical component containment",
+      "crop": "P3-F04.png",
+      "crop_bbox_px": [
+        920,
+        1467,
+        1800,
+        2347
+      ],
+      "sha256": "2bb7ce56f545be38602ab58ed2f3035be1766dade3559f2ea0a6f4069617bb4b",
+      "question": "Is the hatched wall through the red cross continuous along its axis, or is there a genuine gap in the concrete?",
+      "asked_fields": [
+        "continuous"
+      ]
+    },
+    {
+      "flag_id": "P3-F05",
+      "candidate_label": "T8",
+      "flag": "single_pass_label_reading",
+      "source": "recorded dual OCR / classical component containment",
+      "crop": "P3-F05.png",
+      "crop_bbox_px": [
+        770,
+        1722,
+        1650,
+        2602
+      ],
+      "sha256": "4b2fd7a7cd672eda475df8e34e06605dd4d620e60e496b1e802a79aa406cb968",
+      "question": "What element label and size string are printed beside the element at the red cross?",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    }
+  ],
+  "frozen_utc": "2026-11-06T13:23:32.240801+00:00",
+  "reference_sha256": "97368e2f0d66f443e8c07ef0201b20c5530b83950f000420fe99c6ad5b8e7fda",
+  "prompt_sha256": "d526886279919aceae670fde2bb544fbbd070441ea03d4192de7876a04ada876"
+}

@@ -1,6 +1,6 @@
 # Independent reference reading - student form
 
-Status: pending student reading. Do not use either model's answer to fill this form.
+Status: optional student reading, not yet supplied. Task 1 now uses the permitted alternative second-classical-pass reference in outputs/Plan3/independent_reference/Reference.json. This blank form is retained as process evidence; it is not an outstanding prerequisite for that route. Do not use either model's answer to fill this form.
 
 Read the original drawing or the linked crops directly. The student supplies the reference independently of the two flag readers. Record only visible printed evidence. Leave unreadable entries unresolved. This form is a defensible image reading, not original CAD ground truth.
 

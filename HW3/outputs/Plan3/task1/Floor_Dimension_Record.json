@@ -1,0 +1,87 @@
+{
+  "source": "Archived HW1 dimension-chain reading, commit 5f1eafe; rebuilt as rectangle union, not an ink contour.",
+  "source_sha256": "1564d865bf4c6d96eebfca8325d147ca444613c7c181f86cc8c4212277b96450",
+  "rectangles_m": [
+    [
+      0,
+      0,
+      10.2,
+      12.1
+    ],
+    [
+      0,
+      12.1,
+      7.75,
+      3.1
+    ],
+    [
+      2.45,
+      15.2,
+      5.3,
+      4.0
+    ],
+    [
+      3.75,
+      19.2,
+      2.65,
+      0.5
+    ],
+    [
+      0,
+      15.2,
+      2.45,
+      1.0
+    ],
+    [
+      7.75,
+      13.8,
+      0.5,
+      4.3
+    ],
+    [
+      7.75,
+      12.1,
+      2.45,
+      0.9
+    ],
+    [
+      1,
+      -1.2,
+      8.2,
+      1.2
+    ]
+  ],
+  "exclusions_m": [
+    [
+      "O1",
+      4.7,
+      10.6,
+      1.05,
+      1.25
+    ],
+    [
+      "O2",
+      6.0,
+      10.6,
+      0.55,
+      1.25
+    ],
+    [
+      "S1",
+      4.7,
+      7.45,
+      1.85,
+      2.9
+    ]
+  ],
+  "gross_area_m2": 186.61499999999995,
+  "ordinary_flat_area_m2": 179.25,
+  "void_area_m2": 1.9999999999999996,
+  "separate_stair_area_m2": 5.365,
+  "net_horizontal_area_including_stair_m2": 184.61499999999995,
+  "assumptions": [
+    "Five balconies retained; P10 location and short returns remain image-derived.",
+    "O1/O2 remain voids. S1 is separately loaded, not silently treated as ordinary flat slab.",
+    "The outline is inherited from the documented HW1 reading; no claim of newly automated outline detection."
+  ]
+}

@@ -1,0 +1,7 @@
+[
+  {"flag_id":"P3-F01","label":null,"size_mm":null,"continuous":true,"confidence":0.98,"reason":"The hatched horizontal wall through the cross continues across the T junction; no blank gap interrupts its horizontal strip."},
+  {"flag_id":"P3-F02","label":"T5","size_mm":"250x1750","continuous":null,"confidence":0.99,"reason":"The text immediately to the right of the crossed vertical wall reads T5 250x1750."},
+  {"flag_id":"P3-F03","label":"T6","size_mm":"2100x250","continuous":null,"confidence":0.99,"reason":"The text immediately below the crossed horizontal wall reads T6 2100x250."},
+  {"flag_id":"P3-F04","label":null,"size_mm":null,"continuous":true,"confidence":0.97,"reason":"The vertical hatched wall through the cross extends without a visible concrete gap between the upper and lower horizontal wall junctions."},
+  {"flag_id":"P3-F05","label":"T8","size_mm":"2100x250","continuous":null,"confidence":0.99,"reason":"The text immediately above the crossed bottom horizontal wall reads T8 2100x250."}
+]

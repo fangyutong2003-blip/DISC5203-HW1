@@ -1,0 +1,26 @@
+{
+  "adopted_scale_px_per_m": {
+    "x": 164.41176470588238,
+    "y": 164.11458333333334
+  },
+  "origin_px": [
+    267,
+    3378
+  ],
+  "printed_chains_m": {
+    "x": [
+      1.0,
+      8.2,
+      1.0
+    ],
+    "y": [
+      19.2
+    ]
+  },
+  "label_median_scale_px_per_m": {
+    "x": 163.19459888800634,
+    "y": 162.56825938566553
+  },
+  "reason": "Local labelled-length scale caused five footprint/floor mismatches. A single global dimension-anchored affine transform is applied to all measured centres; no per-element coordinate snapping, clipping, or VLM measurement.",
+  "limitation": "Observed exterior bar extents carry pixel/stroke uncertainty; dimension chains are image-derived, not CAD."
+}

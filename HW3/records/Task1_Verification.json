@@ -1,0 +1,292 @@
+{
+  "passed": 71,
+  "total": 71,
+  "checks": [
+    {
+      "check": "required root schema",
+      "pass": true
+    },
+    {
+      "check": "21 unique named elements",
+      "pass": true
+    },
+    {
+      "check": "nine columns and twelve walls",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C1",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C1",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C2",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C2",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C3",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C3",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C4",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C4",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C5",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C5",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C6",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C6",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C7",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C7",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C8",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C8",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre C9",
+      "pass": true
+    },
+    {
+      "check": "audit provenance C9",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T1",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T1",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T10",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T10",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T11",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T11",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T12",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T12",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T2",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T2",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T3",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T3",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T4",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T4",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T5",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T5",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T6",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T6",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T7",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T7",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T8",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T8",
+      "pass": true
+    },
+    {
+      "check": "reader keeps measured centre T9",
+      "pass": true
+    },
+    {
+      "check": "audit provenance T9",
+      "pass": true
+    },
+    {
+      "check": "regions valid and closed",
+      "pass": true
+    },
+    {
+      "check": "no tributary overlap",
+      "pass": true
+    },
+    {
+      "check": "no ordinary slab gaps",
+      "pass": true
+    },
+    {
+      "check": "ordinary excludes both voids and stair",
+      "pass": true
+    },
+    {
+      "check": "floor decomposition",
+      "pass": true
+    },
+    {
+      "check": "raster area matches polygons",
+      "pass": true
+    },
+    {
+      "check": "scoped axial total",
+      "pass": true
+    },
+    {
+      "check": "reference frozen hash",
+      "pass": true
+    },
+    {
+      "check": "actual answers in flag order",
+      "pass": true
+    },
+    {
+      "check": "question/crop hash P3-F01",
+      "pass": true
+    },
+    {
+      "check": "asked fields agree with reference P3-F01",
+      "pass": true
+    },
+    {
+      "check": "question/crop hash P3-F02",
+      "pass": true
+    },
+    {
+      "check": "asked fields agree with reference P3-F02",
+      "pass": true
+    },
+    {
+      "check": "question/crop hash P3-F03",
+      "pass": true
+    },
+    {
+      "check": "asked fields agree with reference P3-F03",
+      "pass": true
+    },
+    {
+      "check": "question/crop hash P3-F04",
+      "pass": true
+    },
+    {
+      "check": "asked fields agree with reference P3-F04",
+      "pass": true
+    },
+    {
+      "check": "question/crop hash P3-F05",
+      "pass": true
+    },
+    {
+      "check": "asked fields agree with reference P3-F05",
+      "pass": true
+    },
+    {
+      "check": "original preserved hash",
+      "pass": true
+    },
+    {
+      "check": "no Task2 promotion",
+      "pass": true
+    },
+    {
+      "check": "forest trained but never chosen",
+      "pass": true
+    },
+    {
+      "check": "feature scores sum one",
+      "pass": true
+    },
+    {
+      "check": "all adopted footprints inside floor",
+      "pass": true
+    },
+    {
+      "check": "hatch completion support at least 85 percent",
+      "pass": true
+    },
+    {
+      "check": "final schema scale uses declared global anchor",
+      "pass": true
+    }
+  ],
+  "known_geometry_warnings": [],
+  "scope": "Task 1 pipeline/artifact consistency. Passing checks do not erase explicitly listed geometry warnings or establish a Task 2 model winner."
+}

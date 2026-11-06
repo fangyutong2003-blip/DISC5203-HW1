@@ -1,0 +1,107 @@
+[
+  {
+    "element": "C1",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "C2",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "C3",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "C4",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "C5",
+    "prior_outside_m2": 0.01041360446213911,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "C6",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "C7",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "C8",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "C9",
+    "prior_outside_m2": 0.01776678899261201,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T1",
+    "prior_outside_m2": 0.21228928944272973,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T10",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T11",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T12",
+    "prior_outside_m2": 0.09202528934791245,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T2",
+    "prior_outside_m2": 0.03817771479557042,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T3",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T4",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T5",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T6",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T7",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T8",
+    "prior_outside_m2": 0.0,
+    "adopted_outside_m2": 0.0
+  },
+  {
+    "element": "T9",
+    "prior_outside_m2": 1.3877787807814457e-16,
+    "adopted_outside_m2": 0.0
+  }
+]

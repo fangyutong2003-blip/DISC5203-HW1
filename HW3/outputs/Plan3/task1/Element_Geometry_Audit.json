@@ -1,0 +1,110 @@
+{
+  "elements": [
+    {
+      "element": "C1",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "C2",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "C3",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "C4",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "C5",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "C6",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "C7",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "C8",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "C9",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T1",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T10",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T11",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T12",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T2",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T3",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T4",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T5",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T6",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T7",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T8",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    },
+    {
+      "element": "T9",
+      "outside_m2": 0.0,
+      "hatch_axial_support": 1.0
+    }
+  ],
+  "note": "Nonzero outside area is retained as a geometry warning, not hidden by clipping or a reader-supplied coordinate."
+}
