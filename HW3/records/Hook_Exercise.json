@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-11-06T12:45:46.316094+00:00",
+  "hook": ".githooks/pre-commit",
+  "scope": "actual hook invoked against staged fixture",
+  "malformed_staged_json_exit": 1,
+  "malformed_staged_json_output": "FAIL: staged-content gate\nHW3/records/Hook_Test_Fixture.json: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n",
+  "repaired_staged_json_exit": 0,
+  "repaired_staged_json_output": "PASS: staged-content gate (13 text files)\n"
+}

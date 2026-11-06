@@ -1,0 +1,5 @@
+#!/bin/sh
+if [ -n "$HW3_PYTHON" ]; then
+    exec "$HW3_PYTHON" HW3/scripts/check_stage.py
+fi
+exec python HW3/scripts/check_stage.py

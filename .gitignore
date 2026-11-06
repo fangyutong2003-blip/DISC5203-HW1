@@ -8,3 +8,6 @@ FloorPlan3_tributary_regions.png
 # Python cache files
 __pycache__/
 *.pyc
+
+# Local HW3 dependency environment
+.venv_hw3/

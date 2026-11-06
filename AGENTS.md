@@ -2,7 +2,7 @@
 
 ## Scope
 
-This repository supports DISC 5203 Homework 1: image-based tributary-area and vertical-load analysis of Floor Plan 3.
+This repository supports DISC 5203 HW1, HW2 and HW3. HW3 extends the retained image-derived geometry to audited extraction, two VLM readers and rigid-diaphragm lateral analysis.
 
 ## Project rules
 
@@ -33,4 +33,19 @@ This repository supports DISC 5203 Homework 1: image-based tributary-area and ve
 - Floor accumulation follows 1:2:3:4:5 for the five-storey building.
 - The sum of element loads equals independently calculated whole-floor loads.
 - Figures and Markdown links resolve from the repository root.
+
+## HW3 sequence and evidence
+
+1. Preserve source images and hashes in HW3/sources; run threshold, morphology, connected components and shape rules before VLM review.
+2. Read text twice, associate one printed label with one compatible bar, and record scale in both axes, provenance and unresolved flags.
+3. Train and retain a random forest with feature importance; never promote its extraction.
+4. Freeze an independent reference by a separately documented route before scoring readers. Historic HW1 geometry is a review aid, not automatically ground truth.
+5. Give two genuinely different image-capable models identical crops, questions and ordering. Save raw responses and actual model identifiers. Never invent a model run or backdate human review.
+6. Promote only after reference scoring and a no-regression gate; retain both raw extractions.
+7. Calculate CM, shear-inclusive wall stiffness and the hand 3-by-3 matrix before the matching OpenSees run. Resolve dimensional inconsistencies in the assignment by derivation and document them.
+8. Use explicit rigidDiaphragm and Transformation constraints; test unit loads, symmetry, equilibrium, load decomposition and zero rotation through CR.
+9. Keep floor mass fixed while modifying walls; compare eccentricity, force shares and periods. Repeat unchanged procedures on the two additional plans.
+10. Commit meaningful stages with English messages. Use .githooks/pre-commit and preserve readable Git history and actual validation logs.
+
+Store student instructions separately from agent-authored briefing proposals. A proposal is not a signed student prediction. Incomplete tasks remain labelled pending; do not promote them merely to produce a final report.
 
