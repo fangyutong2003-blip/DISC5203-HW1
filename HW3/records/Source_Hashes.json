@@ -1,0 +1,26 @@
+[
+  {
+    "file": "sources/assets/FloorPlan1.png",
+    "sha256": "3e6e5c040729c4ee5c6db2debd0c2e54b924996d6f186820a3efee025f863773"
+  },
+  {
+    "file": "sources/assets/FloorPlan2.png",
+    "sha256": "50efb3e85d1ab844cd686f2b5c655ca2d5511a574ee23e36c3cc6a87f3cd2c90"
+  },
+  {
+    "file": "sources/assets/FloorPlan3.png",
+    "sha256": "54c95338e3b81f1a5778066970f4c56b9b180e5e327b11413ed251a866400c6d"
+  },
+  {
+    "file": "sources/assets/NewPlan.png",
+    "sha256": "d70577698599310ca4a62e0c5a3cb4133df16b02dfc417dcf9d2899e673f63c1"
+  },
+  {
+    "file": "sources/assets/UST_logo.png",
+    "sha256": "63fad79032535cd64eb78ad806836587ed242be2f19065a5e665cec126baece7"
+  },
+  {
+    "file": "sources/HW3_Assignment.md",
+    "sha256": "649bce4e96cff0021fa1cfb3773a29676df9d2444b246313ad652de87b6748f4"
+  }
+]

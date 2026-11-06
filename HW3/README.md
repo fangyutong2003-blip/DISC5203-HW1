@@ -4,7 +4,9 @@ Student: Fangyutong, 21353319. Assigned drawing: Floor Plan 3.
 
 ## Current stage
 
-Task 1A is in progress. No reader has been promoted; no final CM/CR has been calculated. DP v4.1 is the student's proposed second reader; exact service model ID and image capability must be recorded from the actual session.
+Task 1A has an initial classical run: 20 connected components, including merged walls and artifacts. Labels, scale and element-level scores remain pending. No reader has been promoted; no final CM/CR has been calculated. DP v4.1 is the student's proposed second reader; exact service model ID and image capability must be recorded from the actual session.
+
+![Initial connected components, not final elements](outputs/Plan3/stage01/07_Component_Overlay.png)
 
 ## Evidence locations
 

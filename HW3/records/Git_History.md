@@ -1,10 +1,33 @@
 # Readable Git History
 
-Exported UTC: 2026-11-06T12:45:27.747652+00:00
+Exported UTC: 2026-11-06T12:47:35.966900+00:00
 
 Legacy non-English characters are replaced by ? in this display only. Original Git history remains intact.
 
 ```text
+8b44c4a | 2026-11-06T20:45:46+08:00 | Initialize HW3 audited workflow and two-reader protocol
+
+A	.githooks/pre-commit
+M	.gitignore
+M	AGENTS.md
+A	HW3/README.md
+A	HW3/prompts/Reader_Instructions.md
+A	HW3/records/Git_History.md
+A	HW3/records/Hook_Exercise.json
+A	HW3/records/Hook_Test_Fixture.json
+A	HW3/records/Iteration_Log.md
+A	HW3/requirements.txt
+A	HW3/scripts/check_stage.py
+A	HW3/scripts/exercise_hook.py
+A	HW3/scripts/export_git_history.py
+A	HW3/scripts/stage01_classical.py
+A	HW3/sources/HW3_Assignment.md
+A	HW3/sources/assets/FloorPlan1.png
+A	HW3/sources/assets/FloorPlan2.png
+A	HW3/sources/assets/FloorPlan3.png
+A	HW3/sources/assets/NewPlan.png
+A	HW3/sources/assets/UST_logo.png
+M	skills.md
 5f1eafe | 2026-10-12T22:34:45+08:00 | Finalize English HW2 submission report
 
 A	HW2_Final_Report.md
