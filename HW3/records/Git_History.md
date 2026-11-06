@@ -1,10 +1,57 @@
 # Readable Git History
 
-Exported UTC: 2026-11-06T13:30:39.059945+00:00
+Exported UTC: 2026-11-06T13:31:01.483864+00:00
 
 Legacy non-English characters are replaced by ? in this display only. Original Git history remains intact.
 
 ```text
+78defc7 | 2026-11-06T21:30:39+08:00 | Complete HW3 Task 1 floor geometry closed areas and crop-only reader record
+
+A	HW3/HW3_Reader_Package_V1.zip
+A	HW3/HW3_Task_01_Report.md
+M	HW3/README.md
+A	HW3/outputs/Plan3/independent_reference/P3-F01_Reference_Input.png
+A	HW3/outputs/Plan3/independent_reference/P3-F02_Reference_Input.png
+A	HW3/outputs/Plan3/independent_reference/P3-F03_Reference_Input.png
+A	HW3/outputs/Plan3/independent_reference/P3-F04_Reference_Input.png
+A	HW3/outputs/Plan3/independent_reference/P3-F05_Reference_Input.png
+A	HW3/outputs/Plan3/independent_reference/Reference.json
+A	HW3/outputs/Plan3/reader_A_task1/Application_Log.json
+A	HW3/outputs/Plan3/reader_A_task1/Raw_Answers.json
+A	HW3/outputs/Plan3/reader_A_task1/Run_Metadata.json
+A	HW3/outputs/Plan3/reader_package_v1/Flag_Manifest.json
+A	HW3/outputs/Plan3/reader_package_v1/P3-F01.png
+A	HW3/outputs/Plan3/reader_package_v1/P3-F02.png
+A	HW3/outputs/Plan3/reader_package_v1/P3-F03.png
+A	HW3/outputs/Plan3/reader_package_v1/P3-F04.png
+A	HW3/outputs/Plan3/reader_package_v1/P3-F05.png
+A	HW3/outputs/Plan3/reader_package_v1/Questions.md
+A	HW3/outputs/Plan3/reader_package_v1/Reader_Instructions.md
+A	HW3/outputs/Plan3/task1/Calibration_Revision_Audit.json
+A	HW3/outputs/Plan3/task1/Candidate_Tributary_Areas.csv
+A	HW3/outputs/Plan3/task1/Closed_Tributary_Regions.geojson
+A	HW3/outputs/Plan3/task1/Column_Grid.json
+A	HW3/outputs/Plan3/task1/Element_Geometry_Audit.json
+A	HW3/outputs/Plan3/task1/Elements_After_Reader_A.json
+A	HW3/outputs/Plan3/task1/Elements_Classical.json
+A	HW3/outputs/Plan3/task1/Floor_Dimension_Record.json
+A	HW3/outputs/Plan3/task1/Floor_Zones.geojson
+A	HW3/outputs/Plan3/task1/Floor_and_Closed_Regions.png
+A	HW3/outputs/Plan3/task1/Global_Dimension_Anchor.json
+A	HW3/outputs/Plan3/task1/Inherited_HW1_Loads.csv
+A	HW3/outputs/Plan3/task1/Score_Sheet.json
+M	HW3/records/Git_History.md
+M	HW3/records/Independent_Reference_Form.md
+M	HW3/records/Iteration_Log.md
+A	HW3/records/Task1_Verification.json
+M	HW3/records/Task_Status.md
+A	HW3/scripts/apply_task1_reader.py
+M	HW3/scripts/stage03_bars.py
+A	HW3/scripts/stage06_independent_reference.py
+A	HW3/scripts/stage07_floor_and_record.py
+A	HW3/scripts/verify_task1.py
+A	HW3/scripts/write_task1_report.py
+M	README.md
 3782f88 | 2026-11-06T21:05:00+08:00 | Calibrate HW3 metric geometry with explicit rejection and dimension checks
 
 M	HW3/README.md

@@ -1,0 +1,10 @@
+# Keep hashed text artifacts byte-stable across Windows and Unix checkouts.
+*.json text eol=lf
+*.geojson text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.png binary
+*.zip binary
+*.joblib binary
