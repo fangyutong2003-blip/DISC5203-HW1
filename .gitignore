@@ -11,3 +11,6 @@ __pycache__/
 
 # Local HW3 dependency environment
 .venv_hw3/
+
+# Original screenshots containing unrelated personal sidebar content
+HW3/local_evidence/

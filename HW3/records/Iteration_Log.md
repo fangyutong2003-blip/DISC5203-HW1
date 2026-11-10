@@ -70,3 +70,8 @@
 ### Model identity follow-up
 
 - The student subsequently confirmed the external model as Grok 4.5. Metadata and the comparison table now use that student-reported version. The original answers remain unchanged; screenshot/transcript verification and execution-environment limitations remain separately recorded.
+
+### Screenshot follow-up
+
+- The student supplied an original website screenshot corroborating P3-F05, the pasted JSON answer, and the chatbot's self-description as Grok 4.5. The selector only reads Fast, so the exact backend version remains unverified.
+- Original screenshot retained locally in ignored local_evidence because unrelated personal sidebar conversations are visible. A tracked English evidence description records what is and is not established; raw model answers are unchanged.

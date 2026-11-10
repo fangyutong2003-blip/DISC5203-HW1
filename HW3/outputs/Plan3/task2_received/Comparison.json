@@ -95,7 +95,7 @@
   "model_promoted": null,
   "verdict": "Tie on the five asked-field answers; no accuracy winner is established. Self-reported confidence is not a tiebreaker.",
   "remaining": [
-    "Website/session evidence for student-reported Grok 4.5",
+    "Full-session evidence and exact backend version beyond chatbot self-description",
     "Isolated first-reader run for fair comparison",
     "Document or align the execution harness",
     "Structural consequences relative to reference after Task 3 mechanics exists"

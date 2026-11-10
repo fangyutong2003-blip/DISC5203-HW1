@@ -1,16 +1,18 @@
 {
   "provider": "Grok (user-reported; original user spelling: gork)",
   "exact_model_version": "Grok 4.5",
-  "model_version_source": "Student confirmation in this chat on 2026-11-10; website screenshot not yet supplied.",
+  "model_version_source": "Student confirmation and visible chatbot self-description in screenshot received 2026-11-10. The UI selector displays Fast, not an exact model version; backend version is not independently verified.",
   "collection_method": "Five original JSON objects pasted by the student from an external chatbot session.",
   "received_date_Asia_Singapore": "2026-11-10",
   "external_inference_time": null,
-  "website_model_screenshot_received": false,
+  "website_model_screenshot_received": true,
+  "screenshot_evidence": "HW3/records/Grok_Screenshot_Evidence.md",
+  "exact_backend_version_independently_verified": false,
   "prompt_and_image_submission_independently_verified": false,
   "raw_answer_handling": "Objects preserved without changing values or correcting errors; combined into an ordered array.",
   "limitations": [
-    "Model version is student-reported as Grok 4.5; original website transcript or screenshot has not been supplied.",
-    "Common question package was supplied to the student; the external session's actual prompt, images, settings and ordering have not been inspected.",
+    "The screenshot corroborates the P3-F05 question, attachment indicator and answer, plus chatbot self-description as Grok 4.5. It does not independently verify the exact backend version.",
+    "The complete external session's five prompts, image contents, settings and ordering have not been inspected; only P3-F05 is visibly corroborated by this screenshot.",
     "The native-viewing engineering session used for Reader A and the external website are not an identical execution harness.",
     "Reader A previously saw OCR and reference-related engineering context. This comparison is provisional, not a blinded controlled benchmark."
   ],

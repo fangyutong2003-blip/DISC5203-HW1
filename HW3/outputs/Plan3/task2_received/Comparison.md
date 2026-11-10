@@ -9,7 +9,7 @@ Provisional scoring of received records; Task 2 evidence not yet complete
 
 Tie on the five asked-field answers; no accuracy winner is established. Self-reported confidence is not a tiebreaker.
 
-The student confirmed Grok 4.5 on 2026-11-10; a website screenshot or original transcript has not been supplied. The five JSON objects are preserved as received, without correcting them. The two original execution environments differ. Reader A was an engineering session with prior draft/answer-related context, not an isolated reader. These limitations prevent presenting this table as a fully controlled experiment.
+The student confirmed Grok 4.5 and supplied a screenshot on 2026-11-10. The screenshot corroborates P3-F05 and the chatbot's self-description; the UI selector shows Fast rather than an exact backend version. The full five-question website transcript remains unavailable. The five pasted JSON objects are preserved as received, without correcting them. The two original execution environments differ. Reader A had prior draft/answer-related engineering context. These limitations prevent presenting the table as a fully controlled experiment. See [screenshot evidence description](../../../records/Grok_Screenshot_Evidence.md).
 
 All queried fields are identical, so these five corrections alone introduce no geometry difference between the readers. No numerical CR or reference-relative structural error is claimed before the mechanics calculation. No winner or promotion has been manufactured.
 
