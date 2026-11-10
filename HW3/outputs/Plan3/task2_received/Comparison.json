@@ -1,0 +1,103 @@
+{
+  "status": "Provisional scoring of received records; Task 2 evidence not yet complete",
+  "reference_sha256": "97368e2f0d66f443e8c07ef0201b20c5530b83950f000420fe99c6ad5b8e7fda",
+  "readers": [
+    {
+      "reader": "GPT-6 contextual Task 1 reader",
+      "resolved": 5,
+      "broken": 0,
+      "total": 5,
+      "mean_confidence": 0.984,
+      "flags": [
+        {
+          "flag_id": "P3-F01",
+          "resolved": true,
+          "broken": false,
+          "confidence": 0.98,
+          "max_dimension_error_mm": null
+        },
+        {
+          "flag_id": "P3-F02",
+          "resolved": true,
+          "broken": false,
+          "confidence": 0.99,
+          "max_dimension_error_mm": 0
+        },
+        {
+          "flag_id": "P3-F03",
+          "resolved": true,
+          "broken": false,
+          "confidence": 0.99,
+          "max_dimension_error_mm": 0
+        },
+        {
+          "flag_id": "P3-F04",
+          "resolved": true,
+          "broken": false,
+          "confidence": 0.97,
+          "max_dimension_error_mm": null
+        },
+        {
+          "flag_id": "P3-F05",
+          "resolved": true,
+          "broken": false,
+          "confidence": 0.99,
+          "max_dimension_error_mm": 0
+        }
+      ]
+    },
+    {
+      "reader": "Grok (version pending)",
+      "resolved": 5,
+      "broken": 0,
+      "total": 5,
+      "mean_confidence": 0.9800000000000001,
+      "flags": [
+        {
+          "flag_id": "P3-F01",
+          "resolved": true,
+          "broken": false,
+          "confidence": 0.95,
+          "max_dimension_error_mm": null
+        },
+        {
+          "flag_id": "P3-F02",
+          "resolved": true,
+          "broken": false,
+          "confidence": 1.0,
+          "max_dimension_error_mm": 0
+        },
+        {
+          "flag_id": "P3-F03",
+          "resolved": true,
+          "broken": false,
+          "confidence": 1.0,
+          "max_dimension_error_mm": 0
+        },
+        {
+          "flag_id": "P3-F04",
+          "resolved": true,
+          "broken": false,
+          "confidence": 0.95,
+          "max_dimension_error_mm": null
+        },
+        {
+          "flag_id": "P3-F05",
+          "resolved": true,
+          "broken": false,
+          "confidence": 1.0,
+          "max_dimension_error_mm": 0
+        }
+      ]
+    }
+  ],
+  "asked_field_outputs_identical": true,
+  "model_promoted": null,
+  "verdict": "Tie on the five asked-field answers; no accuracy winner is established. Self-reported confidence is not a tiebreaker.",
+  "remaining": [
+    "Exact Grok version and website/session evidence",
+    "Isolated first-reader run for fair comparison",
+    "Document or align the execution harness",
+    "Structural consequences relative to reference after Task 3 mechanics exists"
+  ]
+}

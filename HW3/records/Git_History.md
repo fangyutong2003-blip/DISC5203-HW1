@@ -1,10 +1,14 @@
 # Readable Git History
 
-Exported UTC: 2026-11-06T13:31:01.483864+00:00
+Exported UTC: 2026-11-10T07:34:26.860228+00:00
 
 Legacy non-English characters are replaced by ? in this display only. Original Git history remains intact.
 
 ```text
+541883a | 2026-11-06T21:31:01+08:00 | Preserve HW3 text hashes across platforms and export Task 1 history
+
+A	HW3/.gitattributes
+M	HW3/records/Git_History.md
 78defc7 | 2026-11-06T21:30:39+08:00 | Complete HW3 Task 1 floor geometry closed areas and crop-only reader record
 
 A	HW3/HW3_Reader_Package_V1.zip

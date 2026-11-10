@@ -1,0 +1,42 @@
+[
+  {
+    "flag_id": "P3-F01",
+    "label": null,
+    "size_mm": null,
+    "continuous": true,
+    "confidence": 0.95,
+    "reason": "The hatched concrete region passes unbroken through the red cross with continuous hatching and no visible interruption or gap along its horizontal axis."
+  },
+  {
+    "flag_id": "P3-F02",
+    "label": "T5",
+    "size_mm": "250x1750",
+    "continuous": null,
+    "confidence": 1.0,
+    "reason": "The text 'T5 250x1750' is printed immediately beside the vertical hatched element containing the red cross."
+  },
+  {
+    "flag_id": "P3-F03",
+    "label": "T6",
+    "size_mm": "2100x250",
+    "continuous": null,
+    "confidence": 1.0,
+    "reason": "The text 'T6 2100x250' is printed directly below the horizontal hatched element containing the red cross."
+  },
+  {
+    "flag_id": "P3-F04",
+    "label": null,
+    "size_mm": null,
+    "continuous": true,
+    "confidence": 0.95,
+    "reason": "The vertical hatched strip containing the red cross shows continuous hatching with no interruption or gap along its vertical axis."
+  },
+  {
+    "flag_id": "P3-F05",
+    "label": "T8",
+    "size_mm": "2100x250",
+    "continuous": null,
+    "confidence": 1.0,
+    "reason": "The text 'T8 2100x250' is printed directly above the horizontal hatched element containing the red cross."
+  }
+]
