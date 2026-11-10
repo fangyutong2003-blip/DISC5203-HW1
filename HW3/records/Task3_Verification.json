@@ -1,0 +1,238 @@
+{
+  "passed": 54,
+  "total": 54,
+  "checks": [
+    {
+      "check": "polygon-integral one-storey mass",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "polygon-integral CM",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "polygon-integral polar mass",
+      "pass": true,
+      "error": 8.185452315956354e-12
+    },
+    {
+      "check": "five-storey sum not storey mass",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T1",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T1",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T10",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T10",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T11",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T11",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T12",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T12",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T2",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T2",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T3",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T3",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T4",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T4",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T5",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T5",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T6",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T6",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T7",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T7",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T8",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T8",
+      "pass": true
+    },
+    {
+      "check": "shear stiffness independent formula T9",
+      "pass": true
+    },
+    {
+      "check": "shear increases flexibility T9",
+      "pass": true
+    },
+    {
+      "check": "independent scalar-sum K",
+      "pass": true
+    },
+    {
+      "check": "weighted-position CR",
+      "pass": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "check": "flexibility CR",
+      "pass": true
+    },
+    {
+      "check": "symmetric K",
+      "pass": true
+    },
+    {
+      "check": "positive-definite K",
+      "pass": true
+    },
+    {
+      "check": "K F identity",
+      "pass": true
+    },
+    {
+      "check": "coordinate shift matches K at CR",
+      "pass": true
+    },
+    {
+      "check": "zero coupling at CR",
+      "pass": true
+    },
+    {
+      "check": "unit push through CR no rotation x",
+      "pass": true
+    },
+    {
+      "check": "unit push through CR no rotation y",
+      "pass": true
+    },
+    {
+      "check": "CM force rotates eccentric floor",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T1",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T10",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T11",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T12",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T2",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T3",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T4",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T5",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T6",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T7",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T8",
+      "pass": true
+    },
+    {
+      "check": "direct solve versus push-turn T9",
+      "pass": true
+    },
+    {
+      "check": "demonstration horizontal x closure",
+      "pass": true,
+      "error": 1.887379141862766e-15
+    },
+    {
+      "check": "demonstration horizontal y closure",
+      "pass": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "check": "demonstration moment closure about CM",
+      "pass": true,
+      "error": 5.684341886080802e-14
+    }
+  ],
+  "independent_polygon_CM_m": [
+    4.9637705495219775,
+    8.326082658505538
+  ],
+  "independent_weighted_CR_m": [
+    5.563279751615918,
+    9.694115626048402
+  ],
+  "scope": "Analytical consistency and independent integration only; OpenSees agreement not yet checked."
+}

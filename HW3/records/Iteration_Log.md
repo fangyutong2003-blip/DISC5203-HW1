@@ -75,3 +75,13 @@
 
 - The student supplied an original website screenshot corroborating P3-F05, the pasted JSON answer, and the chatbot's self-description as Grok 4.5. The selector only reads Fast, so the exact backend version remains unverified.
 - Original screenshot retained locally in ignored local_evidence because unrelated personal sidebar conversations are visible. A tracked English evidence description records what is and is not established; raw model answers are unchanged.
+
+## 2026-11-10 - Task 3 analytical baseline before OpenSees
+
+- User instruction: continue. The analytical plan and parameter file were committed first as 8d1d35c. No student-signed prediction or handwritten work is claimed.
+- Both readers have identical asked-field answers. A provisional common-geometry mechanics baseline proceeds without claiming final Task 2 promotion or a model winner.
+- Signed rectangles keep O1/O2 void and S1 separate. One-storey equivalent mass is 164.666794 t; five-storey sum is 823.333970 t. CM=(4.963771,8.326083) m. The assigned service G+Q intensity is an exercise mass convention, not a code seismic mass.
+- Corrected dimensional inconsistency in the brief's stiffness-based CR expression by deriving weighted-position and flexibility formulas. Full force torque uses signed directional eccentricity, not automatically e*F.
+- The matched rectangular-wall baseline retains strong/weak lateral bending and shear, excludes intrinsic vertical wall torsion and columns, and treats walls as cantilevers. Strong-direction-only and bending-only sensitivity cases are retained separately.
+- Shear-inclusive CR=(5.563280,9.694116) m, e=1.493628 m. Independent polygon mass integrals, scalar stiffness sums, coordinate shift, unit-load no-rotation and wall-force equilibrium checks pass 54/54. No OpenSees agreement is claimed until the next actual run.
+- Task 4's detailed model briefing is frozen before solver execution. No VLM confidence tiebreaker or hidden geometry correction is used.
