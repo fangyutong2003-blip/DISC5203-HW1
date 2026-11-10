@@ -12,6 +12,8 @@ For HW3, open [Task 1 report](HW3/HW3_Task_01_Report.md), [task status](HW3/reco
 
 The provisional common-geometry baseline now has [Task 3 analytical centres](HW3/HW3_Task_03_Analytical_Report.md) and [Tasks 4/5 OpenSees verification](HW3/HW3_Task_04_05_OpenSees_Report.md). Task 2's formal experiment-control limits remain open; no reader winner is claimed.
 
+[Tasks 6/7 modification and explanation](HW3/HW3_Task_06_07_Modification_Report.md) align CR with the fixed CM by thickening T9/T10 inward. Both exact and 5 mm-rounded proposals, geometry checks, force redistribution, added concrete and actual coupled modes are retained. Task 8's two additional plans remain pending.
+
 Open [HW1_Final_Report.md](HW1_Final_Report.md) for the complete continuous submission report.
 
 For HW2, start with [the final English report](HW2_Final_Report.md) and [process-file manifest](HW2_Process_File_Manifest.md). The earlier [submission draft](HW2_Submission_Report_Draft.md) is retained as process evidence.

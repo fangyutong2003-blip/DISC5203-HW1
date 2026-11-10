@@ -1,0 +1,545 @@
+{
+  "passed": 133,
+  "total": 133,
+  "checks": [
+    {
+      "check": "baseline hash unchanged",
+      "pass": true
+    },
+    {
+      "check": "saved before walls equal baseline",
+      "pass": true
+    },
+    {
+      "check": "mass record unchanged",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T1",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T1",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T10",
+      "pass": true
+    },
+    {
+      "check": "ideal inward growth T10",
+      "pass": true
+    },
+    {
+      "check": "ideal inside floor T10",
+      "pass": true
+    },
+    {
+      "check": "ideal avoids void/stair T10",
+      "pass": true
+    },
+    {
+      "check": "ideal avoids columns T10",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T11",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T11",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T12",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T12",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T2",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T2",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T3",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T3",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T4",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T4",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T5",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T5",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T6",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T6",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T7",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T7",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T8",
+      "pass": true
+    },
+    {
+      "check": "ideal unselected wall preserved T8",
+      "pass": true
+    },
+    {
+      "check": "ideal unchanged length/direction T9",
+      "pass": true
+    },
+    {
+      "check": "ideal inward growth T9",
+      "pass": true
+    },
+    {
+      "check": "ideal inside floor T9",
+      "pass": true
+    },
+    {
+      "check": "ideal avoids void/stair T9",
+      "pass": true
+    },
+    {
+      "check": "ideal avoids columns T9",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T1",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T1",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T10",
+      "pass": true
+    },
+    {
+      "check": "rounded inward growth T10",
+      "pass": true
+    },
+    {
+      "check": "rounded inside floor T10",
+      "pass": true
+    },
+    {
+      "check": "rounded avoids void/stair T10",
+      "pass": true
+    },
+    {
+      "check": "rounded avoids columns T10",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T11",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T11",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T12",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T12",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T2",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T2",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T3",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T3",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T4",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T4",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T5",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T5",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T6",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T6",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T7",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T7",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T8",
+      "pass": true
+    },
+    {
+      "check": "rounded unselected wall preserved T8",
+      "pass": true
+    },
+    {
+      "check": "rounded unchanged length/direction T9",
+      "pass": true
+    },
+    {
+      "check": "rounded inward growth T9",
+      "pass": true
+    },
+    {
+      "check": "rounded inside floor T9",
+      "pass": true
+    },
+    {
+      "check": "rounded avoids void/stair T9",
+      "pass": true
+    },
+    {
+      "check": "rounded avoids columns T9",
+      "pass": true
+    },
+    {
+      "check": "added volume T9",
+      "pass": true
+    },
+    {
+      "check": "added weight T9",
+      "pass": true
+    },
+    {
+      "check": "added volume T10",
+      "pass": true
+    },
+    {
+      "check": "added weight T10",
+      "pass": true
+    },
+    {
+      "check": "before independent K",
+      "pass": true
+    },
+    {
+      "check": "before positive stiffness",
+      "pass": true
+    },
+    {
+      "check": "before hand/model F",
+      "pass": true
+    },
+    {
+      "check": "before hand/model CR",
+      "pass": true
+    },
+    {
+      "check": "before unchanged mass matrix",
+      "pass": true
+    },
+    {
+      "check": "beforex solve matches K",
+      "pass": true
+    },
+    {
+      "check": "beforex global equilibrium",
+      "pass": true
+    },
+    {
+      "check": "beforex signed amplification formula",
+      "pass": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "check": "beforey solve matches K",
+      "pass": true
+    },
+    {
+      "check": "beforey global equilibrium",
+      "pass": true
+    },
+    {
+      "check": "beforey signed amplification formula",
+      "pass": true,
+      "error": 6.661338147750939e-16
+    },
+    {
+      "check": "before eigenvalue 1",
+      "pass": true
+    },
+    {
+      "check": "before modal residual 1",
+      "pass": true
+    },
+    {
+      "check": "before model modal shape 1",
+      "pass": true
+    },
+    {
+      "check": "before eigenvalue 2",
+      "pass": true
+    },
+    {
+      "check": "before modal residual 2",
+      "pass": true
+    },
+    {
+      "check": "before model modal shape 2",
+      "pass": true
+    },
+    {
+      "check": "before eigenvalue 3",
+      "pass": true
+    },
+    {
+      "check": "before modal residual 3",
+      "pass": true
+    },
+    {
+      "check": "before model modal shape 3",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned independent K",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned positive stiffness",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned hand/model F",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned hand/model CR",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned unchanged mass matrix",
+      "pass": true
+    },
+    {
+      "check": "ideal_alignedx solve matches K",
+      "pass": true
+    },
+    {
+      "check": "ideal_alignedx global equilibrium",
+      "pass": true
+    },
+    {
+      "check": "ideal_alignedx signed amplification formula",
+      "pass": true,
+      "error": 8.548717289613705e-15
+    },
+    {
+      "check": "ideal_alignedy solve matches K",
+      "pass": true
+    },
+    {
+      "check": "ideal_alignedy global equilibrium",
+      "pass": true
+    },
+    {
+      "check": "ideal_alignedy signed amplification formula",
+      "pass": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "check": "ideal_aligned eigenvalue 1",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned modal residual 1",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned model modal shape 1",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned eigenvalue 2",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned modal residual 2",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned model modal shape 2",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned eigenvalue 3",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned modal residual 3",
+      "pass": true
+    },
+    {
+      "check": "ideal_aligned model modal shape 3",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm independent K",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm positive stiffness",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm hand/model F",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm hand/model CR",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm unchanged mass matrix",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mmx solve matches K",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mmx global equilibrium",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mmx signed amplification formula",
+      "pass": true,
+      "error": 3.9745984281580604e-14
+    },
+    {
+      "check": "rounded_5mmy solve matches K",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mmy global equilibrium",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mmy signed amplification formula",
+      "pass": true,
+      "error": 4.440892098500626e-16
+    },
+    {
+      "check": "rounded_5mm eigenvalue 1",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm modal residual 1",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm model modal shape 1",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm eigenvalue 2",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm modal residual 2",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm model modal shape 2",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm eigenvalue 3",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm modal residual 3",
+      "pass": true
+    },
+    {
+      "check": "rounded_5mm model modal shape 3",
+      "pass": true
+    },
+    {
+      "check": "ideal target CM=CR",
+      "pass": true
+    },
+    {
+      "check": "aligned CM force no turn x",
+      "pass": true
+    },
+    {
+      "check": "aligned all wall factors one x",
+      "pass": true
+    },
+    {
+      "check": "aligned CM force no turn y",
+      "pass": true
+    },
+    {
+      "check": "aligned all wall factors one y",
+      "pass": true
+    },
+    {
+      "check": "rounded design reduces eccentricity",
+      "pass": true
+    }
+  ],
+  "scope": "Tasks 6/7 fixed-mass modification and numerical interpretation; not a construction design or final Task 2 promotion."
+}

@@ -1,10 +1,34 @@
 # Readable Git History
 
-Exported UTC: 2026-11-10T08:06:40.312654+00:00
+Exported UTC: 2026-11-10T08:19:11.897884+00:00
 
 Legacy non-English characters are replaced by ? in this display only. Original Git history remains intact.
 
 ```text
+e8514a7 | 2026-11-10T16:12:05+08:00 | Freeze HW3 wall-thickening design constraints before optimisation
+
+A	HW3/params_modification.json
+A	HW3/records/Task_06_PreSolve_Design_Briefing.md
+080d26e | 2026-11-10T16:06:40+08:00 | Verify HW3 rigid diaphragm unit loads reactions and push-turn decomposition
+
+M	HW3/HW3_Task_03_Analytical_Report.md
+A	HW3/HW3_Task_04_05_OpenSees_Report.md
+M	HW3/README.md
+M	HW3/outputs/Plan3/task2_received/Comparison.json
+M	HW3/outputs/Plan3/task2_received/Comparison.md
+A	HW3/outputs/Plan3/task4/Demonstration_Wall_Reactions.csv
+A	HW3/outputs/Plan3/task4/OpenSees_Result.json
+A	HW3/outputs/Plan3/task4/Wall_Force_Comparison.png
+M	HW3/records/Git_History.md
+M	HW3/records/Iteration_Log.md
+A	HW3/records/Task4_5_Verification.json
+M	HW3/records/Task_Status.md
+M	HW3/scripts/compare_received_readers.py
+M	HW3/scripts/task03_centres.py
+A	HW3/scripts/task04_opensees.py
+A	HW3/scripts/verify_task04.py
+A	HW3/scripts/write_task04_report.py
+M	README.md
 3fd490a | 2026-11-10T16:00:28+08:00 | Calculate and independently verify HW3 analytical CM CR before OpenSees
 
 A	HW3/HW3_Task_03_Analytical_Report.md
