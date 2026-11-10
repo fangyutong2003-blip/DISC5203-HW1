@@ -1,0 +1,35 @@
+{
+  "selected": false,
+  "selection_reason": "Labels copy the classical rules, including merges and artifacts.",
+  "stage": "preliminary weak-label experiment; not final label-supervised pipeline extraction",
+  "training_plan": "NIST",
+  "test_plan": null,
+  "validation_note": "No generalisation performance is claimed on the training drawing. The unchanged fitting procedure is repeated per plan, not a held-out transfer accuracy test.",
+  "class_counts": {
+    "0": 53562
+  },
+  "degenerate_single_class": true,
+  "random_seed": 5203,
+  "trees": 60,
+  "features": 15,
+  "training_pixels": 53562,
+  "training_seconds": 0.26872650000041176,
+  "image_resize_factor": 0.5,
+  "feature_importance": {
+    "grey": 0.0,
+    "edge_strength": 0.0,
+    "ink_density_5": 0.0,
+    "diagonal_45_5": 0.0,
+    "ink_density_9": 0.0,
+    "diagonal_45_9": 0.0,
+    "ink_density_17": 0.0,
+    "diagonal_45_17": 0.0,
+    "blur_1": 0.0,
+    "blur_2": 0.0,
+    "blur_4": 0.0,
+    "blur_8": 0.0,
+    "directional_1_9": 0.0,
+    "directional_1_17": 0.0,
+    "directional_17_1": 0.0
+  }
+}

@@ -4,17 +4,19 @@ from pathlib import Path
 import cv2
 import numpy as np
 from scipy.optimize import linear_sum_assignment
+from plan_context import context
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    out = ROOT / "outputs/Plan3/stage03"
+    plan, source, output = context()
+    out = output / "stage03"
     out.mkdir(parents=True, exist_ok=True)
-    initial = json.loads((ROOT / "outputs/Plan3/stage01/Classical_Components.json").read_text())
-    ocr = json.loads((ROOT / "outputs/Plan3/stage02/Dual_OCR.json").read_text())
-    mask = cv2.imread(str(ROOT / "outputs/Plan3/stage01/04_Open21.png"), 0)
-    grey = cv2.imread(str(ROOT / "sources/assets/FloorPlan3.png"), 0)
+    initial = json.loads((output / "stage01/Classical_Components.json").read_text())
+    ocr = json.loads((output / "stage02/Dual_OCR.json").read_text())
+    mask = cv2.imread(str(output / "stage01/04_Open21.png"), 0)
+    grey = cv2.imread(str(source), 0)
     candidates = []
     for direction, kernel in (("x", np.ones((1, 121), np.uint8)),
                               ("y", np.ones((121, 1), np.uint8))):
@@ -40,9 +42,11 @@ def main():
     # Use square-column sizes to estimate scale without a pre-existing metric schedule.
     column_widths = [np.mean(c["bbox_px"][2:]) for c in candidates if c["class"] == "column"]
     printed_columns = [h["readings"][0]["size_mm"][0]/1000 for h in labels if h["label"].startswith("C")]
-    scale_seed = float(np.median(column_widths)/np.median(printed_columns))
+    scale_seed = float(np.median(column_widths)/np.median(printed_columns)) if column_widths and printed_columns else None
     cost = np.full((len(labels), len(candidates)), 1e9)
     for i, label in enumerate(labels):
+        if scale_seed is None:
+            continue
         readings = label["readings"]
         best = max(readings, key=lambda r: r["confidence"])
         a, b = best["size_mm"]
@@ -80,7 +84,7 @@ def main():
         cv2.putText(overlay,item["label"],(x,y-5),cv2.FONT_HERSHEY_SIMPLEX,.8,(255,0,0),2)
     cv2.imwrite(str(out / "Provisional_Label_Matches.png"),overlay)
     result = {"scale_seed_px_per_m": scale_seed,
-              "scale_note": "Provisional square-column median; stroke growth NOT yet subtracted. Not final label-derived scale.",
+              "scale_note": "Provisional square-column median; stroke growth NOT yet subtracted. Not final label-derived scale." if scale_seed is not None else "No scale seed: square-column pixel widths or printed column sizes absent. No fabricated size or matching fallback.",
               "thickness_gate_relative": .45, "directional_opening_px": 121,
               "candidates": candidates, "matches": matched,
               "unmatched_labels": sorted({l["label"] for l in labels}-{m["label"] for m in matched}),
@@ -90,7 +94,7 @@ def main():
     assert len({m["label"] for m in matched}) == len(matched)
     print(f"PASS: unique claims; {len(candidates)} candidates, {len(matched)} provisional matches")
     print("Unmatched labels:",result["unmatched_labels"])
-    print("Scale seed, NOT final:",round(scale_seed,3))
+    print("Scale seed, NOT final:",round(scale_seed,3) if scale_seed is not None else None)
 
 
 if __name__ == "__main__":

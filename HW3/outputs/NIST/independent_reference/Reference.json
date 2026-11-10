@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-11-10T08:49:56.941649+00:00",
+  "route": "Same alternative threshold-180 OCR / trim-8 raw-ink occupancy route as Plan 3; no VLM answers.",
+  "independence_limits": "Shares OCR engine and query locations; this is an alternative classical reference, not independent human/CAD ground truth. NewPlan range syntax is parsed only in this reference, never added to main extraction.",
+  "records": [
+    {
+      "flag_id": "NI-F01",
+      "expected": {
+        "label": null,
+        "size_mm": null,
+        "continuous": null
+      },
+      "reference_resolved": false,
+      "source_unmarked_crop_sha256": "69cedadb64fc39098fa211da2a2e586c21d4804ed950b137ac7995a78c3e4b6b",
+      "threshold": 180,
+      "independent_ocr": [],
+      "raw_ink_axial_support": null,
+      "interior_trim_px": 8,
+      "reason": "Fixed 8 px reference trim leaves no interior in the thin schematic symbol; unchanged route unresolved"
+    },
+    {
+      "flag_id": "NI-F02",
+      "expected": {
+        "label": null,
+        "size_mm": null,
+        "continuous": null
+      },
+      "reference_resolved": false,
+      "source_unmarked_crop_sha256": "653be12b8b9cf34d262ffefc947fcb8ecc89f728a878c897658697f26debc32e",
+      "threshold": 180,
+      "independent_ocr": [],
+      "raw_ink_axial_support": null,
+      "interior_trim_px": 8,
+      "reason": "Fixed 8 px reference trim leaves no interior in the thin schematic symbol; unchanged route unresolved"
+    },
+    {
+      "flag_id": "NI-F03",
+      "expected": {
+        "label": null,
+        "size_mm": null,
+        "continuous": null
+      },
+      "reference_resolved": false,
+      "source_unmarked_crop_sha256": "90e5bc779ab3a27112606b1a68fdda335e1d0163c5b4627d0bfdb528ad674fa2",
+      "threshold": 180,
+      "independent_ocr": [],
+      "raw_ink_axial_support": null,
+      "interior_trim_px": 8,
+      "reason": "Fixed 8 px reference trim leaves no interior in the thin schematic symbol; unchanged route unresolved"
+    },
+    {
+      "flag_id": "NI-F04",
+      "expected": {
+        "label": null,
+        "size_mm": null,
+        "continuous": null
+      },
+      "reference_resolved": false,
+      "source_unmarked_crop_sha256": "365d0c6e164b7a2f4f5fc83b91c2ca30479dcf1456412f79589b452845818f32",
+      "threshold": 180,
+      "independent_ocr": [],
+      "raw_ink_axial_support": null,
+      "interior_trim_px": 8,
+      "reason": "Fixed 8 px reference trim leaves no interior in the thin schematic symbol; unchanged route unresolved"
+    }
+  ]
+}

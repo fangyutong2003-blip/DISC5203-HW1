@@ -1,0 +1,50 @@
+[
+  {
+    "file": "sources/assets/FloorPlan1.png",
+    "sha256": "3e6e5c040729c4ee5c6db2debd0c2e54b924996d6f186820a3efee025f863773"
+  },
+  {
+    "file": "sources/assets/FloorPlan2.png",
+    "sha256": "50efb3e85d1ab844cd686f2b5c655ca2d5511a574ee23e36c3cc6a87f3cd2c90"
+  },
+  {
+    "file": "sources/assets/FloorPlan3.png",
+    "sha256": "54c95338e3b81f1a5778066970f4c56b9b180e5e327b11413ed251a866400c6d"
+  },
+  {
+    "file": "sources/assets/NewPlan.png",
+    "sha256": "d70577698599310ca4a62e0c5a3cb4133df16b02dfc417dcf9d2899e673f63c1"
+  },
+  {
+    "file": "sources/assets/UST_logo.png",
+    "sha256": "63fad79032535cd64eb78ad806836587ed242be2f19065a5e665cec126baece7"
+  },
+  {
+    "file": "sources/HW3_Assignment.md",
+    "sha256": "649bce4e96cff0021fa1cfb3773a29676df9d2444b246313ad652de87b6748f4"
+  },
+  {
+    "file": "sources/third_plan_candidates/NIST_Figure_02_Plan.png",
+    "sha256": "034d7accbcfd36191b4de3a0f4b96782dc256b943e59e934880d2546fc05ba12"
+  },
+  {
+    "file": "sources/third_plan_candidates/NIST_Page_09.png",
+    "sha256": "127f3c902f5f507ade0c2088d79415065445efe28bdc2b6f44dc1d7424ba1d5d"
+  },
+  {
+    "file": "sources/third_plan_candidates/NIST_Source_Manifest.json",
+    "sha256": "e9e2b2942141460f83e616a0452bc6f17d94c1e4b9e733479a8b58617bf072ce"
+  },
+  {
+    "file": "sources/third_plan_candidates/NIST_TN2351_2025.pdf",
+    "sha256": "a679ffc7b57c28985e0418a143ed2234d5ac39351c2ee32844237cc2831bd0f5"
+  },
+  {
+    "file": "sources/third_plan_candidates/Seo_2015_Figure_1a.png",
+    "sha256": "2dde2f068135527ddb18c83dbd06c2a48598fec59d8f36a343a6b4e692da0dbf"
+  },
+  {
+    "file": "sources/third_plan_candidates/Velarde_2025_Dual_RC_Buildings.pdf",
+    "sha256": "0845099d8c3bd2efc4322aa4082dad37e3aba3d38bae58400c8595489950f0aa"
+  }
+]

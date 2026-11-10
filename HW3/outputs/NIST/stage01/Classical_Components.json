@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-11-10T08:46:56.638015+00:00",
+  "source": "sources/third_plan_candidates/NIST_Figure_02_Plan.png",
+  "image_shape_hw": [
+    540,
+    580
+  ],
+  "parameters": {
+    "ink_less_than": 225,
+    "diagonal_line_px": 11,
+    "close_square_px": 17,
+    "open_square_px": 21,
+    "wall_aspect_ratio": 4,
+    "long_line_kernel_px": 81
+  },
+  "parameter_note": "Close17/open21 follows L09's L07 recap. The brief says open17/open21; the open17 alternative is also preserved. No tuning to reference labels has occurred.",
+  "scale_px_per_m": {
+    "x": null,
+    "y": null
+  },
+  "components": [],
+  "score_sheet": {
+    "component_count": 0,
+    "named_elements_found": null,
+    "merged": null,
+    "broken": null,
+    "reason": "Label matching and independent reference are pending."
+  },
+  "pending": [
+    "dual OCR",
+    "bar/label matching",
+    "label-derived scale",
+    "independent reference",
+    "frozen flags",
+    "random forest",
+    "two VLM runs"
+  ]
+}

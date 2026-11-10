@@ -10,7 +10,7 @@
 | 3 CM/CR analytical calculation | Signed rectangles, mass, strong/weak wall stiffness, shear sensitivities, K/F and CR; 54 independent checks | Complete on declared provisional common-geometry baseline; not claimed as handwritten student work |
 | 4 / 5 OpenSees and checks | Explicit Timoshenko rigid diaphragm, unit loads, reactions, zero-rotation and push/turn tests; 75 checks | Complete on matched provisional baseline |
 | 6 / 7 Modification and explanation | T9/T10 inward thickening; exact and 5 mm-rounded proposals; force amplification, cost, actual modal comparison; 133 checks | Complete as a verified fixed-mass design proposal on provisional baseline; practical redesign/signoff not claimed |
-| 8 Additional plans | NewPlan retained; NIST TN 2351 Figure 2 selected, source and limitations recorded in Task_08_Found_Plan_Selection.md | Source selection complete; extraction, two-reader evaluation and calculation pending |
+| 8 Additional plans | Frozen NewPlan/NIST inputs; unchanged classical/OCR/bar/forest runs; retained portability failures; V3 reader packages; 156 evidence checks | Classical checkpoint complete; references partly unresolved, two real reader runs and structural calculations pending; no promotion |
 
 Source dimensions, printed sizes and prior HW1 coordinates must be distinguished. The initial connected components are not final named structural elements.
 

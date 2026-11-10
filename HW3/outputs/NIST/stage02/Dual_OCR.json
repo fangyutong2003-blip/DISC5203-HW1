@@ -1,0 +1,313 @@
+{
+  "created_utc": "2026-11-10T08:47:12.468606+00:00",
+  "engine": "RapidOCR ONNX 1.4.4; local text detection/recognition",
+  "method_note": "OCR transcription only; this is not a VLM flag-resolution run.",
+  "raw_passes": {
+    "original": {
+      "source": "sources/third_plan_candidates/NIST_Figure_02_Plan.png",
+      "sha256": "034d7accbcfd36191b4de3a0f4b96782dc256b943e59e934880d2546fc05ba12",
+      "detections": [
+        {
+          "detection_id": "original_000",
+          "box_px": [
+            [
+              284.0,
+              16.0
+            ],
+            [
+              336.0,
+              16.0
+            ],
+            [
+              336.0,
+              34.0
+            ],
+            [
+              284.0,
+              34.0
+            ]
+          ],
+          "text": "120'-0\"",
+          "confidence": 0.9350674067224775
+        },
+        {
+          "detection_id": "original_001",
+          "box_px": [
+            [
+              156.0,
+              78.0
+            ],
+            [
+              273.0,
+              82.0
+            ],
+            [
+              272.0,
+              101.0
+            ],
+            [
+              156.0,
+              98.0
+            ]
+          ],
+          "text": "30'BaySpacing",
+          "confidence": 0.9806839823722839
+        },
+        {
+          "detection_id": "original_002",
+          "box_px": [
+            [
+              220.0,
+              132.0
+            ],
+            [
+              333.0,
+              132.0
+            ],
+            [
+              333.0,
+              150.0
+            ],
+            [
+              220.0,
+              150.0
+            ]
+          ],
+          "text": "Gravity Column",
+          "confidence": 0.9834503999778202
+        },
+        {
+          "detection_id": "original_003",
+          "box_px": [
+            [
+              42.0,
+              241.0
+            ],
+            [
+              60.0,
+              241.0
+            ],
+            [
+              60.0,
+              291.0
+            ],
+            [
+              42.0,
+              291.0
+            ]
+          ],
+          "text": "120'-0\"",
+          "confidence": 0.930772704737527
+        },
+        {
+          "detection_id": "original_004",
+          "box_px": [
+            [
+              100.0,
+              328.0
+            ],
+            [
+              205.0,
+              330.0
+            ],
+            [
+              205.0,
+              349.0
+            ],
+            [
+              100.0,
+              348.0
+            ]
+          ],
+          "text": "RC Shear Wall",
+          "confidence": 0.9830428866239694
+        },
+        {
+          "detection_id": "original_005",
+          "box_px": [
+            [
+              413.0,
+              444.0
+            ],
+            [
+              501.0,
+              446.0
+            ],
+            [
+              501.0,
+              466.0
+            ],
+            [
+              412.0,
+              464.0
+            ]
+          ],
+          "text": "RC Flat Slab",
+          "confidence": 0.9276068558295568
+        }
+      ],
+      "elapsed_seconds": [
+        0.3015978000003088,
+        0.014030933380126953,
+        0.7759706974029541
+      ]
+    },
+    "lines_removed": {
+      "source": "outputs/NIST/stage01/06_OCR_Long_Lines_Removed.png",
+      "sha256": "fd09a061711a85d003be46234fd3ec63f3e32e1bf48fc0b872801c6b2729c1d4",
+      "detections": [
+        {
+          "detection_id": "lines_removed_000",
+          "box_px": [
+            [
+              283.0,
+              17.0
+            ],
+            [
+              337.0,
+              17.0
+            ],
+            [
+              337.0,
+              34.0
+            ],
+            [
+              283.0,
+              34.0
+            ]
+          ],
+          "text": "120'-0\"",
+          "confidence": 0.892460537808282
+        },
+        {
+          "detection_id": "lines_removed_001",
+          "box_px": [
+            [
+              155.0,
+              78.0
+            ],
+            [
+              273.0,
+              81.0
+            ],
+            [
+              272.0,
+              103.0
+            ],
+            [
+              154.0,
+              100.0
+            ]
+          ],
+          "text": "30'Bay Spacing",
+          "confidence": 0.9771855643817356
+        },
+        {
+          "detection_id": "lines_removed_002",
+          "box_px": [
+            [
+              215.0,
+              131.0
+            ],
+            [
+              334.0,
+              131.0
+            ],
+            [
+              334.0,
+              151.0
+            ],
+            [
+              215.0,
+              151.0
+            ]
+          ],
+          "text": "Gravity Column",
+          "confidence": 0.9936732266630445
+        },
+        {
+          "detection_id": "lines_removed_003",
+          "box_px": [
+            [
+              41.0,
+              260.0
+            ],
+            [
+              60.0,
+              260.0
+            ],
+            [
+              60.0,
+              291.0
+            ],
+            [
+              41.0,
+              291.0
+            ]
+          ],
+          "text": "120'",
+          "confidence": 0.9166016429662704
+        },
+        {
+          "detection_id": "lines_removed_004",
+          "box_px": [
+            [
+              100.0,
+              328.0
+            ],
+            [
+              206.0,
+              330.0
+            ],
+            [
+              206.0,
+              349.0
+            ],
+            [
+              100.0,
+              348.0
+            ]
+          ],
+          "text": "RC Shear Wall",
+          "confidence": 0.9792511050517743
+        },
+        {
+          "detection_id": "lines_removed_005",
+          "box_px": [
+            [
+              411.0,
+              444.0
+            ],
+            [
+              500.0,
+              446.0
+            ],
+            [
+              500.0,
+              466.0
+            ],
+            [
+              411.0,
+              464.0
+            ]
+          ],
+          "text": "RC Flat Slab",
+          "confidence": 0.9558461060126623
+        }
+      ],
+      "elapsed_seconds": [
+        0.23516149999886693,
+        0.01838374137878418,
+        0.48766136169433594
+      ]
+    }
+  },
+  "label_hypotheses": [],
+  "named_hypotheses": 0,
+  "pending": [
+    "bar matching",
+    "scale from labelled lengths and measured growth",
+    "independent reference",
+    "frozen reader flags"
+  ]
+}

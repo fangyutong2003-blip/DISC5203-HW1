@@ -1,0 +1,41 @@
+{
+  "plan": "NIST",
+  "flags": [
+    {
+      "flag_id": "NI-F01",
+      "crop": "NI-F01.png",
+      "sha256": "ecd18c22f1576879005f09ad6ee2f90295e19168fbaac073a27a263f77d92b10",
+      "question": "Is the concrete wall through the red cross continuous along its axis, or is there a genuine gap? Answer continuous only; keep label and size_mm null.",
+      "asked_fields": [
+        "continuous"
+      ]
+    },
+    {
+      "flag_id": "NI-F02",
+      "crop": "NI-F02.png",
+      "sha256": "82cecdad058919c2afab544c5940d19211eddecb0cc9978acb13536d8fc17983",
+      "question": "Is the concrete wall through the red cross continuous along its axis, or is there a genuine gap? Answer continuous only; keep label and size_mm null.",
+      "asked_fields": [
+        "continuous"
+      ]
+    },
+    {
+      "flag_id": "NI-F03",
+      "crop": "NI-F03.png",
+      "sha256": "418f615b34e5acbcb500e79393f70907f76259a264c9b7c8808483098393f090",
+      "question": "Is the concrete wall through the red cross continuous along its axis, or is there a genuine gap? Answer continuous only; keep label and size_mm null.",
+      "asked_fields": [
+        "continuous"
+      ]
+    },
+    {
+      "flag_id": "NI-F04",
+      "crop": "NI-F04.png",
+      "sha256": "2d3988fd7b29ac316e0f0c763b20f38c4b376f7db11c2626a06392603f6df83d",
+      "question": "Is the concrete wall through the red cross continuous along its axis, or is there a genuine gap? Answer continuous only; keep label and size_mm null.",
+      "asked_fields": [
+        "continuous"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "selected": false,
+  "selection_reason": "Labels copy the classical rules, including merges and artifacts.",
+  "stage": "preliminary weak-label experiment; not final label-supervised pipeline extraction",
+  "training_plan": "NewPlan",
+  "test_plan": null,
+  "validation_note": "No generalisation performance is claimed on the training drawing. The unchanged fitting procedure is repeated per plan, not a held-out transfer accuracy test.",
+  "class_counts": {
+    "0": 80000,
+    "1": 40000
+  },
+  "degenerate_single_class": false,
+  "random_seed": 5203,
+  "trees": 60,
+  "features": 15,
+  "training_pixels": 120000,
+  "training_seconds": 2.8880369999988034,
+  "image_resize_factor": 0.5,
+  "feature_importance": {
+    "ink_density_17": 0.17039267313960796,
+    "blur_8": 0.16919753743503352,
+    "blur_4": 0.09660491364336006,
+    "directional_1_17": 0.08332534877209952,
+    "ink_density_9": 0.08291088177076818,
+    "diagonal_45_17": 0.06736776092172486,
+    "diagonal_45_9": 0.06120793086318785,
+    "directional_17_1": 0.058295046950740045,
+    "blur_2": 0.04986802796572231,
+    "grey": 0.0403371229128351,
+    "directional_1_9": 0.03974410700304288,
+    "edge_strength": 0.034633076257568514,
+    "blur_1": 0.030174323225135115,
+    "ink_density_5": 0.01178761781658191,
+    "diagonal_45_5": 0.0041536313225922624
+  }
+}

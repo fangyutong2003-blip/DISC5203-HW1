@@ -1,0 +1,684 @@
+{
+  "scope": "Artifact integrity and unchanged classical portability. Passing does not establish correct geometry, reader accuracy or completed Task 8.",
+  "passed": 156,
+  "total": 156,
+  "checks": [
+    {
+      "check": "Frozen file unchanged: sources/assets/NewPlan.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: sources/third_plan_candidates/NIST_Figure_02_Plan.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/independent_reference/P3-F01_Reference_Input.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/independent_reference/P3-F02_Reference_Input.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/independent_reference/P3-F03_Reference_Input.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/independent_reference/P3-F04_Reference_Input.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/independent_reference/P3-F05_Reference_Input.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/independent_reference/Reference.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_A_task1/Application_Log.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_A_task1/Raw_Answers.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_A_task1/Run_Metadata.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_B_grok/Raw_Answers.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_B_grok/Run_Metadata.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_package_v1/Flag_Manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_package_v1/P3-F01.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_package_v1/P3-F02.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_package_v1/P3-F03.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_package_v1/P3-F04.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_package_v1/P3-F05.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_package_v1/Questions.md",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/reader_package_v1/Reader_Instructions.md",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/review_package_draft/Flag_Manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/review_package_draft/P3-F01.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/review_package_draft/P3-F02.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/review_package_draft/P3-F03.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/review_package_draft/P3-F04.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/review_package_draft/P3-F05.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/review_package_draft/Questions.md",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage01/01_Threshold.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage01/02_Diagonal_Hatching.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage01/03_Close17.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage01/04_Open21.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage01/05_Open17_Alternative.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage01/06_OCR_Long_Lines_Removed.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage01/07_Component_Overlay.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage01/Classical_Components.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage02/Dual_OCR.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage02/Dual_OCR_Review.md",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage03/Bar_Label_Matches.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage03/Bars_x.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage03/Bars_y.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage03/Provisional_Label_Matches.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage04_forest/Feature_Importance.md",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage04_forest/Forest_Mask_Never_Selected.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage04_forest/Forest_Never_Selected.joblib",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage04_forest/Forest_Probability.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage04_forest/Forest_Report.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage05/Classical_Elements_Unpromoted.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage05/Dimension_Chain_and_Historical_Audit.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage05/Labelled_Size_Rectangles.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage05/Metric_Calibration.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/stage05/Metric_Geometry_Review.md",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Calibration_Revision_Audit.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Candidate_Tributary_Areas.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Closed_Tributary_Regions.geojson",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Column_Grid.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Element_Geometry_Audit.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Elements_After_Reader_A.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Elements_Classical.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Floor_and_Closed_Regions.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Floor_Dimension_Record.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Floor_Zones.geojson",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Global_Dimension_Anchor.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Inherited_HW1_Loads.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task1/Score_Sheet.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task2_received/Comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task2_received/Comparison.md",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task3/Analytical_Result.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task3/CM_CR_and_Wall_Stiffness.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task3/Mass_Rectangles.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task3/Wall_Force_Shares.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task3/Wall_Stiffnesses.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task4/Demonstration_Wall_Reactions.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task4/OpenSees_Result.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task4/Wall_Force_Comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task6/Force_Amplification_Comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task6/Forces_and_Periods.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task6/Modification_Result.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task6/Modified_Walls_and_Centres.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen file unchanged: outputs/Plan3/task6/Optimisation_Trajectory.json",
+      "passed": true
+    },
+    {
+      "check": "Plan 3 exact classical image regression: 01_Threshold.png",
+      "passed": true
+    },
+    {
+      "check": "Plan 3 exact classical image regression: 02_Diagonal_Hatching.png",
+      "passed": true
+    },
+    {
+      "check": "Plan 3 exact classical image regression: 03_Close17.png",
+      "passed": true
+    },
+    {
+      "check": "Plan 3 exact classical image regression: 04_Open21.png",
+      "passed": true
+    },
+    {
+      "check": "Plan 3 exact classical image regression: 05_Open17_Alternative.png",
+      "passed": true
+    },
+    {
+      "check": "Plan 3 exact classical image regression: 06_OCR_Long_Lines_Removed.png",
+      "passed": true
+    },
+    {
+      "check": "Plan 3 complete component records unchanged",
+      "passed": true
+    },
+    {
+      "check": "Plan 3 overlay differences confined to ID label neighborhoods",
+      "passed": true
+    },
+    {
+      "check": "NewPlan fixed threshold/morphology rules",
+      "passed": true
+    },
+    {
+      "check": "NewPlan component area conservation",
+      "passed": true
+    },
+    {
+      "check": "NewPlan mask is binary",
+      "passed": true
+    },
+    {
+      "check": "NewPlan original image shape retained",
+      "passed": true
+    },
+    {
+      "check": "NewPlan two actual OCR passes",
+      "passed": true
+    },
+    {
+      "check": "NewPlan OCR input hash original",
+      "passed": true
+    },
+    {
+      "check": "NewPlan OCR input hash lines_removed",
+      "passed": true
+    },
+    {
+      "check": "NewPlan unique label claims",
+      "passed": true
+    },
+    {
+      "check": "NewPlan unique bar claims",
+      "passed": true
+    },
+    {
+      "check": "NewPlan absent scale represented by null",
+      "passed": true
+    },
+    {
+      "check": "NewPlan forest actually retained and never selected",
+      "passed": true
+    },
+    {
+      "check": "NewPlan frozen forest settings",
+      "passed": true
+    },
+    {
+      "check": "NewPlan feature importance matches class degeneracy",
+      "passed": true
+    },
+    {
+      "check": "NewPlan stored training counts",
+      "passed": true
+    },
+    {
+      "check": "NewPlan training is not advertised as transfer accuracy",
+      "passed": true
+    },
+    {
+      "check": "NewPlan reference frozen hash",
+      "passed": true
+    },
+    {
+      "check": "NewPlan common instructions unchanged",
+      "passed": true
+    },
+    {
+      "check": "NewPlan no fabricated reader run or promotion",
+      "passed": true
+    },
+    {
+      "check": "NewPlan same order public/private/reference",
+      "passed": true
+    },
+    {
+      "check": "NewPlan crop hash NP-F01",
+      "passed": true
+    },
+    {
+      "check": "NewPlan marker within crop NP-F01",
+      "passed": true
+    },
+    {
+      "check": "NewPlan full target text within crop NP-F01",
+      "passed": true
+    },
+    {
+      "check": "NewPlan crop hash NP-F02",
+      "passed": true
+    },
+    {
+      "check": "NewPlan marker within crop NP-F02",
+      "passed": true
+    },
+    {
+      "check": "NewPlan full target text within crop NP-F02",
+      "passed": true
+    },
+    {
+      "check": "NewPlan crop hash NP-F03",
+      "passed": true
+    },
+    {
+      "check": "NewPlan marker within crop NP-F03",
+      "passed": true
+    },
+    {
+      "check": "NewPlan full target text within crop NP-F03",
+      "passed": true
+    },
+    {
+      "check": "NewPlan crop hash NP-F04",
+      "passed": true
+    },
+    {
+      "check": "NewPlan marker within crop NP-F04",
+      "passed": true
+    },
+    {
+      "check": "NewPlan full target text within crop NP-F04",
+      "passed": true
+    },
+    {
+      "check": "NewPlan crop hash NP-F05",
+      "passed": true
+    },
+    {
+      "check": "NewPlan marker within crop NP-F05",
+      "passed": true
+    },
+    {
+      "check": "NewPlan full target text within crop NP-F05",
+      "passed": true
+    },
+    {
+      "check": "NewPlan crop hash NP-F06",
+      "passed": true
+    },
+    {
+      "check": "NewPlan marker within crop NP-F06",
+      "passed": true
+    },
+    {
+      "check": "NewPlan full target text within crop NP-F06",
+      "passed": true
+    },
+    {
+      "check": "NewPlan reader ZIP excludes evaluator/reference answers",
+      "passed": true
+    },
+    {
+      "check": "NewPlan reader ZIP bytes match frozen files",
+      "passed": true
+    },
+    {
+      "check": "NIST fixed threshold/morphology rules",
+      "passed": true
+    },
+    {
+      "check": "NIST component area conservation",
+      "passed": true
+    },
+    {
+      "check": "NIST mask is binary",
+      "passed": true
+    },
+    {
+      "check": "NIST original image shape retained",
+      "passed": true
+    },
+    {
+      "check": "NIST two actual OCR passes",
+      "passed": true
+    },
+    {
+      "check": "NIST OCR input hash original",
+      "passed": true
+    },
+    {
+      "check": "NIST OCR input hash lines_removed",
+      "passed": true
+    },
+    {
+      "check": "NIST unique label claims",
+      "passed": true
+    },
+    {
+      "check": "NIST unique bar claims",
+      "passed": true
+    },
+    {
+      "check": "NIST absent scale represented by null",
+      "passed": true
+    },
+    {
+      "check": "NIST forest actually retained and never selected",
+      "passed": true
+    },
+    {
+      "check": "NIST frozen forest settings",
+      "passed": true
+    },
+    {
+      "check": "NIST feature importance matches class degeneracy",
+      "passed": true
+    },
+    {
+      "check": "NIST stored training counts",
+      "passed": true
+    },
+    {
+      "check": "NIST training is not advertised as transfer accuracy",
+      "passed": true
+    },
+    {
+      "check": "NIST reference frozen hash",
+      "passed": true
+    },
+    {
+      "check": "NIST common instructions unchanged",
+      "passed": true
+    },
+    {
+      "check": "NIST no fabricated reader run or promotion",
+      "passed": true
+    },
+    {
+      "check": "NIST same order public/private/reference",
+      "passed": true
+    },
+    {
+      "check": "NIST crop hash NI-F01",
+      "passed": true
+    },
+    {
+      "check": "NIST marker within crop NI-F01",
+      "passed": true
+    },
+    {
+      "check": "NIST crop hash NI-F02",
+      "passed": true
+    },
+    {
+      "check": "NIST marker within crop NI-F02",
+      "passed": true
+    },
+    {
+      "check": "NIST crop hash NI-F03",
+      "passed": true
+    },
+    {
+      "check": "NIST marker within crop NI-F03",
+      "passed": true
+    },
+    {
+      "check": "NIST crop hash NI-F04",
+      "passed": true
+    },
+    {
+      "check": "NIST marker within crop NI-F04",
+      "passed": true
+    },
+    {
+      "check": "NIST reader ZIP excludes evaluator/reference answers",
+      "passed": true
+    },
+    {
+      "check": "NIST reader ZIP bytes match frozen files",
+      "passed": true
+    }
+  ],
+  "observations": [
+    {
+      "check": "Plan 3 exact overlay bytes",
+      "passed": false,
+      "differing_pixels": 2614,
+      "interpretation": "Overlay is not byte/pixel-identical. All six processing images and complete component records are identical; differences lie within ID text neighborhoods. Historic overlay retained. This observation is not reported as an exact-overlay pass."
+    }
+  ],
+  "plans": [
+    {
+      "plan": "NewPlan",
+      "components": 216,
+      "ocr_original": 61,
+      "ocr_lines_removed": 116,
+      "size_hypotheses": 2,
+      "bar_candidates": 225,
+      "provisional_matches": 0,
+      "scale_seed": null,
+      "forest_training_pixels": 120000,
+      "forest_degenerate": false,
+      "reader_flags": 6,
+      "reference_resolved": 5,
+      "reference_unresolved": [
+        "NP-F03"
+      ],
+      "rejected_queries": 1,
+      "actual_reader_runs": 0,
+      "CM_CR_status": "pending; no promoted additional-plan geometry"
+    },
+    {
+      "plan": "NIST",
+      "components": 0,
+      "ocr_original": 6,
+      "ocr_lines_removed": 6,
+      "size_hypotheses": 0,
+      "bar_candidates": 0,
+      "provisional_matches": 0,
+      "scale_seed": null,
+      "forest_training_pixels": 53562,
+      "forest_degenerate": true,
+      "reader_flags": 4,
+      "reference_resolved": 0,
+      "reference_unresolved": [
+        "NI-F01",
+        "NI-F02",
+        "NI-F03",
+        "NI-F04"
+      ],
+      "rejected_queries": 0,
+      "actual_reader_runs": 0,
+      "CM_CR_status": "pending; no promoted additional-plan geometry"
+    }
+  ]
+}

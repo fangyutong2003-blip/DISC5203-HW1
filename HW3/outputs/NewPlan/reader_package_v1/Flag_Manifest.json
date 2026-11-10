@@ -1,0 +1,256 @@
+{
+  "status": "FROZEN reader inputs; reference may be unresolved; no promotion",
+  "plan": "NewPlan",
+  "source_sha256": "d70577698599310ca4a62e0c5a3cb4133df16b02dfc417dcf9d2899e673f63c1",
+  "frozen_utc": "2026-11-10T08:49:56.760752+00:00",
+  "reference_sha256": "8e7ef6d3ebac4426eba75554cd483174b8ada807771a6bfb4067062b7a49a7b4",
+  "common_instruction_sha256": "d526886279919aceae670fde2bb544fbbd070441ea03d4192de7876a04ada876",
+  "confidence_threshold": 0.8,
+  "model_runs": [],
+  "flags": [
+    {
+      "candidate_label_private": "C1:C30",
+      "flag": "unparsed_shared_size_schedule",
+      "anchor_px": [
+        1786,
+        3959
+      ],
+      "crop_centre_px": [
+        2518,
+        3959
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_060",
+      "flag_id": "NP-F01",
+      "crop": "NP-F01.png",
+      "crop_bbox_px": [
+        2078,
+        3519,
+        2958,
+        4399
+      ],
+      "sha256": "8cce8a9d5b2201b52ecab1a9f1edcfdb0af0b179b44fb47f561f732c3b7dbdf9"
+    },
+    {
+      "candidate_label_private": "T13",
+      "flag": "raw_OCR_text_not_parsed",
+      "anchor_px": [
+        2766,
+        2380
+      ],
+      "crop_centre_px": [
+        2847,
+        2380
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_013",
+      "flag_id": "NP-F02",
+      "crop": "NP-F02.png",
+      "crop_bbox_px": [
+        2407,
+        1940,
+        3287,
+        2820
+      ],
+      "sha256": "5ef77ea51e3ccbe815f2a4a405877fc8e4e428b2d8ae84183772293f02c6118a"
+    },
+    {
+      "candidate_label_private": "T23",
+      "flag": "raw_OCR_text_not_parsed",
+      "anchor_px": [
+        3117,
+        2159
+      ],
+      "crop_centre_px": [
+        3421,
+        2159
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_016",
+      "flag_id": "NP-F03",
+      "crop": "NP-F03.png",
+      "crop_bbox_px": [
+        2981,
+        1719,
+        3861,
+        2599
+      ],
+      "sha256": "c9280b699946cb3908b9bf67e9148c097da9d3e21deae2b6345e5b774327bb7c"
+    },
+    {
+      "candidate_label_private": "T33",
+      "flag": "raw_OCR_text_not_parsed",
+      "anchor_px": [
+        2786,
+        3124
+      ],
+      "crop_centre_px": [
+        2861,
+        3124
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_035",
+      "flag_id": "NP-F04",
+      "crop": "NP-F04.png",
+      "crop_bbox_px": [
+        2421,
+        2684,
+        3301,
+        3564
+      ],
+      "sha256": "8d38f8f6db1fca7ada3bc1b1dc863fb95050c669cceb3354e81c20413eed5e3e"
+    },
+    {
+      "candidate_label_private": "T42",
+      "flag": "raw_OCR_text_not_parsed",
+      "anchor_px": [
+        2891,
+        3547
+      ],
+      "crop_centre_px": [
+        3214,
+        3547
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_051",
+      "flag_id": "NP-F05",
+      "crop": "NP-F05.png",
+      "crop_bbox_px": [
+        2774,
+        3107,
+        3654,
+        3987
+      ],
+      "sha256": "cdff02f53b6ff909bd37cfe17137198697fe2e099781d73eeaa053e466481fcd"
+    },
+    {
+      "candidate_label_private": "T53",
+      "flag": "raw_OCR_text_not_parsed",
+      "anchor_px": [
+        4883,
+        2165
+      ],
+      "crop_centre_px": [
+        5191,
+        2165
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_018",
+      "flag_id": "NP-F06",
+      "crop": "NP-F06.png",
+      "crop_bbox_px": [
+        4751,
+        1725,
+        5631,
+        2605
+      ],
+      "sha256": "6a67a8e3dcba8d8f060b4b2c0c744cf785371fc888cf3ab368ef6272ebdd309f"
+    },
+    {
+      "candidate_label_private": "T63",
+      "flag": "raw_OCR_text_not_parsed",
+      "anchor_px": [
+        5576,
+        2370
+      ],
+      "crop_centre_px": [
+        5645,
+        2370
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_014",
+      "flag_id": "NP-F07",
+      "crop": "NP-F07.png",
+      "crop_bbox_px": [
+        5205,
+        1930,
+        6085,
+        2810
+      ],
+      "sha256": "6f29f39e045dba758b753b3f4f02291fdcb455e34c4804f73c855c69b461f915"
+    },
+    {
+      "candidate_label_private": "T73",
+      "flag": "raw_OCR_text_not_parsed",
+      "anchor_px": [
+        5576,
+        3110
+      ],
+      "crop_centre_px": [
+        5659,
+        3110
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_037",
+      "flag_id": "NP-F08",
+      "crop": "NP-F08.png",
+      "crop_bbox_px": [
+        5219,
+        2670,
+        6099,
+        3550
+      ],
+      "sha256": "63549d57f508829b69211563d0511fec26e6d788facee21b71898de4cfb6b911"
+    },
+    {
+      "candidate_label_private": "T82",
+      "flag": "raw_OCR_text_not_parsed",
+      "anchor_px": [
+        5169,
+        3547
+      ],
+      "crop_centre_px": [
+        5486,
+        3547
+      ],
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ],
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "source_detection_id": "original_052",
+      "flag_id": "NP-F09",
+      "crop": "NP-F09.png",
+      "crop_bbox_px": [
+        5046,
+        3107,
+        5926,
+        3987
+      ],
+      "sha256": "9f559b9ef9c8d36e197c10ed4f0d6cca9dcb1852730cc022f2324cf0448abeb1"
+    }
+  ],
+  "note": "Evaluator metadata only. Send Reader_Manifest.json, Questions.md, instructions and PNGs to readers; exclude this private manifest and reference."
+}

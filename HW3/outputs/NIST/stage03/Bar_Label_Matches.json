@@ -1,0 +1,10 @@
+{
+  "scale_seed_px_per_m": null,
+  "scale_note": "No scale seed: square-column pixel widths or printed column sizes absent. No fabricated size or matching fallback.",
+  "thickness_gate_relative": 0.45,
+  "directional_opening_px": 121,
+  "candidates": [],
+  "matches": [],
+  "unmatched_labels": [],
+  "unclaimed_candidates": []
+}

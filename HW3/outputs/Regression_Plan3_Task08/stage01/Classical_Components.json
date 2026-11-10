@@ -1,0 +1,399 @@
+{
+  "created_utc": "2026-11-10T08:47:00.620503+00:00",
+  "source": "sources/assets/FloorPlan3.png",
+  "image_shape_hw": [
+    3695,
+    2273
+  ],
+  "parameters": {
+    "ink_less_than": 225,
+    "diagonal_line_px": 11,
+    "close_square_px": 17,
+    "open_square_px": 21,
+    "wall_aspect_ratio": 4,
+    "long_line_kernel_px": 81
+  },
+  "parameter_note": "Close17/open21 follows L09's L07 recap. The brief says open17/open21; the open17 alternative is also preserved. No tuning to reference labels has occurred.",
+  "scale_px_per_m": {
+    "x": null,
+    "y": null
+  },
+  "components": [
+    {
+      "component_id": 1,
+      "bbox_px": [
+        2258,
+        0,
+        15,
+        3695
+      ],
+      "centroid_px": [
+        2265.4758656569743,
+        1845.9462974738424
+      ],
+      "area_px": 51897,
+      "aspect_ratio": 246.33333333333334,
+      "shape_rule_class": "wall_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        673,
+        227,
+        86,
+        330
+      ],
+      "centroid_px": [
+        702.1471485036702,
+        371.6878599661208
+      ],
+      "area_px": 17710,
+      "aspect_ratio": 3.8372093023255816,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 3,
+      "bbox_px": [
+        1208,
+        227,
+        331,
+        88
+      ],
+      "centroid_px": [
+        1396.406095280009,
+        257.05044559357464
+      ],
+      "area_px": 18178,
+      "aspect_ratio": 3.7613636363636362,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 4,
+      "bbox_px": [
+        1467,
+        730,
+        80,
+        69
+      ],
+      "centroid_px": [
+        1504.0891010342084,
+        763.4373508353221
+      ],
+      "area_px": 5028,
+      "aspect_ratio": 1.1594202898550725,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 5,
+      "bbox_px": [
+        543,
+        835,
+        331,
+        93
+      ],
+      "centroid_px": [
+        707.5431878383048,
+        893.8549464470805
+      ],
+      "area_px": 17366,
+      "aspect_ratio": 3.5591397849462365,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 6,
+      "bbox_px": [
+        267,
+        871,
+        70,
+        76
+      ],
+      "centroid_px": [
+        301.47388433059837,
+        909.7402441464878
+      ],
+      "area_px": 4997,
+      "aspect_ratio": 1.0857142857142856,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 7,
+      "bbox_px": [
+        1817,
+        1261,
+        21,
+        23
+      ],
+      "centroid_px": [
+        1827.0,
+        1272.0
+      ],
+      "area_px": 483,
+      "aspect_ratio": 1.0952380952380953,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 8,
+      "bbox_px": [
+        1037,
+        1346,
+        502,
+        851
+      ],
+      "centroid_px": [
+        1276.970074728261,
+        1732.5445199275362
+      ],
+      "area_px": 88320,
+      "aspect_ratio": 1.6952191235059761,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 9,
+      "bbox_px": [
+        267,
+        1380,
+        70,
+        77
+      ],
+      "centroid_px": [
+        302.3862263391059,
+        1419.9877164720097
+      ],
+      "area_px": 4966,
+      "aspect_ratio": 1.1,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 10,
+      "bbox_px": [
+        821,
+        1386,
+        78,
+        71
+      ],
+      "centroid_px": [
+        860.8253937764118,
+        1421.2650787552823
+      ],
+      "area_px": 5206,
+      "aspect_ratio": 1.0985915492957747,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 11,
+      "bbox_px": [
+        1867,
+        1386,
+        77,
+        71
+      ],
+      "centroid_px": [
+        1906.5781897061725,
+        1421.6418852297377
+      ],
+      "area_px": 5071,
+      "aspect_ratio": 1.0845070422535212,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 12,
+      "bbox_px": [
+        1313,
+        2340,
+        72,
+        73
+      ],
+      "centroid_px": [
+        1348.5020812685827,
+        2376.68899900892
+      ],
+      "area_px": 5045,
+      "aspect_ratio": 1.0138888888888888,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 13,
+      "bbox_px": [
+        267,
+        2342,
+        70,
+        71
+      ],
+      "centroid_px": [
+        301.56261721191913,
+        2376.9670764742655
+      ],
+      "area_px": 4799,
+      "aspect_ratio": 1.0142857142857142,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 14,
+      "bbox_px": [
+        818,
+        2343,
+        88,
+        79
+      ],
+      "centroid_px": [
+        863.4630664183737,
+        2382.846834264432
+      ],
+      "area_px": 6444,
+      "aspect_ratio": 1.1139240506329113,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 15,
+      "bbox_px": [
+        1873,
+        2342,
+        71,
+        72
+      ],
+      "centroid_px": [
+        1907.6135285625903,
+        2377.571664260672
+      ],
+      "area_px": 4849,
+      "aspect_ratio": 1.0140845070422535,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 16,
+      "bbox_px": [
+        267,
+        3048,
+        86,
+        330
+      ],
+      "centroid_px": [
+        297.2580503833516,
+        3234.2196604600217
+      ],
+      "area_px": 18260,
+      "aspect_ratio": 3.8372093023255816,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 17,
+      "bbox_px": [
+        1857,
+        3048,
+        87,
+        330
+      ],
+      "centroid_px": [
+        1913.5651178375963,
+        3233.466435831565
+      ],
+      "area_px": 17906,
+      "aspect_ratio": 3.793103448275862,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 18,
+      "bbox_px": [
+        426,
+        3083,
+        26,
+        26
+      ],
+      "centroid_px": [
+        438.69908814589667,
+        3095.6990881458964
+      ],
+      "area_px": 658,
+      "aspect_ratio": 1.0,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 19,
+      "bbox_px": [
+        673,
+        3290,
+        330,
+        88
+      ],
+      "centroid_px": [
+        839.3575265869971,
+        3347.21006468589
+      ],
+      "area_px": 18242,
+      "aspect_ratio": 3.75,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    },
+    {
+      "component_id": 20,
+      "bbox_px": [
+        1209,
+        3290,
+        330,
+        88
+      ],
+      "centroid_px": [
+        1371.5694551458448,
+        3347.31386901486
+      ],
+      "area_px": 18170,
+      "aspect_ratio": 3.75,
+      "shape_rule_class": "column_candidate",
+      "labels": [],
+      "status": "unmatched; not a named element"
+    }
+  ],
+  "score_sheet": {
+    "component_count": 20,
+    "named_elements_found": null,
+    "merged": null,
+    "broken": null,
+    "reason": "Label matching and independent reference are pending."
+  },
+  "pending": [
+    "dual OCR",
+    "bar/label matching",
+    "label-derived scale",
+    "independent reference",
+    "frozen flags",
+    "random forest",
+    "two VLM runs"
+  ]
+}

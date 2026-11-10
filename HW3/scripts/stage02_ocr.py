@@ -8,17 +8,19 @@ from pathlib import Path
 import cv2
 import numpy as np
 from rapidocr_onnxruntime import RapidOCR
+from plan_context import context
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    out = ROOT / "outputs" / "Plan3" / "stage02"
+    plan, source, output = context()
+    out = output / "stage02"
     out.mkdir(parents=True, exist_ok=True)
     engine = RapidOCR()
     inputs = {
-        "original": ROOT / "sources/assets/FloorPlan3.png",
-        "lines_removed": ROOT / "outputs/Plan3/stage01/06_OCR_Long_Lines_Removed.png",
+        "original": source,
+        "lines_removed": output / "stage01/06_OCR_Long_Lines_Removed.png",
     }
     raw = {}
     candidates = []

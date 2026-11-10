@@ -1,0 +1,11 @@
+# Task 8 reader package revision
+
+The first draft (v1) was generated on 2026-11-10 and was rejected during pre-reader inspection. No VLM used it, and no score or promotion is valid from it.
+
+The location-only regex greedily attached the first dimension digit to a wall ID: T1 3500x400 became T13 / 500x400; likewise T4 2000x300 became T42 / 000x300. The nominally resolved v1 reference records therefore do not establish correct answers. The fixed-size column-schedule crop also omits part of the printed schedule. Original v1 files and ZIPs are retained as invalid draft evidence, not current reader inputs.
+
+Revision v2 changes only review-location parsing: enumerate one-/two-digit ID splits, reject nonpositive or non-elongated dimension interpretations and require a unique location hypothesis. Main extraction, OCR outputs, masks, matching thresholds and forest are unchanged. The independent reference still uses separate threshold-180 OCR; unresolved or clipped questions remain unresolved rather than receiving invented answers. NIST query positions and the failing fixed 8 px interior trim remain disclosed.
+
+Revision v2 corrected the ID split, but inspection found that the 1424 px-wide column-schedule detection cannot fit the inherited 880 px crop and its red marker falls outside that crop. It is not an admissible reader question. Revision v3 adds a pre-freeze framing gate: exclude queries whose full target text or red marker does not fit the fixed crop. The schedule remains an unresolved extraction issue in evaluator metadata; it is not silently recovered or scored. All v1/v2 drafts remain retained and are superseded. No external VLM used either draft; the contextual engineering agent inspected several crops during quality control.
+
+Use only packages with V3 in the filename for future reader runs. Private Flag_Manifest.json and independent-reference files are evaluator evidence and must not be sent to readers. Reader packages contain identical images/questions/instructions for either reader and exclude answers. These changes are documented limitations of exact unchanged portability; they are not claimed as a successful frozen-parser extraction.

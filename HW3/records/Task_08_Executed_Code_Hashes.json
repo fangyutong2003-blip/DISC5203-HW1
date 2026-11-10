@@ -1,0 +1,37 @@
+{
+  "scope": "Code retained after classical execution and package quality control; not a pre-run prediction",
+  "files": [
+    {
+      "file": "scripts/plan_context.py",
+      "sha256": "aa42f8a74ee0376c1ad38b43b1033276b3ffdb0402988882aa2eaedfaba62651"
+    },
+    {
+      "file": "scripts/stage01_classical.py",
+      "sha256": "e8195c023ece40ab5b64ab4e8966772a68f5198d0561bb8e63076b18c678449f"
+    },
+    {
+      "file": "scripts/stage02_ocr.py",
+      "sha256": "c892080b4d66b5499f99f25c084dd2cbea4b314bdf7a3dc3af8d94f4b2b7393f"
+    },
+    {
+      "file": "scripts/stage03_bars.py",
+      "sha256": "7b3d59ded2ab09584fed9113eb81ff5f4ba7a3567be6085f2429f4d6399392df"
+    },
+    {
+      "file": "scripts/stage04_forest.py",
+      "sha256": "2051929f021e73c21d3604d668c8d5dc98e18cb547a2ed7e4d3793453f8fac48"
+    },
+    {
+      "file": "scripts/task08_review_packages.py",
+      "sha256": "13d8573d5af2b9f1506820b40f04d50460c8f6626f2476dcdc81773555266b64"
+    },
+    {
+      "file": "scripts/verify_task08_classical.py",
+      "sha256": "5379b293453161065831c375f4a74e3b008160e78d1b7edfb380c4b7f5f2f865"
+    },
+    {
+      "file": "scripts/plot_task08_classical.py",
+      "sha256": "f6e6c74b1d5bb28826a4a4068b1af1f542aa5c46501decbfa1ea31894ad2b422"
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import cv2
 import joblib
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
+from plan_context import context
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -27,10 +28,11 @@ def features(grey):
 
 
 def main():
-    out = ROOT / "outputs/Plan3/stage04_forest"
+    plan, source, output = context()
+    out = output / "stage04_forest"
     out.mkdir(parents=True,exist_ok=True)
-    grey = cv2.imread(str(ROOT / "sources/assets/FloorPlan3.png"),0)
-    mask = cv2.imread(str(ROOT / "outputs/Plan3/stage01/04_Open21.png"),0)
+    grey = cv2.imread(str(source),0)
+    mask = cv2.imread(str(output / "stage01/04_Open21.png"),0)
     # Preliminary experiment at 50% image size, explicitly not a held-out evaluation.
     grey = cv2.resize(grey,None,fx=.5,fy=.5,interpolation=cv2.INTER_AREA)
     mask = cv2.resize(mask,(grey.shape[1],grey.shape[0]),interpolation=cv2.INTER_NEAREST)>0
@@ -50,13 +52,16 @@ def main():
     elapsed=time.perf_counter()-start
     joblib.dump({"model":forest,"features":names,"selected":False},out / "Forest_Never_Selected.joblib",compress=3)
     probability=np.empty(len(X),dtype=np.float32)
+    positive_class = np.flatnonzero(forest.classes_ == 1)
     for begin in range(0,len(X),100000):
-        probability[begin:begin+100000]=forest.predict_proba(X[begin:begin+100000])[:,1]
+        probability[begin:begin+100000]=(forest.predict_proba(X[begin:begin+100000])[:,positive_class[0]] if len(positive_class) else 0.0)
     cv2.imwrite(str(out / "Forest_Probability.png"),(probability.reshape(grey.shape)*255).astype(np.uint8))
     cv2.imwrite(str(out / "Forest_Mask_Never_Selected.png"),(probability.reshape(grey.shape)>.5).astype(np.uint8)*255)
     record={"selected":False,"selection_reason":"Labels copy the classical rules, including merges and artifacts.",
             "stage":"preliminary weak-label experiment; not final label-supervised pipeline extraction",
-            "training_plan":"Plan3","test_plan":None,"validation_note":"No generalisation performance is claimed on the training drawing.",
+            "training_plan":plan,"test_plan":None,"validation_note":"No generalisation performance is claimed on the training drawing. The unchanged fitting procedure is repeated per plan, not a held-out transfer accuracy test.",
+            "class_counts": {str(int(v)):int(np.sum(y[idx] == v)) for v in np.unique(y[idx])},
+            "degenerate_single_class":len(forest.classes_) < 2,
             "random_seed":5203,"trees":60,"features":len(names),"training_pixels":len(idx),
             "training_seconds":elapsed,"image_resize_factor":.5,
             "feature_importance":dict(sorted(zip(names,map(float,forest.feature_importances_)),key=lambda t:-t[1]))}
