@@ -1,0 +1,31 @@
+{
+  "scope": "Source selection only; no extraction or structural model validation claimed",
+  "checks": [
+    {
+      "check": "SHA256 and bytes: NIST_TN2351_2025.pdf",
+      "passed": true
+    },
+    {
+      "check": "SHA256 and bytes: NIST_Page_09.png",
+      "passed": true
+    },
+    {
+      "check": "SHA256 and bytes: NIST_Figure_02_Plan.png",
+      "passed": true
+    },
+    {
+      "check": "Original PDF has 56 pages",
+      "passed": true
+    },
+    {
+      "check": "Unannotated PDF-render crop dimensions",
+      "passed": true
+    },
+    {
+      "check": "Selection report local links resolve",
+      "passed": true
+    }
+  ],
+  "passed": 6,
+  "failed": 0
+}

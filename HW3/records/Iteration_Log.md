@@ -108,3 +108,9 @@
 - Corrected the brief's radius-only amplification denominator by dimensional derivation: squared torsional radius and wall stiffness are required. Force-specific signed eccentricity is used, not automatically norm(e)*F.
 - Actual analytical and OpenSees eigenanalyses share the unchanged diagonal mass matrix. The engine emitted its generic fullGenLapack speed warning, but all three finite modes were obtained and independently checked. The torsion-dominant mode is mode 3 before/after, not mode 1. Its rotational mass fraction changes approximately 0.667 to 1, demonstrating decoupling rather than disappearance of torsional dynamics.
 - Independent modification, geometry, force, amplification, eigenvalue/eigenvector and zero-rotation checks pass 133/133. English reports, figures, parameters, trajectory and raw solver responses are retained. Formal Task 2 experiment controls and Task 8 additional plans remain pending.
+
+## Task 8 - Third-plan source selection, 2026-11-10
+
+- Student requested a public third plan of manageable, comparable complexity. Selected NIST TN 2351 Figure 2 after comparing the Seo 2015 and Velarde 2025 research figures; retained source, unannotated renders, hash manifest and a reproducible rendering command.
+- The selected office-building archetype has clear overall/bay dimensions and walls in both directions, but lacks individual printed IDs and full section sizes. Solid symbols, imperial units and missing labels are recorded as generalisation challenges. The source-text versus schematic column-count discrepancy remains flagged.
+- Uniform-mass symmetry is a conditional zero-eccentricity check, not an already run result or a reduction claim. No thresholds were retuned, dimensions invented, reader responses generated or extraction promoted. Both additional-plan pipelines remain pending.

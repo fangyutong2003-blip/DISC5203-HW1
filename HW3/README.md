@@ -4,7 +4,7 @@ Start with [the Task 1 report](HW3_Task_01_Report.md). The assigned-plan Task 1 
 
 The provisional common-geometry baseline now has [Task 3 analytical centres](HW3_Task_03_Analytical_Report.md) and [Tasks 4/5 OpenSees verification](HW3_Task_04_05_OpenSees_Report.md). Analytical checks pass 54/54; model/decomposition checks pass 75/75. The declared model includes both rectangular-wall bending axes and shear; strong-direction-only sensitivity is separately tabulated. No Task 2 winner is claimed.
 
-The [Tasks 6/7 report](HW3_Task_06_07_Modification_Report.md) records the inward T9/T10 thickening proposal, exact/rounded eccentricity, force redistribution, concrete cost and actual modal checks. Verification passes 133/133 under the frozen-mass assumption. NewPlan and a separately sourced third plan are still required for Task 8.
+The [Tasks 6/7 report](HW3_Task_06_07_Modification_Report.md) records the inward T9/T10 thickening proposal, exact/rounded eccentricity, force redistribution, concrete cost and actual modal checks. Verification passes 133/133 under the frozen-mass assumption. For Task 8, NewPlan is retained and [NIST Figure 2 is selected as the third plan](records/Task_08_Found_Plan_Selection.md); processing and comparison of both additional plans remain pending.
 
 Student: Fangyutong, 21353319. Assigned drawing: Floor Plan 3.
 

@@ -1,0 +1,36 @@
+{
+    "source_url":  "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2351.pdf",
+    "doi":  "10.6028/NIST.TN.2351",
+    "retrieved_date":  "2026-11-10",
+    "printed_page":  9,
+    "pdf_page_one_based":  17,
+    "figure":  2,
+    "status":  "source_selected_extraction_pending",
+    "render":  {
+                   "scale_to_pixels":  1700,
+                   "crop_xywh":  [
+                                     370,
+                                     145,
+                                     580,
+                                     540
+                                 ],
+                   "annotations_added":  false
+               },
+    "files":  [
+                  {
+                      "file":  "NIST_TN2351_2025.pdf",
+                      "sha256":  "a679ffc7b57c28985e0418a143ed2234d5ac39351c2ee32844237cc2831bd0f5",
+                      "bytes":  1871581
+                  },
+                  {
+                      "file":  "NIST_Page_09.png",
+                      "sha256":  "127f3c902f5f507ade0c2088d79415065445efe28bdc2b6f44dc1d7424ba1d5d",
+                      "bytes":  196378
+                  },
+                  {
+                      "file":  "NIST_Figure_02_Plan.png",
+                      "sha256":  "034d7accbcfd36191b4de3a0f4b96782dc256b943e59e934880d2546fc05ba12",
+                      "bytes":  16255
+                  }
+              ]
+}
