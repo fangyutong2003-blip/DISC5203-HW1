@@ -1,0 +1,13 @@
+{
+  "changed_walls": ["T9", "T10"],
+  "growth_rule": {"T9": "keep exterior left face; grow inward", "T10": "keep exterior bottom face; grow upward"},
+  "initial_thickness_m": [0.5, 0.5],
+  "lower_thickness_m": [0.25, 0.25],
+  "upper_thickness_m": [1.0, 1.0],
+  "target_eccentricity_m": 0.000001,
+  "rounding_grid_m": 0.005,
+  "mass_layout_fixed": true,
+  "concrete_unit_weight_kN_m3": 25.0,
+  "geometry_area_tolerance_m2": 0.000001,
+  "max_function_evaluations": 500
+}
