@@ -1,0 +1,19 @@
+{
+  "plan": "Plan3",
+  "element_record": "outputs/Plan3/task1/Elements_After_Reader_A.json",
+  "floor_record": "outputs/Plan3/task1/Floor_Dimension_Record.json",
+  "selection_status": "provisional common-geometry engineering baseline; formal Task 2 promotion pending",
+  "E_kN_m2": 30000000.0,
+  "nu": 0.2,
+  "height_m": 3.0,
+  "shear_factor": 0.8333333333333334,
+  "gravity_m_s2": 9.81,
+  "ordinary_mass_intensity_kN_m2": 8.75,
+  "separate_stair_mass_intensity_kN_m2": 8.75,
+  "storeys": 5,
+  "include_weak_axis": true,
+  "include_columns_in_lateral_model": false,
+  "wall_intrinsic_torsion_J_m4": 0.0,
+  "design_demonstration_force_kN": 100.0,
+  "design_force_note": "Assumed linear-analysis demonstration force along global y at CM; not a prescribed code earthquake demand."
+}
