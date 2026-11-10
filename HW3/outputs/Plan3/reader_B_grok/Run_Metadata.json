@@ -1,6 +1,7 @@
 {
   "provider": "Grok (user-reported; original user spelling: gork)",
-  "exact_model_version": null,
+  "exact_model_version": "Grok 4.5",
+  "model_version_source": "Student confirmation in this chat on 2026-11-10; website screenshot not yet supplied.",
   "collection_method": "Five original JSON objects pasted by the student from an external chatbot session.",
   "received_date_Asia_Singapore": "2026-11-10",
   "external_inference_time": null,
@@ -8,7 +9,7 @@
   "prompt_and_image_submission_independently_verified": false,
   "raw_answer_handling": "Objects preserved without changing values or correcting errors; combined into an ordered array.",
   "limitations": [
-    "Exact model version and original website transcript or screenshot are not yet supplied.",
+    "Model version is student-reported as Grok 4.5; original website transcript or screenshot has not been supplied.",
     "Common question package was supplied to the student; the external session's actual prompt, images, settings and ordering have not been inspected.",
     "The native-viewing engineering session used for Reader A and the external website are not an identical execution harness.",
     "Reader A previously saw OCR and reference-related engineering context. This comparison is provisional, not a blinded controlled benchmark."

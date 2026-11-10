@@ -47,7 +47,7 @@
       ]
     },
     {
-      "reader": "Grok (version pending)",
+      "reader": "Grok 4.5 (student-confirmed)",
       "resolved": 5,
       "broken": 0,
       "total": 5,
@@ -95,7 +95,7 @@
   "model_promoted": null,
   "verdict": "Tie on the five asked-field answers; no accuracy winner is established. Self-reported confidence is not a tiebreaker.",
   "remaining": [
-    "Exact Grok version and website/session evidence",
+    "Website/session evidence for student-reported Grok 4.5",
     "Isolated first-reader run for fair comparison",
     "Document or align the execution harness",
     "Structural consequences relative to reference after Task 3 mechanics exists"

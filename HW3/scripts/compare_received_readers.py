@@ -18,7 +18,7 @@ def main():
         raise ValueError("Frozen reference hash mismatch")
     refs={r["flag_id"]:r for r in load(ref_path)["records"]}
     reports=[]
-    for name,folder in (("GPT-6 contextual Task 1 reader","reader_A_task1"),("Grok (version pending)","reader_B_grok")):
+    for name,folder in (("GPT-6 contextual Task 1 reader","reader_A_task1"),("Grok 4.5 (student-confirmed)","reader_B_grok")):
         raw=load(OUT/folder/"Raw_Answers.json")
         assert [a["flag_id"] for a in raw]==[f["flag_id"] for f in manifest["flags"]]
         flags=[]
@@ -45,7 +45,7 @@ def main():
             "reference_sha256":manifest["reference_sha256"],"readers":reports,
             "asked_field_outputs_identical":same,"model_promoted":None,
             "verdict":"Tie on the five asked-field answers; no accuracy winner is established. Self-reported confidence is not a tiebreaker.",
-            "remaining":["Exact Grok version and website/session evidence", "Isolated first-reader run for fair comparison", "Document or align the execution harness", "Structural consequences relative to reference after Task 3 mechanics exists"]}
+            "remaining":["Website/session evidence for student-reported Grok 4.5", "Isolated first-reader run for fair comparison", "Document or align the execution harness", "Structural consequences relative to reference after Task 3 mechanics exists"]}
     target=OUT/"task2_received"
     target.mkdir(parents=True,exist_ok=True)
     (target/"Comparison.json").write_text(json.dumps(report,indent=2),encoding="utf-8")
@@ -56,7 +56,7 @@ def main():
         errors=[f["max_dimension_error_mm"] for f in r["flags"] if f["max_dimension_error_mm"] is not None]
         rows.append(f"| {r['reader']} | {r['resolved']}/{r['total']} | {r['broken']} | {r['mean_confidence']:.3f} | {max(errors) if errors else 'N/A'} |")
     rows += ["",report["verdict"],"",
-             "Grok identity is user-reported; no exact version or website screenshot has been supplied. The five JSON objects are preserved as received, without correcting them. The two original execution environments differ. Reader A was an engineering session with prior draft/answer-related context, not an isolated reader. These limitations prevent presenting this table as a fully controlled experiment.","",
+             "The student confirmed Grok 4.5 on 2026-11-10; a website screenshot or original transcript has not been supplied. The five JSON objects are preserved as received, without correcting them. The two original execution environments differ. Reader A was an engineering session with prior draft/answer-related context, not an isolated reader. These limitations prevent presenting this table as a fully controlled experiment.","",
              "All queried fields are identical, so these five corrections alone introduce no geometry difference between the readers. No numerical CR or reference-relative structural error is claimed before the mechanics calculation. No winner or promotion has been manufactured.","",
              "## Per-flag Grok outcomes","","| Flag | Resolved | Broken | Size error (mm) |","|---|---|---|---:|"]
     for f in reports[1]["flags"]:

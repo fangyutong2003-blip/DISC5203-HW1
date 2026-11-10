@@ -6,7 +6,7 @@
 | 1B Label supervision | 21 labelled-size metric rectangles; two OCR reads, strict thickness classes, scale alternatives and global dimension anchor | Complete; 21 footprints inside floor and hatch support checked |
 | 1C Random forest | Actual 120000-pixel, 15-feature, 60-tree experiment; model and importance retained, never selected | Complete for Task 1; no unseen accuracy claimed |
 | 1D Single reader | Five frozen flags, alternative classical reference, real native-viewing GPT-6 answers, validated application to a copy | Complete for Task 1; session exposure disclosed |
-| 2 Two readers | Five user-pasted Grok answers retained; provisional reference comparison available | Exact Grok identity/session evidence, isolated first reader, harness documentation and structural consequence comparison remain pending |
+| 2 Two readers | Five user-pasted answers retained; Grok 4.5 confirmed by student; provisional reference comparison available | Website/session evidence, isolated first reader, harness documentation and structural consequence comparison remain pending |
 | 3 CM/CR hand calculation | Brief ambiguities recorded | Pending promoted extraction |
 | 4 / 5 OpenSees and checks | Workflow procedures specified | Pending hand calculation |
 | 6 / 7 Modification and explanation | No design modification selected | Pending baseline |
