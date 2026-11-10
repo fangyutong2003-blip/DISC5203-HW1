@@ -1,5 +1,7 @@
 """Score retained actual answers against frozen reference, with exposure limits."""
 import hashlib
+import copy
+import math
 import json
 from pathlib import Path
 
@@ -8,6 +10,42 @@ OUT=ROOT/"outputs/Plan3"
 
 
 def load(path):return json.loads(path.read_text(encoding="utf-8"))
+
+
+def conditioned_structure(manifest,refs):
+    params=load(ROOT/"params_mechanics.json")
+    base=load(OUT/"task1/Elements_Classical.json")
+    def corrected(answers):
+        geometry=copy.deepcopy(base)
+        for f,a in zip(manifest["flags"],answers):
+            e=next(e for e in geometry["elements"] if e["labels"]==[f["candidate_label"]])
+            if not all(a[k]==refs[f["flag_id"]]["expected"][k] for k in f["asked_fields"]):continue
+            if "size_mm" in f["asked_fields"]:e["size_mm"]=list(map(int,a["size_mm"].split("x")))
+            if "continuous" in f["asked_fields"]:e["continuous"]=a["continuous"]
+        return geometry
+    expected=[refs[f["flag_id"]]["expected"] for f in manifest["flags"]]
+    geometries={"flag_conditioned_reference":corrected(expected),
+                "GPT-6 contextual":corrected(load(OUT/"reader_A_task1/Raw_Answers.json")),
+                "Grok 4.5 student-reported":corrected(load(OUT/"reader_B_grok/Raw_Answers.json"))}
+    def cr(geometry):
+        kx_sum=ky_sum=kx_y=ky_x=0.
+        for e in geometry["elements"]:
+            if e["class"]!="wall":continue
+            L=max(e["size_mm"])/1000;t=min(e["size_mm"])/1000;E=params["E_kN_m2"];H=params["height_m"]
+            G=E/(2*(1+params["nu"]));Av=params["shear_factor"]*L*t
+            strong=1/(H**3/(3*E*(t*L**3/12))+H/(G*Av))
+            weak=1/(H**3/(3*E*(L*t**3/12))+H/(G*Av))
+            kx,ky=(strong,weak) if e["angle_deg"]==0 else (weak,strong)
+            kx_sum+=kx;ky_sum+=ky;kx_y+=kx*e["centre_m"][1];ky_x+=ky*e["centre_m"][0]
+        return [ky_x/ky_sum,kx_y/kx_sum]
+    ref=cr(geometries["flag_conditioned_reference"])
+    result=[]
+    for name,g in geometries.items():
+        centre=cr(g)
+        signature=[{k:e.get(k) for k in ("labels","class","centre_m","size_mm","angle_deg","continuous")} for e in g["elements"]]
+        result.append({"record":name,"CR_m":centre,"shift_from_flag_conditioned_reference_m":math.dist(centre,ref),
+                       "mechanical_geometry_sha256":hashlib.sha256(json.dumps(signature,sort_keys=True).encode()).hexdigest()})
+    return {"scope":"Conditional on the shared unqueried classical geometry and accepted answers; not error relative to an independently surveyed full plan.","rows":result}
 
 
 def main():
@@ -45,7 +83,9 @@ def main():
             "reference_sha256":manifest["reference_sha256"],"readers":reports,
             "asked_field_outputs_identical":same,"model_promoted":None,
             "verdict":"Tie on the five asked-field answers; no accuracy winner is established. Self-reported confidence is not a tiebreaker.",
-            "remaining":["Full-session evidence and exact backend version beyond chatbot self-description", "Isolated first-reader run for fair comparison", "Document or align the execution harness", "Structural consequences relative to reference after Task 3 mechanics exists"]}
+            "remaining":["Full-session evidence and exact backend version beyond chatbot self-description", "Isolated first-reader run for fair comparison", "Document or align the execution harness"]}
+    if (OUT/"task3/Analytical_Result.json").exists():
+        report["conditional_structural_consequences"]=conditioned_structure(manifest,refs)
     target=OUT/"task2_received"
     target.mkdir(parents=True,exist_ok=True)
     (target/"Comparison.json").write_text(json.dumps(report,indent=2),encoding="utf-8")
@@ -57,11 +97,17 @@ def main():
         rows.append(f"| {r['reader']} | {r['resolved']}/{r['total']} | {r['broken']} | {r['mean_confidence']:.3f} | {max(errors) if errors else 'N/A'} |")
     rows += ["",report["verdict"],"",
              "The student confirmed Grok 4.5 and supplied a screenshot on 2026-11-10. The screenshot corroborates P3-F05 and the chatbot's self-description; the UI selector shows Fast rather than an exact backend version. The full five-question website transcript remains unavailable. The five pasted JSON objects are preserved as received, without correcting them. The two original execution environments differ. Reader A had prior draft/answer-related engineering context. These limitations prevent presenting the table as a fully controlled experiment. See [screenshot evidence description](../../../records/Grok_Screenshot_Evidence.md).","",
-             "All queried fields are identical, so these five corrections alone introduce no geometry difference between the readers. No numerical CR or reference-relative structural error is claimed before the mechanics calculation. No winner or promotion has been manufactured.","",
+             "All queried fields are identical, so these five corrections alone introduce no geometry difference between the readers. No winner or promotion has been manufactured.","",
              "## Per-flag Grok outcomes","","| Flag | Resolved | Broken | Size error (mm) |","|---|---|---|---:|"]
     for f in reports[1]["flags"]:
         rows.append(f"| {f['flag_id']} | {f['resolved']} | {f['broken']} | {f['max_dimension_error_mm'] if f['max_dimension_error_mm'] is not None else 'N/A'} |")
     rows += ["","Raw records: [Grok answers](../reader_B_grok/Raw_Answers.json), [Grok metadata](../reader_B_grok/Run_Metadata.json), [Reader A answers](../reader_A_task1/Raw_Answers.json)."]
+    if "conditional_structural_consequences" in report:
+        cs=report["conditional_structural_consequences"]
+        rows += ["","## Conditional structural consequences","",cs["scope"],"",
+                 "Each record applies the accepted queried fields to a copy of the same classical geometry. Weighted wall-stiffness CR is computed separately for each copy using the Task 3 rectangular, shear-inclusive wall convention. Thus this calculation measures the consequence of the flagged fields, not full-plan extraction truth.","",
+                 "| Record | CR x (m) | CR y (m) | Shift from conditional reference (m) |","|---|---:|---:|---:|"]
+        rows += [f"| {v['record']} | {v['CR_m'][0]:.6f} | {v['CR_m'][1]:.6f} | {v['shift_from_flag_conditioned_reference_m']:.6f} |" for v in cs["rows"]]
     (target/"Comparison.md").write_text("\n".join(rows)+"\n",encoding="utf-8")
     print(json.dumps({"readers":[{k:r[k] for k in ('reader','resolved','broken','mean_confidence')} for r in reports],"verdict":report["verdict"]},indent=2))
 

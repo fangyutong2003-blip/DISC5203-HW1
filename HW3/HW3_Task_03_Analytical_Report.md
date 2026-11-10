@@ -54,3 +54,5 @@ At CR, direct y force share is ky/sum(ky), torsional y coefficient is ky*dx/J, a
 Run python HW3/scripts/task03_centres.py, then python HW3/scripts/verify_task03.py. The independent checker uses polygon boundary integrals, direct weighted CR and separately assembled equilibrium equations. OpenSees matching is a later stage, not asserted by this analytical report.
 
 The [pre-solve briefing](records/Task_03_PreSolve_Briefing.md) and params_mechanics.json were committed before this calculation. Input hashes and all intermediate matrices are retained in [Analytical_Result.json](outputs/Plan3/task3/Analytical_Result.json).
+
+![CM, CR and shear sensitivity](outputs/Plan3/task3/CM_CR_and_Wall_Stiffness.png)

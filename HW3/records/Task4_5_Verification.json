@@ -1,0 +1,327 @@
+{
+  "passed": 75,
+  "total": 75,
+  "checks": [
+    {
+      "check": "hand/model flexibility",
+      "pass": true,
+      "error": 1.6015147875107515e-16
+    },
+    {
+      "check": "hand/model CR",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "symmetric flexibility",
+      "pass": true
+    },
+    {
+      "check": "positive-definite stiffness",
+      "pass": true
+    },
+    {
+      "check": "K F identity",
+      "pass": true
+    },
+    {
+      "check": "explicit rigid diaphragm",
+      "pass": true
+    },
+    {
+      "check": "one Timoshenko element per wall",
+      "pass": true
+    },
+    {
+      "check": "wall cantilever top rotations free",
+      "pass": true
+    },
+    {
+      "check": "weak axis and intrinsic torsion match briefing",
+      "pass": true
+    },
+    {
+      "check": "unit_0 converged",
+      "pass": true
+    },
+    {
+      "check": "unit_0 horizontal/moment equilibrium",
+      "pass": true,
+      "error": 7.077671781985373e-16
+    },
+    {
+      "check": "unit_0 rigid-plane kinematics",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "unit_0 load response agrees with F",
+      "pass": true
+    },
+    {
+      "check": "unit_1 converged",
+      "pass": true
+    },
+    {
+      "check": "unit_1 horizontal/moment equilibrium",
+      "pass": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "check": "unit_1 rigid-plane kinematics",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "unit_1 load response agrees with F",
+      "pass": true
+    },
+    {
+      "check": "unit_2 converged",
+      "pass": true
+    },
+    {
+      "check": "unit_2 horizontal/moment equilibrium",
+      "pass": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "check": "unit_2 rigid-plane kinematics",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "unit_2 load response agrees with F",
+      "pass": true
+    },
+    {
+      "check": "design converged",
+      "pass": true
+    },
+    {
+      "check": "design horizontal/moment equilibrium",
+      "pass": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "check": "design rigid-plane kinematics",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "design load response agrees with F",
+      "pass": true
+    },
+    {
+      "check": "unit_x_through_CR converged",
+      "pass": true
+    },
+    {
+      "check": "unit_x_through_CR horizontal/moment equilibrium",
+      "pass": true,
+      "error": 4.440892098500626e-16
+    },
+    {
+      "check": "unit_x_through_CR rigid-plane kinematics",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "unit_x_through_CR load response agrees with F",
+      "pass": true
+    },
+    {
+      "check": "unit_y_through_CR converged",
+      "pass": true
+    },
+    {
+      "check": "unit_y_through_CR horizontal/moment equilibrium",
+      "pass": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "check": "unit_y_through_CR rigid-plane kinematics",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "unit_y_through_CR load response agrees with F",
+      "pass": true
+    },
+    {
+      "check": "push_y_through_CR converged",
+      "pass": true
+    },
+    {
+      "check": "push_y_through_CR horizontal/moment equilibrium",
+      "pass": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "check": "push_y_through_CR rigid-plane kinematics",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "push_y_through_CR load response agrees with F",
+      "pass": true
+    },
+    {
+      "check": "pure_torque converged",
+      "pass": true
+    },
+    {
+      "check": "pure_torque horizontal/moment equilibrium",
+      "pass": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "check": "pure_torque rigid-plane kinematics",
+      "pass": true,
+      "error": 0.0
+    },
+    {
+      "check": "pure_torque load response agrees with F",
+      "pass": true
+    },
+    {
+      "check": "Euler-Bernoulli bending-only limit",
+      "pass": true
+    },
+    {
+      "check": "isolated cantilever limit 0 (strong)",
+      "pass": true
+    },
+    {
+      "check": "isolated cantilever limit 1 (weak)",
+      "pass": true
+    },
+    {
+      "check": "isolated cantilever limit 2 (strong)",
+      "pass": true
+    },
+    {
+      "check": "isolated cantilever limit 3 (weak)",
+      "pass": true
+    },
+    {
+      "check": "unit_x_through_CR zero rotation",
+      "pass": true
+    },
+    {
+      "check": "unit_y_through_CR zero rotation",
+      "pass": true
+    },
+    {
+      "check": "unit forces at CM rotate",
+      "pass": true
+    },
+    {
+      "check": "push plus turn displacement",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T1",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T1",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T10",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T10",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T11",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T11",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T12",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T12",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T2",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T2",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T3",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T3",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T4",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T4",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T5",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T5",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T6",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T6",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T7",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T7",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T8",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T8",
+      "pass": true
+    },
+    {
+      "check": "push/turn wall force T9",
+      "pass": true
+    },
+    {
+      "check": "wall demand versus analytical T9",
+      "pass": true
+    },
+    {
+      "check": "cross-direction forces equal and opposite in total",
+      "pass": true
+    }
+  ],
+  "relative_hand_model_F_error": 1.6015147875107515e-16,
+  "max_hand_model_CR_error_m": 0.0,
+  "scope": "Tasks 4/5 numerical model and decomposition checks; inherited image/reader uncertainty is not removed."
+}

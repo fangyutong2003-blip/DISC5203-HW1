@@ -1,10 +1,55 @@
 # Readable Git History
 
-Exported UTC: 2026-11-10T07:34:26.860228+00:00
+Exported UTC: 2026-11-10T08:06:40.312654+00:00
 
 Legacy non-English characters are replaced by ? in this display only. Original Git history remains intact.
 
 ```text
+3fd490a | 2026-11-10T16:00:28+08:00 | Calculate and independently verify HW3 analytical CM CR before OpenSees
+
+A	HW3/HW3_Task_03_Analytical_Report.md
+A	HW3/outputs/Plan3/task3/Analytical_Result.json
+A	HW3/outputs/Plan3/task3/CM_CR_and_Wall_Stiffness.png
+A	HW3/outputs/Plan3/task3/Mass_Rectangles.csv
+A	HW3/outputs/Plan3/task3/Wall_Force_Shares.csv
+A	HW3/outputs/Plan3/task3/Wall_Stiffnesses.csv
+M	HW3/records/Iteration_Log.md
+A	HW3/records/Task3_Verification.json
+A	HW3/records/Task_04_Model_Briefing.md
+A	HW3/scripts/task03_centres.py
+A	HW3/scripts/verify_task03.py
+8d1d35c | 2026-11-10T15:56:02+08:00 | Freeze HW3 analytical assumptions and pre-solve CM CR derivation
+
+A	HW3/params_mechanics.json
+A	HW3/records/Task_03_PreSolve_Briefing.md
+e33a0eb | 2026-11-10T15:52:02+08:00 | Document Grok screenshot evidence and model identity limits
+
+M	.gitignore
+M	HW3/outputs/Plan3/reader_B_grok/Run_Metadata.json
+M	HW3/outputs/Plan3/task2_received/Comparison.json
+M	HW3/outputs/Plan3/task2_received/Comparison.md
+A	HW3/records/Grok_Screenshot_Evidence.md
+M	HW3/records/Iteration_Log.md
+M	HW3/records/Task_Status.md
+M	HW3/scripts/compare_received_readers.py
+dcdb66d | 2026-11-10T15:38:57+08:00 | Record student-confirmed Grok 4.5 model identity
+
+M	HW3/outputs/Plan3/reader_B_grok/Run_Metadata.json
+M	HW3/outputs/Plan3/task2_received/Comparison.json
+M	HW3/outputs/Plan3/task2_received/Comparison.md
+M	HW3/records/Iteration_Log.md
+M	HW3/records/Task_Status.md
+M	HW3/scripts/compare_received_readers.py
+d7b93cb | 2026-11-10T15:34:27+08:00 | Preserve received Grok answers and provisional reference comparison
+
+A	HW3/outputs/Plan3/reader_B_grok/Raw_Answers.json
+A	HW3/outputs/Plan3/reader_B_grok/Run_Metadata.json
+A	HW3/outputs/Plan3/task2_received/Comparison.json
+A	HW3/outputs/Plan3/task2_received/Comparison.md
+M	HW3/records/Git_History.md
+M	HW3/records/Iteration_Log.md
+M	HW3/records/Task_Status.md
+A	HW3/scripts/compare_received_readers.py
 541883a | 2026-11-06T21:31:01+08:00 | Preserve HW3 text hashes across platforms and export Task 1 history
 
 A	HW3/.gitattributes

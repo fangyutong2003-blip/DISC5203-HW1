@@ -85,3 +85,14 @@
 - The matched rectangular-wall baseline retains strong/weak lateral bending and shear, excludes intrinsic vertical wall torsion and columns, and treats walls as cantilevers. Strong-direction-only and bending-only sensitivity cases are retained separately.
 - Shear-inclusive CR=(5.563280,9.694116) m, e=1.493628 m. Independent polygon mass integrals, scalar stiffness sums, coordinate shift, unit-load no-rotation and wall-force equilibrium checks pass 54/54. No OpenSees agreement is claimed until the next actual run.
 - Task 4's detailed model briefing is frozen before solver execution. No VLM confidence tiebreaker or hidden geometry correction is used.
+
+## Tasks 4 and 5 - Actual matching solver run
+
+- Analytical results and the detailed model briefing were committed as 3fd490a before the OpenSees run. Official ElasticTimoshenkoBeam and rigidDiaphragm documentation was checked for 3D argument order, local axes and Transformation constraints.
+- OpenSees 3.8.0 ran 12 one-element Timoshenko cantilever walls, with an explicit rigid diaphragm at CM. Strong and weak rectangular-wall stiffnesses and both shear areas match the analytical assumptions; intrinsic vertical wall torsion is zero. No artificial stiff slab, penalty diaphragm, hidden fixed wall-top bending restraint or additional lateral columns were introduced.
+- Three rebuilt unit-load analyses gave CR=(5.563280,9.694116) m. Relative hand/model flexibility error is 1.6015e-16; reported maximum CR difference is zero at stored floating-point precision.
+- Unit x/y forces through the model-derived CR gave rotations approximately 1.80e-24 and 7.19e-25 rad. Direct 100 kN global-y loading at CM agrees with the superposed push-through-CR and signed torque runs for all master displacements and wall forces.
+- Real isolated strong/weak cantilever tests and a rebuilt bending-only elasticBeamColumn model verify orientation, shear and limiting behaviour. Saved base reactions and top displacements pass force/moment equilibrium and rigid-plane kinematic checks. Tasks 4/5 verification passes 75/75.
+- The 100 kN force is explicitly an assumed linear-analysis demonstration, not a supplied seismic design demand. No claim is made that numerical agreement validates the inherited image reading or completes formal Task 2 experiment control.
+- Conditional structural consequences of the accepted five flag answers were added to the reader comparison. Both readers and the flag-conditioned reference produce the same mechanical geometry and CR; each conditional shift is zero. This is not a surveyed full-plan accuracy claim.
+- All new calculations, raw model responses, verification records, figures and reports are in English. Existing homework steps and reader answers remain preserved.

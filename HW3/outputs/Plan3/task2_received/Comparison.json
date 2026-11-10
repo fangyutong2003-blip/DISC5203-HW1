@@ -97,7 +97,38 @@
   "remaining": [
     "Full-session evidence and exact backend version beyond chatbot self-description",
     "Isolated first-reader run for fair comparison",
-    "Document or align the execution harness",
-    "Structural consequences relative to reference after Task 3 mechanics exists"
-  ]
+    "Document or align the execution harness"
+  ],
+  "conditional_structural_consequences": {
+    "scope": "Conditional on the shared unqueried classical geometry and accepted answers; not error relative to an independently surveyed full plan.",
+    "rows": [
+      {
+        "record": "flag_conditioned_reference",
+        "CR_m": [
+          5.563279751615919,
+          9.694115626048402
+        ],
+        "shift_from_flag_conditioned_reference_m": 0.0,
+        "mechanical_geometry_sha256": "cf2bd172abc125fae572500ae150ff194b427863331a50ff916090a3304d3874"
+      },
+      {
+        "record": "GPT-6 contextual",
+        "CR_m": [
+          5.563279751615919,
+          9.694115626048402
+        ],
+        "shift_from_flag_conditioned_reference_m": 0.0,
+        "mechanical_geometry_sha256": "cf2bd172abc125fae572500ae150ff194b427863331a50ff916090a3304d3874"
+      },
+      {
+        "record": "Grok 4.5 student-reported",
+        "CR_m": [
+          5.563279751615919,
+          9.694115626048402
+        ],
+        "shift_from_flag_conditioned_reference_m": 0.0,
+        "mechanical_geometry_sha256": "cf2bd172abc125fae572500ae150ff194b427863331a50ff916090a3304d3874"
+      }
+    ]
+  }
 }

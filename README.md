@@ -8,7 +8,9 @@ This repository contains the final Homework 1 submission and the ongoing Homewor
 
 ## Start here
 
-For HW3, open [Task 1 report](HW3/HW3_Task_01_Report.md), [task status](HW3/records/Task_Status.md), and [iteration log](HW3/records/Iteration_Log.md). The extraction pipeline and one contextual reader are complete for Plan 3. The formal two-reader comparison and structural calculations remain pending.
+For HW3, open [Task 1 report](HW3/HW3_Task_01_Report.md), [task status](HW3/records/Task_Status.md), and [iteration log](HW3/records/Iteration_Log.md). The extraction pipeline and one contextual reader are complete for Plan 3. Formal reader-comparison evidence, structural modification and additional-plan generalisation remain pending.
+
+The provisional common-geometry baseline now has [Task 3 analytical centres](HW3/HW3_Task_03_Analytical_Report.md) and [Tasks 4/5 OpenSees verification](HW3/HW3_Task_04_05_OpenSees_Report.md). Task 2's formal experiment-control limits remain open; no reader winner is claimed.
 
 Open [HW1_Final_Report.md](HW1_Final_Report.md) for the complete continuous submission report.
 

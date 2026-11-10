@@ -39,6 +39,8 @@ def stiffness_case(walls,cm,shear,weak):
 def main():
     out=ROOT/"outputs/Plan3/task3";out.mkdir(parents=True,exist_ok=True)
     params=load(ROOT/"params_mechanics.json")
+    if not params["include_weak_axis"] or params["include_columns_in_lateral_model"] or params["wall_intrinsic_torsion_J_m4"]!=0:
+        raise ValueError("This matched baseline requires weak-axis bending, no lateral columns and zero intrinsic wall torsion; extend both hand/model routes together for other assumptions.")
     geom=load(ROOT/params["element_record"]); floor=load(ROOT/params["floor_record"])
     g=params["gravity_m_s2"]; ordinary=params["ordinary_mass_intensity_kN_m2"]; stair=params["separate_stair_mass_intensity_kN_m2"]
     rectangles=[]
@@ -120,7 +122,8 @@ def main():
              "At CR, direct y force share is ky/sum(ky), torsional y coefficient is ky*dx/J, and torsional x coefficient is -kx*dy/J. [Force-share table](outputs/Plan3/task3/Wall_Force_Shares.csv) records direct and torsional components separately. Unit-torque coefficients have units 1/m, not dimensionless percentages.","",
              "## Reproduction and verification","",
              "Run python HW3/scripts/task03_centres.py, then python HW3/scripts/verify_task03.py. The independent checker uses polygon boundary integrals, direct weighted CR and separately assembled equilibrium equations. OpenSees matching is a later stage, not asserted by this analytical report.","",
-             "The [pre-solve briefing](records/Task_03_PreSolve_Briefing.md) and params_mechanics.json were committed before this calculation. Input hashes and all intermediate matrices are retained in [Analytical_Result.json](outputs/Plan3/task3/Analytical_Result.json)."]
+             "The [pre-solve briefing](records/Task_03_PreSolve_Briefing.md) and params_mechanics.json were committed before this calculation. Input hashes and all intermediate matrices are retained in [Analytical_Result.json](outputs/Plan3/task3/Analytical_Result.json).","",
+             "![CM, CR and shear sensitivity](outputs/Plan3/task3/CM_CR_and_Wall_Stiffness.png)"]
     (ROOT/"HW3_Task_03_Analytical_Report.md").write_text("\n".join(text)+"\n",encoding="utf-8")
     import matplotlib
     matplotlib.use("Agg")

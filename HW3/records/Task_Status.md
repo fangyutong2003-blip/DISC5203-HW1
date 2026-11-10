@@ -6,9 +6,9 @@
 | 1B Label supervision | 21 labelled-size metric rectangles; two OCR reads, strict thickness classes, scale alternatives and global dimension anchor | Complete; 21 footprints inside floor and hatch support checked |
 | 1C Random forest | Actual 120000-pixel, 15-feature, 60-tree experiment; model and importance retained, never selected | Complete for Task 1; no unseen accuracy claimed |
 | 1D Single reader | Five frozen flags, alternative classical reference, real native-viewing GPT-6 answers, validated application to a copy | Complete for Task 1; session exposure disclosed |
-| 2 Two readers | Five pasted answers and a P3-F05 screenshot retained; Grok 4.5 student-confirmed and chatbot self-reported; provisional comparison available | Full session/version verification, isolated first reader, harness documentation and structural consequence comparison remain pending |
-| 3 CM/CR hand calculation | Brief ambiguities recorded | Pending promoted extraction |
-| 4 / 5 OpenSees and checks | Workflow procedures specified | Pending hand calculation |
+| 2 Two readers | Five pasted Grok answers and screenshot; tie on flags; conditional CR consequences calculated | Full-session/version verification, isolated first reader and harness documentation remain pending; no final promotion |
+| 3 CM/CR analytical calculation | Signed rectangles, mass, strong/weak wall stiffness, shear sensitivities, K/F and CR; 54 independent checks | Complete on declared provisional common-geometry baseline; not claimed as handwritten student work |
+| 4 / 5 OpenSees and checks | Explicit Timoshenko rigid diaphragm, unit loads, reactions, zero-rotation and push/turn tests; 75 checks | Complete on matched provisional baseline |
 | 6 / 7 Modification and explanation | No design modification selected | Pending baseline |
 | 8 Additional plans | NewPlan source retained; independent found plan not selected | Pending |
 
