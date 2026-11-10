@@ -1,0 +1,362 @@
+{
+  "created_utc": "2026-11-10T08:46:13.233310+00:00",
+  "pre_execution_git_commit": "181c6cb990e973fccd728d5b4c6c1facefe17784",
+  "inputs": [
+    {
+      "plan": "NewPlan",
+      "file": "sources/assets/NewPlan.png",
+      "sha256": "d70577698599310ca4a62e0c5a3cb4133df16b02dfc417dcf9d2899e673f63c1"
+    },
+    {
+      "plan": "NIST",
+      "file": "sources/third_plan_candidates/NIST_Figure_02_Plan.png",
+      "sha256": "034d7accbcfd36191b4de3a0f4b96782dc256b943e59e934880d2546fc05ba12"
+    }
+  ],
+  "original_code": [
+    {
+      "file": "scripts/stage01_classical.py",
+      "sha256": "15b72fac7be94ebcf4743787a2dac78caba9ad7c6b91e0de4ad1c419b8a281ea"
+    },
+    {
+      "file": "scripts/stage02_ocr.py",
+      "sha256": "ec57d5af00b11ff97d44d9d2dc374338e29ee22f1767a7457ed8e6c5e5864acd"
+    },
+    {
+      "file": "scripts/stage03_bars.py",
+      "sha256": "46af93d3bfeb9dfeca71ef1175c13691aae9a68e718cdd65885326be1521664d"
+    },
+    {
+      "file": "scripts/stage04_forest.py",
+      "sha256": "2e9a3cc5f3a4c0f960ba2d5fc6522c44231ee160d4bf9c63ba03bf2b764655ba"
+    }
+  ],
+  "historic_plan3_outputs": [
+    {
+      "file": "outputs/Plan3/independent_reference/P3-F01_Reference_Input.png",
+      "sha256": "00249e0c7d0fd29e777ff2eef984da588e91128efdb2b0bdee932bc96b93badc"
+    },
+    {
+      "file": "outputs/Plan3/independent_reference/P3-F02_Reference_Input.png",
+      "sha256": "aae7cab867a7226f4cfd75909e7208fe8d927e67a572ec1d38835d87af5e4668"
+    },
+    {
+      "file": "outputs/Plan3/independent_reference/P3-F03_Reference_Input.png",
+      "sha256": "033c203cb167359870930b5569db0056bd1e09b94d5d192b8718181a7e4f0c99"
+    },
+    {
+      "file": "outputs/Plan3/independent_reference/P3-F04_Reference_Input.png",
+      "sha256": "8554c18e8b889e50cd83557d63682032f7f0a59db1d59ee36d0e641754107460"
+    },
+    {
+      "file": "outputs/Plan3/independent_reference/P3-F05_Reference_Input.png",
+      "sha256": "e70d2a1a5b99069ee4765533b54e6a8011da8666b4463f2ba72cf47a7bde7fe9"
+    },
+    {
+      "file": "outputs/Plan3/independent_reference/Reference.json",
+      "sha256": "97368e2f0d66f443e8c07ef0201b20c5530b83950f000420fe99c6ad5b8e7fda"
+    },
+    {
+      "file": "outputs/Plan3/reader_A_task1/Application_Log.json",
+      "sha256": "cf4a3ad44ad245217ee30976de725e4e44edec1b3ce1a33a8388b2cdd625976e"
+    },
+    {
+      "file": "outputs/Plan3/reader_A_task1/Raw_Answers.json",
+      "sha256": "cf695bee636a1eb4b71014f6d3ec10155c7b0ad9bdebc00e20ba79eec433bb80"
+    },
+    {
+      "file": "outputs/Plan3/reader_A_task1/Run_Metadata.json",
+      "sha256": "d8c2290680deb41ac3e45fadc78bb5d56c99c401cc431ead601ea4d0a9aff348"
+    },
+    {
+      "file": "outputs/Plan3/reader_B_grok/Raw_Answers.json",
+      "sha256": "933acd7cd9c54ca1375f182395b015c7292753e76653a870be33796a7bab2def"
+    },
+    {
+      "file": "outputs/Plan3/reader_B_grok/Run_Metadata.json",
+      "sha256": "20f980c7d26648f5536bd5ed41c8c586f49313e93aa1b1c3ca50b729cf21b2c3"
+    },
+    {
+      "file": "outputs/Plan3/reader_package_v1/Flag_Manifest.json",
+      "sha256": "8ceb8339e56410f969e8946db73bd6480b104cc08cea8b5965e89257c489256f"
+    },
+    {
+      "file": "outputs/Plan3/reader_package_v1/P3-F01.png",
+      "sha256": "49f2985828f67595e73708b5392961e5a67ed5f3850746e0d62b451078abb23d"
+    },
+    {
+      "file": "outputs/Plan3/reader_package_v1/P3-F02.png",
+      "sha256": "1e9b746cb598766f16eb268aa1df8cea56116cdd5cd8f45fb75559742f1a5b41"
+    },
+    {
+      "file": "outputs/Plan3/reader_package_v1/P3-F03.png",
+      "sha256": "9873d0aba1f4923f33fa76c7a26ce14aec37637a924d6c382216b4ec17ff42ec"
+    },
+    {
+      "file": "outputs/Plan3/reader_package_v1/P3-F04.png",
+      "sha256": "2bb7ce56f545be38602ab58ed2f3035be1766dade3559f2ea0a6f4069617bb4b"
+    },
+    {
+      "file": "outputs/Plan3/reader_package_v1/P3-F05.png",
+      "sha256": "4b2fd7a7cd672eda475df8e34e06605dd4d620e60e496b1e802a79aa406cb968"
+    },
+    {
+      "file": "outputs/Plan3/reader_package_v1/Questions.md",
+      "sha256": "ecda783129938787255f7d7132a8283a42d5f261b1e932ddf35c388eb03f1dcc"
+    },
+    {
+      "file": "outputs/Plan3/reader_package_v1/Reader_Instructions.md",
+      "sha256": "d526886279919aceae670fde2bb544fbbd070441ea03d4192de7876a04ada876"
+    },
+    {
+      "file": "outputs/Plan3/review_package_draft/Flag_Manifest.json",
+      "sha256": "57100f1af6fdd2f42cedb9811082a9d173b3497de463dc7680ea2f56222c530d"
+    },
+    {
+      "file": "outputs/Plan3/review_package_draft/P3-F01.png",
+      "sha256": "49f2985828f67595e73708b5392961e5a67ed5f3850746e0d62b451078abb23d"
+    },
+    {
+      "file": "outputs/Plan3/review_package_draft/P3-F02.png",
+      "sha256": "1e9b746cb598766f16eb268aa1df8cea56116cdd5cd8f45fb75559742f1a5b41"
+    },
+    {
+      "file": "outputs/Plan3/review_package_draft/P3-F03.png",
+      "sha256": "9873d0aba1f4923f33fa76c7a26ce14aec37637a924d6c382216b4ec17ff42ec"
+    },
+    {
+      "file": "outputs/Plan3/review_package_draft/P3-F04.png",
+      "sha256": "2bb7ce56f545be38602ab58ed2f3035be1766dade3559f2ea0a6f4069617bb4b"
+    },
+    {
+      "file": "outputs/Plan3/review_package_draft/P3-F05.png",
+      "sha256": "4b2fd7a7cd672eda475df8e34e06605dd4d620e60e496b1e802a79aa406cb968"
+    },
+    {
+      "file": "outputs/Plan3/review_package_draft/Questions.md",
+      "sha256": "1073c8acdec00f96c08902ab36fdb64c3b21e6ff8f80e75a9334479db5e70a3a"
+    },
+    {
+      "file": "outputs/Plan3/stage01/01_Threshold.png",
+      "sha256": "16834dbffbd5023ab1315887eb447ee07f09af13966196a6196aec6e77e4a6aa"
+    },
+    {
+      "file": "outputs/Plan3/stage01/02_Diagonal_Hatching.png",
+      "sha256": "3053edd7ac5bca2594256aff752e92caa8b752c74175955aefb7e004720d601c"
+    },
+    {
+      "file": "outputs/Plan3/stage01/03_Close17.png",
+      "sha256": "7eb3f232dfd835bebc3511ef81837e3eca98e779314b6cf7ab4d1d8537c324e8"
+    },
+    {
+      "file": "outputs/Plan3/stage01/04_Open21.png",
+      "sha256": "823bc85922d1ad5311089b5b25b833638ad05852bd2bdf24344b742a4ce6cb1f"
+    },
+    {
+      "file": "outputs/Plan3/stage01/05_Open17_Alternative.png",
+      "sha256": "7c3c3f3c42b64a79c1209700650333b18542dc94440110337d2a8d049baef2bf"
+    },
+    {
+      "file": "outputs/Plan3/stage01/06_OCR_Long_Lines_Removed.png",
+      "sha256": "f5e214f78a17d9e3fa39f85f6ede49f1d866824b28afbb13cb37e8ffcf3e392b"
+    },
+    {
+      "file": "outputs/Plan3/stage01/07_Component_Overlay.png",
+      "sha256": "78215379ae139144085d37f1efe24f8e8d764a2eba214e42f3d570c69e514890"
+    },
+    {
+      "file": "outputs/Plan3/stage01/Classical_Components.json",
+      "sha256": "c91d1d89c0f7a2a83ebab75d9ca97aadd33371156ec81008d492a2c4d6b12d4d"
+    },
+    {
+      "file": "outputs/Plan3/stage02/Dual_OCR.json",
+      "sha256": "c9ea4cdd267eb484257385e2394b8df1bd96fca98db16907d591b437d2e4759b"
+    },
+    {
+      "file": "outputs/Plan3/stage02/Dual_OCR_Review.md",
+      "sha256": "2462fee7aed7de077c0032641df0f82aaf66cfde2da31352faf49aa224e7fdf6"
+    },
+    {
+      "file": "outputs/Plan3/stage03/Bar_Label_Matches.json",
+      "sha256": "16dbe20fb13a3ec8420c9435bd8a568ae82ec28bd9cb6dfec621f347b2a0c314"
+    },
+    {
+      "file": "outputs/Plan3/stage03/Bars_x.png",
+      "sha256": "7d0cdf89817dfb2791b05e56fae96b39bddd60e4baa998a2bae9fe3700ec5ff8"
+    },
+    {
+      "file": "outputs/Plan3/stage03/Bars_y.png",
+      "sha256": "fa078fed61bcceb0ac7604cb6e9eaf344a7911ab436891f1eb4a775babc35565"
+    },
+    {
+      "file": "outputs/Plan3/stage03/Provisional_Label_Matches.png",
+      "sha256": "a32be7cf9eb544877352fa82d91f09d5d07fa6af4d2f548ba72a7977d96f72a8"
+    },
+    {
+      "file": "outputs/Plan3/stage04_forest/Feature_Importance.md",
+      "sha256": "9409491278933ac32b55b0210f3ca32fb62b29c8ee671b25d2248d71b806cac2"
+    },
+    {
+      "file": "outputs/Plan3/stage04_forest/Forest_Mask_Never_Selected.png",
+      "sha256": "d01c12d1c84dfdab2aafa4485e46f391b52632dc9d8ea318936dea0c05fe0e5f"
+    },
+    {
+      "file": "outputs/Plan3/stage04_forest/Forest_Never_Selected.joblib",
+      "sha256": "3870f33edd6ae1fd7fff8e52947f710b4d3c7db3dd9d2221eadd784bf11f5fb1"
+    },
+    {
+      "file": "outputs/Plan3/stage04_forest/Forest_Probability.png",
+      "sha256": "af2b4a49c6a2cab4096887bee8fa981fb7a4a738a7acdf017d0e4f7f15a98520"
+    },
+    {
+      "file": "outputs/Plan3/stage04_forest/Forest_Report.json",
+      "sha256": "3ca9032e82197286491263a1819769551af4afc93af3d43e153a793eb16b37b4"
+    },
+    {
+      "file": "outputs/Plan3/stage05/Classical_Elements_Unpromoted.json",
+      "sha256": "4e6960431362a50728255cc04b14817a67f4a7f075d38697f4a771a2fb71e035"
+    },
+    {
+      "file": "outputs/Plan3/stage05/Dimension_Chain_and_Historical_Audit.json",
+      "sha256": "4708964edbe70a58b43b6d5b24a2705049eda37e405bbfecfb6efbfa22d0edbd"
+    },
+    {
+      "file": "outputs/Plan3/stage05/Labelled_Size_Rectangles.png",
+      "sha256": "4b960c39e275b41b2ea9b7a8cabd23bc377d14090e5bdde5a4addf7f2d22e1f5"
+    },
+    {
+      "file": "outputs/Plan3/stage05/Metric_Calibration.json",
+      "sha256": "14f5d383e186916936f0e8675bd65e960d154d4f7fde8b1114370cdd4cf0a4f3"
+    },
+    {
+      "file": "outputs/Plan3/stage05/Metric_Geometry_Review.md",
+      "sha256": "945580313f1528fd883c6d508bc37ae31a6dbdcc99f5bcc03146a68a8c114fcc"
+    },
+    {
+      "file": "outputs/Plan3/task1/Calibration_Revision_Audit.json",
+      "sha256": "4a73fdb7ab326c30ed3a5c4c6d89426d09a5ceb5c6b12e58d1e7c6354e8f9071"
+    },
+    {
+      "file": "outputs/Plan3/task1/Candidate_Tributary_Areas.csv",
+      "sha256": "b7eb90cb138a072a5ba64324df63ac7a90bc6f6c2bb63ddb53f89a64fecaeb06"
+    },
+    {
+      "file": "outputs/Plan3/task1/Closed_Tributary_Regions.geojson",
+      "sha256": "9a44a18ac9223af590863bcb557586bc80d67c9fec3bd31a631d62e8f6f398f1"
+    },
+    {
+      "file": "outputs/Plan3/task1/Column_Grid.json",
+      "sha256": "ea61788099e8f8b33613a7d53cf41e31886328ffb73b2d0d0b5c18bccdb1d242"
+    },
+    {
+      "file": "outputs/Plan3/task1/Element_Geometry_Audit.json",
+      "sha256": "b11236772f8495520f7f30f206496181ed8091be339ad9625eaa011ee9eb1780"
+    },
+    {
+      "file": "outputs/Plan3/task1/Elements_After_Reader_A.json",
+      "sha256": "7f7ffe3ecd6326fe1d45c9212760645593d37653e47f00980de5bcf3ef6862f3"
+    },
+    {
+      "file": "outputs/Plan3/task1/Elements_Classical.json",
+      "sha256": "2c0ffece47b3e0f4477238fbc2d1b20061e307c9f2077d8fe57b24500a93c0a8"
+    },
+    {
+      "file": "outputs/Plan3/task1/Floor_and_Closed_Regions.png",
+      "sha256": "6023a8fa441b09a6103022c0705dc54c7035ef0f4b9cff7012f5375af32ed0fb"
+    },
+    {
+      "file": "outputs/Plan3/task1/Floor_Dimension_Record.json",
+      "sha256": "6329e967702250595b7ce90bca56db909af0ad92d671512c1e8da39b050482ff"
+    },
+    {
+      "file": "outputs/Plan3/task1/Floor_Zones.geojson",
+      "sha256": "25d1e94b314a0bc59ccc20c515763e9b954d912494d10a74621612cfc9cc6909"
+    },
+    {
+      "file": "outputs/Plan3/task1/Global_Dimension_Anchor.json",
+      "sha256": "ebf1377bf901ade0e082220ff09ec7d766958ee56e1803306e8ce52619ea4c23"
+    },
+    {
+      "file": "outputs/Plan3/task1/Inherited_HW1_Loads.csv",
+      "sha256": "fe2fc56876280756d42911bcc04689a4cb5f862a92a0f5a5d06771ce97772426"
+    },
+    {
+      "file": "outputs/Plan3/task1/Score_Sheet.json",
+      "sha256": "d0fb78a993b47e69a8255b032bcef79408f6548427a7a1e4925ef0ad766a6124"
+    },
+    {
+      "file": "outputs/Plan3/task2_received/Comparison.json",
+      "sha256": "769c1763b8177cbfb5e6993a163548c4ee98ce2ecd8274ff5be200bbb5f0f55f"
+    },
+    {
+      "file": "outputs/Plan3/task2_received/Comparison.md",
+      "sha256": "8476c88c851de06cde499ee707c34f4a5c7f097fd808e072acf8f8d6897d5158"
+    },
+    {
+      "file": "outputs/Plan3/task3/Analytical_Result.json",
+      "sha256": "2bb5efc76ce52d0186c44f6217f68b128593281be5e7fb4a53b81b264a7faafb"
+    },
+    {
+      "file": "outputs/Plan3/task3/CM_CR_and_Wall_Stiffness.png",
+      "sha256": "f539143beeb84a22409c4be5c506cdc0ff6554f83df3776864f6ce6f3e47a172"
+    },
+    {
+      "file": "outputs/Plan3/task3/Mass_Rectangles.csv",
+      "sha256": "cec4b8a5634c72631b27aeff98ad2cf4115074ed1fa64165943b3001fa645caf"
+    },
+    {
+      "file": "outputs/Plan3/task3/Wall_Force_Shares.csv",
+      "sha256": "2f4d6b503e409b489b3199475c45bc15934560accc5f4c5fe9e728a4bca6eafb"
+    },
+    {
+      "file": "outputs/Plan3/task3/Wall_Stiffnesses.csv",
+      "sha256": "cc5ccfddd33f5bc434f70352682bca924e057fa90fc708ac70f720e9876d05d0"
+    },
+    {
+      "file": "outputs/Plan3/task4/Demonstration_Wall_Reactions.csv",
+      "sha256": "cc020b99fac121297691a464b3d5e58071d59a89617f4dcc58637d71a2677ed4"
+    },
+    {
+      "file": "outputs/Plan3/task4/OpenSees_Result.json",
+      "sha256": "24c0f6f37b2c8d815d2f39ac183af0b0325847648e62382666be4d6da3dea3bf"
+    },
+    {
+      "file": "outputs/Plan3/task4/Wall_Force_Comparison.png",
+      "sha256": "3c1437ecdaf0c4320c2d293be24a0966effdc10cfbe46f96e19dabc856cc4423"
+    },
+    {
+      "file": "outputs/Plan3/task6/Force_Amplification_Comparison.csv",
+      "sha256": "1136228b5c5f1036ebf93c7718c7ab941a97db64fca1c568a85eadbdf849426c"
+    },
+    {
+      "file": "outputs/Plan3/task6/Forces_and_Periods.png",
+      "sha256": "20a897c8d7474d4d894a5a6f3c8f1cb90fe79a3e661a2e8675b63ce1908a5200"
+    },
+    {
+      "file": "outputs/Plan3/task6/Modification_Result.json",
+      "sha256": "ab0f821d505f7e09ae42792bbedb6b93988851bb24799ea957015a37db11eeb3"
+    },
+    {
+      "file": "outputs/Plan3/task6/Modified_Walls_and_Centres.png",
+      "sha256": "7c4ac22b1bd54267a19e18aa1af9d516ffdae42762d59511ab2e33437144447e"
+    },
+    {
+      "file": "outputs/Plan3/task6/Optimisation_Trajectory.json",
+      "sha256": "9f93e15326def611f93292497b1bbcd5ded27e74be4763d17ca5d9d54ed5a37f"
+    }
+  ],
+  "scope": "Freeze before source routing; no VLM answers or promoted geometry supplied.",
+  "preprocessing_resize": null,
+  "rules": {
+    "threshold_lt": 225,
+    "diagonal_px": 11,
+    "close_px": 17,
+    "open_px": 21,
+    "long_line_px": 81,
+    "wall_aspect": 4,
+    "bar_open_px": 121,
+    "forest_seed": 5203,
+    "forest_trees": 60,
+    "forest_resize": 0.5
+  }
+}
