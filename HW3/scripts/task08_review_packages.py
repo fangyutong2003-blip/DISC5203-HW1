@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def write_json(path, obj):
-    path.write_text(json.dumps(obj, indent=2, allow_nan=False) + '\n', encoding='utf-8')
+    path.write_text(json.dumps(obj, indent=2, allow_nan=False) + '\n', encoding='utf-8', newline='\n')
 
 
 def sha(path):
@@ -181,7 +181,7 @@ def prepare(plan, engine, version):
                'plan':plan,'source_sha256':sha(source),'frozen_utc':reference['created_utc'],
                'reference_sha256':sha(reference_dir/'Reference.json'),
                'common_instruction_sha256':sha(instruction),'confidence_threshold':.8,
-               'model_runs':[],'flags':flags,
+               'model_runs':[],'flags':flags,'serialization':'UTF-8 with LF line endings before hashing and ZIP creation',
                'rejected_queries':rejected_queries,
                'note':'Evaluator metadata only. Send Reader_Manifest.json, Questions.md, instructions and PNGs to readers; exclude this private manifest and reference.'}
     write_json(package/'Flag_Manifest.json',private)
@@ -189,7 +189,7 @@ def prepare(plan, engine, version):
            'Use Reader_Instructions.md unchanged for both models. Submit one image and its question in the order below. Do not send evaluator metadata or reference answers.','']
     for flag in public_flags:
         lines += ['## '+flag['flag_id'],'',flag['question'],'',f"![{flag['flag_id']}]({flag['crop']})",'']
-    (package/'Questions.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    (package/'Questions.md').write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
     zip_path = ROOT / f'HW3_Task_08_{plan}_Reader_Package_{version.upper()}.zip'
     with zipfile.ZipFile(zip_path,'w',zipfile.ZIP_DEFLATED) as archive:
         for name in ['Reader_Instructions.md','Reader_Manifest.json','Questions.md']+[f['crop'] for f in public_flags]:
@@ -199,7 +199,7 @@ def prepare(plan, engine, version):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--revision', choices=['v3'], default='v3')
+    parser.add_argument('--revision', choices=['v4'], default='v4')
     args = parser.parse_args()
     engine = RapidOCR()
     for plan in ('NewPlan','NIST'):

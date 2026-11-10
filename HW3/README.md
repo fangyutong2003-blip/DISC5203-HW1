@@ -8,7 +8,7 @@ The [Tasks 6/7 report](HW3_Task_06_07_Modification_Report.md) records the inward
 
 Student: Fangyutong, 21353319. Assigned drawing: Floor Plan 3.
 
-Task 8 now has an [additional-plan portability checkpoint](HW3_Task_08_Additional_Plans_Report.md): fixed-rule classical, dual OCR, bar matching and never-selected forests were run on both NewPlan and NIST. Failures are retained; no additional-plan geometry is promoted. Current reader packages are **V3**, with six NewPlan and four NIST questions; earlier drafts are superseded. Actual reader runs, outstanding references and mechanics remain pending.
+Task 8 now has an [additional-plan portability checkpoint](HW3_Task_08_Additional_Plans_Report.md): fixed-rule classical, dual OCR, bar matching and never-selected forests were run on both NewPlan and NIST. Failures are retained; no additional-plan geometry is promoted. Current reader packages are **V4**, with six NewPlan and four NIST questions; earlier drafts are superseded. UTF-8/LF serialization and actual staged Git bytes are verified. Actual reader runs, outstanding references and mechanics remain pending.
 
 ## Current stage
 

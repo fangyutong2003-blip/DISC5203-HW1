@@ -1,0 +1,65 @@
+{
+  "plan": "NewPlan",
+  "flags": [
+    {
+      "flag_id": "NP-F01",
+      "crop": "NP-F01.png",
+      "sha256": "5ef77ea51e3ccbe815f2a4a405877fc8e4e428b2d8ae84183772293f02c6118a",
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "NP-F02",
+      "crop": "NP-F02.png",
+      "sha256": "c9280b699946cb3908b9bf67e9148c097da9d3e21deae2b6345e5b774327bb7c",
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "NP-F03",
+      "crop": "NP-F03.png",
+      "sha256": "8d38f8f6db1fca7ada3bc1b1dc863fb95050c669cceb3354e81c20413eed5e3e",
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "NP-F04",
+      "crop": "NP-F04.png",
+      "sha256": "6a67a8e3dcba8d8f060b4b2c0c744cf785371fc888cf3ab368ef6272ebdd309f",
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "NP-F05",
+      "crop": "NP-F05.png",
+      "sha256": "6f29f39e045dba758b753b3f4f02291fdcb455e34c4804f73c855c69b461f915",
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    },
+    {
+      "flag_id": "NP-F06",
+      "crop": "NP-F06.png",
+      "sha256": "63549d57f508829b69211563d0511fec26e6d788facee21b71898de4cfb6b911",
+      "question": "What element label (or label range) and size string are printed immediately to the right of the red cross? Answer label and size_mm; keep continuous null.",
+      "asked_fields": [
+        "label",
+        "size_mm"
+      ]
+    }
+  ]
+}

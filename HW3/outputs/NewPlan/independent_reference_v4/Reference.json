@@ -1,0 +1,625 @@
+{
+  "created_utc": "2026-11-10T08:59:22.113729+00:00",
+  "route": "Same alternative threshold-180 OCR / trim-8 raw-ink occupancy route as Plan 3; no VLM answers.",
+  "independence_limits": "Shares OCR engine and query locations; this is an alternative classical reference, not independent human/CAD ground truth. NewPlan range syntax is parsed only in this reference, never added to main extraction.",
+  "records": [
+    {
+      "flag_id": "NP-F01",
+      "expected": {
+        "label": "T1",
+        "size_mm": "3500x400",
+        "continuous": null
+      },
+      "reference_resolved": true,
+      "source_unmarked_crop_sha256": "99bd9758c34978716f3c0e24e19edefe7658a36e82cb3ca8eb134a51d259858c",
+      "threshold": 180,
+      "independent_ocr": [
+        {
+          "box_px": [
+            [
+              14.0,
+              88.0
+            ],
+            [
+              490.0,
+              82.0
+            ],
+            [
+              490.0,
+              131.0
+            ],
+            [
+              14.0,
+              137.0
+            ]
+          ],
+          "text": "\u4e8c\u4e8c\u4e8c\u4e09\u4e8c\u4e8c",
+          "confidence": 0.644588237007459
+        },
+        {
+          "box_px": [
+            [
+              400.0,
+              161.0
+            ],
+            [
+              485.0,
+              162.0
+            ],
+            [
+              481.0,
+              726.0
+            ],
+            [
+              396.0,
+              725.0
+            ]
+          ],
+          "text": "T1 3500x 400",
+          "confidence": 0.9793590754270554
+        },
+        {
+          "box_px": [
+            [
+              728.0,
+              177.0
+            ],
+            [
+              845.0,
+              177.0
+            ],
+            [
+              845.0,
+              258.0
+            ],
+            [
+              728.0,
+              258.0
+            ]
+          ],
+          "text": "T2",
+          "confidence": 0.9991603791713715
+        },
+        {
+          "box_px": [
+            [
+              602.0,
+              591.0
+            ],
+            [
+              850.0,
+              591.0
+            ],
+            [
+              850.0,
+              700.0
+            ],
+            [
+              602.0,
+              700.0
+            ]
+          ],
+          "text": "C17",
+          "confidence": 0.9913817842801412
+        },
+        {
+          "box_px": [
+            [
+              3.0,
+              603.0
+            ],
+            [
+              173.0,
+              603.0
+            ],
+            [
+              173.0,
+              698.0
+            ],
+            [
+              3.0,
+              698.0
+            ]
+          ],
+          "text": "C16",
+          "confidence": 0.9693030913670858
+        }
+      ],
+      "raw_ink_axial_support": null,
+      "reason": "Unique high-confidence independent OCR reading"
+    },
+    {
+      "flag_id": "NP-F02",
+      "expected": {
+        "label": "T2",
+        "size_mm": "3500x400",
+        "continuous": null
+      },
+      "reference_resolved": true,
+      "source_unmarked_crop_sha256": "a03851903e4a495987bd96733dcda163f24fd61ef30eb2d2aefcb478f61e1899",
+      "threshold": 180,
+      "independent_ocr": [
+        {
+          "box_px": [
+            [
+              159.0,
+              400.0
+            ],
+            [
+              714.0,
+              403.0
+            ],
+            [
+              714.0,
+              477.0
+            ],
+            [
+              159.0,
+              474.0
+            ]
+          ],
+          "text": "T2 3500x 400",
+          "confidence": 0.9810707171758016
+        }
+      ],
+      "raw_ink_axial_support": null,
+      "reason": "Unique high-confidence independent OCR reading"
+    },
+    {
+      "flag_id": "NP-F03",
+      "expected": {
+        "label": null,
+        "size_mm": null,
+        "continuous": null
+      },
+      "reference_resolved": false,
+      "source_unmarked_crop_sha256": "5fc871a70bb2bb39a5ec0d17e895d26baa070d2617740ababe521eb9066c447b",
+      "threshold": 180,
+      "independent_ocr": [
+        {
+          "box_px": [
+            [
+              545.0,
+              231.0
+            ],
+            [
+              611.0,
+              226.0
+            ],
+            [
+              615.0,
+              284.0
+            ],
+            [
+              549.0,
+              289.0
+            ]
+          ],
+          "text": "11",
+          "confidence": 0.954308956861496
+        },
+        {
+          "box_px": [
+            [
+              402.0,
+              255.0
+            ],
+            [
+              480.0,
+              255.0
+            ],
+            [
+              480.0,
+              710.0
+            ],
+            [
+              402.0,
+              710.0
+            ]
+          ],
+          "text": " 3500x 400",
+          "confidence": 0.9385809004306793
+        },
+        {
+          "box_px": [
+            [
+              1.0,
+              571.0
+            ],
+            [
+              162.0,
+              571.0
+            ],
+            [
+              162.0,
+              666.0
+            ],
+            [
+              1.0,
+              666.0
+            ]
+          ],
+          "text": "C24",
+          "confidence": 0.8875194191932678
+        },
+        {
+          "box_px": [
+            [
+              632.0,
+              574.0
+            ],
+            [
+              835.0,
+              574.0
+            ],
+            [
+              835.0,
+              662.0
+            ],
+            [
+              632.0,
+              662.0
+            ]
+          ],
+          "text": "C25",
+          "confidence": 0.998412032922109
+        },
+        {
+          "box_px": [
+            [
+              502.0,
+              828.0
+            ],
+            [
+              717.0,
+              828.0
+            ],
+            [
+              717.0,
+              875.0
+            ],
+            [
+              502.0,
+              875.0
+            ]
+          ],
+          "text": "T4.20",
+          "confidence": 0.9654285192489624
+        }
+      ],
+      "raw_ink_axial_support": null,
+      "reason": "No unique high-confidence reference; do not score or promote"
+    },
+    {
+      "flag_id": "NP-F04",
+      "expected": {
+        "label": "T5",
+        "size_mm": "3500x400",
+        "continuous": null
+      },
+      "reference_resolved": true,
+      "source_unmarked_crop_sha256": "2dc205647fa6156a8dae6a5e2b57c9a90427a301faea21312e65c4bec3393e61",
+      "threshold": 180,
+      "independent_ocr": [
+        {
+          "box_px": [
+            [
+              758.0,
+              11.0
+            ],
+            [
+              811.0,
+              11.0
+            ],
+            [
+              811.0,
+              76.0
+            ],
+            [
+              758.0,
+              76.0
+            ]
+          ],
+          "text": "11",
+          "confidence": 0.6443738639354706
+        },
+        {
+          "box_px": [
+            [
+              758.0,
+              92.0
+            ],
+            [
+              810.0,
+              92.0
+            ],
+            [
+              810.0,
+              158.0
+            ],
+            [
+              758.0,
+              158.0
+            ]
+          ],
+          "text": "11",
+          "confidence": 0.7325809001922607
+        },
+        {
+          "box_px": [
+            [
+              0.0,
+              142.0
+            ],
+            [
+              112.0,
+              142.0
+            ],
+            [
+              112.0,
+              237.0
+            ],
+            [
+              0.0,
+              237.0
+            ]
+          ],
+          "text": "12",
+          "confidence": 0.999655157327652
+        },
+        {
+          "box_px": [
+            [
+              162.0,
+              401.0
+            ],
+            [
+              717.0,
+              401.0
+            ],
+            [
+              717.0,
+              476.0
+            ],
+            [
+              162.0,
+              476.0
+            ]
+          ],
+          "text": "T5 3500x 400",
+          "confidence": 0.9704056332508723
+        },
+        {
+          "box_px": [
+            [
+              3.0,
+              815.0
+            ],
+            [
+              108.0,
+              821.0
+            ],
+            [
+              105.0,
+              879.0
+            ],
+            [
+              0.0,
+              877.0
+            ]
+          ],
+          "text": "19",
+          "confidence": 0.9937399625778198
+        }
+      ],
+      "raw_ink_axial_support": null,
+      "reason": "Unique high-confidence independent OCR reading"
+    },
+    {
+      "flag_id": "NP-F05",
+      "expected": {
+        "label": "T6",
+        "size_mm": "3500x400",
+        "continuous": null
+      },
+      "reference_resolved": true,
+      "source_unmarked_crop_sha256": "038edbe4aa9a3e7a3692339d6522fd9cae3179a4f4ec09464fbd1085aecd00a2",
+      "threshold": 180,
+      "independent_ocr": [
+        {
+          "box_px": [
+            [
+              474.0,
+              97.0
+            ],
+            [
+              831.0,
+              97.0
+            ],
+            [
+              831.0,
+              143.0
+            ],
+            [
+              474.0,
+              143.0
+            ]
+          ],
+          "text": "\u4e8c\u4e8c\u4e09\u4e8c",
+          "confidence": 0.5744969844818115
+        },
+        {
+          "box_px": [
+            [
+              399.0,
+              166.0
+            ],
+            [
+              481.0,
+              167.0
+            ],
+            [
+              475.0,
+              723.0
+            ],
+            [
+              394.0,
+              722.0
+            ]
+          ],
+          "text": "T6 3500x 400",
+          "confidence": 0.988966554403305
+        },
+        {
+          "box_px": [
+            [
+              1.0,
+              198.0
+            ],
+            [
+              263.0,
+              194.0
+            ],
+            [
+              265.0,
+              272.0
+            ],
+            [
+              2.0,
+              275.0
+            ]
+          ],
+          "text": "0x 400",
+          "confidence": 0.8755766848723093
+        },
+        {
+          "box_px": [
+            [
+              74.0,
+              596.0
+            ],
+            [
+              391.0,
+              578.0
+            ],
+            [
+              399.0,
+              722.0
+            ],
+            [
+              82.0,
+              741.0
+            ]
+          ],
+          "text": "C20!!",
+          "confidence": 0.9719688177108765
+        },
+        {
+          "box_px": [
+            [
+              774.0,
+              619.0
+            ],
+            [
+              854.0,
+              619.0
+            ],
+            [
+              854.0,
+              698.0
+            ],
+            [
+              774.0,
+              698.0
+            ]
+          ],
+          "text": "C",
+          "confidence": 0.988784909248352
+        }
+      ],
+      "raw_ink_axial_support": null,
+      "reason": "Unique high-confidence independent OCR reading"
+    },
+    {
+      "flag_id": "NP-F06",
+      "expected": {
+        "label": "T7",
+        "size_mm": "3500x400",
+        "continuous": null
+      },
+      "reference_resolved": true,
+      "source_unmarked_crop_sha256": "f53b53e672f48ff82a3ae7b014cecc684baf549fe26f91436855ab3912b1adb5",
+      "threshold": 180,
+      "independent_ocr": [
+        {
+          "box_px": [
+            [
+              396.0,
+              155.0
+            ],
+            [
+              477.0,
+              155.0
+            ],
+            [
+              479.0,
+              731.0
+            ],
+            [
+              398.0,
+              731.0
+            ]
+          ],
+          "text": "T7 3500x 400",
+          "confidence": 0.9633133808771769
+        },
+        {
+          "box_px": [
+            [
+              73.0,
+              582.0
+            ],
+            [
+              281.0,
+              587.0
+            ],
+            [
+              278.0,
+              682.0
+            ],
+            [
+              71.0,
+              677.0
+            ]
+          ],
+          "text": "C28",
+          "confidence": 0.9918385545412699
+        },
+        {
+          "box_px": [
+            [
+              752.0,
+              584.0
+            ],
+            [
+              879.0,
+              584.0
+            ],
+            [
+              879.0,
+              678.0
+            ],
+            [
+              752.0,
+              678.0
+            ]
+          ],
+          "text": "C2",
+          "confidence": 0.9952562749385834
+        }
+      ],
+      "raw_ink_axial_support": null,
+      "reason": "Unique high-confidence independent OCR reading"
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 """Audit frozen inputs, preserved history and additional-plan evidence, not structural accuracy."""
 import hashlib
+import argparse
 import json
+import subprocess
 import zipfile
 from pathlib import Path
 
@@ -22,6 +24,9 @@ def sha(path):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--git-index',action='store_true',help='Also check LF-stable source/reference/ZIP bytes in the actual staged Git index')
+    args = parser.parse_args()
     checks = []
 
     def check(name, condition):
@@ -76,11 +81,11 @@ def main():
         check(plan+' feature importance matches class degeneracy',importance==0 if forest['degenerate_single_class'] else abs(importance-1)<1e-10)
         check(plan+' stored training counts',sum(forest['class_counts'].values())==forest['training_pixels'])
         check(plan+' training is not advertised as transfer accuracy',forest['test_plan'] is None and forest['training_plan']==plan)
-        package = out/'reader_package_v3'
+        package = out/'reader_package_v4'
         private = load(package/'Flag_Manifest.json')
         public = load(package/'Reader_Manifest.json')
-        reference = load(out/'independent_reference_v3/Reference.json')
-        check(plan+' reference frozen hash',private['reference_sha256']==sha(out/'independent_reference_v3/Reference.json'))
+        reference = load(out/'independent_reference_v4/Reference.json')
+        check(plan+' reference frozen hash',private['reference_sha256']==sha(out/'independent_reference_v4/Reference.json'))
         check(plan+' common instructions unchanged',private['common_instruction_sha256']==sha(ROOT/'prompts/Reader_Instructions.md')==sha(package/'Reader_Instructions.md'))
         check(plan+' no fabricated reader run or promotion',private['model_runs']==[] and 'no promotion' in private['status'])
         check(plan+' same order public/private/reference',[f['flag_id'] for f in public['flags']]==[f['flag_id'] for f in private['flags']]==[f['flag_id'] for f in reference['records']])
@@ -93,9 +98,16 @@ def main():
                 a,b,c,d = flag['target_text_bbox_px']
                 check(plan+' full target text within crop '+flag['flag_id'],x0<=a and y0<=b and c<=x1 and d<=y1)
         expected_names = {'Reader_Instructions.md','Reader_Manifest.json','Questions.md'}|{f['crop'] for f in public['flags']}
-        with zipfile.ZipFile(ROOT/f'HW3_Task_08_{plan}_Reader_Package_V3.zip') as archive:
+        with zipfile.ZipFile(ROOT/f'HW3_Task_08_{plan}_Reader_Package_V4.zip') as archive:
             check(plan+' reader ZIP excludes evaluator/reference answers',set(archive.namelist())==expected_names)
             check(plan+' reader ZIP bytes match frozen files',all(archive.read(name)==(package/name).read_bytes() for name in expected_names))
+            if args.git_index:
+                def git_bytes(path):
+                    return subprocess.check_output(['git','show',':'+path.relative_to(ROOT.parent).as_posix()],cwd=ROOT.parent)
+                ref_bytes = git_bytes(out/'independent_reference_v4/Reference.json')
+                check(plan+' actual Git index reference hash',hashlib.sha256(ref_bytes).hexdigest()==private['reference_sha256'])
+                for name in sorted(expected_names):
+                    check(plan+' actual Git index/reader ZIP bytes '+name,git_bytes(package/name)==archive.read(name))
         summaries.append({'plan':plan,'components':len(components['components']),
             'ocr_original':len(ocr['raw_passes']['original']['detections']),
             'ocr_lines_removed':len(ocr['raw_passes']['lines_removed']['detections']),
@@ -108,8 +120,8 @@ def main():
             'rejected_queries':len(private['rejected_queries']),'actual_reader_runs':0,
             'CM_CR_status':'pending; no promoted additional-plan geometry'})
     report = {'scope':'Artifact integrity and unchanged classical portability. Passing does not establish correct geometry, reader accuracy or completed Task 8.',
-              'passed':sum(x['passed'] for x in checks),'total':len(checks),'checks':checks,'observations':observations,'plans':summaries}
-    (ROOT/'records/Task_08_Classical_Validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+              'git_index_checked':args.git_index,'passed':sum(x['passed'] for x in checks),'total':len(checks),'checks':checks,'observations':observations,'plans':summaries}
+    (ROOT/'records/Task_08_Classical_Validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(f"Task 8 artifact checks: {report['passed']}/{report['total']}")
     for summary in summaries:
         print(json.dumps(summary))

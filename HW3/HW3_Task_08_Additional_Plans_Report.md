@@ -20,7 +20,7 @@ The original scripts embedded Plan 3 paths. A shared `--plan` / `--output-plan` 
 
 Two defensive changes are disclosed: absent column-width/printed-column-size evidence produces JSON `null` rather than NaN and no fallback matches; a single-class forest produces a valid all-background probability map rather than indexing a nonexistent positive class. Neither change adds a geometry, size string or reader answer. The forest fitting procedure is repeated independently per drawing, with no claim of held-out classifier transfer accuracy.
 
-Review-location parsing and query framing required revisions after quality control. Their [revision record](records/Task_08_Reader_Package_Revision.md) preserves the invalid v1/v2 drafts and explains the current v3 gate. These revisions are an admitted portability limitation, not proof of a completely unchanged successful end-to-end pipeline. The main extraction remains unchanged.
+Review-location parsing, query framing and portable text serialization required revisions after quality control. Their [revision record](records/Task_08_Reader_Package_Revision.md) preserves superseded v1/v2/v3 packages and explains the current v4 gate and UTF-8/LF serialization. V3 passed local checks but failed a Git-object reference hash check because of CRLF normalization. These revisions are an admitted portability limitation, not proof of a completely unchanged successful end-to-end pipeline. The main extraction remains unchanged.
 
 ## Measured results
 
@@ -51,8 +51,8 @@ The alternative route uses threshold 180 on unmarked crops, separate OCR and the
 
 Current reader packages, identical for either model:
 
-- [NewPlan V3 ZIP](HW3_Task_08_NewPlan_Reader_Package_V3.zip) and [questions](outputs/NewPlan/reader_package_v3/Questions.md).
-- [NIST V3 ZIP](HW3_Task_08_NIST_Reader_Package_V3.zip) and [questions](outputs/NIST/reader_package_v3/Questions.md).
+- [NewPlan V4 ZIP](HW3_Task_08_NewPlan_Reader_Package_V4.zip) and [questions](outputs/NewPlan/reader_package_v4/Questions.md).
+- [NIST V4 ZIP](HW3_Task_08_NIST_Reader_Package_V4.zip) and [questions](outputs/NIST/reader_package_v4/Questions.md).
 
 Each ZIP contains only common instructions, public manifest, ordered questions and marked images. Reference answers, candidate-label metadata and other-model answers are excluded. The private manifests retain source/crop/reference/instruction hashes, confidence threshold 0.8 and an empty `model_runs` list. No model result, winner, accuracy or promotion is fabricated.
 
@@ -60,7 +60,7 @@ The engineering agent has viewed source images, OCR/reference evidence and sever
 
 ## Verification and preservation
 
-[The validation record](records/Task_08_Classical_Validation.json) passes **156/156 evidence-integrity checks**, covering frozen sources, all historic Plan 3 artifacts, unchanged masks/components, binary/area closure, actual forest artifacts, strict JSON, unique claims, crop/reference hashes and answer-free reader ZIPs. These checks do not measure structural accuracy or complete Task 8.
+[The validation record](records/Task_08_Classical_Validation.json) passes **174/174 evidence-integrity checks**: 156 local artifact checks plus 18 checks against actual staged Git reference and reader-file bytes. They cover frozen sources, all historic Plan 3 artifacts, unchanged masks/components, binary/area closure, actual forest artifacts, strict JSON, unique claims, crop/reference hashes and answer-free reader ZIPs. These checks do not measure structural accuracy or complete Task 8.
 
 The first validation attempt is [retained](records/Task_08_Validation_Attempt_01.json): it passed 154/155 because the regenerated Plan 3 component overlay differed at 2614 pixels. All six intermediate processing images are byte-identical and the complete component records are identical. The differences lie within ID text neighborhoods; the final validator records the exact-overlay comparison as a failed observation, not an exact-overlay pass. The old overlay is preserved. Existing Task 1 verification was rerun and still passes 71/71.
 
@@ -78,12 +78,12 @@ python HW3/scripts/stage01_classical.py --plan NIST
 python HW3/scripts/stage02_ocr.py --plan NIST
 python HW3/scripts/stage03_bars.py --plan NIST
 python HW3/scripts/stage04_forest.py --plan NIST
-python HW3/scripts/task08_review_packages.py --revision v3
+python HW3/scripts/task08_review_packages.py --revision v4
 python HW3/scripts/verify_task08_classical.py
 python HW3/scripts/plot_task08_classical.py
 ```
 
-The reference/crop script verifies an existing frozen v3 package rather than overwriting it. For a separately retained classical rerun, pass `--output-plan` to each of the four classical/OCR/bar/forest scripts. Forest elapsed times may vary; binary masks and geometry evidence are the reproducibility target. Earlier v1/v2 draft ZIPs are audit evidence only and must not be distributed as current questions.
+The reference/crop script verifies an existing frozen v4 package rather than overwriting it. The default verifier runs 156 local checks; run it with `--git-index` after staging the current files to include the 18 Git-byte checks. For a separately retained classical rerun, pass `--output-plan` to each of the four classical/OCR/bar/forest scripts. Forest elapsed times may vary; binary masks and geometry evidence are the reproducibility target. Earlier v1/v2/v3 ZIPs are audit evidence only and must not be distributed as current questions.
 
 ## Remaining work
 

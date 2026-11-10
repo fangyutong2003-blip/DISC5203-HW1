@@ -122,3 +122,9 @@
 - Preserved invalid v1/v2 question-package drafts: v1 ID splitting was wrong; v2's shared schedule did not fit its crop. V3 uses an explicit framing gate and retains the excluded schedule as unresolved. Main extraction was not repaired. Six NewPlan questions have five alternative-reference answers; four NIST continuity references fail the unchanged 8 px trim. No actual VLM runs or winner are claimed.
 - Validation initially passed 154/155, exposing an overlay-render difference. Kept that attempt; six processing PNGs and component records are exact, while 2614 differing overlay pixels fall inside ID text neighborhoods. Final validation passes 156/156 artifact checks and retains the exact-overlay mismatch as an observation. Historic Plan 3 hashes are unchanged; Task 1 still passes 71/71.
 - English report, comparison figure, actual model files, frozen crop/reference hashes and answer-free V3 reader ZIPs retained. Additional-plan CM/CR, promotion and the full Task 8 comparison remain pending.
+
+### Pre-push serialization correction
+
+- The v3 local validation was insufficient: Git attributes normalise text to LF, while Windows-generated reference JSON and ZIP text contained CRLF. A direct HEAD-blob/reference-hash comparison failed before upload. Kept the v3 commit and files as superseded evidence.
+- V4 explicitly serializes all new frozen JSON/questions as UTF-8/LF before hashing and ZIP creation. Images/questions and reference meanings are unchanged; no reader answers are added. The current packages are V4 only.
+- The verifier now compares actual staged reference hashes and every distributed text/image file with its reader ZIP. All 174/174 checks pass (156 local plus 18 Git-index checks); this does not resolve outstanding reference or structural-model limitations.
