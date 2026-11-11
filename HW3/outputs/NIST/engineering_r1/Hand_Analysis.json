@@ -1,0 +1,330 @@
+{
+  "plan": "NIST",
+  "status": "Conditional supplementary engineering baseline; not promoted unchanged-pipeline extraction",
+  "model_promoted": false,
+  "geometry_record": "outputs/NIST/geometry_recovery_r1/Elements_Conditional.json",
+  "mass": {
+    "area_m2": 1337.803776,
+    "CM_m": [
+      18.288,
+      18.288
+    ],
+    "mass_t": 1193.2500550458715,
+    "polar_mass_t_m2": 266055.73822542914,
+    "intensity_kN_m2": 8.75
+  },
+  "parameters": {
+    "plan": "NIST",
+    "element_record": "outputs/NIST/geometry_recovery_r1/Elements_Conditional.json",
+    "floor_record": "outputs/Plan3/task1/Floor_Dimension_Record.json",
+    "selection_status": "Conditional supplementary engineering baseline; not promoted unchanged-pipeline extraction",
+    "E_kN_m2": 30000000.0,
+    "nu": 0.2,
+    "height_m": 3.0,
+    "shear_factor": 0.8333333333333334,
+    "gravity_m_s2": 9.81,
+    "ordinary_mass_intensity_kN_m2": 8.75,
+    "separate_stair_mass_intensity_kN_m2": 8.75,
+    "storeys": 5,
+    "include_weak_axis": true,
+    "include_columns_in_lateral_model": false,
+    "wall_intrinsic_torsion_J_m4": 0.0,
+    "design_demonstration_force_kN": 100.0,
+    "design_force_note": "Assumed linear-analysis demonstration force along global y at CM; not a prescribed code earthquake demand."
+  },
+  "walls": [
+    {
+      "label": "NW01",
+      "centre_m": [
+        18.692601769911505,
+        36.451
+      ],
+      "angle_deg": 0.0,
+      "length_m": 7.444672566371681,
+      "thickness_m": 0.25,
+      "A_m2": 1.8611681415929202,
+      "Av_m2": 1.5509734513274336,
+      "I_strong_m4": 8.595983365032362,
+      "I_weak_m4": 0.009693584070796459,
+      "k_strong_bending_kN_m": 28653277.883441206,
+      "k_weak_bending_kN_m": 32311.94690265486,
+      "k_strong_shear_kN_m": 5273106.084512083,
+      "k_weak_shear_kN_m": 32151.190947915282
+    },
+    {
+      "label": "NW02",
+      "centre_m": [
+        18.3689203539823,
+        0.125
+      ],
+      "angle_deg": 0.0,
+      "length_m": 7.444672566371679,
+      "thickness_m": 0.25,
+      "A_m2": 1.8611681415929198,
+      "Av_m2": 1.5509734513274331,
+      "I_strong_m4": 8.595983365032357,
+      "I_weak_m4": 0.009693584070796457,
+      "k_strong_bending_kN_m": 28653277.883441187,
+      "k_weak_bending_kN_m": 32311.946902654858,
+      "k_strong_shear_kN_m": 5273106.084512081,
+      "k_weak_shear_kN_m": 32151.190947915282
+    },
+    {
+      "label": "NW03",
+      "centre_m": [
+        0.125,
+        18.20764850615114
+      ],
+      "angle_deg": 90.0,
+      "length_m": 7.4018946602355165,
+      "thickness_m": 0.25,
+      "A_m2": 1.8504736650588791,
+      "Av_m2": 1.542061387549066,
+      "I_strong_m4": 8.448652801717968,
+      "I_weak_m4": 0.009637883672181663,
+      "k_strong_bending_kN_m": 28162176.005726557,
+      "k_weak_bending_kN_m": 32126.27890727221,
+      "k_strong_shear_kN_m": 5231645.567457153,
+      "k_weak_shear_kN_m": 31966.446673902694
+    },
+    {
+      "label": "NW04",
+      "centre_m": [
+        36.451,
+        18.20764850615114
+      ],
+      "angle_deg": 90.0,
+      "length_m": 7.4018946602355165,
+      "thickness_m": 0.25,
+      "A_m2": 1.8504736650588791,
+      "Av_m2": 1.542061387549066,
+      "I_strong_m4": 8.448652801717968,
+      "I_weak_m4": 0.009637883672181663,
+      "k_strong_bending_kN_m": 28162176.005726557,
+      "k_weak_bending_kN_m": 32126.27890727221,
+      "k_strong_shear_kN_m": 5231645.567457153,
+      "k_weak_shear_kN_m": 31966.446673902694
+    }
+  ],
+  "matched_rectangular_shear": {
+    "shear_included": true,
+    "weak_axis_included": true,
+    "K_about_CM": [
+      [
+        10610145.062371971,
+        0.0,
+        5137.10348654614
+      ],
+      [
+        0.0,
+        10527593.516810138,
+        15610.114514753222
+      ],
+      [
+        5137.10348654614,
+        15610.114514753222,
+        6930926923.89343
+      ]
+    ],
+    "F_about_CM": [
+      [
+        9.42494183142961e-08,
+        1.0358160968681917e-16,
+        -6.985631537610502e-14
+      ],
+      [
+        1.0358160968681919e-16,
+        9.498847022757956e-08,
+        -2.1393688241816074e-13
+      ],
+      [
+        -6.985631537610503e-14,
+        -2.1393688241816077e-13,
+        1.442808465129064e-10
+      ]
+    ],
+    "CR_m": [
+      18.289482780892882,
+      18.287515830984745
+    ],
+    "CR_from_flexibility_m": [
+      18.289482780892882,
+      18.287515830984745
+    ],
+    "eccentricity_m": 0.0015598265325444222,
+    "K_about_CR": [
+      [
+        10610145.062371971,
+        0.0,
+        -3.2433490559924394e-08
+      ],
+      [
+        0.0,
+        10527593.516810138,
+        0.0
+      ],
+      [
+        -3.2433490559924394e-08,
+        0.0,
+        6930926898.259825
+      ]
+    ]
+  },
+  "bending_only": {
+    "shear_included": false,
+    "weak_axis_included": true,
+    "K_about_CM": [
+      [
+        57370808.32469693,
+        0.0,
+        5162.789003651194
+      ],
+      [
+        0.0,
+        56388975.905258425,
+        15688.165087342262
+      ],
+      [
+        5162.789003651194,
+        15688.165087342262,
+        37486225262.58199
+      ]
+    ],
+    "F_about_CM": [
+      [
+        1.7430467326741756e-08,
+        6.678818482856462e-19,
+        -2.400610475531333e-15
+      ],
+      [
+        6.678818482856461e-19,
+        1.773396278372881e-08,
+        -7.421748491840722e-15
+      ],
+      [
+        -2.4006104755313326e-15,
+        -7.421748491840722e-15,
+        2.6676465638352966e-11
+      ]
+    ],
+    "CR_m": [
+      18.288278213335772,
+      18.287910010174958
+    ],
+    "CR_from_flexibility_m": [
+      18.288278213335772,
+      18.287910010174958
+    ],
+    "eccentricity_m": 0.0002924052475803179,
+    "K_about_CR": [
+      [
+        57370808.32469693,
+        0.0,
+        -3.6878191167488694e-08
+      ],
+      [
+        0.0,
+        56388975.905258425,
+        -5.960464477539063e-08
+      ],
+      [
+        -3.6878191167488694e-08,
+        -5.960464477539063e-08,
+        37486225257.75274
+      ]
+    ]
+  },
+  "strong_direction_only": {
+    "shear_included": true,
+    "weak_axis_included": false,
+    "K_about_CM": [
+      [
+        10546212.169024164,
+        0.0,
+        -2.9802322387695312e-08
+      ],
+      [
+        0.0,
+        10463291.134914307,
+        0.0
+      ],
+      [
+        -2.9802322387695312e-08,
+        0.0,
+        6930921037.356858
+      ]
+    ],
+    "F_about_CM": [
+      [
+        9.482077393978027e-08,
+        0.0,
+        4.077205985716688e-25
+      ],
+      [
+        0.0,
+        9.557222360593237e-08,
+        0.0
+      ],
+      [
+        4.077205985716688e-25,
+        0.0,
+        1.442809685192078e-10
+      ]
+    ],
+    "CR_m": [
+      18.288,
+      18.288000000000004
+    ],
+    "CR_from_flexibility_m": [
+      18.288,
+      18.288000000000004
+    ],
+    "eccentricity_m": 3.552713678800501e-15,
+    "K_about_CR": [
+      [
+        10546212.169024164,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        10463291.134914307,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        6930921037.356858
+      ]
+    ]
+  },
+  "analytical_modes": [
+    {
+      "mode": 1,
+      "period_s": 0.06689305752859329,
+      "rotational_mass_fraction": 2.5860480831521544e-09
+    },
+    {
+      "mode": 2,
+      "period_s": 0.06663232067896416,
+      "rotational_mass_fraction": 2.8232895195164815e-10
+    },
+    {
+      "mode": 3,
+      "period_s": 0.03892875576259124,
+      "rotational_mass_fraction": 0.9999999971316232
+    }
+  ],
+  "sensitivities": {
+    "symmetric_idealisation": {
+      "CR_m": [
+        18.288,
+        18.288000000000004
+      ],
+      "eccentricity_m": 3.552713678800501e-15,
+      "interpretation": "Equal opposing source bars centred tangentially. Measured schematic offsets are not verified real-building asymmetry."
+    }
+  },
+  "mass_note": "Uniform prescribed 8.75 kN/m2 floor mass; known vertical-member gravity weights are reported separately and excluded here, matching Plan 3 convention.",
+  "lateral_note": "Labelled rectangular bars with strong/weak bending, shear, J=0; not coupled monolithic L-wall shells; columns provide no lateral stiffness."
+}
