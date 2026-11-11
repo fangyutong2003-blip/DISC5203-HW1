@@ -1,0 +1,8 @@
+{
+  "flag_id": "NI-F04",
+  "label": null,
+  "size_mm": null,
+  "continuous": true,
+  "confidence": 0.95,
+  "reason": "The right vertical RC shear wall under the red cross is drawn as a single solid black bar with no visible interruption or gap."
+}
