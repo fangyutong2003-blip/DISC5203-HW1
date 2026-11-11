@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-11-11T11:50:21.442297+00:00",
+  "reference_sha256": "452ad406e53c5455307551b9cfcab88534d2a9e89ae3d8a385a7b999e183d3af",
+  "source_sha256": "d70577698599310ca4a62e0c5a3cb4133df16b02dfc417dcf9d2899e673f63c1",
+  "old_reference_sha256": "cddda9680b958abc703c6b08a1c7f1b150c10b9f7ec695b30faa476a993b3757",
+  "code_sha256": "45f5511de36e506daf659308f4fae7800cc42eb90af97a37bbc23160c08573ff",
+  "protocol_sha256": "8ff88ab5a6a1244be3aafc57343541d45323e07898b62022608ebff20c1995c0",
+  "execution_git_commit": "820a363f458164c054a67bcf76cc31f26bd4b9dc",
+  "resolved": 5,
+  "total": 6
+}

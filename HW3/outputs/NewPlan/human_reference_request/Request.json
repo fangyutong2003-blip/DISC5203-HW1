@@ -1,0 +1,14 @@
+{
+  "status": "pending student direct source reading; no answer supplied",
+  "flag_id": "NP-F03",
+  "crop_bbox_px": [
+    2421,
+    2684,
+    3301,
+    3564
+  ],
+  "source_sha256": "d70577698599310ca4a62e0c5a3cb4133df16b02dfc417dcf9d2899e673f63c1",
+  "image_sha256": "6336a65e57767eac261990c0b58972dc8d95520d0c49e9c0770b21fe743d6b9a",
+  "question": "Read the vertical printed element label and size string beside the long vertical wall; ignore the horizontal T4 annotation. Enter the label and dimensions yourself from the image.",
+  "timing": "Requested after Grok and computational reference R2; no claim of blind human review."
+}
