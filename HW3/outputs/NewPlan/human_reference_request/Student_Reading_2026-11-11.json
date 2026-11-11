@@ -1,0 +1,15 @@
+{
+  "received_date": "2026-11-11",
+  "flag_id": "NP-F03",
+  "raw_user_text": "T3 3500X400",
+  "normalized_reading": {
+    "label": "T3",
+    "size_mm": "3500x400"
+  },
+  "source_image_file": "outputs/NewPlan/human_reference_request/NP-F03_Unmarked_Source.png",
+  "source_image_sha256": "6336a65e57767eac261990c0b58972dc8d95520d0c49e9c0770b21fe743d6b9a",
+  "collection_route": "Student replied to the request to personally read the vertical printed label and dimensions from the unmarked source crop.",
+  "timing_disclosure": "Received after the student had supplied Grok replies and after the isolated-reader comparison. This is a non-blind source review, not a pre-response reference or pre-solve prediction.",
+  "confidence": null,
+  "scope": "Printed label and dimensions only; does not certify wall coordinates, full geometry or structural calculations."
+}
