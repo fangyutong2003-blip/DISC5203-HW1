@@ -1,0 +1,27 @@
+{
+  "received_date": "2026-11-11",
+  "provenance": "User-pasted responses during the Grok V4 handoff. No direct service invocation or transcript export is claimed.",
+  "service_intended_by_handoff": "Grok",
+  "actual_model_identifier": null,
+  "current_session_model_screenshot_received": false,
+  "NewPlan": {
+    "raw_file": "outputs/NewPlan/reader_grok_received_v4/Raw_User_Messages.jsonl",
+    "received_objects": 6,
+    "flag_ids": ["NP-F01", "NP-F02", "NP-F03", "NP-F04", "NP-F05", "NP-F06"],
+    "format_status": "Six complete schema-shaped JSON responses, preserved without changing user fields.",
+    "independent_reference_unresolved": ["NP-F03"],
+    "promotion_status": "Not evaluated or promoted by this receipt record."
+  },
+  "NIST": {
+    "raw_file": "outputs/NIST/reader_grok_received_v4/Raw_User_Message.md",
+    "received_text_entries": 4,
+    "interpretation": "All four entries say continuous; label and size_mm are explicitly null.",
+    "missing_fields": ["flag_id", "confidence", "reason"],
+    "mapping_to_flag_ids": null,
+    "format_status": "Original abbreviated text retained. Full original-ID JSON requested from the same model session; any follow-up must be retained separately.",
+    "independent_reference_unresolved": ["NI-F01", "NI-F02", "NI-F03", "NI-F04"],
+    "promotion_status": "Not scored or promoted. No confidence, reasons or flag mapping fabricated."
+  },
+  "frozen_reader_inputs_modified": false,
+  "reference_answers_modified": false
+}

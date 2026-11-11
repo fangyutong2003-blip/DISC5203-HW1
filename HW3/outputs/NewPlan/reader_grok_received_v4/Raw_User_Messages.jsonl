@@ -1,0 +1,6 @@
+{"flag_id":"NP-F01","label":"T1","size_mm":"3500x400","continuous":null,"confidence":0.95,"reason":"Vertical printed text immediately right of the red cross reads T1 3500x400."}
+{"flag_id":"NP-F02","label":"T2","size_mm":"3500x400","continuous":null,"confidence":0.98,"reason":"Horizontal printed text immediately right of the red cross reads T2 3500x 400."}
+{"flag_id":"NP-F03","label":"T3","size_mm":"3500x400","continuous":null,"confidence":0.95,"reason":"Vertical printed text immediately right of the red cross reads T3 3500x400."}
+{"flag_id":"NP-F04","label":"T5","size_mm":"3500x400","continuous":null,"confidence":0.98,"reason":"Horizontal printed text immediately right of the red cross reads T5 3500x 400."}
+{"flag_id":"NP-F05","label":"T6","size_mm":"3500x400","continuous":null,"confidence":0.95,"reason":"Vertical printed text immediately right of the red cross reads T6 3500x400."}
+{"flag_id":"NP-F06","label":"T7","size_mm":"3500x400","continuous":null,"confidence":0.95,"reason":"Vertical printed text immediately right of the red cross reads T7 3500x400."}
