@@ -49,3 +49,12 @@ This repository supports DISC 5203 HW1, HW2 and HW3. HW3 extends the retained im
 
 Store student instructions separately from agent-authored briefing proposals. A proposal is not a signed student prediction. Incomplete tasks remain labelled pending; do not promote them merely to produce a final report.
 
+## Reader experiment revisions and controls
+
+- Preserve frozen V4 source/crop/question/reference bytes. A later source-only reference is a named revision; disclose whether model replies were already visible when it was designed. Never describe post-response R2 as a pre-response blind reference.
+- Independently unresolved flags are unscorable, even if two models agree. Do not count them as resolved or broken against a fabricated answer. A tie and high self-reported confidence do not establish a winner.
+- User-authorised isolated readers receive no inherited chat history, evaluator files, geometry or other-reader replies. Retain actual delivered inputs, raw outputs and available runtime model metadata. Record interface and isolation-control differences rather than claiming an identical harness.
+- Retain initial abbreviated replies and requested follow-ups separately. Record Grok 4.5 as student-reported when its backend version is unverified; do not repeatedly demand a screenshot that cannot establish it.
+- Validate LF-stable JSON/JSONL, actual Git object hashes and ZIP input bytes. Exercise the installed hook with a staged malformed fixture and preserve the actual rejection/repair log.
+- Flag-level no-regression is necessary but insufficient: complete geometry, both-axis scale, dimensions, closed tributary regions and conservation must pass before full-plan promotion and downstream structural analysis.
+

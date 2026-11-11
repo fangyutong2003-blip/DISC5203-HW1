@@ -15,6 +15,10 @@ def check_text(path, text):
     try:
         if path.endswith(".json"):
             json.loads(text)
+        if path.endswith(".jsonl"):
+            for line in text.splitlines():
+                if line.strip():
+                    json.loads(line)
         if path.endswith(".py"):
             ast.parse(text, filename=path)
     except (ValueError, SyntaxError) as exc:
@@ -26,6 +30,7 @@ def main():
     if "--self-test" in sys.argv:
         assert check_text("bad.md", "\u4e2d\u6587")
         assert check_text("bad.json", "{")
+        assert check_text("bad.jsonl", '{}\n{')
         assert check_text("bad.py", "if:")
         assert not check_text("good.md", "English evidence")
         print("PASS: invalid language, JSON and syntax rejected; valid text accepted")
@@ -38,7 +43,7 @@ def main():
     for name in filter(None, names):
         if re.search(r"[\u3400-\u9fff]", name):
             failures.append("Non-English filename")
-        if not name.endswith((".md", ".py", ".json", ".csv", ".txt", ".sh")):
+        if not name.endswith((".md", ".py", ".json", ".jsonl", ".csv", ".txt", ".sh")):
             continue
         raw = subprocess.check_output(["git", "show", ":" + name])
         try:

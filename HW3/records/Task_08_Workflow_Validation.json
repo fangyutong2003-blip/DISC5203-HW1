@@ -1,0 +1,331 @@
+{
+  "scope": "Workflow/evidence integrity and adversarial flag gate; not full geometry or engineering validation.",
+  "passed": 81,
+  "total": 81,
+  "checks": [
+    {
+      "check": "NewPlan original reference unchanged",
+      "passed": true
+    },
+    {
+      "check": "NewPlan R2 frozen bytes",
+      "passed": true
+    },
+    {
+      "check": "NewPlan R2 uses frozen original source",
+      "passed": true
+    },
+    {
+      "check": "NewPlan R2 code/protocol hashes",
+      "passed": true
+    },
+    {
+      "check": "NewPlan fresh session no history fork",
+      "passed": true
+    },
+    {
+      "check": "NewPlan isolated session closed",
+      "passed": true
+    },
+    {
+      "check": "NewPlan actual runtime model evidenced",
+      "passed": true
+    },
+    {
+      "check": "NewPlan one runtime turn per flag",
+      "passed": true
+    },
+    {
+      "check": "NewPlan no tool or file consultation",
+      "passed": true
+    },
+    {
+      "check": "NewPlan exact common instructions",
+      "passed": true
+    },
+    {
+      "check": "NP-F01 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NP-F01 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NP-F01 native image only",
+      "passed": true
+    },
+    {
+      "check": "NP-F01 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NP-F02 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NP-F02 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NP-F02 native image only",
+      "passed": true
+    },
+    {
+      "check": "NP-F02 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NP-F03 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NP-F03 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NP-F03 native image only",
+      "passed": true
+    },
+    {
+      "check": "NP-F03 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NP-F04 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NP-F04 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NP-F04 native image only",
+      "passed": true
+    },
+    {
+      "check": "NP-F04 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NP-F05 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NP-F05 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NP-F05 native image only",
+      "passed": true
+    },
+    {
+      "check": "NP-F05 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NP-F06 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NP-F06 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NP-F06 native image only",
+      "passed": true
+    },
+    {
+      "check": "NP-F06 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NewPlan confidence does not manufacture winner",
+      "passed": true
+    },
+    {
+      "check": "NewPlan has scorable flag for adversarial gate check",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wrong high-confidence flag rejected by no-regression gate",
+      "passed": true
+    },
+    {
+      "check": "NewPlan low confidence cannot resolve or preserve cleared flag",
+      "passed": true
+    },
+    {
+      "check": "NewPlan duplicated IDs rejected",
+      "passed": true
+    },
+    {
+      "check": "NewPlan no final model promotion",
+      "passed": true
+    },
+    {
+      "check": "NIST original reference unchanged",
+      "passed": true
+    },
+    {
+      "check": "NIST R2 frozen bytes",
+      "passed": true
+    },
+    {
+      "check": "NIST R2 uses frozen original source",
+      "passed": true
+    },
+    {
+      "check": "NIST R2 code/protocol hashes",
+      "passed": true
+    },
+    {
+      "check": "NIST fresh session no history fork",
+      "passed": true
+    },
+    {
+      "check": "NIST isolated session closed",
+      "passed": true
+    },
+    {
+      "check": "NIST actual runtime model evidenced",
+      "passed": true
+    },
+    {
+      "check": "NIST one runtime turn per flag",
+      "passed": true
+    },
+    {
+      "check": "NIST no tool or file consultation",
+      "passed": true
+    },
+    {
+      "check": "NIST exact common instructions",
+      "passed": true
+    },
+    {
+      "check": "NI-F01 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NI-F01 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NI-F01 native image only",
+      "passed": true
+    },
+    {
+      "check": "NI-F01 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NI-F02 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NI-F02 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NI-F02 native image only",
+      "passed": true
+    },
+    {
+      "check": "NI-F02 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NI-F03 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NI-F03 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NI-F03 native image only",
+      "passed": true
+    },
+    {
+      "check": "NI-F03 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NI-F04 source/crop hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "NI-F04 exact question and order",
+      "passed": true
+    },
+    {
+      "check": "NI-F04 native image only",
+      "passed": true
+    },
+    {
+      "check": "NI-F04 parsed answer equals raw output",
+      "passed": true
+    },
+    {
+      "check": "NIST confidence does not manufacture winner",
+      "passed": true
+    },
+    {
+      "check": "NIST has scorable flag for adversarial gate check",
+      "passed": true
+    },
+    {
+      "check": "NIST wrong high-confidence flag rejected by no-regression gate",
+      "passed": true
+    },
+    {
+      "check": "NIST low confidence cannot resolve or preserve cleared flag",
+      "passed": true
+    },
+    {
+      "check": "NIST duplicated IDs rejected",
+      "passed": true
+    },
+    {
+      "check": "NIST no final model promotion",
+      "passed": true
+    },
+    {
+      "check": "Unresolved T3 remains unscorable even with model consensus",
+      "passed": true
+    },
+    {
+      "check": "Two independent Codex sessions",
+      "passed": true
+    },
+    {
+      "check": "Actual response input hash outputs/NewPlan/reader_codex_isolated_v4/Parsed_Answers.json",
+      "passed": true
+    },
+    {
+      "check": "Actual response input hash outputs/NewPlan/reader_grok_received_v4/Raw_User_Messages.jsonl",
+      "passed": true
+    },
+    {
+      "check": "Actual response input hash outputs/NIST/reader_codex_isolated_v4/Parsed_Answers.json",
+      "passed": true
+    },
+    {
+      "check": "Actual response input hash outputs/NIST/reader_grok_received_v4/Followup_NI-F01.json",
+      "passed": true
+    },
+    {
+      "check": "Actual response input hash outputs/NIST/reader_grok_received_v4/Followup_NI-F02.json",
+      "passed": true
+    },
+    {
+      "check": "Actual response input hash outputs/NIST/reader_grok_received_v4/Followup_NI-F03.json",
+      "passed": true
+    },
+    {
+      "check": "Actual response input hash outputs/NIST/reader_grok_received_v4/Followup_NI-F04.json",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "agent_id": "01a1ca70-cf0e-7303-b7c2-5c25475c3b29",
+  "runtime_log_file": "rollout-2026-11-11T19-49-13-01a1ca70-cf0e-7303-b7c2-5c25475c3b29.jsonl",
+  "runtime_log_sha256_at_capture": "1302ba1404b5814d8dc282cdb83f67fad03e83e7a7967127884417c304d145b2",
+  "metadata_extraction_scope": "Only turn ID, model and effort fields plus tool-call names; no private reasoning or unrelated logs copied.",
+  "turn_context_model_evidence": [
+    {
+      "turn_id": "01a1ca70-d09a-7bf3-ab4b-469af12d1733",
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "turn_id": "01a1ca71-ef7a-7530-9b80-0b1fd8e984be",
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "turn_id": "01a1ca72-b993-79a0-b92e-c78aa23f6bee",
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "turn_id": "01a1ca74-0038-7663-8e33-ea57d6b32193",
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    }
+  ],
+  "runtime_model_ids": [
+    "gpt-6.1-sol"
+  ],
+  "reader_tool_calls": [],
+  "identity_note": "Runtime model routing ID, not a separately certified weights snapshot. Agent self-report unknown is retained in the raw response."
+}

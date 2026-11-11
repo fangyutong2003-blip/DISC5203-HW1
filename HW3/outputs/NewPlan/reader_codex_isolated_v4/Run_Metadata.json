@@ -1,0 +1,18 @@
+{
+  "run_date": "2026-11-11",
+  "interface": "Codex isolated native-image agent",
+  "actual_runtime_model_ids": [
+    "gpt-6.1-sol"
+  ],
+  "model_identity_source": "Model_Runtime_Evidence.json",
+  "fork_context": false,
+  "one_fresh_session_per_plan": true,
+  "one_flag_per_turn": true,
+  "reference_or_other_reader_files_provided": false,
+  "reader_tool_calls": [],
+  "common_instruction_sha256": "d526886279919aceae670fde2bb544fbbd070441ea03d4192de7876a04ada876",
+  "model_promoted": false,
+  "parsed_answers_note": "JSON mechanically extracted from original completed-agent messages; all raw prefaces and reasons retained.",
+  "harness_limitations": "Separate interface from Grok web. Additional no-tools/isolation control is recorded in actual first-turn input. Platform system prompts are not controlled by the student.",
+  "full_plan_accuracy_claimed": false
+}

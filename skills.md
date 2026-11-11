@@ -10,6 +10,15 @@
 6. Score resolved and broken flags against the reference. Abstention is unresolved. A self-reported confidence is not a calibrated probability.
 7. Apply validated answers to copies through deterministic geometry rules. Recheck after application and reject regressions; readers never supply vertex coordinates.
 
+### Isolated readers and post-response reference audits
+
+- After explicit student authorisation for delegation, start a history-free session per plan. Deliver only the exact frozen common instructions, ordered question and image, one flag per turn. Retain actual payloads and completed-model outputs. Derive model identity from available runtime metadata without inventing an unavailable weights snapshot; retain unknown self-reports unedited.
+- Do not call different web/native interfaces the same harness. Preserve interface limitations and original versus follow-up replies. A student-reported Grok version remains student-reported.
+- Freeze the prospective reference method in Git before running it. If responses were already visible, disclose the new reference as post-response sensitivity. Keep original-reference scores and reference bytes. The source-only reference program must never load reader-answer files.
+- Unresolved reference questions are unscorable, not automatically correct or broken. Score asked fields with confidence >=0.8; high confidence is not an accuracy tie-break. Adversarially check wrong answers, duplicate IDs, abstention and loss of another reader's cleared flag.
+- Require complete geometry, both-axis calibration, dimensions and area conservation separately from the local flag gate. Retain failures and label any recovery method as a revision; do not silently retune the frozen extraction.
+- Write hashed JSON/JSONL and prompts as UTF-8/LF before packing. Validate actual Git index/object bytes. Preserve a real installed-hook damaged-fixture rejection and repaired-fixture acceptance log.
+
 ## Briefing to rigid-diaphragm model
 
 1. Save the student's actual instruction and an explicitly agent-authored detailed briefing proposal before solving.

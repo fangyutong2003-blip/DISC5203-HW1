@@ -8,9 +8,11 @@ The [Tasks 6/7 report](HW3_Task_06_07_Modification_Report.md) records the inward
 
 Student: Fangyutong, 21353319. Assigned drawing: Floor Plan 3.
 
-Task 8 now has an [additional-plan portability checkpoint](HW3_Task_08_Additional_Plans_Report.md): fixed-rule classical, dual OCR, bar matching and never-selected forests were run on both NewPlan and NIST. Failures are retained; no additional-plan geometry is promoted. Current reader packages are **V4**, with six NewPlan and four NIST questions; earlier drafts are superseded. UTF-8/LF serialization and actual staged Git bytes are verified. Actual reader runs, outstanding references and mechanics remain pending.
+The retained [2026-11-10 additional-plan portability checkpoint](HW3_Task_08_Additional_Plans_Report.md) documents fixed-rule classical, dual OCR, bar matching and never-selected forests on NewPlan/NIST, including failures before actual reader intake. Current reader packages remain **V4**, with six NewPlan and four NIST questions; earlier drafts are superseded. UTF-8/LF serialization and actual Git bytes were verified. The subsequent reader evidence and current limitations are recorded below.
 
-## Current stage
+The [Task 8 workflow review R2](HW3_Task_08_Workflow_Review_R2.md) now retains actual isolated `gpt-6.1-sol` readings and the student-pasted Grok 4.5 replies. Both resolve nine R2-scorable flags with zero incorrect answers; NP-F03 remains unscorable. Original pre-response V4 scores and the post-response R2 revision are both retained. There is no winner or full-plan promotion; source-based geometry and mechanics remain pending.
+
+## Retained early-stage chronology (superseded)
 
 Task 1A has an initial classical run: 20 connected components, including merged walls and artifacts. Labels, scale and element-level scores remain pending. No reader has been promoted; no final CM/CR has been calculated. DP v4.1 is the student's proposed second reader; exact service model ID and image capability must be recorded from the actual session.
 

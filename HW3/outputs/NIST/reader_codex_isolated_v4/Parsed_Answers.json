@@ -1,0 +1,34 @@
+[
+  {
+    "flag_id": "NI-F01",
+    "label": null,
+    "size_mm": null,
+    "continuous": true,
+    "confidence": 0.99,
+    "reason": "The dark horizontal wall bar extends across the red cross without a visible gap."
+  },
+  {
+    "flag_id": "NI-F02",
+    "label": null,
+    "size_mm": null,
+    "continuous": true,
+    "confidence": 0.99,
+    "reason": "The dark horizontal wall bar extends across the red cross without a visible gap."
+  },
+  {
+    "flag_id": "NI-F03",
+    "label": null,
+    "size_mm": null,
+    "continuous": true,
+    "confidence": 0.99,
+    "reason": "The dark vertical wall bar extends above and below the red cross without a visible gap."
+  },
+  {
+    "flag_id": "NI-F04",
+    "label": null,
+    "size_mm": null,
+    "continuous": true,
+    "confidence": 0.99,
+    "reason": "The dark vertical wall bar extends above and below the red cross without a visible gap."
+  }
+]
