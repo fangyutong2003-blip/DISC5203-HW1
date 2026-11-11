@@ -2,10 +2,11 @@
   "received_date": "2026-11-11",
   "provenance": "User-pasted follow-up JSON after a request to the same intended Grok session to supply missing fields. These are follow-ups, not replacements for the original abbreviated answers.",
   "original_preserved": "outputs/NIST/reader_grok_received_v4/Raw_User_Message.md",
-  "complete_followup_flag_ids": ["NI-F01", "NI-F03", "NI-F04"],
-  "missing_complete_followup_flag_ids": ["NI-F02"],
+  "complete_followup_flag_ids": ["NI-F01", "NI-F02", "NI-F03", "NI-F04"],
+  "missing_complete_followup_flag_ids": [],
   "followup_files": [
     "outputs/NIST/reader_grok_received_v4/Followup_NI-F01.json",
+    "outputs/NIST/reader_grok_received_v4/Followup_NI-F02.json",
     "outputs/NIST/reader_grok_received_v4/Followup_NI-F03.json",
     "outputs/NIST/reader_grok_received_v4/Followup_NI-F04.json"
   ],
