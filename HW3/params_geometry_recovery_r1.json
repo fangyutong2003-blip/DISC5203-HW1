@@ -1,0 +1,37 @@
+{
+  "method_status": "Supplementary post-audit solid-symbol recovery; original frozen pipeline remains unchanged",
+  "threshold_lt": 100,
+  "physical_opening_m": 0.2,
+  "minimum_opening_px": 2,
+  "directional_opening_m": 1.0,
+  "bar_aspect_min": 3.0,
+  "column_fill_min": 0.85,
+  "column_aspect_max": 1.5,
+  "coordinate_cluster_tolerance_m": 0.30,
+  "region_step_m": 0.05,
+  "region_check_step_m": 0.10,
+  "NewPlan": {
+    "source": "sources/assets/NewPlan.png",
+    "initial_bottom_left_grid_px": [1646.0, 3406.0],
+    "initial_top_right_grid_px": [6890.0, 1391.0],
+    "grid_width_m": 46.0,
+    "grid_height_m": 18.0,
+    "grid_x_m": [0.0, 6.0, 12.0, 20.0, 26.0, 34.0, 40.0, 46.0],
+    "grid_y_m": [0.0, 6.0, 12.0, 18.0],
+    "column_size_mm": [800, 800],
+    "assumed_label_only_columns": ["C17", "C20"],
+    "floor_bounds_m": [-0.4, -0.4, 46.4, 18.4]
+  },
+  "NIST": {
+    "source": "sources/third_plan_candidates/NIST_Figure_02_Plan.png",
+    "initial_bottom_left_grid_px": [74.0, 502.0],
+    "initial_top_right_grid_px": [527.0, 48.0],
+    "grid_width_m": 36.576,
+    "grid_height_m": 36.576,
+    "grid_x_m": [0.0, 9.144, 18.288, 27.432, 36.576],
+    "grid_y_m": [0.0, 9.144, 18.288, 27.432, 36.576],
+    "column_size_mm": null,
+    "assumed_wall_thickness_mm": 250,
+    "floor_bounds_m": [0.0, 0.0, 36.576, 36.576]
+  }
+}
