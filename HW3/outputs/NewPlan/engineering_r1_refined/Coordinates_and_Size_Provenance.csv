@@ -1,0 +1,39 @@
+element_id,type,x_m,y_m,size_x_mm,size_y_mm,angle_deg,label_only_grid_inference,size_provenance
+C1,column,0.0,18.0,800,800,,False,Printed shared C1:C30 schedule
+C2,column,6.0,18.0,800,800,,False,Printed shared C1:C30 schedule
+C3,column,12.0,18.0,800,800,,False,Printed shared C1:C30 schedule
+C4,column,20.0,18.0,800,800,,False,Printed shared C1:C30 schedule
+C5,column,26.0,18.0,800,800,,False,Printed shared C1:C30 schedule
+C6,column,34.0,18.0,800,800,,False,Printed shared C1:C30 schedule
+C7,column,40.0,18.0,800,800,,False,Printed shared C1:C30 schedule
+C8,column,46.0,18.0,800,800,,False,Printed shared C1:C30 schedule
+C9,column,0.0,12.0,800,800,,False,Printed shared C1:C30 schedule
+C10,column,6.0,12.0,800,800,,False,Printed shared C1:C30 schedule
+C11,column,20.0,12.0,800,800,,False,Printed shared C1:C30 schedule
+C12,column,26.0,12.0,800,800,,False,Printed shared C1:C30 schedule
+C13,column,40.0,12.0,800,800,,False,Printed shared C1:C30 schedule
+C14,column,46.0,12.0,800,800,,False,Printed shared C1:C30 schedule
+C15,column,0.0,6.0,800,800,,False,Printed shared C1:C30 schedule
+C16,column,6.0,6.0,800,800,,False,Printed shared C1:C30 schedule
+C17,column,12.0,6.0,800,800,,True,Printed shared C1:C30 schedule
+C18,column,20.0,6.0,800,800,,False,Printed shared C1:C30 schedule
+C19,column,26.0,6.0,800,800,,False,Printed shared C1:C30 schedule
+C20,column,34.0,6.0,800,800,,True,Printed shared C1:C30 schedule
+C21,column,40.0,6.0,800,800,,False,Printed shared C1:C30 schedule
+C22,column,46.0,6.0,800,800,,False,Printed shared C1:C30 schedule
+C23,column,0.0,0.0,800,800,,False,Printed shared C1:C30 schedule
+C24,column,6.0,0.0,800,800,,False,Printed shared C1:C30 schedule
+C25,column,12.0,0.0,800,800,,False,Printed shared C1:C30 schedule
+C26,column,20.0,0.0,800,800,,False,Printed shared C1:C30 schedule
+C27,column,26.0,0.0,800,800,,False,Printed shared C1:C30 schedule
+C28,column,34.0,0.0,800,800,,False,Printed shared C1:C30 schedule
+C29,column,40.0,0.0,800,800,,False,Printed shared C1:C30 schedule
+C30,column,46.0,0.0,800,800,,False,Printed shared C1:C30 schedule
+T1,wall,12.004347826086956,10.361671469740633,400.0,3500.0,90.0,False,Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8
+T2,wall,13.652173913043478,12.027210884353742,3500.0,400.0,0.0,False,Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8
+T3,wall,12.004347826086956,1.4818181818181824,400.0,3500.0,90.0,False,Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8
+T4,wall,12.908695652173913,-0.2636363636363636,2000.0,300.0,0.0,False,Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8
+T5,wall,32.3508294805548,12.027210884353742,3500.0,400.0,0.0,False,Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8
+T6,wall,34.004329004329,10.361671469740633,400.0,3500.0,90.0,False,Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8
+T7,wall,34.0,1.4818181818181824,400.0,3500.0,90.0,False,Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8
+T8,wall,33.107968452542835,-0.2636363636363636,2000.0,300.0,0.0,False,Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8

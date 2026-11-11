@@ -1,0 +1,113 @@
+{
+  "scope": "Post-execution provenance snapshot; prospective briefs/checkpoints are retained separately",
+  "files": [
+    {
+      "file": "scripts/task08_geometry_recovery.py",
+      "sha256": "d2000e348667ad50f637c0f4dc344414fb7105b24dca3fd894fec5b65186266f"
+    },
+    {
+      "file": "scripts/task08_areas_and_hand.py",
+      "sha256": "869caa899040298d6d0b4061a8f220e8741139c86c8bd3928ec87d7b83ce00e5"
+    },
+    {
+      "file": "scripts/verify_task08_engineering.py",
+      "sha256": "2bbb5af5e0d81e33f65cb5f5df2f3cd2d34dc6626e14140024b85cc119cb2b18"
+    },
+    {
+      "file": "scripts/task08_opensees.py",
+      "sha256": "f89ec4fcafcee2aa9b0cc00e3b0a864fa7c3da22a933a759d1d5119d4ae10f10"
+    },
+    {
+      "file": "scripts/verify_task08_opensees.py",
+      "sha256": "a45633da69a0329500a83f57184aeb246b83555610a57e1e6c739c4ac47e6fdd"
+    },
+    {
+      "file": "scripts/task08_source_sensitivity.py",
+      "sha256": "c4b573b99786184ed82b119190b6be3cb9555a63b431ab60a2e10eb46543d3b7"
+    },
+    {
+      "file": "scripts/write_task08_engineering_report.py",
+      "sha256": "5d8752a62d597bd876d45fdb6042e3985752978d8ebc992b2f8668d61e5fcb2a"
+    },
+    {
+      "file": "scripts/task03_centres.py",
+      "sha256": "2b8ce2bd3fe32ccd2bb0ebb1f777a8ab76d23ed877ffb8d558bf37d7bdaa92ab"
+    },
+    {
+      "file": "scripts/task04_opensees.py",
+      "sha256": "9301b4bfcc51b29a08103864689c22102c2f1b79eff4d1cdfc214f55b5ba87af"
+    },
+    {
+      "file": "scripts/task06_modify.py",
+      "sha256": "3e4cf7f44d51b06f9bcb14ee8bbe14c64c294e8e3f885433cd783412e35c18b1"
+    },
+    {
+      "file": "params_geometry_recovery_r1.json",
+      "sha256": "41164ba3095fdabb5eacdfe7d6fdfe80ecbeb9f7505b6d733cc0b521a335068b"
+    },
+    {
+      "file": "outputs/NewPlan/geometry_recovery_r1/Elements_Conditional.json",
+      "sha256": "44d559e45192651209ebaff9b6d513ae388790548d82eb974fdd65021904e111"
+    },
+    {
+      "file": "outputs/NewPlan/geometry_recovery_r1/Calibration.json",
+      "sha256": "8e322ca464cc76b84b9dfb4d859ba728c959a6c6d292032ffa7b8c29f1f7352a"
+    },
+    {
+      "file": "outputs/NewPlan/engineering_r1_refined/Hand_Analysis.json",
+      "sha256": "65d60c4fa7664a97f297e1bac4ad11587069e91a30be49d73eb9981ca817ecd1"
+    },
+    {
+      "file": "outputs/NewPlan/engineering_r1_refined/OpenSees_Result.json",
+      "sha256": "4b676125af260c8e31a095cca857b7fbdf9a17fd29096e4ac588b5401b294536"
+    },
+    {
+      "file": "outputs/NewPlan/engineering_r1_refined/Closed_Tributary_Regions.geojson",
+      "sha256": "6515920a89fb5f6ae7b62906bff0f38c5bb9f96373a9a39f793099ea03fe278c"
+    },
+    {
+      "file": "outputs/NewPlan/engineering_r1_refined/Tributary_and_Known_Loads.csv",
+      "sha256": "a8a4a2f5365adff64ef69d31d702504d07cc445a0451ea303c37fa0a84f98b3d"
+    },
+    {
+      "file": "outputs/NewPlan/engineering_r1_refined/Coordinates_and_Size_Provenance.csv",
+      "sha256": "45327e08fc90e753aa2b2465bd3b9ac2525fb79d27c0461a1e8d60dce3babb3a"
+    },
+    {
+      "file": "outputs/NewPlan/engineering_r1_refined/Source_Uncertainty_Cases.json",
+      "sha256": "d7f9badf7216991e39c5a22bd7222a2eafdf6d29e69a3e281b6e55e929ec720e"
+    },
+    {
+      "file": "outputs/NIST/geometry_recovery_r1/Elements_Conditional.json",
+      "sha256": "2aed708c779ec3292177390cba3d2b1676f1fe5b1649fc550cd9034111ec8d26"
+    },
+    {
+      "file": "outputs/NIST/geometry_recovery_r1/Calibration.json",
+      "sha256": "0d06ee9545bdd2e8280ff368b83fef51551ce3c60a00efcd6459337dc3f8a422"
+    },
+    {
+      "file": "outputs/NIST/engineering_r1_refined/Hand_Analysis.json",
+      "sha256": "40a16f9c7eec291a78ca12cbe9604479187fb221649bfd3ecd360b4855dff5b8"
+    },
+    {
+      "file": "outputs/NIST/engineering_r1_refined/OpenSees_Result.json",
+      "sha256": "3056812593b01789a78c5efbde8e58fe9c40a380fddf858fab6518c02cdc5d19"
+    },
+    {
+      "file": "outputs/NIST/engineering_r1_refined/Closed_Tributary_Regions.geojson",
+      "sha256": "cffb06ec287dd2df85a67d3b13c5ab71d6737712025011786af022319d18f4f9"
+    },
+    {
+      "file": "outputs/NIST/engineering_r1_refined/Tributary_and_Known_Loads.csv",
+      "sha256": "145eefd425dc3664782c6ee559354d98b6167e6365f2e3229f8f8d9d4f120b6e"
+    },
+    {
+      "file": "outputs/NIST/engineering_r1_refined/Coordinates_and_Size_Provenance.csv",
+      "sha256": "b72bfd32118527619c82f992e6643c4e5b5d9a80062d7021f910f427e2a627f7"
+    },
+    {
+      "file": "outputs/NIST/engineering_r1_refined/Source_Uncertainty_Cases.json",
+      "sha256": "35c9798ed7874b11646e31c830dc91a658eac4840552a61b2d626da67f99d43c"
+    }
+  ]
+}

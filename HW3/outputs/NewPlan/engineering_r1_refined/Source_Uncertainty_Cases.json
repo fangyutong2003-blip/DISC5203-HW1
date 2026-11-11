@@ -1,0 +1,11 @@
+{
+  "scope": "Analytical source-uncertainty sensitivities, not additional OpenSees runs or a statistical confidence interval.",
+  "global_affine_instead_of_piecewise": {
+    "CR_m": [
+      23.00191177171841,
+      9.808469504009222
+    ],
+    "eccentricity_m": 0.8084717643702973,
+    "CR_shift_m": 0.07456517189188094
+  }
+}

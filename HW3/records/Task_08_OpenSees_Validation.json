@@ -1,0 +1,685 @@
+{
+  "scope": "Actual matched single-floor diagnostic solver checks under conditional geometry assumptions, not source validation or a full multi-storey design.",
+  "passed": 140,
+  "total": 140,
+  "checks": [
+    {
+      "check": "NewPlan hand/model flexibility",
+      "passed": true,
+      "error": 6.40863394530801e-16
+    },
+    {
+      "check": "NewPlan independent hand/model CR",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "check": "NewPlan symmetric flexibility",
+      "passed": true
+    },
+    {
+      "check": "NewPlan inverse and positive stiffness",
+      "passed": true
+    },
+    {
+      "check": "NewPlan explicit rigidDiaphragm Transformation model",
+      "passed": true
+    },
+    {
+      "check": "NewPlan cantilever section and fixities",
+      "passed": true
+    },
+    {
+      "check": "NewPlan matched wall count",
+      "passed": true
+    },
+    {
+      "check": "NewPlan original hand input hash",
+      "passed": true
+    },
+    {
+      "check": "NewPlan unit_0 converged/equilibrium",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "check": "NewPlan unit_0 rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan unit_0 q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan unit_1 converged/equilibrium",
+      "passed": true,
+      "error": 1.2923689896027213e-15
+    },
+    {
+      "check": "NewPlan unit_1 rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan unit_1 q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan unit_2 converged/equilibrium",
+      "passed": true,
+      "error": 3.344763702117781e-17
+    },
+    {
+      "check": "NewPlan unit_2 rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan unit_2 q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan design_x converged/equilibrium",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "check": "NewPlan design_x rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan design_x q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan design_y converged/equilibrium",
+      "passed": true,
+      "error": 8.704148513061227e-14
+    },
+    {
+      "check": "NewPlan design_y rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan design_y q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan unit_x_CR converged/equilibrium",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "check": "NewPlan unit_x_CR rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan unit_x_CR q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan unit_y_CR converged/equilibrium",
+      "passed": true,
+      "error": 1.536964999715451e-15
+    },
+    {
+      "check": "NewPlan unit_y_CR rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan unit_y_CR q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan push_x_CR converged/equilibrium",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "check": "NewPlan push_x_CR rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan push_x_CR q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan turn_x converged/equilibrium",
+      "passed": true,
+      "error": 2.6749435999562365e-15
+    },
+    {
+      "check": "NewPlan turn_x rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan turn_x q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan push_y_CR converged/equilibrium",
+      "passed": true,
+      "error": 1.9539925233402755e-14
+    },
+    {
+      "check": "NewPlan push_y_CR rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan push_y_CR q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan turn_y converged/equilibrium",
+      "passed": true,
+      "error": 1.0570971181733668e-18
+    },
+    {
+      "check": "NewPlan turn_y rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NewPlan turn_y q=F P",
+      "passed": true
+    },
+    {
+      "check": "NewPlan x load through CR gives zero rotation",
+      "passed": true
+    },
+    {
+      "check": "NewPlan x push/turn displacement decomposition",
+      "passed": true,
+      "error": 1.0058516248644817e-21
+    },
+    {
+      "check": "NewPlan x push/turn wall-force decomposition",
+      "passed": true,
+      "error": 2.1760371282653068e-14
+    },
+    {
+      "check": "NewPlan y load through CR gives zero rotation",
+      "passed": true
+    },
+    {
+      "check": "NewPlan y push/turn displacement decomposition",
+      "passed": true,
+      "error": 1.129145863806869e-21
+    },
+    {
+      "check": "NewPlan y push/turn wall-force decomposition",
+      "passed": true,
+      "error": 2.252018016513091e-14
+    },
+    {
+      "check": "NewPlan bending-only limit",
+      "passed": true
+    },
+    {
+      "check": "NewPlan isolated strong shear section limit",
+      "passed": true
+    },
+    {
+      "check": "NewPlan isolated weak shear section limit",
+      "passed": true
+    },
+    {
+      "check": "NewPlan isolated strong bending section limit",
+      "passed": true
+    },
+    {
+      "check": "NewPlan isolated weak bending section limit",
+      "passed": true
+    },
+    {
+      "check": "NewPlan modal period 1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan modal eigenvector 1",
+      "passed": true,
+      "error": 3.378049187195498e-16
+    },
+    {
+      "check": "NewPlan modal period 2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan modal eigenvector 2",
+      "passed": true,
+      "error": 3.02146157620231e-16
+    },
+    {
+      "check": "NewPlan modal period 3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan modal eigenvector 3",
+      "passed": true,
+      "error": 4.372634338372442e-18
+    },
+    {
+      "check": "NewPlan independent CR force shares x T1",
+      "passed": true,
+      "error": 1.5543122344752192e-15
+    },
+    {
+      "check": "NewPlan independent CR force shares x T2",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "check": "NewPlan independent CR force shares x T3",
+      "passed": true,
+      "error": 1.5543122344752192e-15
+    },
+    {
+      "check": "NewPlan independent CR force shares x T4",
+      "passed": true,
+      "error": 6.938893903907228e-18
+    },
+    {
+      "check": "NewPlan independent CR force shares x T5",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "check": "NewPlan independent CR force shares x T6",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "check": "NewPlan independent CR force shares x T7",
+      "passed": true,
+      "error": 1.5543122344752192e-15
+    },
+    {
+      "check": "NewPlan independent CR force shares x T8",
+      "passed": true,
+      "error": 8.049116928532385e-16
+    },
+    {
+      "check": "NewPlan independent CR force shares y T1",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "check": "NewPlan independent CR force shares y T2",
+      "passed": true,
+      "error": 5.410168840702667e-16
+    },
+    {
+      "check": "NewPlan independent CR force shares y T3",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "check": "NewPlan independent CR force shares y T4",
+      "passed": true,
+      "error": 4.948298715223842e-16
+    },
+    {
+      "check": "NewPlan independent CR force shares y T5",
+      "passed": true,
+      "error": 5.410168840702667e-16
+    },
+    {
+      "check": "NewPlan independent CR force shares y T6",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "check": "NewPlan independent CR force shares y T7",
+      "passed": true,
+      "error": 4.960224939121183e-17
+    },
+    {
+      "check": "NewPlan independent CR force shares y T8",
+      "passed": true,
+      "error": 2.3869795029440866e-15
+    },
+    {
+      "check": "NIST hand/model flexibility",
+      "passed": true,
+      "error": 5.573261583911999e-16
+    },
+    {
+      "check": "NIST independent hand/model CR",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST symmetric flexibility",
+      "passed": true
+    },
+    {
+      "check": "NIST inverse and positive stiffness",
+      "passed": true
+    },
+    {
+      "check": "NIST explicit rigidDiaphragm Transformation model",
+      "passed": true
+    },
+    {
+      "check": "NIST cantilever section and fixities",
+      "passed": true
+    },
+    {
+      "check": "NIST matched wall count",
+      "passed": true
+    },
+    {
+      "check": "NIST original hand input hash",
+      "passed": true
+    },
+    {
+      "check": "NIST unit_0 converged/equilibrium",
+      "passed": true,
+      "error": 1.4755720516984594e-15
+    },
+    {
+      "check": "NIST unit_0 rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST unit_0 q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST unit_1 converged/equilibrium",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "check": "NIST unit_1 rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST unit_1 q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST unit_2 converged/equilibrium",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "check": "NIST unit_2 rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST unit_2 q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST design_x converged/equilibrium",
+      "passed": true,
+      "error": 1.289020973294086e-13
+    },
+    {
+      "check": "NIST design_x rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST design_x q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST design_y converged/equilibrium",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "check": "NIST design_y rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST design_y q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST unit_x_CR converged/equilibrium",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "check": "NIST unit_x_CR rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST unit_x_CR q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST unit_y_CR converged/equilibrium",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "check": "NIST unit_y_CR rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST unit_y_CR q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST push_x_CR converged/equilibrium",
+      "passed": true,
+      "error": 8.686801278301459e-14
+    },
+    {
+      "check": "NIST push_x_CR rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST push_x_CR q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST turn_x converged/equilibrium",
+      "passed": true,
+      "error": 1.0842021724855044e-19
+    },
+    {
+      "check": "NIST turn_x rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST turn_x q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST push_y_CR converged/equilibrium",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "check": "NIST push_y_CR rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST push_y_CR q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST turn_y converged/equilibrium",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "check": "NIST turn_y rigid-plane kinematics",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "check": "NIST turn_y q=F P",
+      "passed": true
+    },
+    {
+      "check": "NIST x load through CR gives zero rotation",
+      "passed": true
+    },
+    {
+      "check": "NIST x push/turn displacement decomposition",
+      "passed": true,
+      "error": 6.719286093870394e-23
+    },
+    {
+      "check": "NIST x push/turn wall-force decomposition",
+      "passed": true,
+      "error": 3.6797388053289026e-14
+    },
+    {
+      "check": "NIST y load through CR gives zero rotation",
+      "passed": true
+    },
+    {
+      "check": "NIST y push/turn displacement decomposition",
+      "passed": true,
+      "error": 8.666202436240805e-22
+    },
+    {
+      "check": "NIST y push/turn wall-force decomposition",
+      "passed": true,
+      "error": 1.441381736189129e-14
+    },
+    {
+      "check": "NIST bending-only limit",
+      "passed": true
+    },
+    {
+      "check": "NIST isolated strong shear section limit",
+      "passed": true
+    },
+    {
+      "check": "NIST isolated weak shear section limit",
+      "passed": true
+    },
+    {
+      "check": "NIST isolated strong bending section limit",
+      "passed": true
+    },
+    {
+      "check": "NIST isolated weak bending section limit",
+      "passed": true
+    },
+    {
+      "check": "NIST modal period 1",
+      "passed": true
+    },
+    {
+      "check": "NIST modal eigenvector 1",
+      "passed": true,
+      "error": 5.96155497137633e-17
+    },
+    {
+      "check": "NIST modal period 2",
+      "passed": true
+    },
+    {
+      "check": "NIST modal eigenvector 2",
+      "passed": true,
+      "error": 2.372553259902468e-18
+    },
+    {
+      "check": "NIST modal period 3",
+      "passed": true
+    },
+    {
+      "check": "NIST modal eigenvector 3",
+      "passed": true,
+      "error": 2.790819612972974e-16
+    },
+    {
+      "check": "NIST independent CR force shares x NW01",
+      "passed": true,
+      "error": 3.2097122396119635e-18
+    },
+    {
+      "check": "NIST independent CR force shares x NW02",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "check": "NIST independent CR force shares x NW03",
+      "passed": true,
+      "error": 1.926952521158487e-15
+    },
+    {
+      "check": "NIST independent CR force shares x NW04",
+      "passed": true,
+      "error": 1.1167282376600696e-15
+    },
+    {
+      "check": "NIST independent CR force shares y NW01",
+      "passed": true,
+      "error": 2.0660556598883772e-15
+    },
+    {
+      "check": "NIST independent CR force shares y NW02",
+      "passed": true,
+      "error": 2.065621979019383e-15
+    },
+    {
+      "check": "NIST independent CR force shares y NW03",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "check": "NIST independent CR force shares y NW04",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    }
+  ],
+  "summaries": [
+    {
+      "plan": "NewPlan",
+      "max_relative_F_error": 6.40863394530801e-16,
+      "max_CR_coordinate_error_m": 1.7763568394002505e-15,
+      "CR_m": [
+        23.003249578423944,
+        9.73391633417397
+      ],
+      "eccentricity_m": 0.7339235282556967,
+      "periods_s": [
+        0.0729340971362005,
+        0.06929567040317745,
+        0.05629315880219873
+      ]
+    },
+    {
+      "plan": "NIST",
+      "max_relative_F_error": 5.573261583911999e-16,
+      "max_CR_coordinate_error_m": 0.0,
+      "CR_m": [
+        18.289482780892882,
+        18.287515830984745
+      ],
+      "eccentricity_m": 0.0015598265325444222,
+      "periods_s": [
+        0.06689305752859333,
+        0.0666323206789642,
+        0.03892875576259123
+      ]
+    }
+  ]
+}

@@ -8,11 +8,13 @@ The [Tasks 6/7 report](HW3_Task_06_07_Modification_Report.md) records the inward
 
 Student: Fangyutong, 21353319. Assigned drawing: Floor Plan 3.
 
+**Latest Task 8:** [conditional geometry, areas and matched OpenSees report](HW3_Task_08_Conditional_Engineering_Report.md). NewPlan/NIST now have exported metric supports, source overlays, closed polygons, known gravity, hand CM/K/CR and actual solver/mode checks. Geometry/area/hand checks pass 364/364; solver checks pass 140/140. This is a supplementary engineering recovery with explicit source assumptions, not a retroactive success of the unchanged extraction or full-source promotion. Unknown NIST column weights remain null.
+
 The retained [2026-11-10 additional-plan portability checkpoint](HW3_Task_08_Additional_Plans_Report.md) documents fixed-rule classical, dual OCR, bar matching and never-selected forests on NewPlan/NIST, including failures before actual reader intake. Current reader packages remain **V4**, with six NewPlan and four NIST questions; earlier drafts are superseded. UTF-8/LF serialization and actual Git bytes were verified. The subsequent reader evidence and current limitations are recorded below.
 
-The [Task 8 workflow review R2](HW3_Task_08_Workflow_Review_R2.md) now retains actual isolated `gpt-6.1-sol` readings and the student-pasted Grok 4.5 replies. Both resolve nine R2-scorable flags with zero incorrect answers; NP-F03 remains unscorable. Original pre-response V4 scores and the post-response R2 revision are both retained. There is no winner or full-plan promotion; source-based geometry and mechanics remain pending.
+The retained [Task 8 workflow review R2](HW3_Task_08_Workflow_Review_R2.md) records actual isolated `gpt-6.1-sol` readings and the student-pasted Grok 4.5 replies. At that checkpoint both resolved nine R2-scorable flags with zero incorrect answers; NP-F03 was unscorable. Original pre-response V4 scores and post-response R2 results remain historical evidence.
 
-Subsequently, the student supplied the direct T3 source reading. The [R3 supplement](records/Task_08_Human_Reference_R3_Result.md) resolves that reference question: both readers agree with all ten supplemented flags. This is a non-blind human/source audit, not a pre-response accuracy benchmark. Earlier R2 results remain historical; complete geometry, calibration and mechanics are still pending.
+Subsequently, the student supplied the direct T3 source reading. The [R3 supplement](records/Task_08_Human_Reference_R3_Result.md) resolves that reference question: both readers agree with all ten supplemented flags. This is a non-blind human/source audit, not a pre-response accuracy benchmark. The latest conditional engineering report above supplies subsequent geometry/area/numerical work while preserving all source and experiment limitations.
 
 ## Retained early-stage chronology (superseded)
 

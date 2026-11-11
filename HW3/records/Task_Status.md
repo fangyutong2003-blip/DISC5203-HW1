@@ -10,7 +10,7 @@
 | 3 CM/CR analytical calculation | Signed rectangles, mass, strong/weak wall stiffness, shear sensitivities, K/F and CR; 54 independent checks | Complete on declared provisional common-geometry baseline; not claimed as handwritten student work |
 | 4 / 5 OpenSees and checks | Explicit Timoshenko rigid diaphragm, unit loads, reactions, zero-rotation and push/turn tests; 75 checks | Complete on matched provisional baseline |
 | 6 / 7 Modification and explanation | T9/T10 inward thickening; exact and 5 mm-rounded proposals; force amplification, cost, actual modal comparison; 133 checks | Complete as a verified fixed-mass design proposal on provisional baseline; practical redesign/signoff not claimed |
-| 8 Additional plans | Frozen V4 failures and actual two-reader replies retained; original/R2 scores plus separate non-blind R3 human supplement; both readers agree with 10 supplemented flags, 0 incorrect; 81 historical workflow checks | Flag reference intake complete; complete geometry/scale, area/gravity checks and mechanics pending; tie, no full-plan promotion |
+| 8 Additional plans | Original failures and actual two-reader/R2/R3 evidence retained; supplementary conditional geometry/closed areas/known gravity/hand CM-K-CR/actual OpenSees for both plans; 364 engineering and 140 solver checks | Conditional numerical comparison complete; source ambiguities, missing NIST weights, post-response/harness limits and unsuccessful unchanged-pipeline promotion remain explicit; no accuracy winner |
 
 Source dimensions, printed sizes and prior HW1 coordinates must be distinguished. The initial connected components are not final named structural elements.
 

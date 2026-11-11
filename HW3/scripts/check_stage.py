@@ -13,7 +13,7 @@ def check_text(path, text):
     if re.search(r"^(<<<<<<< |=======\s*$|>>>>>>> )", text, re.M):
         errors.append("merge conflict marker")
     try:
-        if path.endswith(".json"):
+        if path.endswith((".json", ".geojson")):
             json.loads(text)
         if path.endswith(".jsonl"):
             for line in text.splitlines():
@@ -30,6 +30,7 @@ def main():
     if "--self-test" in sys.argv:
         assert check_text("bad.md", "\u4e2d\u6587")
         assert check_text("bad.json", "{")
+        assert check_text("bad.geojson", "{")
         assert check_text("bad.jsonl", '{}\n{')
         assert check_text("bad.py", "if:")
         assert not check_text("good.md", "English evidence")
@@ -43,7 +44,7 @@ def main():
     for name in filter(None, names):
         if re.search(r"[\u3400-\u9fff]", name):
             failures.append("Non-English filename")
-        if not name.endswith((".md", ".py", ".json", ".jsonl", ".csv", ".txt", ".sh")):
+        if not name.endswith((".md", ".py", ".json", ".geojson", ".jsonl", ".csv", ".txt", ".sh")):
             continue
         raw = subprocess.check_output(["git", "show", ":" + name])
         try:

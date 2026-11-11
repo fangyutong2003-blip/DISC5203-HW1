@@ -1,0 +1,26 @@
+element_id,type,x_m,y_m,size_x_mm,size_y_mm,angle_deg,label_only_grid_inference,size_provenance
+NC01,column,0.0,36.576,,,,False,Not supplied; no assumed column cross-section
+NC02,column,9.144,36.576,,,,False,Not supplied; no assumed column cross-section
+NC03,column,27.432,36.576,,,,False,Not supplied; no assumed column cross-section
+NC04,column,36.576,36.576,,,,False,Not supplied; no assumed column cross-section
+NC05,column,0.0,27.432,,,,False,Not supplied; no assumed column cross-section
+NC06,column,9.144,27.432,,,,False,Not supplied; no assumed column cross-section
+NC07,column,18.288,27.432,,,,False,Not supplied; no assumed column cross-section
+NC08,column,27.432,27.432,,,,False,Not supplied; no assumed column cross-section
+NC09,column,36.576,27.432,,,,False,Not supplied; no assumed column cross-section
+NC10,column,9.144,18.288,,,,False,Not supplied; no assumed column cross-section
+NC11,column,18.288,18.288,,,,False,Not supplied; no assumed column cross-section
+NC12,column,27.432,18.288,,,,False,Not supplied; no assumed column cross-section
+NC13,column,0.0,9.144,,,,False,Not supplied; no assumed column cross-section
+NC14,column,9.144,9.144,,,,False,Not supplied; no assumed column cross-section
+NC15,column,18.288,9.144,,,,False,Not supplied; no assumed column cross-section
+NC16,column,27.432,9.144,,,,False,Not supplied; no assumed column cross-section
+NC17,column,36.576,9.144,,,,False,Not supplied; no assumed column cross-section
+NC18,column,0.0,0.0,,,,False,Not supplied; no assumed column cross-section
+NC19,column,9.144,0.0,,,,False,Not supplied; no assumed column cross-section
+NC20,column,27.432,0.0,,,,False,Not supplied; no assumed column cross-section
+NC21,column,36.576,0.0,,,,False,Not supplied; no assumed column cross-section
+NW01,wall,18.692601769911505,36.451,7444.672566371681,250.0,0.0,False,Length from schematic endpoints; thickness is course default 250 mm
+NW02,wall,18.3689203539823,0.125,7444.672566371679,250.0,0.0,False,Length from schematic endpoints; thickness is course default 250 mm
+NW03,wall,0.125,18.20764850615114,250.0,7401.894660235516,90.0,False,Length from schematic endpoints; thickness is course default 250 mm
+NW04,wall,36.451,18.20764850615114,250.0,7401.894660235516,90.0,False,Length from schematic endpoints; thickness is course default 250 mm

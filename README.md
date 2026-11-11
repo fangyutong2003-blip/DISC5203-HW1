@@ -1,6 +1,6 @@
 # DISC 5203 HW1 - AI-Assisted Structural Analysis
 
-This repository contains the final Homework 1 submission and the ongoing Homework 2 extension for Floor Plan 3, together with the complete intermediate audit trail.
+This repository contains the retained Homework 1/2 submissions and the Homework 3 extension, together with intermediate calculations, source assumptions and audit history.
 
 **Student:** Fangyutong  
 **Student ID:** 21353319  
@@ -8,11 +8,11 @@ This repository contains the final Homework 1 submission and the ongoing Homewor
 
 ## Start here
 
-For HW3, open [Task 1 report](HW3/HW3_Task_01_Report.md), [task status](HW3/records/Task_Status.md), and [iteration log](HW3/records/Iteration_Log.md). The extraction pipeline and one contextual reader are complete for Plan 3. Formal reader-comparison evidence, structural modification and additional-plan generalisation remain pending.
+For HW3, open [Task 1 report](HW3/HW3_Task_01_Report.md), [task status](HW3/records/Task_Status.md), and [iteration log](HW3/records/Iteration_Log.md). The assigned-plan extraction and its contextual-reader limitations are retained. Current additional-plan work is documented in the [Task 8 conditional engineering report](HW3/HW3_Task_08_Conditional_Engineering_Report.md); strict experimental/source limitations remain disclosed.
 
 The provisional common-geometry baseline now has [Task 3 analytical centres](HW3/HW3_Task_03_Analytical_Report.md) and [Tasks 4/5 OpenSees verification](HW3/HW3_Task_04_05_OpenSees_Report.md). Task 2's formal experiment-control limits remain open; no reader winner is claimed.
 
-[Tasks 6/7 modification and explanation](HW3/HW3_Task_06_07_Modification_Report.md) align CR with the fixed CM by thickening T9/T10 inward. Both exact and 5 mm-rounded proposals, geometry checks, force redistribution, added concrete and actual coupled modes are retained. Task 8's two additional plans remain pending.
+[Tasks 6/7 modification and explanation](HW3/HW3_Task_06_07_Modification_Report.md) align CR with the fixed CM by thickening T9/T10 inward. Both exact and 5 mm-rounded proposals, geometry checks, force redistribution, added concrete and actual coupled modes are retained. Task 8 now includes both additional plans' conditional support/area/gravity/CM/CR and actual OpenSees comparisons: 364 engineering checks and 140 solver checks pass, without claiming the original frozen image rules succeeded or source ambiguities disappeared.
 
 Open [HW1_Final_Report.md](HW1_Final_Report.md) for the complete continuous submission report.
 
