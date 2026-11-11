@@ -1,0 +1,1682 @@
+{
+  "plan": "NewPlan",
+  "status": "Conditional supplementary engineering baseline; not promoted unchanged-pipeline extraction",
+  "source": {
+    "file": "sources/assets/NewPlan.png",
+    "sha256": "d70577698599310ca4a62e0c5a3cb4133df16b02dfc417dcf9d2899e673f63c1"
+  },
+  "origin": "A4 lower-left column-grid axis centre",
+  "units": "m; section dimensions mm; positive y upward",
+  "calibration": {
+    "grid_px": {
+      "x": [
+        1645.5,
+        2307.5,
+        3000.5,
+        3920.5,
+        4616.25,
+        5535.5,
+        6228.5,
+        6891.0
+      ],
+      "y": [
+        1391.5,
+        2053.0,
+        2747.0,
+        3407.0
+      ]
+    },
+    "grid_m": {
+      "x": [
+        0.0,
+        6.0,
+        12.0,
+        20.0,
+        26.0,
+        34.0,
+        40.0,
+        46.0
+      ],
+      "y": [
+        18.0,
+        12.0,
+        6.0,
+        0.0
+      ]
+    },
+    "global_affine_px_per_m": {
+      "x": 114.59691455696205,
+      "y": 112.34166666666667
+    },
+    "global_affine_intercepts_px": {
+      "x": 1632.4272151898738,
+      "y": 3410.7000000000003
+    },
+    "global_fit_residual_m": {
+      "x": [
+        0.1140762372238932,
+        -0.10915392076658828,
+        -0.06187068736387277,
+        -0.03373132988840629,
+        0.03754905920240728,
+        0.05914373785384485,
+        0.10642697125656037,
+        -0.11244006751789987
+      ],
+      "y": [
+        0.0262591795860825,
+        -0.08545360136488715,
+        0.09212966397151061,
+        -0.0329352421927181
+      ]
+    },
+    "adopted": "Monotone piecewise dimension-grid mapping, linear end extrapolation; no clamp/silent wall snapping",
+    "local_px_per_m": {
+      "x": [
+        110.33333333333333,
+        115.5,
+        115.0,
+        115.95833333333333,
+        114.90625,
+        115.5,
+        110.41666666666667
+      ],
+      "y": [
+        110.25,
+        115.66666666666667,
+        110.0
+      ]
+    }
+  },
+  "floor": {
+    "bounds_m": [
+      -0.4,
+      -0.4,
+      46.4,
+      18.4
+    ],
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            46.4,
+            -0.4
+          ],
+          [
+            46.4,
+            18.4
+          ],
+          [
+            -0.4,
+            18.4
+          ],
+          [
+            -0.4,
+            -0.4
+          ],
+          [
+            46.4,
+            -0.4
+          ]
+        ]
+      ]
+    },
+    "area_m2": 879.8399999999998,
+    "edge_interpretation": "Grid expanded by half printed 800 mm column width",
+    "openings": [],
+    "openings_note": "None shown; assumed absent for this schematic exercise"
+  },
+  "elements": [
+    {
+      "id": 1,
+      "labels": [
+        "C1"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.0,
+        18.0
+      ],
+      "measured_grid_centre_px": [
+        1645.5,
+        1391.5
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          1
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 2,
+      "labels": [
+        "C2"
+      ],
+      "class": "column",
+      "centre_m": [
+        6.0,
+        18.0
+      ],
+      "measured_grid_centre_px": [
+        2307.5,
+        1391.5
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          2
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 3,
+      "labels": [
+        "C3"
+      ],
+      "class": "column",
+      "centre_m": [
+        12.0,
+        18.0
+      ],
+      "measured_grid_centre_px": [
+        3000.5,
+        1391.5
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          3
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 4,
+      "labels": [
+        "C4"
+      ],
+      "class": "column",
+      "centre_m": [
+        20.0,
+        18.0
+      ],
+      "measured_grid_centre_px": [
+        3920.5,
+        1391.5
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          4
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 5,
+      "labels": [
+        "C5"
+      ],
+      "class": "column",
+      "centre_m": [
+        26.0,
+        18.0
+      ],
+      "measured_grid_centre_px": [
+        4616.25,
+        1391.5
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          5
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 6,
+      "labels": [
+        "C6"
+      ],
+      "class": "column",
+      "centre_m": [
+        34.0,
+        18.0
+      ],
+      "measured_grid_centre_px": [
+        5535.5,
+        1391.5
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          6
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 7,
+      "labels": [
+        "C7"
+      ],
+      "class": "column",
+      "centre_m": [
+        40.0,
+        18.0
+      ],
+      "measured_grid_centre_px": [
+        6228.5,
+        1391.5
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          7
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 8,
+      "labels": [
+        "C8"
+      ],
+      "class": "column",
+      "centre_m": [
+        46.0,
+        18.0
+      ],
+      "measured_grid_centre_px": [
+        6891.0,
+        1391.5
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          8
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 9,
+      "labels": [
+        "C9"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.0,
+        12.0
+      ],
+      "measured_grid_centre_px": [
+        1645.5,
+        2053.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          9
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 10,
+      "labels": [
+        "C10"
+      ],
+      "class": "column",
+      "centre_m": [
+        6.0,
+        12.0
+      ],
+      "measured_grid_centre_px": [
+        2307.5,
+        2053.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          11
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 11,
+      "labels": [
+        "C11"
+      ],
+      "class": "column",
+      "centre_m": [
+        20.0,
+        12.0
+      ],
+      "measured_grid_centre_px": [
+        3920.5,
+        2053.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          12
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 12,
+      "labels": [
+        "C12"
+      ],
+      "class": "column",
+      "centre_m": [
+        26.0,
+        12.0
+      ],
+      "measured_grid_centre_px": [
+        4616.25,
+        2053.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          13
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 13,
+      "labels": [
+        "C13"
+      ],
+      "class": "column",
+      "centre_m": [
+        40.0,
+        12.0
+      ],
+      "measured_grid_centre_px": [
+        6228.5,
+        2053.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          14
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 14,
+      "labels": [
+        "C14"
+      ],
+      "class": "column",
+      "centre_m": [
+        46.0,
+        12.0
+      ],
+      "measured_grid_centre_px": [
+        6891.0,
+        2053.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          10
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 15,
+      "labels": [
+        "C15"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.0,
+        6.0
+      ],
+      "measured_grid_centre_px": [
+        1645.5,
+        2747.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          17
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 16,
+      "labels": [
+        "C16"
+      ],
+      "class": "column",
+      "centre_m": [
+        6.0,
+        6.0
+      ],
+      "measured_grid_centre_px": [
+        2307.5,
+        2747.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          18
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 17,
+      "labels": [
+        "C17"
+      ],
+      "class": "column",
+      "centre_m": [
+        12.0,
+        6.0
+      ],
+      "measured_grid_centre_px": [
+        3000.5,
+        2747.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": true
+      }
+    },
+    {
+      "id": 18,
+      "labels": [
+        "C18"
+      ],
+      "class": "column",
+      "centre_m": [
+        20.0,
+        6.0
+      ],
+      "measured_grid_centre_px": [
+        3920.5,
+        2747.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          19
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 19,
+      "labels": [
+        "C19"
+      ],
+      "class": "column",
+      "centre_m": [
+        26.0,
+        6.0
+      ],
+      "measured_grid_centre_px": [
+        4616.25,
+        2747.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          20
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 20,
+      "labels": [
+        "C20"
+      ],
+      "class": "column",
+      "centre_m": [
+        34.0,
+        6.0
+      ],
+      "measured_grid_centre_px": [
+        5535.5,
+        2747.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": true
+      }
+    },
+    {
+      "id": 21,
+      "labels": [
+        "C21"
+      ],
+      "class": "column",
+      "centre_m": [
+        40.0,
+        6.0
+      ],
+      "measured_grid_centre_px": [
+        6228.5,
+        2747.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          21
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 22,
+      "labels": [
+        "C22"
+      ],
+      "class": "column",
+      "centre_m": [
+        46.0,
+        6.0
+      ],
+      "measured_grid_centre_px": [
+        6891.0,
+        2747.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          22
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 23,
+      "labels": [
+        "C23"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        1645.5,
+        3407.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          25
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 24,
+      "labels": [
+        "C24"
+      ],
+      "class": "column",
+      "centre_m": [
+        6.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        2307.5,
+        3407.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          26
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 25,
+      "labels": [
+        "C25"
+      ],
+      "class": "column",
+      "centre_m": [
+        12.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        3000.5,
+        3407.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [],
+        "merged_wall_junction": true,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 26,
+      "labels": [
+        "C26"
+      ],
+      "class": "column",
+      "centre_m": [
+        20.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        3920.5,
+        3407.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          27
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 27,
+      "labels": [
+        "C27"
+      ],
+      "class": "column",
+      "centre_m": [
+        26.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        4616.25,
+        3407.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          28
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 28,
+      "labels": [
+        "C28"
+      ],
+      "class": "column",
+      "centre_m": [
+        34.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        5535.5,
+        3407.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [],
+        "merged_wall_junction": true,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 29,
+      "labels": [
+        "C29"
+      ],
+      "class": "column",
+      "centre_m": [
+        40.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        6228.5,
+        3407.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          29
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 30,
+      "labels": [
+        "C30"
+      ],
+      "class": "column",
+      "centre_m": [
+        46.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        6891.0,
+        3407.0
+      ],
+      "size_mm": [
+        800,
+        800
+      ],
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Printed label at this grid position",
+        "size": "Printed shared C1:C30 schedule"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          30
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 31,
+      "labels": [
+        "T1"
+      ],
+      "class": "wall",
+      "centre_m": [
+        12.004347826086956,
+        10.361671469740633
+      ],
+      "size_mm": [
+        3500,
+        400
+      ],
+      "angle_deg": 90.0,
+      "continuous": true,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "provenance": {
+        "position": "Piecewise dimension-grid transform of directional-bar box centre",
+        "size": "Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8",
+        "label": "Printed element label"
+      },
+      "audit": {
+        "candidate_id": 5,
+        "measured_bbox_px": [
+          2971,
+          2021,
+          61,
+          444
+        ],
+        "measured_centre_px": [
+          3001.0,
+          2242.5
+        ],
+        "unadjusted_metric_centre_m": [
+          12.004347826086956,
+          10.361671469740633
+        ],
+        "label_match_cost_px": 207.00671984325905,
+        "endpoint_uncertainty_m": 0.017866004962779156,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          12.004347826086956,
+          8.611671469740633
+        ],
+        [
+          12.004347826086956,
+          12.111671469740633
+        ]
+      ]
+    },
+    {
+      "id": 32,
+      "labels": [
+        "T2"
+      ],
+      "class": "wall",
+      "centre_m": [
+        13.652173913043478,
+        12.027210884353742
+      ],
+      "size_mm": [
+        3500,
+        400
+      ],
+      "angle_deg": 0.0,
+      "continuous": true,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "provenance": {
+        "position": "Piecewise dimension-grid transform of directional-bar box centre",
+        "size": "Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8",
+        "label": "Printed element label"
+      },
+      "audit": {
+        "candidate_id": 1,
+        "measured_bbox_px": [
+          2972,
+          2020,
+          438,
+          61
+        ],
+        "measured_centre_px": [
+          3190.5,
+          2050.0
+        ],
+        "unadjusted_metric_centre_m": [
+          13.652173913043478,
+          12.027210884353742
+        ],
+        "label_match_cost_px": 255.56428248886309,
+        "endpoint_uncertainty_m": 0.017866004962779156,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          11.902173913043478,
+          12.027210884353742
+        ],
+        [
+          15.402173913043478,
+          12.027210884353742
+        ]
+      ]
+    },
+    {
+      "id": 33,
+      "labels": [
+        "T3"
+      ],
+      "class": "wall",
+      "centre_m": [
+        12.004347826086956,
+        1.4818181818181824
+      ],
+      "size_mm": [
+        3500,
+        400
+      ],
+      "angle_deg": 90.0,
+      "continuous": true,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "provenance": {
+        "position": "Piecewise dimension-grid transform of directional-bar box centre",
+        "size": "Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8",
+        "label": "Printed element label"
+      },
+      "audit": {
+        "candidate_id": 7,
+        "measured_bbox_px": [
+          2971,
+          3028,
+          61,
+          433
+        ],
+        "measured_centre_px": [
+          3001.0,
+          3244.0
+        ],
+        "unadjusted_metric_centre_m": [
+          12.004347826086956,
+          1.4818181818181824
+        ],
+        "label_match_cost_px": 184.55217085012472,
+        "endpoint_uncertainty_m": 0.017866004962779156,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          12.004347826086956,
+          -0.26818181818181763
+        ],
+        [
+          12.004347826086956,
+          3.2318181818181824
+        ]
+      ]
+    },
+    {
+      "id": 34,
+      "labels": [
+        "T4"
+      ],
+      "class": "wall",
+      "centre_m": [
+        12.908695652173913,
+        -0.2636363636363636
+      ],
+      "size_mm": [
+        2000,
+        300
+      ],
+      "angle_deg": 0.0,
+      "continuous": true,
+      "length_m": 2.0,
+      "thickness_m": 0.3,
+      "provenance": {
+        "position": "Piecewise dimension-grid transform of directional-bar box centre",
+        "size": "Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8",
+        "label": "Printed element label"
+      },
+      "audit": {
+        "candidate_id": 3,
+        "measured_bbox_px": [
+          2972,
+          3413,
+          267,
+          47
+        ],
+        "measured_centre_px": [
+          3105.0,
+          3436.0
+        ],
+        "unadjusted_metric_centre_m": [
+          12.908695652173913,
+          -0.2636363636363636
+        ],
+        "label_match_cost_px": 155.91607383337296,
+        "endpoint_uncertainty_m": 0.017866004962779156,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          11.908695652173913,
+          -0.2636363636363636
+        ],
+        [
+          13.908695652173913,
+          -0.2636363636363636
+        ]
+      ]
+    },
+    {
+      "id": 35,
+      "labels": [
+        "T5"
+      ],
+      "class": "wall",
+      "centre_m": [
+        32.3508294805548,
+        12.027210884353742
+      ],
+      "size_mm": [
+        3500,
+        400
+      ],
+      "angle_deg": 0.0,
+      "continuous": true,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "provenance": {
+        "position": "Piecewise dimension-grid transform of directional-bar box centre",
+        "size": "Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8",
+        "label": "Printed element label"
+      },
+      "audit": {
+        "candidate_id": 2,
+        "measured_bbox_px": [
+          5125,
+          2020,
+          443,
+          61
+        ],
+        "measured_centre_px": [
+          5346.0,
+          2050.0
+        ],
+        "unadjusted_metric_centre_m": [
+          32.3508294805548,
+          12.027210884353742
+        ],
+        "label_match_cost_px": 192.70185075575367,
+        "endpoint_uncertainty_m": 0.017866004962779156,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          30.6008294805548,
+          12.027210884353742
+        ],
+        [
+          34.1008294805548,
+          12.027210884353742
+        ]
+      ]
+    },
+    {
+      "id": 36,
+      "labels": [
+        "T6"
+      ],
+      "class": "wall",
+      "centre_m": [
+        34.004329004329,
+        10.361671469740633
+      ],
+      "size_mm": [
+        3500,
+        400
+      ],
+      "angle_deg": 90.0,
+      "continuous": true,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "provenance": {
+        "position": "Piecewise dimension-grid transform of directional-bar box centre",
+        "size": "Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8",
+        "label": "Printed element label"
+      },
+      "audit": {
+        "candidate_id": 6,
+        "measured_bbox_px": [
+          5506,
+          2021,
+          61,
+          444
+        ],
+        "measured_centre_px": [
+          5536.0,
+          2242.5
+        ],
+        "unadjusted_metric_centre_m": [
+          34.004329004329,
+          10.361671469740633
+        ],
+        "label_match_cost_px": 168.25361567419844,
+        "endpoint_uncertainty_m": 0.017866004962779156,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          34.004329004329,
+          8.611671469740633
+        ],
+        [
+          34.004329004329,
+          12.111671469740633
+        ]
+      ]
+    },
+    {
+      "id": 37,
+      "labels": [
+        "T7"
+      ],
+      "class": "wall",
+      "centre_m": [
+        34.0,
+        1.4818181818181824
+      ],
+      "size_mm": [
+        3500,
+        400
+      ],
+      "angle_deg": 90.0,
+      "continuous": true,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "provenance": {
+        "position": "Piecewise dimension-grid transform of directional-bar box centre",
+        "size": "Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8",
+        "label": "Printed element label"
+      },
+      "audit": {
+        "candidate_id": 8,
+        "measured_bbox_px": [
+          5505,
+          3028,
+          62,
+          433
+        ],
+        "measured_centre_px": [
+          5535.5,
+          3244.0
+        ],
+        "unadjusted_metric_centre_m": [
+          34.0,
+          1.4818181818181824
+        ],
+        "label_match_cost_px": 182.54837340264257,
+        "endpoint_uncertainty_m": 0.017866004962779156,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          34.0,
+          -0.26818181818181763
+        ],
+        [
+          34.0,
+          3.2318181818181824
+        ]
+      ]
+    },
+    {
+      "id": 38,
+      "labels": [
+        "T8"
+      ],
+      "class": "wall",
+      "centre_m": [
+        33.107968452542835,
+        -0.2636363636363636
+      ],
+      "size_mm": [
+        2000,
+        300
+      ],
+      "angle_deg": 0.0,
+      "continuous": true,
+      "length_m": 2.0,
+      "thickness_m": 0.3,
+      "provenance": {
+        "position": "Piecewise dimension-grid transform of directional-bar box centre",
+        "size": "Printed labelled dimensions; six checked flags plus existing dual OCR T4/T8",
+        "label": "Printed element label"
+      },
+      "audit": {
+        "candidate_id": 4,
+        "measured_bbox_px": [
+          5300,
+          3413,
+          267,
+          47
+        ],
+        "measured_centre_px": [
+          5433.0,
+          3436.0
+        ],
+        "unadjusted_metric_centre_m": [
+          33.107968452542835,
+          -0.2636363636363636
+        ],
+        "label_match_cost_px": 123.64900702308404,
+        "endpoint_uncertainty_m": 0.017866004962779156,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          32.107968452542835,
+          -0.2636363636363636
+        ],
+        [
+          34.107968452542835,
+          -0.2636363636363636
+        ]
+      ]
+    }
+  ],
+  "geometry_diagnostics": [
+    {
+      "label": "C1",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C2",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C3",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C4",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C5",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C6",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C7",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C8",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C9",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C10",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C11",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C12",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C13",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C14",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C15",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C16",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C17",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C18",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C19",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C20",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C21",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C22",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C23",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C24",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C25",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C26",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C27",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C28",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C29",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "C30",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "T1",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "T2",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "T3",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "T4",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.027272727272727115
+    },
+    {
+      "label": "T5",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "T6",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "T7",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "T8",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.027272727272727115
+    }
+  ],
+  "unresolved_source_issues": [
+    "C17/C20 label-only supports; small footprint-edge mismatch retained"
+  ],
+  "model_promoted": false
+}

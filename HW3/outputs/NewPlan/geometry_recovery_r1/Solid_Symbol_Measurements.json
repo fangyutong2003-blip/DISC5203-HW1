@@ -1,0 +1,1079 @@
+{
+  "plan": "NewPlan",
+  "source_sha256": "d70577698599310ca4a62e0c5a3cb4133df16b02dfc417dcf9d2899e673f63c1",
+  "parameters_sha256": "41164ba3095fdabb5eacdfe7d6fdfe80ecbeb9f7505b6d733cc0b521a335068b",
+  "opening_kernel_px": 22,
+  "initial_px_per_m": {
+    "x": 114.0,
+    "y": 111.94444444444444
+  },
+  "all_components": [
+    {
+      "component_id": 1,
+      "bbox_px": [
+        1593,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        1645.5,
+        1391.5
+      ],
+      "area_px": 11161,
+      "fill_fraction": 0.9933250266998932,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        2253,
+        1339,
+        110,
+        106
+      ],
+      "centre_px": [
+        2307.5,
+        1391.5
+      ],
+      "area_px": 11539,
+      "fill_fraction": 0.9896226415094339,
+      "aspect_ratio": 1.0377358490566038
+    },
+    {
+      "component_id": 3,
+      "bbox_px": [
+        2948,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        3000.5,
+        1391.5
+      ],
+      "area_px": 11167,
+      "fill_fraction": 0.9938590245639017,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 4,
+      "bbox_px": [
+        3868,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        3920.5,
+        1391.5
+      ],
+      "area_px": 11143,
+      "fill_fraction": 0.9917230331078676,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 5,
+      "bbox_px": [
+        4564,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        4616.5,
+        1391.5
+      ],
+      "area_px": 11181,
+      "fill_fraction": 0.9951050195799217,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 6,
+      "bbox_px": [
+        5483,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        5535.5,
+        1391.5
+      ],
+      "area_px": 11171,
+      "fill_fraction": 0.9942150231399074,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 7,
+      "bbox_px": [
+        6174,
+        1339,
+        110,
+        106
+      ],
+      "centre_px": [
+        6228.5,
+        1391.5
+      ],
+      "area_px": 11513,
+      "fill_fraction": 0.9873927958833619,
+      "aspect_ratio": 1.0377358490566038
+    },
+    {
+      "component_id": 8,
+      "bbox_px": [
+        6839,
+        1339,
+        105,
+        106
+      ],
+      "centre_px": [
+        6891.0,
+        1391.5
+      ],
+      "area_px": 11077,
+      "fill_fraction": 0.9952380952380953,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 9,
+      "bbox_px": [
+        1593,
+        1998,
+        106,
+        105
+      ],
+      "centre_px": [
+        1645.5,
+        2050.0
+      ],
+      "area_px": 11080,
+      "fill_fraction": 0.995507637017071,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 10,
+      "bbox_px": [
+        6839,
+        1998,
+        105,
+        105
+      ],
+      "centre_px": [
+        6891.0,
+        2050.0
+      ],
+      "area_px": 10985,
+      "fill_fraction": 0.9963718820861678,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 11,
+      "bbox_px": [
+        2253,
+        2002,
+        110,
+        106
+      ],
+      "centre_px": [
+        2307.5,
+        2054.5
+      ],
+      "area_px": 11481,
+      "fill_fraction": 0.9846483704974272,
+      "aspect_ratio": 1.0377358490566038
+    },
+    {
+      "component_id": 12,
+      "bbox_px": [
+        3868,
+        2002,
+        106,
+        106
+      ],
+      "centre_px": [
+        3920.5,
+        2054.5
+      ],
+      "area_px": 11097,
+      "fill_fraction": 0.987629049483802,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 13,
+      "bbox_px": [
+        4564,
+        2002,
+        106,
+        106
+      ],
+      "centre_px": [
+        4616.5,
+        2054.5
+      ],
+      "area_px": 11153,
+      "fill_fraction": 0.9926130295478818,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 14,
+      "bbox_px": [
+        6174,
+        2002,
+        110,
+        106
+      ],
+      "centre_px": [
+        6228.5,
+        2054.5
+      ],
+      "area_px": 11415,
+      "fill_fraction": 0.9789879931389366,
+      "aspect_ratio": 1.0377358490566038
+    },
+    {
+      "component_id": 15,
+      "bbox_px": [
+        2970,
+        2020,
+        439,
+        444
+      ],
+      "centre_px": [
+        3189.0,
+        2241.5
+      ],
+      "area_px": 50010,
+      "fill_fraction": 0.25657206181124176,
+      "aspect_ratio": 1.0113895216400912
+    },
+    {
+      "component_id": 16,
+      "bbox_px": [
+        5124,
+        2020,
+        443,
+        444
+      ],
+      "centre_px": [
+        5345.0,
+        2241.5
+      ],
+      "area_px": 50180,
+      "fill_fraction": 0.255119679498912,
+      "aspect_ratio": 1.002257336343115
+    },
+    {
+      "component_id": 17,
+      "bbox_px": [
+        1593,
+        2695,
+        106,
+        105
+      ],
+      "centre_px": [
+        1645.5,
+        2747.0
+      ],
+      "area_px": 11075,
+      "fill_fraction": 0.995058400718778,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 18,
+      "bbox_px": [
+        2253,
+        2695,
+        110,
+        105
+      ],
+      "centre_px": [
+        2307.5,
+        2747.0
+      ],
+      "area_px": 11432,
+      "fill_fraction": 0.9897835497835498,
+      "aspect_ratio": 1.0476190476190477
+    },
+    {
+      "component_id": 19,
+      "bbox_px": [
+        3868,
+        2695,
+        106,
+        105
+      ],
+      "centre_px": [
+        3920.5,
+        2747.0
+      ],
+      "area_px": 11004,
+      "fill_fraction": 0.9886792452830189,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 20,
+      "bbox_px": [
+        4564,
+        2695,
+        105,
+        105
+      ],
+      "centre_px": [
+        4616.0,
+        2747.0
+      ],
+      "area_px": 10943,
+      "fill_fraction": 0.992562358276644,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 21,
+      "bbox_px": [
+        6174,
+        2695,
+        110,
+        105
+      ],
+      "centre_px": [
+        6228.5,
+        2747.0
+      ],
+      "area_px": 11399,
+      "fill_fraction": 0.9869264069264069,
+      "aspect_ratio": 1.0476190476190477
+    },
+    {
+      "component_id": 22,
+      "bbox_px": [
+        6839,
+        2695,
+        105,
+        105
+      ],
+      "centre_px": [
+        6891.0,
+        2747.0
+      ],
+      "area_px": 10981,
+      "fill_fraction": 0.9960090702947846,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 23,
+      "bbox_px": [
+        2970,
+        3027,
+        268,
+        433
+      ],
+      "centre_px": [
+        3103.5,
+        3243.0
+      ],
+      "area_px": 38625,
+      "fill_fraction": 0.33284788528489195,
+      "aspect_ratio": 1.6156716417910448
+    },
+    {
+      "component_id": 24,
+      "bbox_px": [
+        5299,
+        3027,
+        268,
+        433
+      ],
+      "centre_px": [
+        5432.5,
+        3243.0
+      ],
+      "area_px": 38591,
+      "fill_fraction": 0.33255489297163143,
+      "aspect_ratio": 1.6156716417910448
+    },
+    {
+      "component_id": 25,
+      "bbox_px": [
+        1593,
+        3355,
+        106,
+        105
+      ],
+      "centre_px": [
+        1645.5,
+        3407.0
+      ],
+      "area_px": 11066,
+      "fill_fraction": 0.9942497753818509,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 26,
+      "bbox_px": [
+        2253,
+        3355,
+        110,
+        105
+      ],
+      "centre_px": [
+        2307.5,
+        3407.0
+      ],
+      "area_px": 11459,
+      "fill_fraction": 0.9921212121212121,
+      "aspect_ratio": 1.0476190476190477
+    },
+    {
+      "component_id": 27,
+      "bbox_px": [
+        3868,
+        3355,
+        106,
+        105
+      ],
+      "centre_px": [
+        3920.5,
+        3407.0
+      ],
+      "area_px": 11043,
+      "fill_fraction": 0.9921832884097035,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 28,
+      "bbox_px": [
+        4564,
+        3355,
+        105,
+        105
+      ],
+      "centre_px": [
+        4616.0,
+        3407.0
+      ],
+      "area_px": 10977,
+      "fill_fraction": 0.9956462585034014,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 29,
+      "bbox_px": [
+        6174,
+        3355,
+        110,
+        105
+      ],
+      "centre_px": [
+        6228.5,
+        3407.0
+      ],
+      "area_px": 11380,
+      "fill_fraction": 0.9852813852813853,
+      "aspect_ratio": 1.0476190476190477
+    },
+    {
+      "component_id": 30,
+      "bbox_px": [
+        6839,
+        3355,
+        105,
+        105
+      ],
+      "centre_px": [
+        6891.0,
+        3407.0
+      ],
+      "area_px": 10976,
+      "fill_fraction": 0.9955555555555555,
+      "aspect_ratio": 1.0
+    }
+  ],
+  "column_candidates": [
+    {
+      "component_id": 1,
+      "bbox_px": [
+        1593,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        1645.5,
+        1391.5
+      ],
+      "area_px": 11161,
+      "fill_fraction": 0.9933250266998932,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        2253,
+        1339,
+        110,
+        106
+      ],
+      "centre_px": [
+        2307.5,
+        1391.5
+      ],
+      "area_px": 11539,
+      "fill_fraction": 0.9896226415094339,
+      "aspect_ratio": 1.0377358490566038
+    },
+    {
+      "component_id": 3,
+      "bbox_px": [
+        2948,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        3000.5,
+        1391.5
+      ],
+      "area_px": 11167,
+      "fill_fraction": 0.9938590245639017,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 4,
+      "bbox_px": [
+        3868,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        3920.5,
+        1391.5
+      ],
+      "area_px": 11143,
+      "fill_fraction": 0.9917230331078676,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 5,
+      "bbox_px": [
+        4564,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        4616.5,
+        1391.5
+      ],
+      "area_px": 11181,
+      "fill_fraction": 0.9951050195799217,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 6,
+      "bbox_px": [
+        5483,
+        1339,
+        106,
+        106
+      ],
+      "centre_px": [
+        5535.5,
+        1391.5
+      ],
+      "area_px": 11171,
+      "fill_fraction": 0.9942150231399074,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 7,
+      "bbox_px": [
+        6174,
+        1339,
+        110,
+        106
+      ],
+      "centre_px": [
+        6228.5,
+        1391.5
+      ],
+      "area_px": 11513,
+      "fill_fraction": 0.9873927958833619,
+      "aspect_ratio": 1.0377358490566038
+    },
+    {
+      "component_id": 8,
+      "bbox_px": [
+        6839,
+        1339,
+        105,
+        106
+      ],
+      "centre_px": [
+        6891.0,
+        1391.5
+      ],
+      "area_px": 11077,
+      "fill_fraction": 0.9952380952380953,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 9,
+      "bbox_px": [
+        1593,
+        1998,
+        106,
+        105
+      ],
+      "centre_px": [
+        1645.5,
+        2050.0
+      ],
+      "area_px": 11080,
+      "fill_fraction": 0.995507637017071,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 10,
+      "bbox_px": [
+        6839,
+        1998,
+        105,
+        105
+      ],
+      "centre_px": [
+        6891.0,
+        2050.0
+      ],
+      "area_px": 10985,
+      "fill_fraction": 0.9963718820861678,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 11,
+      "bbox_px": [
+        2253,
+        2002,
+        110,
+        106
+      ],
+      "centre_px": [
+        2307.5,
+        2054.5
+      ],
+      "area_px": 11481,
+      "fill_fraction": 0.9846483704974272,
+      "aspect_ratio": 1.0377358490566038
+    },
+    {
+      "component_id": 12,
+      "bbox_px": [
+        3868,
+        2002,
+        106,
+        106
+      ],
+      "centre_px": [
+        3920.5,
+        2054.5
+      ],
+      "area_px": 11097,
+      "fill_fraction": 0.987629049483802,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 13,
+      "bbox_px": [
+        4564,
+        2002,
+        106,
+        106
+      ],
+      "centre_px": [
+        4616.5,
+        2054.5
+      ],
+      "area_px": 11153,
+      "fill_fraction": 0.9926130295478818,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 14,
+      "bbox_px": [
+        6174,
+        2002,
+        110,
+        106
+      ],
+      "centre_px": [
+        6228.5,
+        2054.5
+      ],
+      "area_px": 11415,
+      "fill_fraction": 0.9789879931389366,
+      "aspect_ratio": 1.0377358490566038
+    },
+    {
+      "component_id": 17,
+      "bbox_px": [
+        1593,
+        2695,
+        106,
+        105
+      ],
+      "centre_px": [
+        1645.5,
+        2747.0
+      ],
+      "area_px": 11075,
+      "fill_fraction": 0.995058400718778,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 18,
+      "bbox_px": [
+        2253,
+        2695,
+        110,
+        105
+      ],
+      "centre_px": [
+        2307.5,
+        2747.0
+      ],
+      "area_px": 11432,
+      "fill_fraction": 0.9897835497835498,
+      "aspect_ratio": 1.0476190476190477
+    },
+    {
+      "component_id": 19,
+      "bbox_px": [
+        3868,
+        2695,
+        106,
+        105
+      ],
+      "centre_px": [
+        3920.5,
+        2747.0
+      ],
+      "area_px": 11004,
+      "fill_fraction": 0.9886792452830189,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 20,
+      "bbox_px": [
+        4564,
+        2695,
+        105,
+        105
+      ],
+      "centre_px": [
+        4616.0,
+        2747.0
+      ],
+      "area_px": 10943,
+      "fill_fraction": 0.992562358276644,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 21,
+      "bbox_px": [
+        6174,
+        2695,
+        110,
+        105
+      ],
+      "centre_px": [
+        6228.5,
+        2747.0
+      ],
+      "area_px": 11399,
+      "fill_fraction": 0.9869264069264069,
+      "aspect_ratio": 1.0476190476190477
+    },
+    {
+      "component_id": 22,
+      "bbox_px": [
+        6839,
+        2695,
+        105,
+        105
+      ],
+      "centre_px": [
+        6891.0,
+        2747.0
+      ],
+      "area_px": 10981,
+      "fill_fraction": 0.9960090702947846,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 25,
+      "bbox_px": [
+        1593,
+        3355,
+        106,
+        105
+      ],
+      "centre_px": [
+        1645.5,
+        3407.0
+      ],
+      "area_px": 11066,
+      "fill_fraction": 0.9942497753818509,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 26,
+      "bbox_px": [
+        2253,
+        3355,
+        110,
+        105
+      ],
+      "centre_px": [
+        2307.5,
+        3407.0
+      ],
+      "area_px": 11459,
+      "fill_fraction": 0.9921212121212121,
+      "aspect_ratio": 1.0476190476190477
+    },
+    {
+      "component_id": 27,
+      "bbox_px": [
+        3868,
+        3355,
+        106,
+        105
+      ],
+      "centre_px": [
+        3920.5,
+        3407.0
+      ],
+      "area_px": 11043,
+      "fill_fraction": 0.9921832884097035,
+      "aspect_ratio": 1.0095238095238095
+    },
+    {
+      "component_id": 28,
+      "bbox_px": [
+        4564,
+        3355,
+        105,
+        105
+      ],
+      "centre_px": [
+        4616.0,
+        3407.0
+      ],
+      "area_px": 10977,
+      "fill_fraction": 0.9956462585034014,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 29,
+      "bbox_px": [
+        6174,
+        3355,
+        110,
+        105
+      ],
+      "centre_px": [
+        6228.5,
+        3407.0
+      ],
+      "area_px": 11380,
+      "fill_fraction": 0.9852813852813853,
+      "aspect_ratio": 1.0476190476190477
+    },
+    {
+      "component_id": 30,
+      "bbox_px": [
+        6839,
+        3355,
+        105,
+        105
+      ],
+      "centre_px": [
+        6891.0,
+        3407.0
+      ],
+      "area_px": 10976,
+      "fill_fraction": 0.9955555555555555,
+      "aspect_ratio": 1.0
+    }
+  ],
+  "bar_candidates": [
+    {
+      "component_id": 1,
+      "bbox_px": [
+        2972,
+        2020,
+        438,
+        61
+      ],
+      "centre_px": [
+        3190.5,
+        2050.0
+      ],
+      "area_px": 26478,
+      "fill_fraction": 0.9910172917134517,
+      "aspect_ratio": 7.180327868852459,
+      "direction": "x",
+      "candidate_id": 1
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        5125,
+        2020,
+        443,
+        61
+      ],
+      "centre_px": [
+        5346.0,
+        2050.0
+      ],
+      "area_px": 26814,
+      "fill_fraction": 0.9922658476112941,
+      "aspect_ratio": 7.262295081967213,
+      "direction": "x",
+      "candidate_id": 2
+    },
+    {
+      "component_id": 3,
+      "bbox_px": [
+        2972,
+        3413,
+        267,
+        47
+      ],
+      "centre_px": [
+        3105.0,
+        3436.0
+      ],
+      "area_px": 12517,
+      "fill_fraction": 0.9974499960156188,
+      "aspect_ratio": 5.680851063829787,
+      "direction": "x",
+      "candidate_id": 3
+    },
+    {
+      "component_id": 4,
+      "bbox_px": [
+        5300,
+        3413,
+        267,
+        47
+      ],
+      "centre_px": [
+        5433.0,
+        3436.0
+      ],
+      "area_px": 12511,
+      "fill_fraction": 0.9969718702685473,
+      "aspect_ratio": 5.680851063829787,
+      "direction": "x",
+      "candidate_id": 4
+    },
+    {
+      "component_id": 1,
+      "bbox_px": [
+        2971,
+        2021,
+        61,
+        444
+      ],
+      "centre_px": [
+        3001.0,
+        2242.5
+      ],
+      "area_px": 27036,
+      "fill_fraction": 0.998227735932654,
+      "aspect_ratio": 7.278688524590164,
+      "direction": "y",
+      "candidate_id": 5
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        5506,
+        2021,
+        61,
+        444
+      ],
+      "centre_px": [
+        5536.0,
+        2242.5
+      ],
+      "area_px": 26924,
+      "fill_fraction": 0.9940924531088465,
+      "aspect_ratio": 7.278688524590164,
+      "direction": "y",
+      "candidate_id": 6
+    },
+    {
+      "component_id": 3,
+      "bbox_px": [
+        2971,
+        3028,
+        61,
+        433
+      ],
+      "centre_px": [
+        3001.0,
+        3244.0
+      ],
+      "area_px": 26353,
+      "fill_fraction": 0.9977283913224548,
+      "aspect_ratio": 7.098360655737705,
+      "direction": "y",
+      "candidate_id": 7
+    },
+    {
+      "component_id": 4,
+      "bbox_px": [
+        5505,
+        3028,
+        62,
+        433
+      ],
+      "centre_px": [
+        5535.5,
+        3244.0
+      ],
+      "area_px": 26391,
+      "fill_fraction": 0.9830514788050362,
+      "aspect_ratio": 6.983870967741935,
+      "direction": "y",
+      "candidate_id": 8
+    }
+  ],
+  "measured_grid_px": {
+    "x": [
+      1645.5,
+      2307.5,
+      3000.5,
+      3920.5,
+      4616.25,
+      5535.5,
+      6228.5,
+      6891.0
+    ],
+    "y": [
+      1391.5,
+      2053.0,
+      2747.0,
+      3407.0
+    ]
+  },
+  "expected_grid_axes": {
+    "x": 8,
+    "y": 4
+  },
+  "status": "Supplementary measurement only; no geometry promotion"
+}

@@ -1,0 +1,13 @@
+# Conditional geometry R1 - junction and edge conventions
+
+The supplementary measured records and overlays are retained separately from the failed frozen pipeline. NewPlan has 26 standalone squares, two column/wall junctions (C25/C28), two label-only columns (C17/C20) and eight directional wall bars. NIST has 21 visible column squares and four bars. These counts follow the measurements; no missing square is relabelled as detected.
+
+Dimension-grid calibration uses local monotone interpolation and linear end extrapolation, retaining global-fit residuals. No wall is clamped to a grid line. NewPlan T4/T8 nominal footprints extend 0.013636 m beyond the assumed -0.400 m lower slab edge; their combined outside area is 0.054545 m2. This pen/edge interpretation discrepancy is retained, not clipped away. Their support axes remain inside the slab. The separate grid-axis slab sensitivity remains 828 m2 versus the main assumed outer-face area 879.84 m2.
+
+For gravity partitioning only, subtract **known column footprints** from wall-axis lines before measuring nearest-support distance. This avoids a wall axis passing through a known column centre and forcing that column's nearest-point tributary region to zero. Retain the full labelled wall axes for the lateral rectangular-bar model. Record trimmed gravity segments and also calculate the original untrimmed-axis allocation as a sensitivity. Unknown NIST column sections are not assigned a footprint or used for this trimming.
+
+NewPlan vertical concrete self-weight is allocated to column footprints first, then each labelled wall's remaining footprint after earlier pieces. The union area controls the total, so wall/column and wall/wall overlap is not counted twice. This allocation is bookkeeping at joints, not a detailed load-path proof. The lateral model remains the explicit labelled rectangular-bar approximation and is not a monolithic L-wall shell model.
+
+NIST gravity output is known-only: uniform slab G/Q plus default-thickness walls. Unknown column weights remain null and no complete axial-design total is claimed. The missing four column symbols described in report text remain unresolved. The visible-support baseline can support a conditional CM/CR exercise because floor mass is prescribed independently and columns are excluded from the lateral model; it cannot certify the complete gravity system.
+
+Passing a conditional engineering gate authorises calculations **under these stated assumptions**, not full-plan VLM/classical promotion. All original fixed-pipeline failures, R2/R3 timing limitations and source ambiguities remain in the final comparison.

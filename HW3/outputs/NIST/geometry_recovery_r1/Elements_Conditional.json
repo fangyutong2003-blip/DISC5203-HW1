@@ -1,0 +1,1059 @@
+{
+  "plan": "NIST",
+  "status": "Conditional supplementary engineering baseline; not promoted unchanged-pipeline extraction",
+  "source": {
+    "file": "sources/third_plan_candidates/NIST_Figure_02_Plan.png",
+    "sha256": "034d7accbcfd36191b4de3a0f4b96782dc256b943e59e934880d2546fc05ba12"
+  },
+  "origin": "Lower-left printed footprint corner",
+  "units": "m; section dimensions mm; positive y upward",
+  "calibration": {
+    "grid_px": {
+      "x": [
+        75.0,
+        188.5,
+        301.5,
+        414.5,
+        528.5
+      ],
+      "y": [
+        48.5,
+        162.0,
+        275.5,
+        389.3,
+        502.5
+      ]
+    },
+    "grid_m": {
+      "x": [
+        0.0,
+        9.144,
+        18.288,
+        27.432,
+        36.576
+      ],
+      "y": [
+        36.576,
+        27.432,
+        18.288,
+        9.144,
+        0.0
+      ]
+    },
+    "global_affine_px_per_m": {
+      "x": 12.390638670166231,
+      "y": 12.415791776028007
+    },
+    "global_affine_intercepts_px": {
+      "x": 75.00000000000007,
+      "y": 502.6200000000001
+    },
+    "global_fit_residual_m": {
+      "x": [
+        -5.734512599991487e-15,
+        0.016141218005290166,
+        -0.00807060900265426,
+        -0.032282436010598686,
+        0.024211827007930665
+      ],
+      "y": [
+        2.2891580289933413e-14,
+        -0.0024162776358558156,
+        -0.004832555271729944,
+        0.01691394345106854,
+        -0.009665110543478201
+      ]
+    },
+    "adopted": "Monotone piecewise dimension-grid mapping, linear end extrapolation; no clamp/silent wall snapping",
+    "local_px_per_m": {
+      "x": [
+        12.412510936132984,
+        12.357830271216098,
+        12.3578302712161,
+        12.467191601049866
+      ],
+      "y": [
+        12.41251093613298,
+        12.412510936132986,
+        12.445319335083116,
+        12.379702537182851
+      ]
+    }
+  },
+  "floor": {
+    "bounds_m": [
+      0.0,
+      0.0,
+      36.576,
+      36.576
+    ],
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            36.576,
+            0.0
+          ],
+          [
+            36.576,
+            36.576
+          ],
+          [
+            0.0,
+            36.576
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            36.576,
+            0.0
+          ]
+        ]
+      ]
+    },
+    "area_m2": 1337.803776,
+    "edge_interpretation": "Printed 120 ft square footprint",
+    "openings": [],
+    "openings_note": "None shown; assumed absent for this schematic exercise"
+  },
+  "elements": [
+    {
+      "id": 1,
+      "labels": [
+        "NC01"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.0,
+        36.576
+      ],
+      "measured_grid_centre_px": [
+        75.0,
+        48.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          1
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 2,
+      "labels": [
+        "NC02"
+      ],
+      "class": "column",
+      "centre_m": [
+        9.144,
+        36.576
+      ],
+      "measured_grid_centre_px": [
+        188.5,
+        48.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          2
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 3,
+      "labels": [
+        "NC03"
+      ],
+      "class": "column",
+      "centre_m": [
+        27.432,
+        36.576
+      ],
+      "measured_grid_centre_px": [
+        414.5,
+        48.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          4
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 4,
+      "labels": [
+        "NC04"
+      ],
+      "class": "column",
+      "centre_m": [
+        36.576,
+        36.576
+      ],
+      "measured_grid_centre_px": [
+        528.5,
+        48.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          5
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 5,
+      "labels": [
+        "NC05"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.0,
+        27.432
+      ],
+      "measured_grid_centre_px": [
+        75.0,
+        162.0
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          6
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 6,
+      "labels": [
+        "NC06"
+      ],
+      "class": "column",
+      "centre_m": [
+        9.144,
+        27.432
+      ],
+      "measured_grid_centre_px": [
+        188.5,
+        162.0
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          7
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 7,
+      "labels": [
+        "NC07"
+      ],
+      "class": "column",
+      "centre_m": [
+        18.288,
+        27.432
+      ],
+      "measured_grid_centre_px": [
+        301.5,
+        162.0
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          8
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 8,
+      "labels": [
+        "NC08"
+      ],
+      "class": "column",
+      "centre_m": [
+        27.432,
+        27.432
+      ],
+      "measured_grid_centre_px": [
+        414.5,
+        162.0
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          9
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 9,
+      "labels": [
+        "NC09"
+      ],
+      "class": "column",
+      "centre_m": [
+        36.576,
+        27.432
+      ],
+      "measured_grid_centre_px": [
+        528.5,
+        162.0
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          10
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 10,
+      "labels": [
+        "NC10"
+      ],
+      "class": "column",
+      "centre_m": [
+        9.144,
+        18.288
+      ],
+      "measured_grid_centre_px": [
+        188.5,
+        275.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          13
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 11,
+      "labels": [
+        "NC11"
+      ],
+      "class": "column",
+      "centre_m": [
+        18.288,
+        18.288
+      ],
+      "measured_grid_centre_px": [
+        301.5,
+        275.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          14
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 12,
+      "labels": [
+        "NC12"
+      ],
+      "class": "column",
+      "centre_m": [
+        27.432,
+        18.288
+      ],
+      "measured_grid_centre_px": [
+        414.5,
+        275.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          15
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 13,
+      "labels": [
+        "NC13"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.0,
+        9.144
+      ],
+      "measured_grid_centre_px": [
+        75.0,
+        389.3
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          16
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 14,
+      "labels": [
+        "NC14"
+      ],
+      "class": "column",
+      "centre_m": [
+        9.144,
+        9.144
+      ],
+      "measured_grid_centre_px": [
+        188.5,
+        389.3
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          18
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 15,
+      "labels": [
+        "NC15"
+      ],
+      "class": "column",
+      "centre_m": [
+        18.288,
+        9.144
+      ],
+      "measured_grid_centre_px": [
+        301.5,
+        389.3
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          19
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 16,
+      "labels": [
+        "NC16"
+      ],
+      "class": "column",
+      "centre_m": [
+        27.432,
+        9.144
+      ],
+      "measured_grid_centre_px": [
+        414.5,
+        389.3
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          20
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 17,
+      "labels": [
+        "NC17"
+      ],
+      "class": "column",
+      "centre_m": [
+        36.576,
+        9.144
+      ],
+      "measured_grid_centre_px": [
+        528.5,
+        389.3
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          17
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 18,
+      "labels": [
+        "NC18"
+      ],
+      "class": "column",
+      "centre_m": [
+        0.0,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        75.0,
+        502.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          21
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 19,
+      "labels": [
+        "NC19"
+      ],
+      "class": "column",
+      "centre_m": [
+        9.144,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        188.5,
+        502.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          22
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 20,
+      "labels": [
+        "NC20"
+      ],
+      "class": "column",
+      "centre_m": [
+        27.432,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        414.5,
+        502.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          24
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 21,
+      "labels": [
+        "NC21"
+      ],
+      "class": "column",
+      "centre_m": [
+        36.576,
+        0.0
+      ],
+      "measured_grid_centre_px": [
+        528.5,
+        502.5
+      ],
+      "size_mm": null,
+      "provenance": {
+        "position": "Printed dimension grid, located from measured column clusters",
+        "label": "Analyst-generated bookkeeping ID; not printed",
+        "size": "Not supplied; no assumed column cross-section"
+      },
+      "audit": {
+        "visible_square_component_ids": [
+          25
+        ],
+        "merged_wall_junction": false,
+        "label_only_grid_inference": false
+      }
+    },
+    {
+      "id": 22,
+      "labels": [
+        "NW01"
+      ],
+      "class": "wall",
+      "centre_m": [
+        18.692601769911505,
+        36.451
+      ],
+      "size_mm": [
+        7444.672566371681,
+        250.0
+      ],
+      "angle_deg": 0.0,
+      "continuous": true,
+      "length_m": 7.444672566371681,
+      "thickness_m": 0.25,
+      "provenance": {
+        "position": "Calibrated directional-bar box centre; NIST normal coordinate inset to put assumed outer face on floor border",
+        "size": "Length from schematic endpoints; thickness is course default 250 mm",
+        "label": "Analyst-generated; not printed"
+      },
+      "audit": {
+        "candidate_id": 1,
+        "measured_bbox_px": [
+          261,
+          45,
+          92,
+          8
+        ],
+        "measured_centre_px": [
+          306.5,
+          48.5
+        ],
+        "unadjusted_metric_centre_m": [
+          18.692601769911505,
+          36.576
+        ],
+        "label_match_cost_px": 0.0,
+        "endpoint_uncertainty_m": 0.1614834437086093,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          14.970265486725665,
+          36.451
+        ],
+        [
+          22.414938053097345,
+          36.451
+        ]
+      ]
+    },
+    {
+      "id": 23,
+      "labels": [
+        "NW02"
+      ],
+      "class": "wall",
+      "centre_m": [
+        18.3689203539823,
+        0.125
+      ],
+      "size_mm": [
+        7444.672566371679,
+        250.0
+      ],
+      "angle_deg": 0.0,
+      "continuous": true,
+      "length_m": 7.444672566371679,
+      "thickness_m": 0.25,
+      "provenance": {
+        "position": "Calibrated directional-bar box centre; NIST normal coordinate inset to put assumed outer face on floor border",
+        "size": "Length from schematic endpoints; thickness is course default 250 mm",
+        "label": "Analyst-generated; not printed"
+      },
+      "audit": {
+        "candidate_id": 2,
+        "measured_bbox_px": [
+          257,
+          499,
+          92,
+          8
+        ],
+        "measured_centre_px": [
+          302.5,
+          502.5
+        ],
+        "unadjusted_metric_centre_m": [
+          18.3689203539823,
+          0.0
+        ],
+        "label_match_cost_px": 0.0,
+        "endpoint_uncertainty_m": 0.1614834437086093,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          14.646584070796461,
+          0.125
+        ],
+        [
+          22.09125663716814,
+          0.125
+        ]
+      ]
+    },
+    {
+      "id": 24,
+      "labels": [
+        "NW03"
+      ],
+      "class": "wall",
+      "centre_m": [
+        0.125,
+        18.20764850615114
+      ],
+      "size_mm": [
+        7401.894660235516,
+        250.0
+      ],
+      "angle_deg": 90.0,
+      "continuous": true,
+      "length_m": 7.4018946602355165,
+      "thickness_m": 0.25,
+      "provenance": {
+        "position": "Calibrated directional-bar box centre; NIST normal coordinate inset to put assumed outer face on floor border",
+        "size": "Length from schematic endpoints; thickness is course default 250 mm",
+        "label": "Analyst-generated; not printed"
+      },
+      "audit": {
+        "candidate_id": 3,
+        "measured_bbox_px": [
+          71,
+          231,
+          9,
+          92
+        ],
+        "measured_centre_px": [
+          75.0,
+          276.5
+        ],
+        "unadjusted_metric_centre_m": [
+          0.0,
+          18.20764850615114
+        ],
+        "label_match_cost_px": 0.0,
+        "endpoint_uncertainty_m": 0.1614834437086093,
+        "sampled_axis_ink_support": 1.0
+      },
+      "axis_endpoints_m": [
+        [
+          0.125,
+          14.506701176033383
+        ],
+        [
+          0.125,
+          21.9085958362689
+        ]
+      ]
+    },
+    {
+      "id": 25,
+      "labels": [
+        "NW04"
+      ],
+      "class": "wall",
+      "centre_m": [
+        36.451,
+        18.20764850615114
+      ],
+      "size_mm": [
+        7401.894660235516,
+        250.0
+      ],
+      "angle_deg": 90.0,
+      "continuous": true,
+      "length_m": 7.4018946602355165,
+      "thickness_m": 0.25,
+      "provenance": {
+        "position": "Calibrated directional-bar box centre; NIST normal coordinate inset to put assumed outer face on floor border",
+        "size": "Length from schematic endpoints; thickness is course default 250 mm",
+        "label": "Analyst-generated; not printed"
+      },
+      "audit": {
+        "candidate_id": 4,
+        "measured_bbox_px": [
+          525,
+          231,
+          8,
+          92
+        ],
+        "measured_centre_px": [
+          528.5,
+          276.5
+        ],
+        "unadjusted_metric_centre_m": [
+          36.576,
+          18.20764850615114
+        ],
+        "label_match_cost_px": 0.0,
+        "endpoint_uncertainty_m": 0.1614834437086093,
+        "sampled_axis_ink_support": 0.9900990099009901
+      },
+      "axis_endpoints_m": [
+        [
+          36.451,
+          14.506701176033383
+        ],
+        [
+          36.451,
+          21.9085958362689
+        ]
+      ]
+    }
+  ],
+  "geometry_diagnostics": [
+    {
+      "label": "NC01",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC02",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC03",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC04",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC05",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC06",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC07",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC08",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC09",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC10",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC11",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC12",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC13",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC14",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC15",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC16",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC17",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC18",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC19",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC20",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NC21",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": null
+    },
+    {
+      "label": "NW01",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "NW02",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "NW03",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    },
+    {
+      "label": "NW04",
+      "axis_inside_floor": true,
+      "footprint_outside_floor_m2": 0.0
+    }
+  ],
+  "unresolved_source_issues": [
+    "21 visible square symbols versus 25 gravity columns in report text; unknown column sections; schematic lengths uncertain"
+  ],
+  "model_promoted": false
+}

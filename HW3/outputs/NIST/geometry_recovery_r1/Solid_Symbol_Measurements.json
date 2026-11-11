@@ -1,0 +1,845 @@
+{
+  "plan": "NIST",
+  "source_sha256": "034d7accbcfd36191b4de3a0f4b96782dc256b943e59e934880d2546fc05ba12",
+  "parameters_sha256": "41164ba3095fdabb5eacdfe7d6fdfe80ecbeb9f7505b6d733cc0b521a335068b",
+  "opening_kernel_px": 2,
+  "initial_px_per_m": {
+    "x": 12.38517060367454,
+    "y": 12.412510936132984
+  },
+  "all_components": [
+    {
+      "component_id": 1,
+      "bbox_px": [
+        71,
+        45,
+        9,
+        8
+      ],
+      "centre_px": [
+        75.0,
+        48.5
+      ],
+      "area_px": 72,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        185,
+        45,
+        8,
+        8
+      ],
+      "centre_px": [
+        188.5,
+        48.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 3,
+      "bbox_px": [
+        260,
+        45,
+        92,
+        8
+      ],
+      "centre_px": [
+        305.5,
+        48.5
+      ],
+      "area_px": 730,
+      "fill_fraction": 0.9918478260869565,
+      "aspect_ratio": 11.5
+    },
+    {
+      "component_id": 4,
+      "bbox_px": [
+        411,
+        45,
+        8,
+        8
+      ],
+      "centre_px": [
+        414.5,
+        48.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 5,
+      "bbox_px": [
+        525,
+        45,
+        8,
+        8
+      ],
+      "centre_px": [
+        528.5,
+        48.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 6,
+      "bbox_px": [
+        71,
+        158,
+        9,
+        9
+      ],
+      "centre_px": [
+        75.0,
+        162.0
+      ],
+      "area_px": 77,
+      "fill_fraction": 0.9506172839506173,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 7,
+      "bbox_px": [
+        185,
+        158,
+        8,
+        9
+      ],
+      "centre_px": [
+        188.5,
+        162.0
+      ],
+      "area_px": 71,
+      "fill_fraction": 0.9861111111111112,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 8,
+      "bbox_px": [
+        298,
+        158,
+        8,
+        9
+      ],
+      "centre_px": [
+        301.5,
+        162.0
+      ],
+      "area_px": 72,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 9,
+      "bbox_px": [
+        411,
+        158,
+        8,
+        9
+      ],
+      "centre_px": [
+        414.5,
+        162.0
+      ],
+      "area_px": 72,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 10,
+      "bbox_px": [
+        525,
+        158,
+        8,
+        9
+      ],
+      "centre_px": [
+        528.5,
+        162.0
+      ],
+      "area_px": 70,
+      "fill_fraction": 0.9722222222222222,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 11,
+      "bbox_px": [
+        71,
+        230,
+        9,
+        92
+      ],
+      "centre_px": [
+        75.0,
+        275.5
+      ],
+      "area_px": 826,
+      "fill_fraction": 0.9975845410628019,
+      "aspect_ratio": 10.222222222222221
+    },
+    {
+      "component_id": 12,
+      "bbox_px": [
+        525,
+        230,
+        8,
+        92
+      ],
+      "centre_px": [
+        528.5,
+        275.5
+      ],
+      "area_px": 735,
+      "fill_fraction": 0.998641304347826,
+      "aspect_ratio": 11.5
+    },
+    {
+      "component_id": 13,
+      "bbox_px": [
+        185,
+        272,
+        8,
+        8
+      ],
+      "centre_px": [
+        188.5,
+        275.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 14,
+      "bbox_px": [
+        298,
+        272,
+        8,
+        8
+      ],
+      "centre_px": [
+        301.5,
+        275.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 15,
+      "bbox_px": [
+        411,
+        272,
+        8,
+        8
+      ],
+      "centre_px": [
+        414.5,
+        275.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 16,
+      "bbox_px": [
+        71,
+        385,
+        9,
+        9
+      ],
+      "centre_px": [
+        75.0,
+        389.0
+      ],
+      "area_px": 74,
+      "fill_fraction": 0.9135802469135802,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 17,
+      "bbox_px": [
+        525,
+        385,
+        8,
+        9
+      ],
+      "centre_px": [
+        528.5,
+        389.0
+      ],
+      "area_px": 66,
+      "fill_fraction": 0.9166666666666666,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 18,
+      "bbox_px": [
+        185,
+        386,
+        8,
+        8
+      ],
+      "centre_px": [
+        188.5,
+        389.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 19,
+      "bbox_px": [
+        298,
+        386,
+        8,
+        8
+      ],
+      "centre_px": [
+        301.5,
+        389.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 20,
+      "bbox_px": [
+        411,
+        386,
+        8,
+        8
+      ],
+      "centre_px": [
+        414.5,
+        389.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 21,
+      "bbox_px": [
+        71,
+        499,
+        9,
+        8
+      ],
+      "centre_px": [
+        75.0,
+        502.5
+      ],
+      "area_px": 72,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 22,
+      "bbox_px": [
+        185,
+        499,
+        8,
+        8
+      ],
+      "centre_px": [
+        188.5,
+        502.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 23,
+      "bbox_px": [
+        256,
+        499,
+        92,
+        8
+      ],
+      "centre_px": [
+        301.5,
+        502.5
+      ],
+      "area_px": 733,
+      "fill_fraction": 0.9959239130434783,
+      "aspect_ratio": 11.5
+    },
+    {
+      "component_id": 24,
+      "bbox_px": [
+        411,
+        499,
+        8,
+        8
+      ],
+      "centre_px": [
+        414.5,
+        502.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 25,
+      "bbox_px": [
+        525,
+        499,
+        8,
+        8
+      ],
+      "centre_px": [
+        528.5,
+        502.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    }
+  ],
+  "column_candidates": [
+    {
+      "component_id": 1,
+      "bbox_px": [
+        71,
+        45,
+        9,
+        8
+      ],
+      "centre_px": [
+        75.0,
+        48.5
+      ],
+      "area_px": 72,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        185,
+        45,
+        8,
+        8
+      ],
+      "centre_px": [
+        188.5,
+        48.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 4,
+      "bbox_px": [
+        411,
+        45,
+        8,
+        8
+      ],
+      "centre_px": [
+        414.5,
+        48.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 5,
+      "bbox_px": [
+        525,
+        45,
+        8,
+        8
+      ],
+      "centre_px": [
+        528.5,
+        48.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 6,
+      "bbox_px": [
+        71,
+        158,
+        9,
+        9
+      ],
+      "centre_px": [
+        75.0,
+        162.0
+      ],
+      "area_px": 77,
+      "fill_fraction": 0.9506172839506173,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 7,
+      "bbox_px": [
+        185,
+        158,
+        8,
+        9
+      ],
+      "centre_px": [
+        188.5,
+        162.0
+      ],
+      "area_px": 71,
+      "fill_fraction": 0.9861111111111112,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 8,
+      "bbox_px": [
+        298,
+        158,
+        8,
+        9
+      ],
+      "centre_px": [
+        301.5,
+        162.0
+      ],
+      "area_px": 72,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 9,
+      "bbox_px": [
+        411,
+        158,
+        8,
+        9
+      ],
+      "centre_px": [
+        414.5,
+        162.0
+      ],
+      "area_px": 72,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 10,
+      "bbox_px": [
+        525,
+        158,
+        8,
+        9
+      ],
+      "centre_px": [
+        528.5,
+        162.0
+      ],
+      "area_px": 70,
+      "fill_fraction": 0.9722222222222222,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 13,
+      "bbox_px": [
+        185,
+        272,
+        8,
+        8
+      ],
+      "centre_px": [
+        188.5,
+        275.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 14,
+      "bbox_px": [
+        298,
+        272,
+        8,
+        8
+      ],
+      "centre_px": [
+        301.5,
+        275.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 15,
+      "bbox_px": [
+        411,
+        272,
+        8,
+        8
+      ],
+      "centre_px": [
+        414.5,
+        275.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 16,
+      "bbox_px": [
+        71,
+        385,
+        9,
+        9
+      ],
+      "centre_px": [
+        75.0,
+        389.0
+      ],
+      "area_px": 74,
+      "fill_fraction": 0.9135802469135802,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 17,
+      "bbox_px": [
+        525,
+        385,
+        8,
+        9
+      ],
+      "centre_px": [
+        528.5,
+        389.0
+      ],
+      "area_px": 66,
+      "fill_fraction": 0.9166666666666666,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 18,
+      "bbox_px": [
+        185,
+        386,
+        8,
+        8
+      ],
+      "centre_px": [
+        188.5,
+        389.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 19,
+      "bbox_px": [
+        298,
+        386,
+        8,
+        8
+      ],
+      "centre_px": [
+        301.5,
+        389.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 20,
+      "bbox_px": [
+        411,
+        386,
+        8,
+        8
+      ],
+      "centre_px": [
+        414.5,
+        389.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 21,
+      "bbox_px": [
+        71,
+        499,
+        9,
+        8
+      ],
+      "centre_px": [
+        75.0,
+        502.5
+      ],
+      "area_px": 72,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.125
+    },
+    {
+      "component_id": 22,
+      "bbox_px": [
+        185,
+        499,
+        8,
+        8
+      ],
+      "centre_px": [
+        188.5,
+        502.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 24,
+      "bbox_px": [
+        411,
+        499,
+        8,
+        8
+      ],
+      "centre_px": [
+        414.5,
+        502.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    },
+    {
+      "component_id": 25,
+      "bbox_px": [
+        525,
+        499,
+        8,
+        8
+      ],
+      "centre_px": [
+        528.5,
+        502.5
+      ],
+      "area_px": 64,
+      "fill_fraction": 1.0,
+      "aspect_ratio": 1.0
+    }
+  ],
+  "bar_candidates": [
+    {
+      "component_id": 1,
+      "bbox_px": [
+        261,
+        45,
+        92,
+        8
+      ],
+      "centre_px": [
+        306.5,
+        48.5
+      ],
+      "area_px": 730,
+      "fill_fraction": 0.9918478260869565,
+      "aspect_ratio": 11.5,
+      "direction": "x",
+      "candidate_id": 1
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        257,
+        499,
+        92,
+        8
+      ],
+      "centre_px": [
+        302.5,
+        502.5
+      ],
+      "area_px": 733,
+      "fill_fraction": 0.9959239130434783,
+      "aspect_ratio": 11.5,
+      "direction": "x",
+      "candidate_id": 2
+    },
+    {
+      "component_id": 1,
+      "bbox_px": [
+        71,
+        231,
+        9,
+        92
+      ],
+      "centre_px": [
+        75.0,
+        276.5
+      ],
+      "area_px": 826,
+      "fill_fraction": 0.9975845410628019,
+      "aspect_ratio": 10.222222222222221,
+      "direction": "y",
+      "candidate_id": 3
+    },
+    {
+      "component_id": 2,
+      "bbox_px": [
+        525,
+        231,
+        8,
+        92
+      ],
+      "centre_px": [
+        528.5,
+        276.5
+      ],
+      "area_px": 735,
+      "fill_fraction": 0.998641304347826,
+      "aspect_ratio": 11.5,
+      "direction": "y",
+      "candidate_id": 4
+    }
+  ],
+  "measured_grid_px": {
+    "x": [
+      75.0,
+      188.5,
+      301.5,
+      414.5,
+      528.5
+    ],
+    "y": [
+      48.5,
+      162.0,
+      275.5,
+      389.3,
+      502.5
+    ]
+  },
+  "expected_grid_axes": {
+    "x": 5,
+    "y": 5
+  },
+  "status": "Supplementary measurement only; no geometry promotion"
+}
