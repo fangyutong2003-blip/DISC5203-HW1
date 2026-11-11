@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-11-11T12:30:11.965187+00:00",
+  "reference_sha256": "54b035d8f0ada202a1a1892541c4bf289b173f2a47b543d16aa04f3e4465716c",
+  "parent_reference_sha256": "452ad406e53c5455307551b9cfcab88534d2a9e89ae3d8a385a7b999e183d3af",
+  "human_receipt_sha256": "4e955abd2121be4ec81ffa36ae86994ac969d7da49168386f53ccbf18062694f",
+  "code_sha256": "166540a4b0d23c88a2794096b22d0c9003e96bf8d8327976add7a56a8d68cf34",
+  "protocol_sha256": "4df43af4d7923c7d6603da8788b1b371c5b119d4c696962797ef7e5a3fababd5",
+  "execution_git_commit": "235cba25d89045389090f6226160ac86bb5de046",
+  "resolved": 6,
+  "total": 6
+}
