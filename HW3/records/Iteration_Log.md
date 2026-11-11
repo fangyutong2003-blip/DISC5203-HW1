@@ -136,3 +136,9 @@
 - Ran two fresh no-history native-image Codex sessions, one per additional plan, one flag per turn. Only V4 inputs and a recorded no-tools control were supplied. All ten actual answers and full delivered payloads are retained. Runtime turn metadata establishes gpt-6.1-sol; neither session used a tool. The raw unknown-version self-report is preserved rather than rewritten.
 - Original V4 and post-response R2 scores are separately tabulated. Both readers agree on all asked fields, resolve the nine R2-scorable flags and break none. NP-F03 is unscorable, not a manufactured tenth success. No accuracy winner or full-plan promotion is claimed; geometry/scale and mechanics remain pending.
 - Extended the installed hook to JSONL and pinned JSONL to LF. Workflow validation passes 81/81 including actual session/input/identity evidence and adversarial wrong-answer/low-confidence/duplicate-ID/no-regression checks. AGENTS.md and skills.md now cover these controls and limitations.
+
+## Task 8 - Student source reading and human supplement R3
+
+- Student replied T3 3500X400 after the unmarked source-crop request. Preserved the exact reply and its non-blind post-response timing, with no invented confidence or student prediction.
+- Committed receipt/protocol as 235cba2 and froze R3 as c1787e4 before scoring. Only NP-F03's reference expectation/resolved state is supplemented; all earlier V4/R2 records, other reference flags and raw reader replies remain unchanged.
+- Separately scored unchanged model answers against NewPlan R3 and NIST R2: both agree with all ten supplemented reference flags, zero incorrect, tie. This does not establish blind full-plan accuracy or pass geometry promotion. Full geometry/calibration and structural analysis remain pending.

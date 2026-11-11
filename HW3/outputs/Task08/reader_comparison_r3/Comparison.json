@@ -1,0 +1,295 @@
+{
+  "reference_status": "NewPlan R3 non-blind student source review; NIST R2 post-response pixel audit. Original V4/R2 files and scores retained.",
+  "human_raw_reply": "T3 3500X400",
+  "human_scope": "Printed identifier and size only, not coordinates or student-signed prediction.",
+  "reader_inputs_and_outputs_unchanged": true,
+  "input_hashes": [
+    {
+      "file": "outputs/NewPlan/reader_codex_isolated_v4/Parsed_Answers.json",
+      "sha256": "4d6c91be394518ea40b831ee538842ce28c63a9db118721aba8ad7ff4373b45c"
+    },
+    {
+      "file": "outputs/NewPlan/reader_grok_received_v4/Raw_User_Messages.jsonl",
+      "sha256": "08b76aa7fe1053e87470ce471473f1dd3879321a9c543c4a81ab3663d763c8ce"
+    },
+    {
+      "file": "outputs/NIST/reader_codex_isolated_v4/Parsed_Answers.json",
+      "sha256": "4af546aaf753ccd3a4888fdd031f5b5661f14735e3df37f9b233cbefe209cf4e"
+    },
+    {
+      "file": "outputs/NIST/reader_grok_received_v4/Followup_NI-F01.json",
+      "sha256": "b0d00e83fbfec579ca80a179d38a8b3fc7bd60b091e65115f3337ed2fb82ee3b"
+    },
+    {
+      "file": "outputs/NIST/reader_grok_received_v4/Followup_NI-F02.json",
+      "sha256": "c95e794fc559d262566b5ddecfd24d81a109033588eafa39287f78e09db68c6f"
+    },
+    {
+      "file": "outputs/NIST/reader_grok_received_v4/Followup_NI-F03.json",
+      "sha256": "47b5b59aa5d6e97ece7b5a8821ea93271adf31c0fa30ba0fa2214421991af07b"
+    },
+    {
+      "file": "outputs/NIST/reader_grok_received_v4/Followup_NI-F04.json",
+      "sha256": "2125b3a3d3cb3f89e7dae693fdf612e0c4e9f8c9965544387daf6532531ca087"
+    }
+  ],
+  "harness_limitations": "Same V4 crops/questions/order/common instructions; separate interfaces and additional Codex no-tools control. Not an identical harness or randomized blinded cross-service trial.",
+  "Grok_identity": "Grok 4.5, student-reported; backend snapshot unverified",
+  "plans": [
+    {
+      "plan": "NewPlan",
+      "reference_revision": "independent_reference_r3",
+      "reference_sha256": "54b035d8f0ada202a1a1892541c4bf289b173f2a47b543d16aa04f3e4465716c",
+      "readers": {
+        "Codex_gpt_6_1_sol_isolated": {
+          "resolved": 6,
+          "incorrect": 0,
+          "low_confidence_or_abstained": 0,
+          "unscorable_reference": 0,
+          "total": 6,
+          "flags": [
+            {
+              "flag_id": "NP-F01",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F02",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F03",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F04",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F05",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F06",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            }
+          ]
+        },
+        "Grok_4_5_student_reported": {
+          "resolved": 6,
+          "incorrect": 0,
+          "low_confidence_or_abstained": 0,
+          "unscorable_reference": 0,
+          "total": 6,
+          "flags": [
+            {
+              "flag_id": "NP-F01",
+              "outcome": "resolved",
+              "confidence": 0.95,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F02",
+              "outcome": "resolved",
+              "confidence": 0.98,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F03",
+              "outcome": "resolved",
+              "confidence": 0.95,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F04",
+              "outcome": "resolved",
+              "confidence": 0.98,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F05",
+              "outcome": "resolved",
+              "confidence": 0.95,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            },
+            {
+              "flag_id": "NP-F06",
+              "outcome": "resolved",
+              "confidence": 0.95,
+              "asked_fields": [
+                "label",
+                "size_mm"
+              ]
+            }
+          ]
+        }
+      },
+      "local_gates": {
+        "Codex": {
+          "no_incorrect_on_scorable_flags": true,
+          "preserves_other_reader_resolved_flags": true,
+          "local_scorable_gate_pass": true
+        },
+        "Grok": {
+          "no_incorrect_on_scorable_flags": true,
+          "preserves_other_reader_resolved_flags": true,
+          "local_scorable_gate_pass": true
+        }
+      },
+      "verdict": "tie",
+      "full_plan_geometry_complete": false,
+      "model_promoted": null
+    },
+    {
+      "plan": "NIST",
+      "reference_revision": "independent_reference_r2",
+      "reference_sha256": "c0214261b84e7d9b13fb4b2fac7a94bfe9f76172d63fa82460e6ed9afc0b2ce6",
+      "readers": {
+        "Codex_gpt_6_1_sol_isolated": {
+          "resolved": 4,
+          "incorrect": 0,
+          "low_confidence_or_abstained": 0,
+          "unscorable_reference": 0,
+          "total": 4,
+          "flags": [
+            {
+              "flag_id": "NI-F01",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "continuous"
+              ]
+            },
+            {
+              "flag_id": "NI-F02",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "continuous"
+              ]
+            },
+            {
+              "flag_id": "NI-F03",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "continuous"
+              ]
+            },
+            {
+              "flag_id": "NI-F04",
+              "outcome": "resolved",
+              "confidence": 0.99,
+              "asked_fields": [
+                "continuous"
+              ]
+            }
+          ]
+        },
+        "Grok_4_5_student_reported": {
+          "resolved": 4,
+          "incorrect": 0,
+          "low_confidence_or_abstained": 0,
+          "unscorable_reference": 0,
+          "total": 4,
+          "flags": [
+            {
+              "flag_id": "NI-F01",
+              "outcome": "resolved",
+              "confidence": 0.95,
+              "asked_fields": [
+                "continuous"
+              ]
+            },
+            {
+              "flag_id": "NI-F02",
+              "outcome": "resolved",
+              "confidence": 0.95,
+              "asked_fields": [
+                "continuous"
+              ]
+            },
+            {
+              "flag_id": "NI-F03",
+              "outcome": "resolved",
+              "confidence": 0.95,
+              "asked_fields": [
+                "continuous"
+              ]
+            },
+            {
+              "flag_id": "NI-F04",
+              "outcome": "resolved",
+              "confidence": 0.95,
+              "asked_fields": [
+                "continuous"
+              ]
+            }
+          ]
+        }
+      },
+      "local_gates": {
+        "Codex": {
+          "no_incorrect_on_scorable_flags": true,
+          "preserves_other_reader_resolved_flags": true,
+          "local_scorable_gate_pass": true
+        },
+        "Grok": {
+          "no_incorrect_on_scorable_flags": true,
+          "preserves_other_reader_resolved_flags": true,
+          "local_scorable_gate_pass": true
+        }
+      },
+      "verdict": "tie",
+      "full_plan_geometry_complete": false,
+      "model_promoted": null
+    }
+  ],
+  "missing_human_reference": [],
+  "overall_verdict": "Both readers agree with all ten supplemented reference flags; tie, no accuracy winner or full-plan promotion.",
+  "next_gate": "Complete metric geometry, both-axis scale, dimensions/assumptions and closed-region area conservation before downstream CM/CR/OpenSees."
+}

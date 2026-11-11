@@ -12,6 +12,8 @@ The retained [2026-11-10 additional-plan portability checkpoint](HW3_Task_08_Add
 
 The [Task 8 workflow review R2](HW3_Task_08_Workflow_Review_R2.md) now retains actual isolated `gpt-6.1-sol` readings and the student-pasted Grok 4.5 replies. Both resolve nine R2-scorable flags with zero incorrect answers; NP-F03 remains unscorable. Original pre-response V4 scores and the post-response R2 revision are both retained. There is no winner or full-plan promotion; source-based geometry and mechanics remain pending.
 
+Subsequently, the student supplied the direct T3 source reading. The [R3 supplement](records/Task_08_Human_Reference_R3_Result.md) resolves that reference question: both readers agree with all ten supplemented flags. This is a non-blind human/source audit, not a pre-response accuracy benchmark. Earlier R2 results remain historical; complete geometry, calibration and mechanics are still pending.
+
 ## Retained early-stage chronology (superseded)
 
 Task 1A has an initial classical run: 20 connected components, including merged walls and artifacts. Labels, scale and element-level scores remain pending. No reader has been promoted; no final CM/CR has been calculated. DP v4.1 is the student's proposed second reader; exact service model ID and image capability must be recorded from the actual session.
