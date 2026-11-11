@@ -1,0 +1,14 @@
+{
+  "conditional_engineering_ready": true,
+  "strict_pipeline_promoted": false,
+  "geometry_sha256": "44d559e45192651209ebaff9b6d513ae388790548d82eb974fdd65021904e111",
+  "hand_sha256": "65d60c4fa7664a97f297e1bac4ad11587069e91a30be49d73eb9981ca817ecd1",
+  "region_sha256": "6515920a89fb5f6ae7b62906bff0f38c5bb9f96373a9a39f793099ea03fe278c",
+  "support_count": 38,
+  "unresolved_source_issues": [
+    "C17/C20 label-only supports; small footprint-edge mismatch retained"
+  ],
+  "max_relative_area_grid_change": 0.00934579439295582,
+  "convergence_note": "Below 1% target",
+  "scope": "Authorises matched diagnostic OpenSees under declared assumptions only; not full source/CAD certification or unmodified-pipeline success."
+}

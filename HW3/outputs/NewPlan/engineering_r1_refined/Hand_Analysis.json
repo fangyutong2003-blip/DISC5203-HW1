@@ -1,0 +1,438 @@
+{
+  "plan": "NewPlan",
+  "status": "Conditional supplementary engineering baseline; not promoted unchanged-pipeline extraction",
+  "model_promoted": false,
+  "geometry_record": "outputs/NewPlan/geometry_recovery_r1/Elements_Conditional.json",
+  "mass": {
+    "area_m2": 879.8399999999998,
+    "CM_m": [
+      23.0,
+      9.0
+    ],
+    "mass_t": 784.7706422018347,
+    "polar_mass_t_m2": 166350.44892966354,
+    "intensity_kN_m2": 8.75
+  },
+  "parameters": {
+    "plan": "NewPlan",
+    "element_record": "outputs/NewPlan/geometry_recovery_r1/Elements_Conditional.json",
+    "floor_record": "outputs/Plan3/task1/Floor_Dimension_Record.json",
+    "selection_status": "Conditional supplementary engineering baseline; not promoted unchanged-pipeline extraction",
+    "E_kN_m2": 30000000.0,
+    "nu": 0.2,
+    "height_m": 3.0,
+    "shear_factor": 0.8333333333333334,
+    "gravity_m_s2": 9.81,
+    "ordinary_mass_intensity_kN_m2": 8.75,
+    "separate_stair_mass_intensity_kN_m2": 8.75,
+    "storeys": 5,
+    "include_weak_axis": true,
+    "include_columns_in_lateral_model": false,
+    "wall_intrinsic_torsion_J_m4": 0.0,
+    "design_demonstration_force_kN": 100.0,
+    "design_force_note": "Assumed linear-analysis demonstration force along global y at CM; not a prescribed code earthquake demand."
+  },
+  "walls": [
+    {
+      "label": "T1",
+      "centre_m": [
+        12.004347826086956,
+        10.361671469740633
+      ],
+      "angle_deg": 90.0,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "A_m2": 1.4000000000000001,
+      "Av_m2": 1.1666666666666667,
+      "I_strong_m4": 1.429166666666667,
+      "I_weak_m4": 0.01866666666666667,
+      "k_strong_bending_kN_m": 4763888.88888889,
+      "k_weak_bending_kN_m": 62222.22222222224,
+      "k_strong_shear_kN_m": 2406004.489337823,
+      "k_weak_shear_kN_m": 61435.84342636478
+    },
+    {
+      "label": "T2",
+      "centre_m": [
+        13.652173913043478,
+        12.027210884353742
+      ],
+      "angle_deg": 0.0,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "A_m2": 1.4000000000000001,
+      "Av_m2": 1.1666666666666667,
+      "I_strong_m4": 1.429166666666667,
+      "I_weak_m4": 0.01866666666666667,
+      "k_strong_bending_kN_m": 4763888.88888889,
+      "k_weak_bending_kN_m": 62222.22222222224,
+      "k_strong_shear_kN_m": 2406004.489337823,
+      "k_weak_shear_kN_m": 61435.84342636478
+    },
+    {
+      "label": "T3",
+      "centre_m": [
+        12.004347826086956,
+        1.4818181818181824
+      ],
+      "angle_deg": 90.0,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "A_m2": 1.4000000000000001,
+      "Av_m2": 1.1666666666666667,
+      "I_strong_m4": 1.429166666666667,
+      "I_weak_m4": 0.01866666666666667,
+      "k_strong_bending_kN_m": 4763888.88888889,
+      "k_weak_bending_kN_m": 62222.22222222224,
+      "k_strong_shear_kN_m": 2406004.489337823,
+      "k_weak_shear_kN_m": 61435.84342636478
+    },
+    {
+      "label": "T4",
+      "centre_m": [
+        12.908695652173913,
+        -0.2636363636363636
+      ],
+      "angle_deg": 0.0,
+      "length_m": 2.0,
+      "thickness_m": 0.3,
+      "A_m2": 0.6,
+      "Av_m2": 0.5,
+      "I_strong_m4": 0.19999999999999998,
+      "I_weak_m4": 0.0045,
+      "k_strong_bending_kN_m": 666666.6666666666,
+      "k_weak_bending_kN_m": 14999.999999999998,
+      "k_strong_shear_kN_m": 505050.50505050505,
+      "k_weak_shear_kN_m": 14892.772041302622
+    },
+    {
+      "label": "T5",
+      "centre_m": [
+        32.3508294805548,
+        12.027210884353742
+      ],
+      "angle_deg": 0.0,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "A_m2": 1.4000000000000001,
+      "Av_m2": 1.1666666666666667,
+      "I_strong_m4": 1.429166666666667,
+      "I_weak_m4": 0.01866666666666667,
+      "k_strong_bending_kN_m": 4763888.88888889,
+      "k_weak_bending_kN_m": 62222.22222222224,
+      "k_strong_shear_kN_m": 2406004.489337823,
+      "k_weak_shear_kN_m": 61435.84342636478
+    },
+    {
+      "label": "T6",
+      "centre_m": [
+        34.004329004329,
+        10.361671469740633
+      ],
+      "angle_deg": 90.0,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "A_m2": 1.4000000000000001,
+      "Av_m2": 1.1666666666666667,
+      "I_strong_m4": 1.429166666666667,
+      "I_weak_m4": 0.01866666666666667,
+      "k_strong_bending_kN_m": 4763888.88888889,
+      "k_weak_bending_kN_m": 62222.22222222224,
+      "k_strong_shear_kN_m": 2406004.489337823,
+      "k_weak_shear_kN_m": 61435.84342636478
+    },
+    {
+      "label": "T7",
+      "centre_m": [
+        34.0,
+        1.4818181818181824
+      ],
+      "angle_deg": 90.0,
+      "length_m": 3.5,
+      "thickness_m": 0.4,
+      "A_m2": 1.4000000000000001,
+      "Av_m2": 1.1666666666666667,
+      "I_strong_m4": 1.429166666666667,
+      "I_weak_m4": 0.01866666666666667,
+      "k_strong_bending_kN_m": 4763888.88888889,
+      "k_weak_bending_kN_m": 62222.22222222224,
+      "k_strong_shear_kN_m": 2406004.489337823,
+      "k_weak_shear_kN_m": 61435.84342636478
+    },
+    {
+      "label": "T8",
+      "centre_m": [
+        33.107968452542835,
+        -0.2636363636363636
+      ],
+      "angle_deg": 0.0,
+      "length_m": 2.0,
+      "thickness_m": 0.3,
+      "A_m2": 0.6,
+      "Av_m2": 0.5,
+      "I_strong_m4": 0.19999999999999998,
+      "I_weak_m4": 0.0045,
+      "k_strong_bending_kN_m": 666666.6666666666,
+      "k_weak_bending_kN_m": 14999.999999999998,
+      "k_strong_shear_kN_m": 505050.50505050505,
+      "k_weak_shear_kN_m": 14892.772041302622
+    }
+  ],
+  "matched_rectangular_shear": {
+    "shear_included": true,
+    "weak_axis_included": true,
+    "K_about_CM": [
+      [
+        6067853.362482114,
+        0.0,
+        -4453296.696098058
+      ],
+      [
+        0.0,
+        9776675.188286625,
+        31770.072749774583
+      ],
+      [
+        -4453296.696098058,
+        31770.072749774583,
+        1316005545.778828
+      ]
+    ],
+    "F_about_CM": [
+      [
+        1.6521324093460732e-07,
+        -1.816752716864971e-12,
+        5.590733565554112e-10
+      ],
+      [
+        -1.8167527168649712e-12,
+        1.022842693845894e-07,
+        -2.4754221050411003e-12
+      ],
+      [
+        5.590733565554113e-10,
+        -2.4754221050411003e-12,
+        7.617671531791909e-10
+      ]
+    ],
+    "CR_m": [
+      23.003249578423944,
+      9.733916334173967
+    ],
+    "CR_from_flexibility_m": [
+      23.003249578423944,
+      9.733916334173967
+    ],
+    "eccentricity_m": 0.7339235282556951,
+    "K_about_CR": [
+      [
+        6067853.362482114,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        9776675.188286625,
+        8.32369551062584e-09
+      ],
+      [
+        0.0,
+        8.32369551062584e-09,
+        1312737095.3532956
+      ]
+    ]
+  },
+  "bending_only": {
+    "shear_included": false,
+    "weak_axis_included": true,
+    "K_about_CM": [
+      [
+        11110000.000000002,
+        0.0,
+        -15724933.93104922
+      ],
+      [
+        0.0,
+        19210000.000000004,
+        62484.85579047818
+      ],
+      [
+        -15724933.93104922,
+        62484.85579047818,
+        2528199879.0908484
+      ]
+    ],
+    "F_about_CM": [
+      [
+        9.080842710819243e-08,
+        -1.8371770789603707e-12,
+        5.648116049938451e-10
+      ],
+      [
+        -1.8371770789604103e-12,
+        5.2056224940428585e-08,
+        -1.2980046489701385e-12
+      ],
+      [
+        5.648116049938541e-10,
+        -1.2980046489701385e-12,
+        3.990514019961308e-10
+      ]
+    ],
+    "CR_m": [
+      23.003252725444586,
+      10.415385592353665
+    ],
+    "CR_from_flexibility_m": [
+      23.003252725444586,
+      10.415385592353665
+    ],
+    "eccentricity_m": 1.4153893299248634,
+    "K_about_CR": [
+      [
+        11110000.000000002,
+        0.0,
+        3.725290298461914e-09
+      ],
+      [
+        0.0,
+        19210000.000000004,
+        -2.293381839990616e-08
+      ],
+      [
+        3.725290298461914e-09,
+        -2.293381839990616e-08,
+        2505942830.918048
+      ]
+    ]
+  },
+  "strong_direction_only": {
+    "shear_included": true,
+    "weak_axis_included": false,
+    "K_about_CM": [
+      [
+        5822109.988776656,
+        0.0,
+        -5209757.507737311
+      ],
+      [
+        0.0,
+        9624017.957351292,
+        31337.382018096745
+      ],
+      [
+        -5209757.507737311,
+        31337.382018096745,
+        1295054227.3936338
+      ]
+    ],
+    "F_about_CM": [
+      [
+        1.7237955136570385e-07,
+        -2.257987965107422e-12,
+        6.93450292405656e-10
+      ],
+      [
+        -2.2579879651074225e-12,
+        1.0390671375593327e-07,
+        -2.5233908232130074e-12
+      ],
+      [
+        6.93450292405656e-10,
+        -2.5233908232130074e-12,
+        7.749581181348597e-10
+      ]
+    ],
+    "CR_m": [
+      23.00325616412573,
+      9.894822928075941
+    ],
+    "CR_from_flexibility_m": [
+      23.00325616412573,
+      9.894822928075941
+    ],
+    "eccentricity_m": 0.8948288524713619,
+    "K_about_CR": [
+      [
+        5822109.988776656,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        9624017.957351292,
+        -2.2351741790771484e-08
+      ],
+      [
+        0.0,
+        -2.2351741790771484e-08,
+        1290392314.8863358
+      ]
+    ]
+  },
+  "analytical_modes": [
+    {
+      "mode": 1,
+      "period_s": 0.07293409713620061,
+      "rotational_mass_fraction": 0.3880788284209258
+    },
+    {
+      "mode": 2,
+      "period_s": 0.06929567040317738,
+      "rotational_mass_fraction": 0.6119207922736264
+    },
+    {
+      "mode": 3,
+      "period_s": 0.05629315880219872,
+      "rotational_mass_fraction": 3.7930544803059015e-07
+    }
+  ],
+  "sensitivities": {
+    "grid_axis_floor_mass": {
+      "mass": {
+        "area_m2": 828,
+        "CM_m": [
+          23.0,
+          9.0
+        ],
+        "mass_t": 738.5321100917431,
+        "polar_mass_t_m2": 150168.19571865443,
+        "intensity_kN_m2": 8.75
+      },
+      "modes": [
+        {
+          "mode": 1,
+          "period_s": 0.07030929260225963,
+          "rotational_mass_fraction": 0.22830525891420167
+        },
+        {
+          "mode": 2,
+          "period_s": 0.06625433467571655,
+          "rotational_mass_fraction": 0.7716942791822443
+        },
+        {
+          "mode": 3,
+          "period_s": 0.054609592087697834,
+          "rotational_mass_fraction": 4.619035538519935e-07
+        }
+      ],
+      "CR_m": [
+        23.003249578423944,
+        9.733916334173967
+      ],
+      "eccentricity_m": 0.7339235282556951
+    },
+    "omit_C17_C20": {
+      "area_sum_m2": 879.839999999509,
+      "omitted_baseline_areas_m2": {
+        "C17": 18.724999999991976,
+        "C20": 18.724999999992022
+      },
+      "max_other_support_area_increase_m2": 7.7074999999930185,
+      "CM_CR_change_m": 0.0,
+      "reason": "Uniform mass prescribed independently; columns excluded from lateral model. Gravity redistribution remains significant."
+    }
+  },
+  "mass_note": "Uniform prescribed 8.75 kN/m2 floor mass; known vertical-member gravity weights are reported separately and excluded here, matching Plan 3 convention.",
+  "lateral_note": "Labelled rectangular bars with strong/weak bending, shear, J=0; not coupled monolithic L-wall shells; columns provide no lateral stiffness."
+}

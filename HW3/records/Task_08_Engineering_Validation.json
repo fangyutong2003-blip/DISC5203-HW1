@@ -1,0 +1,1495 @@
+{
+  "scope": "Conditional engineering geometry, exported regions/loads and independent hand calculations; source ambiguities are not erased.",
+  "passed": 364,
+  "total": 364,
+  "checks": [
+    {
+      "check": "NewPlan declared support IDs unique and complete",
+      "passed": true
+    },
+    {
+      "check": "NewPlan original source hash",
+      "passed": true
+    },
+    {
+      "check": "NewPlan increasing measured grid x",
+      "passed": true
+    },
+    {
+      "check": "NewPlan positive scale x",
+      "passed": true
+    },
+    {
+      "check": "NewPlan increasing measured grid y",
+      "passed": true
+    },
+    {
+      "check": "NewPlan positive scale y",
+      "passed": true
+    },
+    {
+      "check": "NewPlan identical geometry/region/load IDs",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C9",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C9",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C10",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C10",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C11",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C11",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C12",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C12",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C13",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C13",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C14",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C14",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C15",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C15",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C16",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C16",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C17",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C17",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C18",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C18",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C19",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C19",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C20",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C20",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C21",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C21",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C22",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C22",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C23",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C23",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C24",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C24",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C25",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C25",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C26",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C26",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C27",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C27",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C28",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C28",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C29",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C29",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region C30",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area C30",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region T1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area T1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region T2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area T2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region T3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area T3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region T4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area T4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region T5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area T5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region T6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area T6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region T7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area T7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan closed positive valid region T8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan CSV polygon area T8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan exact polygon area conservation",
+      "passed": true
+    },
+    {
+      "check": "NewPlan no polygon gaps or outside pieces",
+      "passed": true
+    },
+    {
+      "check": "NewPlan no polygon overlaps",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C9",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C9",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C10",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C10",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C11",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C11",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C12",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C12",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C13",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C13",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C14",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C14",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C15",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C15",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C16",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C16",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C17",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C17",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C18",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C18",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C19",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C19",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C20",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C20",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C21",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C21",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C22",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C22",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C23",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C23",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C24",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C24",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C25",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C25",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C26",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C26",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C27",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C27",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C28",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C28",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C29",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C29",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained C30",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q C30",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wall ink support T1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained T1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q T1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wall ink support T2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained T2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q T2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wall ink support T3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained T3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q T3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wall ink support T4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained T4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q T4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wall ink support T5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained T5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q T5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wall ink support T6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained T6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q T6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wall ink support T7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained T7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q T7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan wall ink support T8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan support axis contained T8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan slab G/Q T8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan union-based self-weight avoids overlaps",
+      "passed": true
+    },
+    {
+      "check": "NewPlan whole-floor known G independent check",
+      "passed": true
+    },
+    {
+      "check": "NewPlan whole-floor Q independent check",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C9",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C10",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C11",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C12",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C13",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C14",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C15",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C16",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C17",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C18",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C19",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C20",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C21",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C22",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C23",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C24",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C25",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C26",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C27",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C28",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C29",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 C30",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 T1",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 T2",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 T3",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 T4",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 T5",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 T6",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 T7",
+      "passed": true
+    },
+    {
+      "check": "NewPlan storey accumulation 1:2:3:4:5 T8",
+      "passed": true
+    },
+    {
+      "check": "NewPlan label-only supports remain flagged",
+      "passed": true
+    },
+    {
+      "check": "NewPlan small edge discrepancy not hidden",
+      "passed": true
+    },
+    {
+      "check": "NewPlan independent mass/CM/polar integral",
+      "passed": true
+    },
+    {
+      "check": "NewPlan independent hand matrix and weighted CR",
+      "passed": true
+    },
+    {
+      "check": "NewPlan positive definite hand matrix",
+      "passed": true
+    },
+    {
+      "check": "NewPlan independent analytical modal periods",
+      "passed": true
+    },
+    {
+      "check": "NIST declared support IDs unique and complete",
+      "passed": true
+    },
+    {
+      "check": "NIST original source hash",
+      "passed": true
+    },
+    {
+      "check": "NIST increasing measured grid x",
+      "passed": true
+    },
+    {
+      "check": "NIST positive scale x",
+      "passed": true
+    },
+    {
+      "check": "NIST increasing measured grid y",
+      "passed": true
+    },
+    {
+      "check": "NIST positive scale y",
+      "passed": true
+    },
+    {
+      "check": "NIST identical geometry/region/load IDs",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC01",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC01",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC02",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC02",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC03",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC03",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC04",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC04",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC05",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC05",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC06",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC06",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC07",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC07",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC08",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC08",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC09",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC09",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC10",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC10",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC11",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC11",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC12",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC12",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC13",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC13",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC14",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC14",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC15",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC15",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC16",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC16",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC17",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC17",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC18",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC18",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC19",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC19",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC20",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC20",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NC21",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NC21",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NW01",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NW01",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NW02",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NW02",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NW03",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NW03",
+      "passed": true
+    },
+    {
+      "check": "NIST closed positive valid region NW04",
+      "passed": true
+    },
+    {
+      "check": "NIST CSV polygon area NW04",
+      "passed": true
+    },
+    {
+      "check": "NIST exact polygon area conservation",
+      "passed": true
+    },
+    {
+      "check": "NIST no polygon gaps or outside pieces",
+      "passed": true
+    },
+    {
+      "check": "NIST no polygon overlaps",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC01",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC01",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC02",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC02",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC03",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC03",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC04",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC04",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC05",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC05",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC06",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC06",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC07",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC07",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC08",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC08",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC09",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC09",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC10",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC10",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC11",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC11",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC12",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC12",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC13",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC13",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC14",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC14",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC15",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC15",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC16",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC16",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC17",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC17",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC18",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC18",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC19",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC19",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC20",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC20",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NC21",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NC21",
+      "passed": true
+    },
+    {
+      "check": "NIST wall ink support NW01",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NW01",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NW01",
+      "passed": true
+    },
+    {
+      "check": "NIST wall ink support NW02",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NW02",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NW02",
+      "passed": true
+    },
+    {
+      "check": "NIST wall ink support NW03",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NW03",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NW03",
+      "passed": true
+    },
+    {
+      "check": "NIST wall ink support NW04",
+      "passed": true
+    },
+    {
+      "check": "NIST support axis contained NW04",
+      "passed": true
+    },
+    {
+      "check": "NIST slab G/Q NW04",
+      "passed": true
+    },
+    {
+      "check": "NIST union-based self-weight avoids overlaps",
+      "passed": true
+    },
+    {
+      "check": "NIST whole-floor known G independent check",
+      "passed": true
+    },
+    {
+      "check": "NIST whole-floor Q independent check",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC01",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC02",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC03",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC04",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC05",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC06",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC07",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC08",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC09",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC10",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC11",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC12",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC13",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC14",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC15",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC16",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC17",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC18",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC19",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC20",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NC21",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NW01",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NW02",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NW03",
+      "passed": true
+    },
+    {
+      "check": "NIST storey accumulation 1:2:3:4:5 NW04",
+      "passed": true
+    },
+    {
+      "check": "NIST unknown column self-weight is not fabricated",
+      "passed": true
+    },
+    {
+      "check": "NIST independent mass/CM/polar integral",
+      "passed": true
+    },
+    {
+      "check": "NIST independent hand matrix and weighted CR",
+      "passed": true
+    },
+    {
+      "check": "NIST positive definite hand matrix",
+      "passed": true
+    },
+    {
+      "check": "NIST independent analytical modal periods",
+      "passed": true
+    }
+  ],
+  "conditional_gates": [
+    {
+      "plan": "NewPlan",
+      "conditional_engineering_ready": true,
+      "strict_pipeline_promoted": false,
+      "geometry_sha256": "44d559e45192651209ebaff9b6d513ae388790548d82eb974fdd65021904e111",
+      "hand_sha256": "65d60c4fa7664a97f297e1bac4ad11587069e91a30be49d73eb9981ca817ecd1",
+      "region_sha256": "6515920a89fb5f6ae7b62906bff0f38c5bb9f96373a9a39f793099ea03fe278c",
+      "support_count": 38,
+      "unresolved_source_issues": [
+        "C17/C20 label-only supports; small footprint-edge mismatch retained"
+      ],
+      "max_relative_area_grid_change": 0.00934579439295582,
+      "convergence_note": "Below 1% target",
+      "scope": "Authorises matched diagnostic OpenSees under declared assumptions only; not full source/CAD certification or unmodified-pipeline success."
+    },
+    {
+      "plan": "NIST",
+      "conditional_engineering_ready": true,
+      "strict_pipeline_promoted": false,
+      "geometry_sha256": "2aed708c779ec3292177390cba3d2b1676f1fe5b1649fc550cd9034111ec8d26",
+      "hand_sha256": "40a16f9c7eec291a78ca12cbe9604479187fb221649bfd3ecd360b4855dff5b8",
+      "region_sha256": "cffb06ec287dd2df85a67d3b13c5ab71d6737712025011786af022319d18f4f9",
+      "support_count": 25,
+      "unresolved_source_issues": [
+        "21 visible square symbols versus 25 gravity columns in report text; unknown column sections; schematic lengths uncertain"
+      ],
+      "max_relative_area_grid_change": 0.010899101196871092,
+      "convergence_note": "Marginally above approximate 1% target; retained and reported, not a strict 1% convergence pass",
+      "scope": "Authorises matched diagnostic OpenSees under declared assumptions only; not full source/CAD certification or unmodified-pipeline success."
+    }
+  ]
+}

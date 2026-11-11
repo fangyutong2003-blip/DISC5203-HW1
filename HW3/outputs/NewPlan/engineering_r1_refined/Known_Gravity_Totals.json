@@ -1,0 +1,14 @@
+{
+  "scope": "Known slab and net vertical concrete only. NIST unknown column self-weight is null, so complete axial design totals are not claimed.",
+  "G_slab_kN_m2": 3.75,
+  "Q_kN_m2": 5.0,
+  "load_source": "Transferred HW1 exercise assumptions: 150 mm slab, 25 kN/m3 concrete, Q=5; not loads printed on these drawings",
+  "G_known_per_floor_kN": 5385.07499140277,
+  "Q_per_floor_kN": 4399.199999997634,
+  "known_net_vertical_footprint_m2": 27.80899988539392,
+  "known_vertical_self_weight_kN": 2085.674991404544,
+  "unknown_self_weight_ids": [],
+  "joint_allocation": "Column footprints first, then remaining labelled wall footprints in ID order; union prevents overlap double counting",
+  "five_storey_G_known_kN": 26925.37495701385,
+  "five_storey_Q_kN": 21995.99999998817
+}

@@ -1,0 +1,10 @@
+{
+  "area_sum_m2": 1337.8037759990068,
+  "polygon_area_sum_m2": 1337.8037760000007,
+  "floor_area_m2": 1337.803776,
+  "gap_or_outside_m2": 0.0,
+  "overlap_m2": 1.3642420526593924e-12,
+  "max_element_grid_change_m2": 0.456875000026713,
+  "minimum_region_area_m2": 20.93062499999002,
+  "max_polygon_vs_raster_m2": 6.683364972559502e-11
+}

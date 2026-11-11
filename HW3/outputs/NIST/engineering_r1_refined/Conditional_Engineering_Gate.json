@@ -1,0 +1,14 @@
+{
+  "conditional_engineering_ready": true,
+  "strict_pipeline_promoted": false,
+  "geometry_sha256": "2aed708c779ec3292177390cba3d2b1676f1fe5b1649fc550cd9034111ec8d26",
+  "hand_sha256": "40a16f9c7eec291a78ca12cbe9604479187fb221649bfd3ecd360b4855dff5b8",
+  "region_sha256": "cffb06ec287dd2df85a67d3b13c5ab71d6737712025011786af022319d18f4f9",
+  "support_count": 25,
+  "unresolved_source_issues": [
+    "21 visible square symbols versus 25 gravity columns in report text; unknown column sections; schematic lengths uncertain"
+  ],
+  "max_relative_area_grid_change": 0.010899101196871092,
+  "convergence_note": "Marginally above approximate 1% target; retained and reported, not a strict 1% convergence pass",
+  "scope": "Authorises matched diagnostic OpenSees under declared assumptions only; not full source/CAD certification or unmodified-pipeline success."
+}
