@@ -1,0 +1,128 @@
+{
+  "scope": "Pre-commit working snapshot and Git-canonical legacy-byte restoration audit",
+  "working_snapshot_passed": true,
+  "git_canonical_restore_stdout": "{\n  \"scope\": \"Exact EOL-only reconstruction of recorded original text; no reference/geometry/answer modification\",\n  \"already_original\": 0,\n  \"restored\": 37,\n  \"need_restore\": 0,\n  \"restore_required_files\": []\n}\n",
+  "git_canonical_restore_passed": true,
+  "validation": {
+    "prepared_utc": "2026-11-12T07:52:30.073080+00:00",
+    "interpreter": "C:\\Users\\099fyt\\Documents\\computer method\\.venv_hw3\\Scripts\\python.exe",
+    "scope": "Extracted-copy audit of retained results, evidence bytes, current English text and local links. Not a clean installation, new inference or unconditional rubric-compliance claim.",
+    "git_invocations_blocked": true,
+    "commands": [
+      {
+        "label": "Legacy frozen bytes",
+        "command": [
+          "HW3/scripts/restore_legacy_frozen_bytes.py"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"scope\": \"Exact EOL-only reconstruction of recorded original text; no reference/geometry/answer modification\",\n  \"already_original\": 37,\n  \"restored\": 0,\n  \"need_restore\": 0,\n  \"restore_required_files\": []\n}\n",
+        "stderr": ""
+      },
+      {
+        "label": "Task 1",
+        "command": [
+          "HW3/scripts/verify_task1.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Task 1 verification: 71/71; residual geometry warnings: 0\n",
+        "stderr": ""
+      },
+      {
+        "label": "Task 3",
+        "command": [
+          "HW3/scripts/verify_task03.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Task 3 independent verification 54/54\n",
+        "stderr": ""
+      },
+      {
+        "label": "Tasks 4/5",
+        "command": [
+          "HW3/scripts/verify_task04.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Tasks 4/5 verification 75/75; CR error 0 m; relative F error 1.6e-16\n",
+        "stderr": ""
+      },
+      {
+        "label": "Tasks 6/7",
+        "command": [
+          "HW3/scripts/verify_task06.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Tasks 6/7 verification: 133/133\n",
+        "stderr": ""
+      },
+      {
+        "label": "Task 8 unchanged classical artifacts",
+        "command": [
+          "HW3/scripts/verify_task08_classical.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Task 8 artifact checks: 156/156\n{\"plan\": \"NewPlan\", \"components\": 216, \"ocr_original\": 61, \"ocr_lines_removed\": 116, \"size_hypotheses\": 2, \"bar_candidates\": 225, \"provisional_matches\": 0, \"scale_seed\": null, \"forest_training_pixels\": 120000, \"forest_degenerate\": false, \"reader_flags\": 6, \"reference_resolved\": 5, \"reference_unresolved\": [\"NP-F03\"], \"rejected_queries\": 1, \"actual_reader_runs\": 0, \"CM_CR_status\": \"pending; no promoted additional-plan geometry\"}\n{\"plan\": \"NIST\", \"components\": 0, \"ocr_original\": 6, \"ocr_lines_removed\": 6, \"size_hypotheses\": 0, \"bar_candidates\": 0, \"provisional_matches\": 0, \"scale_seed\": null, \"forest_training_pixels\": 53562, \"forest_degenerate\": true, \"reader_flags\": 4, \"reference_resolved\": 0, \"reference_unresolved\": [\"NI-F01\", \"NI-F02\", \"NI-F03\", \"NI-F04\"], \"rejected_queries\": 0, \"actual_reader_runs\": 0, \"CM_CR_status\": \"pending; no promoted additional-plan geometry\"}\n",
+        "stderr": ""
+      },
+      {
+        "label": "Task 8 actual reader workflow",
+        "command": [
+          "HW3/scripts/verify_task08_workflow.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Task 8 workflow: 81/81\n",
+        "stderr": ""
+      },
+      {
+        "label": "Task 8 independent engineering",
+        "command": [
+          "HW3/scripts/verify_task08_engineering.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Conditional engineering validation: 364/364\n",
+        "stderr": ""
+      },
+      {
+        "label": "Task 8 actual solver results",
+        "command": [
+          "HW3/scripts/verify_task08_opensees.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Task 8 actual OpenSees checks: 140/140\n",
+        "stderr": ""
+      },
+      {
+        "label": "Final isolated Plan3 comparison",
+        "command": [
+          "HW3/scripts/final_plan3_reader.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Plan3 final cold comparison: 5 5 of 5; all centres and existing mechanical geometries unchanged\n",
+        "stderr": ""
+      },
+      {
+        "label": "R3 supplemental comparison",
+        "command": [
+          "HW3/scripts/task08_compare_human_r3.py"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS: unchanged actual replies, frozen R3 source chain, unchanged other reference flags and local gates\n{'Codex_gpt_6_1_sol_isolated': 10, 'Grok_4_5_student_reported': 10}\n",
+        "stderr": ""
+      },
+      {
+        "label": "Git-free historical-input probe",
+        "exit_code": 0,
+        "stdout": "PASS: Git invocation blocked\nPASS: three hash-verified historical inputs readable without Git\n",
+        "stderr": ""
+      }
+    ],
+    "static_audit": {
+      "text_files": 386,
+      "local_links": 420,
+      "errors": [],
+      "passed": true
+    },
+    "passed": true
+  },
+  "scratch": "C:\\Users\\099fyt\\Documents\\computer method\\tmp\\submission_check_0aff40530d",
+  "timestamp_utc": "2026-11-12T07:52:47.075396+00:00"
+}

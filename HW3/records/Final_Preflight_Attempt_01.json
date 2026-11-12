@@ -1,0 +1,120 @@
+{
+  "prepared_utc": "2026-11-12T07:50:50.980186+00:00",
+  "interpreter": "C:\\Users\\099fyt\\Documents\\computer method\\.venv_hw3\\Scripts\\python.exe",
+  "scope": "Extracted-copy audit of retained results, evidence bytes, current English text and local links. Not a clean installation, new inference or unconditional rubric-compliance claim.",
+  "git_invocations_blocked": true,
+  "commands": [
+    {
+      "label": "Legacy frozen bytes",
+      "command": [
+        "HW3/scripts/restore_legacy_frozen_bytes.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"scope\": \"Exact EOL-only reconstruction of recorded original text; no reference/geometry/answer modification\",\n  \"already_original\": 37,\n  \"restored\": 0,\n  \"need_restore\": 0,\n  \"restore_required_files\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "Task 1",
+      "command": [
+        "HW3/scripts/verify_task1.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Task 1 verification: 71/71; residual geometry warnings: 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "Task 3",
+      "command": [
+        "HW3/scripts/verify_task03.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Task 3 independent verification 54/54\n",
+      "stderr": ""
+    },
+    {
+      "label": "Tasks 4/5",
+      "command": [
+        "HW3/scripts/verify_task04.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Tasks 4/5 verification 75/75; CR error 0 m; relative F error 1.6e-16\n",
+      "stderr": ""
+    },
+    {
+      "label": "Tasks 6/7",
+      "command": [
+        "HW3/scripts/verify_task06.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Tasks 6/7 verification: 133/133\n",
+      "stderr": ""
+    },
+    {
+      "label": "Task 8 unchanged classical artifacts",
+      "command": [
+        "HW3/scripts/verify_task08_classical.py"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 11, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"HW3/scripts/verify_task08_classical.py\", line 10, in <module>\n    import joblib\n  File \"C:\\Users\\099fyt\\Documents\\computer method\\.venv_hw3\\Lib\\site-packages\\joblib\\__init__.py\", line 120, in <module>\n    from .memory import MemorizedResult, Memory, expires_after, register_store_backend\n  File \"C:\\Users\\099fyt\\Documents\\computer method\\.venv_hw3\\Lib\\site-packages\\joblib\\memory.py\", line 11, in <module>\n    import asyncio\n  File \"C:\\Users\\099fyt\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\asyncio\\__init__.py\", line 43, in <module>\n    from .windows_events import *\n  File \"C:\\Users\\099fyt\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\asyncio\\windows_events.py\", line 26, in <module>\n    from . import windows_utils\n  File \"C:\\Users\\099fyt\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\asyncio\\windows_utils.py\", line 125, in <module>\n    class Popen(subprocess.Popen):\nTypeError: function() argument 'code' must be code, not str\n"
+    },
+    {
+      "label": "Task 8 actual reader workflow",
+      "command": [
+        "HW3/scripts/verify_task08_workflow.py"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 11, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"HW3/scripts/verify_task08_workflow.py\", line 7, in <module>\n    from task08_compare_readers import score,local_gate\nModuleNotFoundError: No module named 'task08_compare_readers'\n"
+    },
+    {
+      "label": "Task 8 independent engineering",
+      "command": [
+        "HW3/scripts/verify_task08_engineering.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Conditional engineering validation: 364/364\n",
+      "stderr": ""
+    },
+    {
+      "label": "Task 8 actual solver results",
+      "command": [
+        "HW3/scripts/verify_task08_opensees.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Task 8 actual OpenSees checks: 140/140\n",
+      "stderr": ""
+    },
+    {
+      "label": "Final isolated Plan3 comparison",
+      "command": [
+        "HW3/scripts/final_plan3_reader.py"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 11, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"HW3/scripts/final_plan3_reader.py\", line 11, in <module>\n    from task08_compare_readers import score,local_gate\nModuleNotFoundError: No module named 'task08_compare_readers'\n"
+    },
+    {
+      "label": "R3 supplemental comparison",
+      "command": [
+        "HW3/scripts/task08_compare_human_r3.py"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 11, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"HW3/scripts/task08_compare_human_r3.py\", line 5, in <module>\n    from task08_compare_readers import load,sha,write,score,local_gate\nModuleNotFoundError: No module named 'task08_compare_readers'\n"
+    },
+    {
+      "label": "Git-free historical-input probe",
+      "exit_code": 0,
+      "stdout": "PASS: Git invocation blocked\nPASS: three hash-verified historical inputs readable without Git\n",
+      "stderr": ""
+    }
+  ],
+  "static_audit": {
+    "text_files": 384,
+    "local_links": 420,
+    "errors": [],
+    "passed": true
+  },
+  "passed": false
+}

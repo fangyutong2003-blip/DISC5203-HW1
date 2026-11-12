@@ -1,0 +1,128 @@
+{
+  "Plan3": [
+    {
+      "flag_id": "P3-F01",
+      "label": null,
+      "size_mm": null,
+      "continuous": true,
+      "confidence": 0.99,
+      "reason": "The horizontal wall has uninterrupted hatching and continuous upper and lower boundaries through the red cross. No concrete gap is visible."
+    },
+    {
+      "flag_id": "P3-F02",
+      "label": "T5",
+      "size_mm": "250x1750",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The text immediately beside the vertical hatched element at the red cross clearly reads T5 250x1750."
+    },
+    {
+      "flag_id": "P3-F03",
+      "label": "T6",
+      "size_mm": "2100x250",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The text directly below the horizontal hatched element at the red cross clearly reads T6 2100x250."
+    },
+    {
+      "flag_id": "P3-F04",
+      "label": null,
+      "size_mm": null,
+      "continuous": true,
+      "confidence": 0.99,
+      "reason": "The vertical wall has uninterrupted diagonal hatching and continuous side boundaries through the red cross, connecting the upper and lower horizontal walls without a visible concrete gap."
+    },
+    {
+      "flag_id": "P3-F05",
+      "label": "T8",
+      "size_mm": "2100x250",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The text directly above the horizontal hatched element at the red cross clearly reads T8 2100x250."
+    }
+  ],
+  "NewPlan": [
+    {
+      "flag_id": "NP-F01",
+      "label": "T1",
+      "size_mm": "3500x400",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The vertically oriented text immediately right of the red cross reads T1 3500x400."
+    },
+    {
+      "flag_id": "NP-F02",
+      "label": "T2",
+      "size_mm": "3500x400",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The printed text immediately right of the red cross reads T2 3500x400."
+    },
+    {
+      "flag_id": "NP-F03",
+      "label": "T3",
+      "size_mm": "3500x400",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The vertically oriented text immediately right of the red cross reads T3 3500x400."
+    },
+    {
+      "flag_id": "NP-F04",
+      "label": "T5",
+      "size_mm": "3500x400",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The printed text immediately right of the red cross reads T5 3500x400."
+    },
+    {
+      "flag_id": "NP-F05",
+      "label": "T6",
+      "size_mm": "3500x400",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The vertically oriented text immediately right of the red cross reads T6 3500x400."
+    },
+    {
+      "flag_id": "NP-F06",
+      "label": "T7",
+      "size_mm": "3500x400",
+      "continuous": null,
+      "confidence": 0.99,
+      "reason": "The vertically oriented text immediately right of the red cross reads T7 3500x400."
+    }
+  ],
+  "NIST": [
+    {
+      "flag_id": "NI-F01",
+      "label": null,
+      "size_mm": null,
+      "continuous": true,
+      "confidence": 0.99,
+      "reason": "The dark horizontal wall bar extends across the red cross without a visible gap."
+    },
+    {
+      "flag_id": "NI-F02",
+      "label": null,
+      "size_mm": null,
+      "continuous": true,
+      "confidence": 0.99,
+      "reason": "The dark horizontal wall bar extends across the red cross without a visible gap."
+    },
+    {
+      "flag_id": "NI-F03",
+      "label": null,
+      "size_mm": null,
+      "continuous": true,
+      "confidence": 0.99,
+      "reason": "The dark vertical wall bar extends above and below the red cross without a visible gap."
+    },
+    {
+      "flag_id": "NI-F04",
+      "label": null,
+      "size_mm": null,
+      "continuous": true,
+      "confidence": 0.99,
+      "reason": "The dark vertical wall bar extends above and below the red cross without a visible gap."
+    }
+  ]
+}

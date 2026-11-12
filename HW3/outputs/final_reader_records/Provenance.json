@@ -1,0 +1,45 @@
+{
+  "prepared_date": "2026-11-12",
+  "purpose": "Mechanical aggregation, not a new model run or answer repair",
+  "path_base": "repository root",
+  "reader_A": "gpt-6.1-sol, runtime-evidenced isolated sessions",
+  "reader_B": "Grok 4.5, student-reported; NIST records are complete follow-ups, originals retained",
+  "files": [
+    {
+      "file": "HW3/outputs/Plan3/reader_A_isolated_final/Raw_Answers.json",
+      "sha256": "ad51b02fef8d054db32c899f9e59cd3a07d2821db76ea7a7cfc95aef8ff05bd1"
+    },
+    {
+      "file": "HW3/outputs/Plan3/reader_B_grok/Raw_Answers.json",
+      "sha256": "933acd7cd9c54ca1375f182395b015c7292753e76653a870be33796a7bab2def"
+    },
+    {
+      "file": "HW3/outputs/NewPlan/reader_codex_isolated_v4/Parsed_Answers.json",
+      "sha256": "4d6c91be394518ea40b831ee538842ce28c63a9db118721aba8ad7ff4373b45c"
+    },
+    {
+      "file": "HW3/outputs/NewPlan/reader_grok_received_v4/Raw_User_Messages.jsonl",
+      "sha256": "08b76aa7fe1053e87470ce471473f1dd3879321a9c543c4a81ab3663d763c8ce"
+    },
+    {
+      "file": "HW3/outputs/NIST/reader_codex_isolated_v4/Parsed_Answers.json",
+      "sha256": "4af546aaf753ccd3a4888fdd031f5b5661f14735e3df37f9b233cbefe209cf4e"
+    },
+    {
+      "file": "HW3/outputs/NIST/reader_grok_received_v4/Followup_NI-F01.json",
+      "sha256": "b0d00e83fbfec579ca80a179d38a8b3fc7bd60b091e65115f3337ed2fb82ee3b"
+    },
+    {
+      "file": "HW3/outputs/NIST/reader_grok_received_v4/Followup_NI-F02.json",
+      "sha256": "c95e794fc559d262566b5ddecfd24d81a109033588eafa39287f78e09db68c6f"
+    },
+    {
+      "file": "HW3/outputs/NIST/reader_grok_received_v4/Followup_NI-F03.json",
+      "sha256": "47b5b59aa5d6e97ece7b5a8821ea93271adf31c0fa30ba0fa2214421991af07b"
+    },
+    {
+      "file": "HW3/outputs/NIST/reader_grok_received_v4/Followup_NI-F04.json",
+      "sha256": "2125b3a3d3cb3f89e7dae693fdf612e0c4e9f8c9965544387daf6532531ca087"
+    }
+  ]
+}

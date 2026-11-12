@@ -2,7 +2,7 @@
 import copy
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 
 from task08_compare_readers import score,local_gate
 
@@ -52,7 +52,13 @@ def main():
             expected_text='Flag ID: '+flag['flag_id']+'\n\n'+flag['question']
             items=turn['input_items']
             check(flag['flag_id']+' exact question and order',turn['flag_id']==flag['flag_id']==answer['flag_id'] and items[-2]=={'type':'text','text':expected_text})
-            check(flag['flag_id']+' native image only',items[-1]['type']=='local_image' and Path(items[-1]['path']).resolve()==actual.resolve() and len(items)==(4 if index==0 else 2))
+            # Raw runtime paths remain original absolute delivery paths. A relocated
+            # submission checks the entire repository-relative suffix and crop hash,
+            # rather than requiring the grader's folder to equal the sender's folder.
+            raw_path=items[-1]['path'].replace('\\','/')
+            expected_suffix='/'+actual.relative_to(ROOT.parent).as_posix()
+            delivered_absolute=Path(raw_path).is_absolute() or PureWindowsPath(raw_path).is_absolute()
+            check(flag['flag_id']+' native image only',items[-1]['type']=='local_image' and delivered_absolute and raw_path.endswith(expected_suffix) and len(items)==(4 if index==0 else 2))
             raw=turn['raw_response']
             extracted,_=json.JSONDecoder().raw_decode(raw[raw.index('{'):])
             check(flag['flag_id']+' parsed answer equals raw output',extracted==answer)

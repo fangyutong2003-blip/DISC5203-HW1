@@ -8,7 +8,9 @@ This repository contains the retained Homework 1/2 submissions and the Homework 
 
 ## Start here
 
-For HW3, open [Task 1 report](HW3/HW3_Task_01_Report.md), [task status](HW3/records/Task_Status.md), and [iteration log](HW3/records/Iteration_Log.md). The assigned-plan extraction and its contextual-reader limitations are retained. Current additional-plan work is documented in the [Task 8 conditional engineering report](HW3/HW3_Task_08_Conditional_Engineering_Report.md); strict experimental/source limitations remain disclosed.
+For HW3 submission, start with the [continuous final English report](HW3_Final_Report.md), [requirement-to-evidence audit](HW3/records/Submission_Requirements_Audit.md), and [reproduction / Git-free inspection guide](HW3/records/Submission_Reproduction.md). All original step files remain available. The [task status](HW3/records/Task_Status.md) and [iteration log](HW3/records/Iteration_Log.md) distinguish completed conditional calculations from open experimental/source limitations.
+
+The [final isolated Plan 3 reader comparison](HW3/outputs/Plan3/reader_A_isolated_final/Report.md) supplements the retained original contextual reader. Both actual readers tie on the five questions and their applied mechanical geometries match the retained analysis baseline. Different interfaces and unverified Grok backend identity remain disclosed. The two consolidated reader JSON files and their raw-source hashes are linked from the continuous report.
 
 The provisional common-geometry baseline now has [Task 3 analytical centres](HW3/HW3_Task_03_Analytical_Report.md) and [Tasks 4/5 OpenSees verification](HW3/HW3_Task_04_05_OpenSees_Report.md). Task 2's formal experiment-control limits remain open; no reader winner is claimed.
 
