@@ -1,0 +1,12 @@
+{
+  "source_commit": "d18bab68a9653b23f99095031fb73f402474798c",
+  "directory": "C:\\Users\\099fyt\\Desktop\\DISC5203_HW3_Fangyutong_21353319_Final_2026-11-12",
+  "archive": "C:\\Users\\099fyt\\Desktop\\DISC5203_HW3_Fangyutong_21353319_Final_2026-11-12.zip",
+  "archive_bytes": 111358760,
+  "archive_sha256": "6e98a15b7be441e75e878a4943af6a5e34440eda79c1f9254320fb892a2e5bd6",
+  "files": 699,
+  "all_archive_entries_match_folder_and_manifest": true,
+  "extracted_validation_passed": true,
+  "scratch": "C:\\Users\\099fyt\\Documents\\computer method\\tmp\\submission_check_3dc2207eb0",
+  "timestamp_utc": "2026-11-12T07:54:12.591313+00:00"
+}
