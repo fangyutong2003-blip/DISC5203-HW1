@@ -22,6 +22,20 @@ def archived_literal(source,name):
     raise KeyError(name)
 
 
+def archived_input(name):
+    """Read byte-exact inherited inputs without requiring Git in a grading environment."""
+    folder=ROOT/'sources/legacy_snapshots/5f1eafe'
+    snapshot=folder/name
+    if snapshot.exists():
+        manifest=json.loads((folder/'Manifest.json').read_text(encoding='utf-8'))
+        record=next(item for item in manifest['files'] if item['file']==name)
+        data=snapshot.read_bytes()
+        if hashlib.sha256(data).hexdigest()!=record['sha256']:
+            raise ValueError('Historical snapshot hash mismatch: '+name)
+        return data
+    return subprocess.check_output(['git','show','5f1eafe:'+name],cwd=REPO)
+
+
 def partition(elements,rects,excluded,step):
     xs=(np.arange(round(10.2/step))+.5)*step
     ys=-1.2+(np.arange(round(20.9/step))+.5)*step
@@ -69,7 +83,7 @@ def polygons(owner,step):
 def main():
     out=ROOT/"outputs/Plan3/task1"
     out.mkdir(parents=True,exist_ok=True)
-    source=subprocess.check_output(["git","show","5f1eafe:tributary_regions.py"],cwd=REPO).decode("utf-8")
+    source=archived_input('tributary_regions.py').decode('utf-8')
     slabs=archived_literal(source,"slabs"); exclusions=archived_literal(source,"openings")
     outline=unary_union([box(x,y,x+w,y+h) for x,y,w,h in slabs])
     flat=outline.difference(unary_union([box(x,y,x+w,y+h) for _,x,y,w,h in exclusions]))
@@ -140,7 +154,7 @@ def main():
     assert abs(sum(g.area for g in regions.values())-unary_union(list(regions.values())).area)<1e-7
     features=[]
     # Historic source fields are preserved exactly rather than guessed from names.
-    historic_csv=subprocess.check_output(["git","show","5f1eafe:Step_01C_Tributary_Areas.csv"],cwd=REPO).decode("utf-8")
+    historic_csv=archived_input('Step_01C_Tributary_Areas.csv').decode('utf-8')
     historic_rows=list(csv.DictReader(io.StringIO(historic_csv)))
     area_key=next(k for k in historic_rows[0] if "area" in k and "m2" in k)
     old_areas={r["element_id"]:float(r[area_key]) for r in historic_rows}
@@ -155,7 +169,7 @@ def main():
     with (out/"Candidate_Tributary_Areas.csv").open("w",newline="",encoding="utf-8") as f:
         writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
     # Retain HW1 loads separately: this new diagnostic does not replace accepted HW1 results.
-    historic_loads=subprocess.check_output(["git","show","5f1eafe:Step_02_Element_Load_Summary.csv"],cwd=REPO)
+    historic_loads=archived_input('Step_02_Element_Load_Summary.csv')
     (out/"Inherited_HW1_Loads.csv").write_bytes(historic_loads)
     geometry["floor"]={"outline_area_m2":outline.area,"load_kN_m2":8.75,"storeys":5,
                        "ordinary_flat_area_m2":flat.area,"void_area_m2":void.area,"separate_stair_area_m2":stair.area}

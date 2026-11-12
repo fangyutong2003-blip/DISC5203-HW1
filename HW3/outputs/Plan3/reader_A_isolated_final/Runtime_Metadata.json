@@ -1,0 +1,39 @@
+{
+  "runtime_log_file": "rollout-2026-11-11T21-12-03-01a1cabc-a3a8-70a1-b701-57b09240c064.jsonl",
+  "runtime_log_sha256_at_capture": "36b5a9aff9679a5e3befd7dec886707aa99b3551036b95bc7ee444333b45436e",
+  "turn_context_model_evidence": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "turn_id": "01a1cabc-a597-7211-9234-02b3193383c7"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "turn_id": "01a1cabd-12e8-7541-b71c-1f8f65c59fb5"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "turn_id": "01a1cabe-2984-7630-b408-530f06701a11"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "turn_id": "01a1cac0-469d-7562-b395-7c079a56b60d"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "turn_id": "01a1cac1-1e5e-73a1-bd4e-0a1480e7a0b0"
+    }
+  ],
+  "runtime_model_ids": [
+    "gpt-6.1-sol"
+  ],
+  "reader_tool_calls": [],
+  "extracted_metadata_scope": "Only public final answers, supplied user prompts/images and model/turn metadata; no private reasoning exported.",
+  "harness_limit": "Isolated native interface differs from student-operated Grok web; shared inputs do not establish an identical harness.",
+  "actual_run_date": "2026-11-11",
+  "ingestion_date": "2026-11-12"
+}

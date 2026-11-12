@@ -1,0 +1,21 @@
+{
+  "purpose": "Byte-exact historical inputs for stage07 without requiring Git at grading time",
+  "source_commit": "5f1eafe",
+  "files": [
+    {
+      "file": "tributary_regions.py",
+      "sha256": "1564d865bf4c6d96eebfca8325d147ca444613c7c181f86cc8c4212277b96450",
+      "git_object": "5f1eafe:tributary_regions.py"
+    },
+    {
+      "file": "Step_01C_Tributary_Areas.csv",
+      "sha256": "4dc88e1dd8677cc1471a772a330b51452bee195b7af0482d065355aaa6d43c44",
+      "git_object": "5f1eafe:Step_01C_Tributary_Areas.csv"
+    },
+    {
+      "file": "Step_02_Element_Load_Summary.csv",
+      "sha256": "fe2fc56876280756d42911bcc04689a4cb5f862a92a0f5a5d06771ce97772426",
+      "git_object": "5f1eafe:Step_02_Element_Load_Summary.csv"
+    }
+  ]
+}

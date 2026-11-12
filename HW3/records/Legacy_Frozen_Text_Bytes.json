@@ -1,0 +1,229 @@
+{
+  "purpose": "Preserve raw legacy Windows text bytes referenced by frozen hashes while keeping Git LF normalisation. Reconstruct only EOL variants proven by both hashes; never rewrite reference expectations.",
+  "prepared_date": "2026-11-12",
+  "files": [
+    {
+      "file": "HW3/outputs/Plan3/independent_reference/Reference.json",
+      "canonical_lf_sha256": "3c321c02f8c28201cbcc6b605add31f829252e22a7178b12e2ff3ed6269c7663",
+      "original_bytes_sha256": "97368e2f0d66f443e8c07ef0201b20c5530b83950f000420fe99c6ad5b8e7fda",
+      "original_bytes": 17648
+    },
+    {
+      "file": "HW3/outputs/Plan3/reader_A_task1/Application_Log.json",
+      "canonical_lf_sha256": "f35271055ba0ac5c13691330bee100aeaf12eae3e9ee79243005d78abf9d12a9",
+      "original_bytes_sha256": "cf4a3ad44ad245217ee30976de725e4e44edec1b3ce1a33a8388b2cdd625976e",
+      "original_bytes": 1294
+    },
+    {
+      "file": "HW3/outputs/Plan3/reader_A_task1/Run_Metadata.json",
+      "canonical_lf_sha256": "f283c9566bfce132d956afb5b5b0c3538c7ed9863791492636d48d9efe3ad637",
+      "original_bytes_sha256": "d8c2290680deb41ac3e45fadc78bb5d56c99c401cc431ead601ea4d0a9aff348",
+      "original_bytes": 1008
+    },
+    {
+      "file": "HW3/outputs/Plan3/reader_package_v1/Flag_Manifest.json",
+      "canonical_lf_sha256": "3b9b2703928f04717d3af16e1deadc7826f79d697979a55af2d69c6512ffc161",
+      "original_bytes_sha256": "8ceb8339e56410f969e8946db73bd6480b104cc08cea8b5965e89257c489256f",
+      "original_bytes": 3400
+    },
+    {
+      "file": "HW3/outputs/Plan3/reader_package_v1/Questions.md",
+      "canonical_lf_sha256": "1c1d3d69dde5a3e22e924ba6e3b400bf86360179233f2c2eb20151fb158177c0",
+      "original_bytes_sha256": "ecda783129938787255f7d7132a8283a42d5f261b1e932ddf35c388eb03f1dcc",
+      "original_bytes": 785
+    },
+    {
+      "file": "HW3/outputs/Plan3/review_package_draft/Flag_Manifest.json",
+      "canonical_lf_sha256": "fb6c53cbb15e6178034789dafac0f689551e772ddc79005bec89f535137fa112",
+      "original_bytes_sha256": "57100f1af6fdd2f42cedb9811082a9d173b3497de463dc7680ea2f56222c530d",
+      "original_bytes": 3191
+    },
+    {
+      "file": "HW3/outputs/Plan3/review_package_draft/Questions.md",
+      "canonical_lf_sha256": "9e725eb70425aa07c3370fc5a602f46a30623cd9b7869223cde9d3b4102fd8f9",
+      "original_bytes_sha256": "1073c8acdec00f96c08902ab36fdb64c3b21e6ff8f80e75a9334479db5e70a3a",
+      "original_bytes": 924
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage01/Classical_Components.json",
+      "canonical_lf_sha256": "78a4e26d91d46318429ae12f42ee6f405b76be7e9d9fe6afddbb330d41e2b18c",
+      "original_bytes_sha256": "c91d1d89c0f7a2a83ebab75d9ca97aadd33371156ec81008d492a2c4d6b12d4d",
+      "original_bytes": 8946
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage02/Dual_OCR.json",
+      "canonical_lf_sha256": "64aae01e447d9c7af7ed5d23913a105501320217e9bd9f85265fcd12e5e9b2e8",
+      "original_bytes_sha256": "c9ea4cdd267eb484257385e2394b8df1bd96fca98db16907d591b437d2e4759b",
+      "original_bytes": 96573
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage02/Dual_OCR_Review.md",
+      "canonical_lf_sha256": "1c96e6cfcf35ee649ac8c2949138283d2cbfa4250f5ac86b9fa9370d73052206",
+      "original_bytes_sha256": "2462fee7aed7de077c0032641df0f82aaf66cfde2da31352faf49aa224e7fdf6",
+      "original_bytes": 794
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage03/Bar_Label_Matches.json",
+      "canonical_lf_sha256": "2a51c175ef32a5c86bad2375d269f0f32028879e076bac8cfa58858233ddd614",
+      "original_bytes_sha256": "16dbe20fb13a3ec8420c9435bd8a568ae82ec28bd9cb6dfec621f347b2a0c314",
+      "original_bytes": 16385
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage04_forest/Feature_Importance.md",
+      "canonical_lf_sha256": "12033c24a1b02aad92302bb6b6857401f8d59340d362a31d5b3e1b4bfeb79c59",
+      "original_bytes_sha256": "9409491278933ac32b55b0210f3ca32fb62b29c8ee671b25d2248d71b806cac2",
+      "original_bytes": 737
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage04_forest/Forest_Report.json",
+      "canonical_lf_sha256": "6516c5fba654c44706d98b206e81f1c0c4a0d1794138b61161ff869a4f181e08",
+      "original_bytes_sha256": "3ca9032e82197286491263a1819769551af4afc93af3d43e153a793eb16b37b4",
+      "original_bytes": 1173
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage05/Classical_Elements_Unpromoted.json",
+      "canonical_lf_sha256": "8eac55aa2e27179678e6d07391ebe84e9aeecf559366d47b2d2affe0b7367704",
+      "original_bytes_sha256": "4e6960431362a50728255cc04b14817a67f4a7f075d38697f4a771a2fb71e035",
+      "original_bytes": 10446
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage05/Dimension_Chain_and_Historical_Audit.json",
+      "canonical_lf_sha256": "9e6984587cfb41f3d044857debe8e537e39c39e3523316492d05aaeceb0481be",
+      "original_bytes_sha256": "4708964edbe70a58b43b6d5b24a2705049eda37e405bbfecfb6efbfa22d0edbd",
+      "original_bytes": 7479
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage05/Metric_Calibration.json",
+      "canonical_lf_sha256": "6c52f47d83911467f540c1bb7a102ae17c0451fb1d6d2306c15789d099afd3b1",
+      "original_bytes_sha256": "14f5d383e186916936f0e8675bd65e960d154d4f7fde8b1114370cdd4cf0a4f3",
+      "original_bytes": 96046
+    },
+    {
+      "file": "HW3/outputs/Plan3/stage05/Metric_Geometry_Review.md",
+      "canonical_lf_sha256": "b223b82a9aeb9d60adcd85b6d77a85e48a416eca2a8135433664d6a0809218bf",
+      "original_bytes_sha256": "945580313f1528fd883c6d508bc37ae31a6dbdcc99f5bcc03146a68a8c114fcc",
+      "original_bytes": 1388
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Calibration_Revision_Audit.json",
+      "canonical_lf_sha256": "7d0a99523cdcded600019ce1e9436d78c82ee40c0c93ec6419efe37233a85cd0",
+      "original_bytes_sha256": "4a73fdb7ab326c30ed3a5c4c6d89426d09a5ceb5c6b12e58d1e7c6354e8f9071",
+      "original_bytes": 2079
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Candidate_Tributary_Areas.csv",
+      "canonical_lf_sha256": "e2b8f3a7dbf2721a3be1eb85341fc78e2a0bbc14533a67c2b68b2dd2b938427b",
+      "original_bytes_sha256": "b7eb90cb138a072a5ba64324df63ac7a90bc6f6c2bb63ddb53f89a64fecaeb06",
+      "original_bytes": 1719
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Column_Grid.json",
+      "canonical_lf_sha256": "f09b0935b9505f990c8de5ec4883a0a4167e3388faf0fc55645ea38aa69cad9e",
+      "original_bytes_sha256": "ea61788099e8f8b33613a7d53cf41e31886328ffb73b2d0d0b5c18bccdb1d242",
+      "original_bytes": 402
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Element_Geometry_Audit.json",
+      "canonical_lf_sha256": "2c251eba996fefef2b2d39510370036bdc8b2c3480742650d2894a78874a9410",
+      "original_bytes_sha256": "b11236772f8495520f7f30f206496181ed8091be339ad9625eaa011ee9eb1780",
+      "original_bytes": 2233
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Elements_After_Reader_A.json",
+      "canonical_lf_sha256": "58467c5a776da3abe688123d43a75b8c6739d655e0f67b1adbb890e043afd460",
+      "original_bytes_sha256": "7f7ffe3ecd6326fe1d45c9212760645593d37653e47f00980de5bcf3ef6862f3",
+      "original_bytes": 22593
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Elements_Classical.json",
+      "canonical_lf_sha256": "da7dd3749a36d80a183873e5e03b311d2ba2a72447a36ac08f95d1170bf10c7a",
+      "original_bytes_sha256": "2c0ffece47b3e0f4477238fbc2d1b20061e307c9f2077d8fe57b24500a93c0a8",
+      "original_bytes": 21155
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Floor_Dimension_Record.json",
+      "canonical_lf_sha256": "a4ded2fc73f8a6dfdaddea9beae24f39017537bc9cb7625e73517e3e127379db",
+      "original_bytes_sha256": "6329e967702250595b7ce90bca56db909af0ad92d671512c1e8da39b050482ff",
+      "original_bytes": 1534
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Global_Dimension_Anchor.json",
+      "canonical_lf_sha256": "224a5b9d1e5cd6014e7d19e43e421f79700325dddb0cac9a6db5522ca3f2e9b9",
+      "original_bytes_sha256": "ebf1377bf901ade0e082220ff09ec7d766958ee56e1803306e8ce52619ea4c23",
+      "original_bytes": 726
+    },
+    {
+      "file": "HW3/outputs/Plan3/task1/Score_Sheet.json",
+      "canonical_lf_sha256": "e3def6b94e183b32537a5aae32c1c07647be88f24183f6062a33358cba8fcc53",
+      "original_bytes_sha256": "d0fb78a993b47e69a8255b032bcef79408f6548427a7a1e4925ef0ad766a6124",
+      "original_bytes": 716
+    },
+    {
+      "file": "HW3/outputs/Plan3/task2_received/Comparison.json",
+      "canonical_lf_sha256": "4ef457316dd1f28f5b8916ecb7a94561b7befa063986d3ee7759bc4ef63131ad",
+      "original_bytes_sha256": "769c1763b8177cbfb5e6993a163548c4ee98ce2ecd8274ff5be200bbb5f0f55f",
+      "original_bytes": 4010
+    },
+    {
+      "file": "HW3/outputs/Plan3/task2_received/Comparison.md",
+      "canonical_lf_sha256": "059ddef2bc0c622568e2b4293667011202993014a7e3a9156a8d49fc760710e5",
+      "original_bytes_sha256": "8476c88c851de06cde499ee707c34f4a5c7f097fd808e072acf8f8d6897d5158",
+      "original_bytes": 2489
+    },
+    {
+      "file": "HW3/outputs/Plan3/task3/Analytical_Result.json",
+      "canonical_lf_sha256": "c2de0ae0df1adb7c3aca4748a467d41ae3a82e54776bdfc33159e28f7f6f9469",
+      "original_bytes_sha256": "2bb5efc76ce52d0186c44f6217f68b128593281be5e7fb4a53b81b264a7faafb",
+      "original_bytes": 26584
+    },
+    {
+      "file": "HW3/outputs/Plan3/task3/Mass_Rectangles.csv",
+      "canonical_lf_sha256": "e3939b0692b1e7b0ffe52e3deef34480d2f4f2af35ceb75f015d7f29645310c9",
+      "original_bytes_sha256": "cec4b8a5634c72631b27aeff98ad2cf4115074ed1fa64165943b3001fa645caf",
+      "original_bytes": 1048
+    },
+    {
+      "file": "HW3/outputs/Plan3/task3/Wall_Force_Shares.csv",
+      "canonical_lf_sha256": "18401cc09aa76d790d37d84f375060405d42a2044f74a67e417b783b2e3ce599",
+      "original_bytes_sha256": "2f4d6b503e409b489b3199475c45bc15934560accc5f4c5fe9e728a4bca6eafb",
+      "original_bytes": 2850
+    },
+    {
+      "file": "HW3/outputs/Plan3/task3/Wall_Stiffnesses.csv",
+      "canonical_lf_sha256": "192e57b8c8ec5b07ddeb1d604912357a0736d2e285b2ab1fefe213501e7afd54",
+      "original_bytes_sha256": "cc5ccfddd33f5bc434f70352682bca924e057fa90fc708ac70f720e9876d05d0",
+      "original_bytes": 2720
+    },
+    {
+      "file": "HW3/outputs/Plan3/task4/Demonstration_Wall_Reactions.csv",
+      "canonical_lf_sha256": "3616a52beace2c237e104dcfe93daefef3ce87745ece576664adb5e79d71030b",
+      "original_bytes_sha256": "cc020b99fac121297691a464b3d5e58071d59a89617f4dcc58637d71a2677ed4",
+      "original_bytes": 2139
+    },
+    {
+      "file": "HW3/outputs/Plan3/task4/OpenSees_Result.json",
+      "canonical_lf_sha256": "70c0589d63283d8e79a9325edb87b5ff0c638352574ca18f0e0155dc846f87ab",
+      "original_bytes_sha256": "24c0f6f37b2c8d815d2f39ac183af0b0325847648e62382666be4d6da3dea3bf",
+      "original_bytes": 114514
+    },
+    {
+      "file": "HW3/outputs/Plan3/task6/Force_Amplification_Comparison.csv",
+      "canonical_lf_sha256": "92e98de5af9c084f24ce20df84ea282bf0bcff64a9c5aaedd375c2f37bd7c21f",
+      "original_bytes_sha256": "1136228b5c5f1036ebf93c7718c7ab941a97db64fca1c568a85eadbdf849426c",
+      "original_bytes": 13666
+    },
+    {
+      "file": "HW3/outputs/Plan3/task6/Modification_Result.json",
+      "canonical_lf_sha256": "351f7c980601dd4e314c2f658c9a24cf65204b69ee6796c72714f5056759009c",
+      "original_bytes_sha256": "ab0f821d505f7e09ae42792bbedb6b93988851bb24799ea957015a37db11eeb3",
+      "original_bytes": 324718
+    },
+    {
+      "file": "HW3/outputs/Plan3/task6/Optimisation_Trajectory.json",
+      "canonical_lf_sha256": "495049fee34c22d2e5c0e3e751d6d6705c2a65cd6fda31ca42fa50406779efbd",
+      "original_bytes_sha256": "9f93e15326def611f93292497b1bbcd5ded27e74be4763d17ca5d9d54ed5a37f",
+      "original_bytes": 4736
+    }
+  ],
+  "scope": "Only protected legacy Plan 3 outputs and original source inventory; active reports/code are excluded so normal revisions are not reverted."
+}

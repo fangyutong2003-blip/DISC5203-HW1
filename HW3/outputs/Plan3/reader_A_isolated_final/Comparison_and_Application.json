@@ -1,0 +1,145 @@
+{
+  "status": "Final isolated Plan 3 corroboration; original contextual run retained",
+  "model_A": [
+    "gpt-6.1-sol"
+  ],
+  "model_B": "Grok 4.5, student-reported; exact backend unverified",
+  "reference_sha256": "97368e2f0d66f443e8c07ef0201b20c5530b83950f000420fe99c6ad5b8e7fda",
+  "original_geometry_sha256": "2c0ffece47b3e0f4477238fbc2d1b20061e307c9f2077d8fe57b24500a93c0a8",
+  "reader_results": {
+    "Codex_isolated": {
+      "resolved": 5,
+      "incorrect": 0,
+      "low_confidence_or_abstained": 0,
+      "unscorable_reference": 0,
+      "total": 5,
+      "flags": [
+        {
+          "flag_id": "P3-F01",
+          "outcome": "resolved",
+          "confidence": 0.99,
+          "asked_fields": [
+            "continuous"
+          ]
+        },
+        {
+          "flag_id": "P3-F02",
+          "outcome": "resolved",
+          "confidence": 0.99,
+          "asked_fields": [
+            "label",
+            "size_mm"
+          ]
+        },
+        {
+          "flag_id": "P3-F03",
+          "outcome": "resolved",
+          "confidence": 0.99,
+          "asked_fields": [
+            "label",
+            "size_mm"
+          ]
+        },
+        {
+          "flag_id": "P3-F04",
+          "outcome": "resolved",
+          "confidence": 0.99,
+          "asked_fields": [
+            "continuous"
+          ]
+        },
+        {
+          "flag_id": "P3-F05",
+          "outcome": "resolved",
+          "confidence": 0.99,
+          "asked_fields": [
+            "label",
+            "size_mm"
+          ]
+        }
+      ]
+    },
+    "Grok_student_reported": {
+      "resolved": 5,
+      "incorrect": 0,
+      "low_confidence_or_abstained": 0,
+      "unscorable_reference": 0,
+      "total": 5,
+      "flags": [
+        {
+          "flag_id": "P3-F01",
+          "outcome": "resolved",
+          "confidence": 0.95,
+          "asked_fields": [
+            "continuous"
+          ]
+        },
+        {
+          "flag_id": "P3-F02",
+          "outcome": "resolved",
+          "confidence": 1.0,
+          "asked_fields": [
+            "label",
+            "size_mm"
+          ]
+        },
+        {
+          "flag_id": "P3-F03",
+          "outcome": "resolved",
+          "confidence": 1.0,
+          "asked_fields": [
+            "label",
+            "size_mm"
+          ]
+        },
+        {
+          "flag_id": "P3-F04",
+          "outcome": "resolved",
+          "confidence": 0.95,
+          "asked_fields": [
+            "continuous"
+          ]
+        },
+        {
+          "flag_id": "P3-F05",
+          "outcome": "resolved",
+          "confidence": 1.0,
+          "asked_fields": [
+            "label",
+            "size_mm"
+          ]
+        }
+      ]
+    }
+  },
+  "local_gates": {
+    "Codex": {
+      "no_incorrect_on_scorable_flags": true,
+      "preserves_other_reader_resolved_flags": true,
+      "local_scorable_gate_pass": true
+    },
+    "Grok": {
+      "no_incorrect_on_scorable_flags": true,
+      "preserves_other_reader_resolved_flags": true,
+      "local_scorable_gate_pass": true
+    }
+  },
+  "applied_copies": {
+    "Codex_isolated": {
+      "mechanical_signature_matches_existing_baseline": true,
+      "vertices_moved": false
+    },
+    "Grok_student_reported": {
+      "mechanical_signature_matches_existing_baseline": true,
+      "vertices_moved": false
+    }
+  },
+  "winner": null,
+  "verdict": "Tie on all five reference questions; no superiority-based winner. Both applied mechanical geometries match the retained numerical baseline.",
+  "limitations": [
+    "Different native/web interfaces, not an identical harness",
+    "Grok website transcript/backend not independently authenticated",
+    "Later isolated run corroborates but does not make the original contextual run blind"
+  ],
+  "baseline_calculations_changed": false
+}
